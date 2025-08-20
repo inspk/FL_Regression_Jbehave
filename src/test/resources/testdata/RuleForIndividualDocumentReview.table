@@ -1,0 +1,2 @@
+|ruleName                     |selectapplicationtype |condition1      |enrollmenttypevalue |condition2       |specialtytypevalue  |
+|IndividualDocumentReviewRule |Enrollment            |Enrollment Type |Individual          |DOCUMENT REVIEW  |Upload Document     |

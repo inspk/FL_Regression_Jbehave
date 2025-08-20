@@ -1,0 +1,52 @@
+[
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Mailing Address.Laboratory services.Do you bill laboratory services?}",
+      "timestamp": 0
+    }
+  },
+  {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Mailing Address.Mailing Address.Is this mailing address the same as service location?}",
+    "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,2",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Mailing Address.Mailing Address.Physical address (P.O. box not accepted)}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,3",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Mailing Address.Mailing Address.Building, Suite}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,3",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Mailing Address.Mailing Address.Zip}",
+      "timestamp": 0
+    }
+  }
+]

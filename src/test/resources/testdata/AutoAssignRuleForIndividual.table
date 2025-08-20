@@ -1,0 +1,2 @@
+|ruleName                 |selectapplicationtype |condition1      |enrollmenttypevalue |
+|IndividualEnrollmentRule |Enrollment            |Enrollment Type |Individual          |

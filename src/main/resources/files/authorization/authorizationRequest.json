@@ -1,0 +1,256 @@
+{
+  "interchangeControlNumber": "${ICN}",
+  "interchangeTransaction": {
+    "authorizationInformationQualifier": "00",
+    "authorizationInformation": "          ",
+    "securityInformationQualifier": "00",
+    "securityInformation": "          ",
+    "senderIdQualifier": "ZZ",
+    "senderId": "123456789012345",
+    "receiverIdQualifier": "ZZ",
+    "receiverId": "123456789012346",
+    "interchangeDate": "2005-05-02T14:30:28",
+    "interchangeControlVersionNumber": "00501",
+    "acknowledgmentRequested": "0",
+    "usageIndicatorRequested": "T",
+    "groupControlNumber": "20213",
+    "versionReleaseAndIndustryIdCode": "005010X217",
+    "transactionPurposeCode": "13",
+    "transactionIdentifier": "B56789",
+    "transactionResponseType": null
+  },
+  "insuranceCompanyOrUMO": {
+    "entityIdentificationCode": "X3",
+    "entityTypeQualifier": "2",
+    "organizationName": "MARYLAND CAPITAL INSURANCE COMPANY",
+    "identificationCodeQualifier": "46",
+    "identificationCode": "789312"
+  },
+  "provider": {
+    "id": null,
+    "entityIdCode": "1P",
+    "entityTypeQualifier": "1",
+    "requesterLastOrOrganizationName": "SMITH",
+    "firstName": "ADAM",
+    "middleName": "",
+    "suffix": "",
+    "idCodeQualifier": "34",
+    "npi": "${NPI}",
+    "address": {
+      "addressLine1": null,
+      "addressLine2": null,
+      "city": null,
+      "stateCode": null,
+      "zipCode": null
+    },
+    "contact": {
+      "name": "",
+      "phone": "4029993456",
+      "fax": null,
+      "email": null,
+      "url": null
+    }
+  },
+  "patient": {
+    "entityIdCode": "IL",
+    "entityTypeQualifier": "1",
+    "lastName": "SMITH",
+    "firstName": "JOE",
+    "middleName": "",
+    "suffix": "",
+    "identificationCodeQualifier": "MI",
+    "identificationCode": "12345678901",
+    "address": {
+      "addressLine1": null,
+      "addressLine2": null,
+      "city": null,
+      "stateCode": null,
+      "zipCode": null
+    },
+    "contact": {
+      "name": null,
+      "phone": null,
+      "fax": null,
+      "email": null,
+      "url": null
+    },
+    "dateOfBirth": "1973-05-19",
+    "gender": "M"
+  },
+  "patientEvent": {
+    "traceNumber": "97021001",
+    "userAssigningId": "9012345678",
+    "serviceReview": {
+      "requestCategoryCode": "AR",
+      "certificationTypeCode": "I",
+      "serviceTypeCode": "2",
+      "facilityTypeCode": "21",
+      "facilityTypeCodeQualifier": "B",
+      "levelOfServiceCode": "",
+      "patientCurrentHealthConditionCode": "",
+      "patientPrognosisCode": "",
+      "releaseOfInformationCode": "Y",
+      "delayReasonCode": null
+    },
+    "eventDateTimePeriod": {
+      "eventDateCodeQualifier": "472",
+      "dateOrPeriodFrom": "2005-05-16",
+      "periodTo": "2005-06-06"
+    },
+    "diagnosis": {
+      "codeType": "BF",
+      "code": "41090",
+      "date": "2005-01-25"
+    },
+    "healthCareServiceDelivery": {
+      "quantityQualifier": "DY",
+      "numberOfPeriods": "7"
+    },
+    "urgentOrNewType": "2",
+    "admittingFacility": {
+      "entityIdCode": "FA",
+      "entityTypeQualifier": "2",
+      "lastOrOrganizationName": "MONTGOMERY HOSPITAL",
+      "firstName": "Jon",
+      "middleName": "Smith",
+      "suffix": "AS",
+      "identificationCodeQualifier": "24",
+      "identificationCode": "000012121",
+      "admittingFacilityIdCode": "888",
+      "address": {
+        "addressLine1": "addr1",
+        "addressLine2": "addr2",
+        "city": "ANYTOWN",
+        "stateCode": "PA",
+        "zipCode": "19087"
+      },
+      "contact": {
+        "name": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "url": null
+      }
+    },
+    "responseCertificationNumber": null,
+    "responseStatusCode": null
+  },
+  "services": [
+    {
+      "traceNumber": "777777771",
+      "serviceLineTypeCode": "9000000002",
+      "serviceReview": {
+        "requestCategoryCode": "HS",
+        "certificationTypeCode": "I",
+        "serviceTypeCode": "2",
+        "facilityTypeCode": null,
+        "facilityTypeCodeQualifier": null,
+        "levelOfServiceCode": null,
+        "patientCurrentHealthConditionCode": null,
+        "patientPrognosisCode": null,
+        "releaseOfInformationCode": null,
+        "delayReasonCode": null
+      },
+      "eventDateTimePeriod": {
+        "eventDateCodeQualifier": "472",
+        "dateOrPeriodFrom": "2005-05-16",
+        "periodTo": null
+      },
+      "serviceProvider": {
+        "entityIdCode": "SJ",
+        "entityTypeQualifier": "1",
+        "lastOrOrganizationName": "WATSON",
+        "firstName": "SUSAN",
+        "identificationCodeQualifier": "XV",
+        "identificationCode": "987654321",
+        "specialityProviderCode": "PE",
+        "specialityReferenceQualifier": "PXC",
+        "specialityReferenceId": "9999H0000X"
+      },
+      "professionalServiceSV1": {
+        "productOrServiceQualifier": null,
+        "procedureCode": null,
+        "procedureModifier": null,
+        "serviceLineAmount": null,
+        "unit": null,
+        "unitCount": null
+      },
+      "institutionalServiceSV2": {
+        "productOrServiceQualifier": "0810",
+        "procedureCode": "",
+        "procedureModifier": null,
+        "serviceLineAmount": "350.00",
+        "unit": "UN",
+        "unitCount": "1"
+      },
+      "dentalServiceSV3": {
+        "productOrServiceQualifier": null,
+        "procedureCode": null,
+        "procedureModifier": null,
+        "serviceLineAmount": null,
+        "unit": null,
+        "unitCount": null
+      },
+      "responseCertificationNumber": null,
+      "responseStatusCode": null
+    },
+    {
+      "traceNumber": "777777772",
+      "serviceLineTypeCode": "9000000003",
+      "serviceReview": {
+        "requestCategoryCode": "HS",
+        "certificationTypeCode": "I",
+        "serviceTypeCode": "2",
+        "facilityTypeCode": null,
+        "facilityTypeCodeQualifier": null,
+        "levelOfServiceCode": null,
+        "patientCurrentHealthConditionCode": null,
+        "patientPrognosisCode": null,
+        "releaseOfInformationCode": null,
+        "delayReasonCode": null
+      },
+      "eventDateTimePeriod": {
+        "eventDateCodeQualifier": "472",
+        "dateOrPeriodFrom": "2005-05-16",
+        "periodTo": null
+      },
+      "serviceProvider": {
+        "entityIdCode": "SJ",
+        "entityTypeQualifier": "1",
+        "lastOrOrganizationName": "WATSON",
+        "firstName": "SUSAN",
+        "identificationCodeQualifier": "XV",
+        "identificationCode": "987654321",
+        "specialityProviderCode": "PE",
+        "specialityReferenceQualifier": "PXC",
+        "specialityReferenceId": "9999H0000X"
+      },
+      "professionalServiceSV1": {
+        "productOrServiceQualifier": "",
+        "procedureCode": "OM",
+        "procedureModifier": "30253S8",
+        "serviceLineAmount": "362.99",
+        "unit": "UN",
+        "unitCount": "3"
+      },
+      "institutionalServiceSV2": {
+        "productOrServiceQualifier": "",
+        "procedureCode": "ID",
+        "procedureModifier": "30253G0",
+        "serviceLineAmount": "500.00",
+        "unit": "UN",
+        "unitCount": "1"
+      },
+      "dentalServiceSV3": {
+        "productOrServiceQualifier": "",
+        "procedureCode": "LP",
+        "procedureModifier": "6564H445",
+        "serviceLineAmount": "6529.22",
+        "unit": "UN",
+        "unitCount": ""
+      },
+      "responseCertificationNumber": null,
+      "responseStatusCode": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Physical Address.Provider name}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,1",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Physical Address.Provider address}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,2",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Physical Address.Building, Suite}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,3",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Physical Address.Zip}",
+      "timestamp": 0
+    }
+  }
+]

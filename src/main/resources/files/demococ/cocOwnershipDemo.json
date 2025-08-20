@@ -1,0 +1,115 @@
+[
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Ownership..Have you ever had ownership in any organization that has billed, or is currently billing Medicare or Title XIX program services?}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,1",
+    "timestamp": 0,
+    "answer": {
+      "type": "table",
+      "value": [
+        {
+          "effective-date": "${Ownership.1.Effective date}",
+          "end-date": "${Ownership.1.End date}",
+          "city": "${Ownership.1.City}",
+          "fein": "${Ownership.1.FEIN}",
+          "organization's-business-name": "${Ownership.1.Organization's business name}",
+          "select-program": "${Ownership.1.Select program}",
+          "state": "${Ownership.1.State}"
+        }
+      ],
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,2",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Ownership..Have you ever managed or directed any organization that has billed or is currently billing Medicare, Title XIX or Title XXI program services?}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,3",
+    "timestamp": 0,
+    "answer": {
+      "type": "table",
+      "value": [
+        {
+          "effective-date": "${Ownership.2.Effective date}",
+          "end-date": "${Ownership.2.End date}",
+          "city": "${Ownership.2.City}",
+          "fein": "${Ownership.2.FEIN}",
+          "organization's-business-name": "${Ownership.2.Organization's business name}",
+          "select-program": "${Ownership.2.Select program}",
+          "state": "${Ownership.2.State}",
+          "zip": "${Ownership.2.Zip}"
+        }
+      ],
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,4",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Ownership..Do you have an ownership interest of 5% or greater in a subcontractor for your business or practice?}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,5",
+    "timestamp": 0,
+    "answer": {
+      "type": "table",
+      "value": [
+        {
+          "subcontractor-name": "${Ownership.3.Subcontractor Name}",
+          "city": "${Ownership.3.City}",
+          "state": "${Ownership.3.State}"
+        }
+      ],
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,6",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${..Do any of the members of your immediate family (spouse, parent, child, sibling) have ownership of 5% or greater in a subcontractor to your business or practice?}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,7",
+    "timestamp": 0,
+    "answer": {
+      "type": "table",
+      "value": [
+        {
+          "first-name": "${Ownership.4.First name}",
+          "last-name": "${Ownership.4.Last name}",
+          "state": "${Ownership.4.Florida}"
+        }
+      ],
+      "timestamp": 0
+    }
+  }
+]

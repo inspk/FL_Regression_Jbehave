@@ -1,0 +1,173 @@
+Meta:
+Narrative:
+1.Delete all existing gmails
+2.As the DYP Individual provider,
+at the time of enrollment
+I can add affiliation with TP and PEM
+with only the affiliation type and effective dates.
+
+Scenario:Delete all existing gmails
+Meta:
+When login to user gmail
+When implicit wait '5' seconds
+Then go to gmail to inbox page
+When implicit wait '10' seconds
+When Delete all existing Gmails
+When implicit wait '5' seconds
+
+Scenario:Add Individual Affiliation to PEM Enrollment and Verify End Affiliation
+Meta:
+Given generate firstname, lastname and email credentials for '<index>'
+And get random npi from file 'WyNPI'
+And save value '<provider>' to variable 'provider'
+And save value '<gender>' to variable 'gender'
+And save value '<dob>' to variable 'dob'
+And save value '<ssn>' to variable 'ssn'
+And save value '<typeOfBusiness>' to variable 'typeOfBusiness'
+And save value '<taxonomyCategory>' to variable 'taxonomyCategory'
+And save value '<primaryTaxonomy>' to variable 'primaryTaxonomy'
+And save value '<phoneno>' to variable 'phoneno'
+And save value '<address>' to variable 'address'
+And save value '<mailingAddressZip>' to variable 'mailingAddressZip'
+And save value '<mailingAddressCountycode>' to variable 'mailingAddressCountycode'
+And save value '<licenseNumber>' to variable 'licenseNumber'
+And save value '<licenseType>' to variable 'licenseType'
+And save value '<licenseIssuedState>' to variable 'licenseIssuedState'
+And save value '<primaryServiceLocationAddressLine1>' to variable 'primaryServiceLocationAddressLine1'
+And save value '<primaryServiceLocationZip>' to variable 'primaryServiceLocationZip'
+And save value '<primaryServiceLocationCountyCode>' to variable 'primaryServiceLocationCountyCode'
+And save value '<profitStatus>' to variable 'profitStatus'
+And save value '<countryOfBirth>' to variable 'countryOfBirth'
+And save value '<stateofBirth>' to variable 'stateofBirth'
+And save value '<stateOfBirth>' to variable 'stateOfBirth'
+And save value '<reasonCode>' to variable 'reasonCode'
+And save value '<businessName>' to variable 'businessName'
+And save value '<dbaName>' to variable 'dbaName'
+And save value '<attentionLine>' to variable 'attentionLine'
+And save value '<managingEmployeeType>' to variable 'managingEmployeeType'
+And save value '<employeeStatus>' to variable 'employeeStatus'
+And save current date to variable 'date'
+When save current date plus 1 years to variable 'expDate'
+When save current date plus 1 years to variable 'enddate'
+When user navigated to landing page
+When click create account link in the landing page
+And wait for screening process execution during '3' seconds
+When fill Email with value '${email}' on registration page
+And fill Password with value 'Aa123321!' on registration page
+When click on continue button in the registartion page
+And fill Organization Name field with value 'HHSTECHGROUP' on registration page
+And fill Organization description with value 'HHSOrg' on registration page
+When click on continue button in the registartion page
+And fill First name  with value '${firstName}' on registration page
+And fill Last name with value '${lastName}' on registration page
+And fill Phone with value '3534534534' on registration page
+When click on create account link in the registartion page
+When login to user gmail
+Then go to gmail to inbox page
+When implicit wait '5' seconds
+When search for message by email - ${email}
+When open new 'Registration in ProviderPortal' email
+When implicit wait '5' seconds
+Then click on new user link from the gmail
+When implicit wait '5' seconds
+Then navigate Back to Login page
+When implicit wait '5' seconds
+And refresh page
+When implicit wait '5' seconds
+When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!
+When click on new 'Agree' button in the Portal page
+When skip help tour if exists
+And user click on Individual Enrollment type
+When implicit wait '5' seconds
+When move to 'Identifying Information' section
+And implicit wait '5' seconds
+When move to new 'Affiliation' section
+And implicit wait '5' seconds
+When click Add Affiliation button in affiliation section
+When set type search value 'PEM' in affiliation section
+When click search by npi in affiliation section
+When click add button in affiliation section
+When select affliation type 'Individual to PEM'
+When fill the effective start '${date}' and effective end '${enddate}' to enrollment end affiliation type page
+And implicit wait '5' seconds
+When click add button in affiliation pop-up
+When verify system should not display service locations under affiliations tab
+
+Scenario:Add Individual Affiliation to TP Enrollment and Verify End Affiliation
+Meta:
+Given generate firstname, lastname and email credentials for '<index>'
+And get random npi from file 'WyNPI'
+And save value '<provider>' to variable 'provider'
+And save value '<gender>' to variable 'gender'
+And save value '<dob>' to variable 'dob'
+And save value '<ssn>' to variable 'ssn'
+And save value '<typeOfBusiness>' to variable 'typeOfBusiness'
+And save value '<taxonomyCategory>' to variable 'taxonomyCategory'
+And save value '<primaryTaxonomy>' to variable 'primaryTaxonomy'
+And save value '<phoneno>' to variable 'phoneno'
+And save value '<address>' to variable 'address'
+And save value '<mailingAddressZip>' to variable 'mailingAddressZip'
+And save value '<mailingAddressCountycode>' to variable 'mailingAddressCountycode'
+And save value '<licenseNumber>' to variable 'licenseNumber'
+And save value '<licenseType>' to variable 'licenseType'
+And save value '<licenseIssuedState>' to variable 'licenseIssuedState'
+And save value '<primaryServiceLocationAddressLine1>' to variable 'primaryServiceLocationAddressLine1'
+And save value '<primaryServiceLocationZip>' to variable 'primaryServiceLocationZip'
+And save value '<primaryServiceLocationCountyCode>' to variable 'primaryServiceLocationCountyCode'
+And save value '<profitStatus>' to variable 'profitStatus'
+And save value '<countryOfBirth>' to variable 'countryOfBirth'
+And save value '<stateofBirth>' to variable 'stateofBirth'
+And save value '<stateOfBirth>' to variable 'stateOfBirth'
+And save value '<reasonCode>' to variable 'reasonCode'
+And save value '<businessName>' to variable 'businessName'
+And save value '<dbaName>' to variable 'dbaName'
+And save value '<attentionLine>' to variable 'attentionLine'
+And save value '<managingEmployeeType>' to variable 'managingEmployeeType'
+And save value '<employeeStatus>' to variable 'employeeStatus'
+And save current date to variable 'date'
+When save current date plus 1 years to variable 'expDate'
+When save current date plus 1 years to variable 'enddate'
+When user navigated to landing page
+When click create account link in the landing page
+And wait for screening process execution during '3' seconds
+When fill Email with value '${email}' on registration page
+And fill Password with value 'Aa123321!' on registration page
+When click on continue button in the registartion page
+And fill Organization Name field with value 'HHSTECHGROUP' on registration page
+And fill Organization description with value 'HHSOrg' on registration page
+When click on continue button in the registartion page
+And fill First name  with value '${firstName}' on registration page
+And fill Last name with value '${lastName}' on registration page
+And fill Phone with value '3534534534' on registration page
+When click on create account link in the registartion page
+When login to user gmail
+Then go to gmail to inbox page
+When implicit wait '5' seconds
+When search for message by email - ${email}
+When open new 'Registration in ProviderPortal' email
+When implicit wait '5' seconds
+Then click on new user link from the gmail
+When implicit wait '5' seconds
+Then navigate Back to Login page
+When implicit wait '5' seconds
+And refresh page
+When implicit wait '5' seconds
+When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!
+When click on new 'Agree' button in the Portal page
+When skip help tour if exists
+And user click on Individual Enrollment type
+When implicit wait '5' seconds
+When move to 'Identifying Information' section
+When implicit wait '5' seconds
+When move to new 'Affiliation' section
+And implicit wait '5' seconds
+When click Add Affiliation button in affiliation section
+When set type search value 'TP' in affiliation section
+When click search by npi in affiliation section
+When click add button in affiliation section
+When select affliation type 'Individual to TP'
+When fill the effective start '${date}' and effective end '${enddate}' to enrollment end affiliation type page
+And implicit wait '5' seconds
+When add transaction type '837D(837 Dental)' transaction value 'Retrieve'
+When click add button in affiliation pop-up
+When verify system should not display service locations under affiliations tab

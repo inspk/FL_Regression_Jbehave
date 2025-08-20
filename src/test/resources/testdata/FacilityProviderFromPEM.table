@@ -1,0 +1,3 @@
+|index             |providerName              |fein        |taxEntityType          |npi        |mailingAddressLine1     |mailingAddressZip|mailingAddressCountycode|phone         |taxonomyCategory|primaryTaxonomy               |licenseNumber |licenseType  |licenseIssuedState |primaryServiceLocationAddressLine1 |primaryServiceLocationZip |primaryServiceLocationCountyCode|profitStatus|
+|FacilityProvider1 |Heritage HealthCare Center|10-20792058 |Waiver - Self Directed |1679523567 |12 Wyman Ct, Laramie WY |67110-8343       |00160                   |(456)357-5678 |Waiver          |251B00000X -  Long Term Waiver|5764655933    |License      |California         |12 Wyarno Rd, Sheridan WY          |74110-2345                |00170                           |Non-Profit  |
+

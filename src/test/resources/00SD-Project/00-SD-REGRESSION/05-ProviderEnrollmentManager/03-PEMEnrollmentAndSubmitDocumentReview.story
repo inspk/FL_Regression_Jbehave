@@ -1,0 +1,38 @@
+Meta:
+
+Narrative:
+As a user
+I want to perform an action
+So that I can achieve a business goal
+
+
+
+Scenario:Changing status from NEW to Document Review
+Meta:
+Given take firstname, lastname and email credentials for type 'ProviderEnrollmentManager1' and 'Submitted' and use in session
+Given user navigated to landing page
+When new user logs to Internal User portal with username - internal.user.dyp+cd@gmail.com and password - Internaluser1!
+When click on new 'Agree' button in the Portal page
+And implicit wait '15' seconds
+When click on Enrollment tab on header
+Then search with tracking num in Enrollment tab
+When implicit wait '5' seconds
+When click to provider data with text '${firstName}' on IU portal
+And implicit wait '15' seconds
+When click on 'Change status' button from the enrollment details page
+When implicit wait '5' seconds
+When set enrollment request New status to - 'Document Review'
+When implicit wait '5' seconds
+And refresh page
+And implicit wait '15' seconds
+When click on Enrollment tab on header
+Then search with tracking num in Enrollment tab
+When implicit wait '5' seconds
+When click to provider data with text '${firstName}' on IU portal
+And implicit wait '15' seconds
+When click on 'Change status' button from the enrollment details page
+When implicit wait '5' seconds
+When set enrollment request document status to - 'Document Review Approved'
+When implicit wait '5' seconds
+And refresh page
+And implicit wait '15' seconds

@@ -1,0 +1,18 @@
+|index          |firstName|lastName|providerName         |fein       |npi       |mailingAddressLine1    |mailingAddressZip|mailingAddressCountycode|phone        |taxonomyCategory|primaryTaxonomy          |licenseNumber|licenseType|licenseIssuedState|primaryServiceLocationAddressLine1|primaryServiceLocationZip|primaryServiceLocationCountyCode|secondaryServiceLocationAddressLine1|profitStatus|
+|DuplicityGroup1|Bob      |Hope    |Brooklyn Plaza Center|55-19185808|1164523833|125 770th St, Tintah MN|33110-4343       |11130                   |(655)357-5678|Interpreter     |171R00000X -  Interpreter|1864655944   |License    |California        |125 3rd Ave NW, Arab AL           |33310-2345               |33140                           |19 Wyarno Rd, Sheridan WY           |Non-Profit  |
+|DuplicityGroup2|Bob      |Hope    |Brooklyn Plaza Center|55-19185808|1164523833|125 770th St, Tintah MN|33110-4343       |11130                   |(655)357-5678|Interpreter     |171R00000X -  Interpreter|1864655944   |License    |California        |125 3rd Ave NW, Arab AL           |33310-2345               |33140                           |19 Wyarno Rd, Sheridan WY           |Non-Profit  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

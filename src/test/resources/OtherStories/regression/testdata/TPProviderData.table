@@ -1,0 +1,6 @@
+|provider         |firstName |lastName  |businessName                   |fein        |providerType|
+|austin.alexander |Austin    |Alexander |Advantage Home Health Services |47-90016080 |Hospital    |
+|aaron.thomas     |Aaron     |Thomas    |Refresh Dental Management      |96-58441732 |Pharmacy    |
+|joshua.scott     |Joshua    |Scott     |Cadence Research & Consulting  |19-22512574 |Practice    |
+|lucinda.barber   |Lucinda   |Barber    |CrossPoint Medical Supplier    |57-90016080 |School      |
+|addie.harvey     |Addie     |Harvey    |CrossPoint Medical Supplier    |18-22512574 |School      |

@@ -1,0 +1,4 @@
+|firstName  |lastName  |provider       |gender |dob         |providerType        |npi        |speciality  |taxonomyDes                                |
+|Philip     |Lynch     |philip.lynch   |Male   |10/11/1985  |Individual          |1245357516 |Physician   |207SG0201X - Clinical Genetics (M.D.)      |
+|Arthur     |Jensen    |arthur.jensen  |Male   |10/11/1985  |Individual          |1285751453 |Therapy     |225100000X - Physical Therapist            |
+|Rose       |Daniels   |rose.daniels   |Female |10/11/1985  |Individual          |1275650459 |Waiver      |251B00000X - Long Term Waiver              |

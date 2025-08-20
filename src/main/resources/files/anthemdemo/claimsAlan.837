@@ -1,0 +1,385 @@
+ISA*01*0000000000*01*0000000000*ZZ*ABCDEFGHIJKLMNO*ZZ*123456789012345*101127*1719*U*00400*000003438*0*P*>
+GS*HC*99999999999*888888888888*20180319*1340*1377*X*005010X222
+
+ST*837*0002*005010X226
+STS*PAID*20180710
+RA*20180910
+BHT*0019*00*565743*20180523*154959*CH
+NM1*41*2*SAMPLE INC*****46*496103
+PER*IC*EDI DEPT*EM*FEEDBACK@1edisource.com*TE*3305551212
+NM1*40*2*PPO BLUE*****46*54771
+HL*1**20*1
+PRV*BI*PXC*333600000X
+NM1*85*2*Cooper*Alan****XX*1003000142
+N3*235 DEPOT DRIVE
+N4*MIAMIBEACH*FL*606930159
+REF*Missing/incomplete/invalid discharge hour.*N317
+REF*Records indicate a mismatch between the submitted NPI and EIN.*N516
+REF*Missing/incomplete/invalid tooth number/letter.*N37
+HL*2*1*22*1
+SBR*P********BL
+NM1*IL*1*Williamson*Cameron****MI*Y4146329597
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19641016*M
+NM1*PR*2*Anthem, Inc.*****PI*54771
+N3*PO BOX 123454444
+N4*CAMP HILL*PA*17089
+HL*3*2*23*0
+PAT*19
+NM1*QC*1*JOHNSTON*COLE*****5457586868
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19940921*M
+CLM*3210030001421097*959.19***12>B>1*Y*A*Y*Y*P
+HI*BK>2533
+LX*1
+SV1*HC>Remote E/M new pt 60mins*266.83*UN*G9485***2
+SV1*HC>Revise spinal cord ligaments*295.42*UN*63182***5
+SV1*HC>Intergt eval inper leadls pm*396.94*UN*0391T***3
+ADJ*13*The date of death precedes the date of service.*Professional
+ADJ*A0*Patient refund amount.*Professional
+ADJ*296*Precertification/authorization/notification/pre-treatment number may be valid but does not apply to the provider.*Professional
+DTP*472*RD8*20171230-20180105
+REF*Not paid separately when the patient is an inpatient.*M2
+NTE*ADD*GENERIC 12MG CARTRIDGE
+LIN**N4*00013264681
+CTP****7*UN
+NM1*DK*1*PATIENT*DEBORAH****XX*12345679030
+N3*123 MAIN ST*APT B
+N4*PITTSBURGH*PA*152181871
+SE*39*0001
+
+ST*837*0002*005010X226
+STS*PAID*20180710
+RA*20180910
+BHT*0019*00*565743*20180523*154959*CH
+NM1*41*2*SAMPLE INC*****46*496103
+PER*IC*EDI DEPT*EM*FEEDBACK@1edisource.com*TE*3305551212
+NM1*40*2*PPO BLUE*****46*54771
+HL*1**20*1
+PRV*BI*PXC*333600000X
+NM1*85*2*Cooper*Alan****XX*1003000142
+N3*235 DEPOT DRIVE
+N4*MIAMIBEACH*FL*606930159
+REF*Missing/incomplete/invalid noncovered days during the billing period.*MA33
+REF*Not qualified for recovery based on employer size.*N526
+HL*2*1*22*1
+SBR*P********BL
+NM1*IL*1*Owens*Lawrence****MI*Y2080290796
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19631117*F
+NM1*PR*2*Anthem, Inc.*****PI*54771
+N3*PO BOX 123454444
+N4*CAMP HILL*PA*17089
+HL*3*2*23*0
+PAT*19
+NM1*QC*1*JOHNSTON*COLE*****5457586868
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19940921*M
+CLM*3210030001421098*928.86***12>B>1*Y*A*Y*Y*P
+HI*BK>2533
+LX*1
+SV1*HC>N block inj vagus*454.38*UN*64408***5
+SV1*HC>Install spinal shunt*474.48*UN*63741***2
+ADJ*239*Claim spans eligible and ineligible periods of coverage.*Professional
+ADJ*250*The attachment/other documentation that was received was the incorrect attachment/document.*Professional
+DTP*472*RD8*20171220-20171225
+REF*Not paid separately when the patient is an inpatient.*M2
+NTE*ADD*GENERIC 12MG CARTRIDGE
+LIN**N4*00013264681
+CTP****7*UN
+NM1*DK*1*PATIENT*DEBORAH****XX*12345679030
+N3*123 MAIN ST*APT B
+N4*PITTSBURGH*PA*152181871
+SE*39*0001
+
+ST*837*0002*005010X226
+STS*PAID*20180710
+RA*20180910
+BHT*0019*00*565743*20180523*154959*CH
+NM1*41*2*SAMPLE INC*****46*496103
+PER*IC*EDI DEPT*EM*FEEDBACK@1edisource.com*TE*3305551212
+NM1*40*2*PPO BLUE*****46*54771
+HL*1**20*1
+PRV*BI*PXC*333600000X
+NM1*85*2*Cooper*Alan****XX*1003000142
+N3*235 DEPOT DRIVE
+N4*MIAMIBEACH*FL*606930159
+REF*Incorrect claim form/format for this service.*N34
+REF*This company has been contracted by your benefit plan to provide administrative claims payment services only. This company does not assume financial risk or obligation with respect to claims processed on behalf of your benefit plan.*N25
+REF*Consolidated billing and payment applies.*N70
+REF*Missing/incomplete/invalid tooth number/letter.*N37
+HL*2*1*22*1
+SBR*P********BL
+NM1*IL*1*Carpenter*Mable****MI*Y1375002151
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19871224*M
+NM1*PR*2*Medicaid*****PI*54771
+N3*PO BOX 123454444
+N4*CAMP HILL*PA*17089
+HL*3*2*23*0
+PAT*19
+NM1*QC*1*JOHNSTON*COLE*****5457586868
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19940921*M
+CLM*3210030001421099*1051.78***12>B>1*Y*A*Y*Y*P
+HI*BK>2533
+LX*1
+SV1*HC>Extracorp shockwv tx hi enrg*28.5*UN*0101T***3
+SV1*HC>Incise spinal cord tract(s)*367.89*UN*63170***5
+SV1*HC>Insj ocular telescope prosth*258.45*UN*0308T***3
+SV1*HC>Intergt eval inper leadls pm*396.94*UN*0391T***3
+ADJ*10*The diagnosis is inconsistent with the patient's gender.*Professional
+ADJ*116*The advance indemnification notice signed by the patient did not comply with requirements.*Professional
+ADJ*292*Claim received by the medical plan, but benefits not available under this plan.*Professional
+ADJ*296*Precertification/authorization/notification/pre-treatment number may be valid but does not apply to the provider.*Professional
+DTP*472*RD8*20181124-20181130
+REF*Not paid separately when the patient is an inpatient.*M2
+NTE*ADD*GENERIC 12MG CARTRIDGE
+LIN**N4*00013264681
+CTP****7*UN
+NM1*DK*1*PATIENT*DEBORAH****XX*12345679030
+N3*123 MAIN ST*APT B
+N4*PITTSBURGH*PA*152181871
+SE*39*0001
+
+ST*837*0002*005010X226
+STS*PAID*20180710
+RA*20180910
+BHT*0019*00*565743*20180523*154959*CH
+NM1*41*2*SAMPLE INC*****46*496103
+PER*IC*EDI DEPT*EM*FEEDBACK@1edisource.com*TE*3305551212
+NM1*40*2*PPO BLUE*****46*54771
+HL*1**20*1
+PRV*BI*PXC*333600000X
+NM1*85*2*Cooper*Alan****XX*1003000142
+N3*235 DEPOT DRIVE
+N4*MIAMIBEACH*FL*606930159
+REF*Missing/incomplete/invalid provider representative signature date.*MA71
+REF*Missing/incomplete/invalid Oxygen Saturation Test date.*N328
+REF*An interest payment is being made because benefits are being paid outside the statutory requirement.*N656
+HL*2*1*22*1
+SBR*P********BL
+NM1*IL*1*Andrews*Antonio****MI*Y3869210106
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19731223*F
+NM1*PR*2*Medicaid*****PI*54771
+N3*PO BOX 123454444
+N4*CAMP HILL*PA*17089
+HL*3*2*23*0
+PAT*19
+NM1*QC*1*JOHNSTON*COLE*****5457586868
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19940921*M
+CLM*3210030001421100*616.87***12>B>1*Y*A*Y*Y*P
+HI*BK>2533
+LX*1
+SV1*HC>Prgrmg eval npgs apnea study*175.94*UN*0436T***5
+SV1*HC>Dstrj neurofibromata xtnsv*364.19*UN*0419T***2
+SV1*HC>Inpatient consultation*76.74*UN*99255***2
+ADJ*209*Per regulatory or other agreement.*Professional
+ADJ*10*The diagnosis is inconsistent with the patient's gender.*Professional
+ADJ*90*Ingredient cost adjustment.*Professional
+DTP*472*RD8*20171010-20171015
+REF*Not paid separately when the patient is an inpatient.*M2
+NTE*ADD*GENERIC 12MG CARTRIDGE
+LIN**N4*00013264681
+CTP****7*UN
+NM1*DK*1*PATIENT*DEBORAH****XX*12345679030
+N3*123 MAIN ST*APT B
+N4*PITTSBURGH*PA*152181871
+SE*39*0001
+
+ST*837*0002*005010X226
+STS*SUBMITTED*20180710
+RA*20181211
+BHT*0019*00*565743*20180523*154959*CH
+NM1*41*2*SAMPLE INC*****46*496103
+PER*IC*EDI DEPT*EM*FEEDBACK@1edisource.com*TE*3305551212
+NM1*40*2*PPO BLUE*****46*54771
+HL*1**20*1
+PRV*BI*PXC*333600000X
+NM1*85*2*Cooper*Alan****XX*1003000142
+N3*235 DEPOT DRIVE
+N4*MIAMIBEACH*FL*606930159
+REF*We have provided you with a bundled payment for a teleconsultation. You must send 25 percent of the teleconsultation payment to the referring practitioner.*M109
+REF*Long term care case mix or per diem rate cannot be determined because the patient ID number is missing, incomplete, or invalid on the assignment request.*N147
+HL*2*1*22*1
+SBR*P********BL
+NM1*IL*1*Gardner*Iva****MI*Y8356602878
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*20031117*M
+NM1*PR*2*Anthem, Inc.*****PI*54771
+N3*PO BOX 123454444
+N4*CAMP HILL*PA*17089
+HL*3*2*23*0
+PAT*19
+NM1*QC*1*JOHNSTON*COLE*****5457586868
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19940921*M
+CLM*4210030001421012*266.09***12>B>1*Y*A*Y*Y*P
+HI*BK>2533
+LX*1
+SV1*HC>Implant spinal canal cath*147.23*UN*62350***3
+SV1*HC>Revise spinal cord vsls crvl*118.86*UN*63250***5
+ADJ*132*Prearranged demonstration project adjustment.*Professional
+ADJ*10*The diagnosis is inconsistent with the patient's gender.*Professional
+DTP*472*RD8*20161012-20161018
+REF*Not paid separately when the patient is an inpatient.*M2
+NTE*ADD*GENERIC 12MG CARTRIDGE
+LIN**N4*00013264681
+CTP****7*UN
+NM1*DK*1*PATIENT*DEBORAH****XX*12345679030
+N3*123 MAIN ST*APT B
+N4*PITTSBURGH*PA*152181871
+SE*39*0001
+
+ST*837*0002*005010X226
+STS*DENIED*20180710
+RA*20180910
+BHT*0019*00*565743*20180523*154959*CH
+NM1*41*2*SAMPLE INC*****46*496103
+PER*IC*EDI DEPT*EM*FEEDBACK@1edisource.com*TE*3305551212
+NM1*40*2*PPO BLUE*****46*54771
+HL*1**20*1
+PRV*BI*PXC*333600000X
+NM1*85*2*Cooper*Alan****XX*1003000142
+N3*235 DEPOT DRIVE
+N4*MIAMIBEACH*FL*606930159
+REF*The professional component must be billed separately.*N200
+REF*Missing contract indicator.*N190
+HL*2*1*22*1
+SBR*P********BL
+NM1*IL*1*Walton*Duane****MI*Y4108313640
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19701112*F
+NM1*PR*2*Anthem, Inc.*****PI*54771
+N3*PO BOX 123454444
+N4*CAMP HILL*PA*17089
+HL*3*2*23*0
+PAT*19
+NM1*QC*1*JOHNSTON*COLE*****5457586868
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19940921*M
+CLM*4210030001421014*914.32***12>B>1*Y*A*Y*Y*P
+HI*BK>2533
+LX*1
+SV1*HC>Rmvl nstim apnea stimj ld*386.64*UN*0430T***4
+SV1*HC>Incise spine accessory nerve*527.68*UN*63191***3
+ADJ*40*Charges do not meet qualifications for emergent/urgent care.*Professional
+ADJ*10*The diagnosis is inconsistent with the patient's gender.*Professional
+DTP*472*RD8*20171211-20171218
+REF*Not paid separately when the patient is an inpatient.*M2
+NTE*ADD*GENERIC 12MG CARTRIDGE
+LIN**N4*00013264681
+CTP****7*UN
+NM1*DK*1*PATIENT*DEBORAH****XX*12345679030
+N3*123 MAIN ST*APT B
+N4*PITTSBURGH*PA*152181871
+SE*39*0001
+
+ST*837*0002*005010X226
+STS*DENIED*20180710
+RA*20180910
+BHT*0019*00*565743*20180523*154959*CH
+NM1*41*2*SAMPLE INC*****46*496103
+PER*IC*EDI DEPT*EM*FEEDBACK@1edisource.com*TE*3305551212
+NM1*40*2*PPO BLUE*****46*54771
+HL*1**20*1
+PRV*BI*PXC*333600000X
+NM1*85*2*Cooper*Alan****XX*1003000142
+N3*235 DEPOT DRIVE
+N4*MIAMIBEACH*FL*606930159
+REF*This fee was calculated based upon New York All Patients Refined Diagnosis Related Groups (APR-DRG), pursuant to Regulation 68.*N605
+REF*Missing/incomplete/invalid certification revision date.*N313
+HL*2*1*22*1
+SBR*P********BL
+NM1*IL*1*Knight*Mark****MI*Y8044794234
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19461012*M
+NM1*PR*2*Medicaid*****PI*54771
+N3*PO BOX 123454444
+N4*CAMP HILL*PA*17089
+HL*3*2*23*0
+PAT*19
+NM1*QC*1*JOHNSTON*COLE*****5457586868
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19940921*M
+CLM*4210030001421015*492.04***12>B>1*Y*A*Y*Y*P
+HI*BK>2533
+LX*1
+SV1*HC>Osteopath manj 3-4 regions*208.39*UN*98926***5
+SV1*HC>Remvl aortic dev vasc seal*283.65*UN*0456T***5
+ADJ*10*The diagnosis is inconsistent with the patient's gender.*Professional
+ADJ*P22*Payment adjusted based on the Medical Payments Coverage (MPC) and/or Personal Injury Protection (PIP) Benefits jurisdictional regulations, or payment policies.*Professional
+DTP*472*RD8*20171122-20171130
+REF*Not paid separately when the patient is an inpatient.*M2
+NTE*ADD*GENERIC 12MG CARTRIDGE
+LIN**N4*00013264681
+CTP****7*UN
+NM1*DK*1*PATIENT*DEBORAH****XX*12345679030
+N3*123 MAIN ST*APT B
+N4*PITTSBURGH*PA*152181871
+SE*39*0001
+
+ST*837*0002*005010X226
+STS*SUBMITTED*20180103
+RA*20191211
+BHT*0019*00*565743*20180523*154959*CH
+NM1*41*2*SAMPLE INC*****46*496103
+PER*IC*EDI DEPT*EM*FEEDBACK@1edisource.com*TE*3305551212
+NM1*40*2*PPO BLUE*****46*54771
+HL*1**20*1
+PRV*BI*PXC*333600000X
+NM1*85*2*Cooper*Alan****XX*1003000142
+N3*235 DEPOT DRIVE
+N4*MIAMIBEACH*FL*606930159
+REF*Patient eligible to apply for other coverage which may be primary.*N196
+REF*The administration method and drug must be reported to adjudicate this service.*N349
+HL*2*1*22*1
+SBR*P********BL
+NM1*IL*1*Fowler*Mitchell****MI*Y5804366848
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19531214*F
+NM1*PR*2*Medicaid*****PI*54771
+N3*PO BOX 123454444
+N4*CAMP HILL*PA*17089
+HL*3*2*23*0
+PAT*19
+NM1*QC*1*JOHNSTON*COLE*****5457586868
+N3*228 PINEAPPLE CIRCLE
+N4*CORA*PA*15108
+DMG*D8*19940921*M
+CLM*4210030001421016*159.46***12>B>1*Y*A*Y*Y*P
+HI*BK>2533
+LX*1
+SV1*HC>Interro eval npgs sleep apne*115.6*UN*0434T***4
+SV1*HC>Abltj perc uxtr/perph nrv*43.86*UN*0440T***5
+ADJ*270*Claim received by the medical plan, but benefits not available under this plan.*Professional
+ADJ*194*Anesthesia performed by the operating physician, the assistant surgeon or the attending physician.*Professional
+DTP*472*RD8*20181221-20181226
+REF*Not paid separately when the patient is an inpatient.*M2
+NTE*ADD*GENERIC 12MG CARTRIDGE
+LIN**N4*00013264681
+CTP****7*UN
+NM1*DK*1*PATIENT*DEBORAH****XX*12345679030
+N3*123 MAIN ST*APT B
+N4*PITTSBURGH*PA*152181871
+SE*39*0001
+
+GE*1*1377
+IEA*1*000001377

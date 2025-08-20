@@ -1,0 +1,4 @@
+|index          |dob       |ssn          |dba   |countryOfBirth|stateOfBirth|businessName            |phoneno   |fein         |providerType|address        |classification|managingEmployeeType |employeeStatus         |
+|TradingPartner1|10/11/1980|456-76-545111|Doctor|United States |South Dakota|AVERA AT HOME           |9874563210|60-42484039  |Hospital    |633 E SIOUX AVE|Switch Vendor |Director             |Managing Non Convicted |
+|TradingPartner2|10/11/1975|665-76-545111|Doctor|United States |South Dakota|Salvation Army          |9874563210|60-42484039  |Hospital    |633 E SIOUX AVE|Switch Vendor |Director             |Managing Non Convicted |
+|TradingPartner3|07/07/1977|242-33-423423|Doctor|United States |South Dakota|Catholic Family Services|4354543534|55-67467745  |Hospital    |633 E SIOUX AVE|Switch Vendor |Director             |Managing Non Convicted |

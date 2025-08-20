@@ -1,0 +1,20 @@
+[
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "table",
+      "value": [
+        {
+          "effective-date":  "${Licensure.Effective date}",
+          "expiration-date": "${Licensure.Expiration date}",
+          "lcae-number": "${Licensure.LCAE number}",
+          "state": "${Licensure.State}",
+          "type": "${Licensure.Type}"
+        }
+      ],
+      "timestamp": 0
+    }
+  }
+]

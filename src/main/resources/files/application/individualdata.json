@@ -1,0 +1,331 @@
+[{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.First name}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,2",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Last name}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,6",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Date of birth}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,5",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Gender}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,4",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Suffix}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,9",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.May gender information be shared with members?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,7",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Country of birth}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,8",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.State}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,10",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Application contact email}",
+    "timestamp": 0
+  }
+},
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,1,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Identifying information.Tax information.SSN}",
+      "timestamp": 0
+    }
+  }, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,1,7",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.Tax information.Race}",
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,0,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Licensure.Provider type and program information.Provider type}",
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Licensure.Provider type and program information.Program participation}",
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,1,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "effective-date": "${Licensure.Licensure, Certification, Accreditation, Endorsement.Effective date}",
+      "expiration-date": "${Licensure.Licensure, Certification, Accreditation, Endorsement.Expiration date}",
+      "lcae-number": "${Licensure.Licensure, Certification, Accreditation, Endorsement.LCAE number}",
+      "state": "${Licensure.Licensure, Certification, Accreditation, Endorsement.State}",
+      "type": "${Licensure.Licensure, Certification, Accreditation, Endorsement.Type}"
+    }
+    ],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,2,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "begin-date": "${Licensure.Taxonomy.Begin date}",
+      "end-date": "${Licensure.Taxonomy.End date}",
+      "taxonomy-number": "${Licensure.Taxonomy.Taxonomy number}"
+    }
+    ],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,4,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Licensure.Specialties and subspecialties.Specialty}"],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,5,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "effective-date": "${Licensure.Insurance.Effective date}",
+      "expiration-date": "${Licensure.Insurance.Expiration date}",
+      "insurance-type": "${Licensure.Insurance.Insurance type}",
+      "insurer": "${Licensure.Insurance.Insurer}",
+      "minimum-limit": "${Licensure.Insurance.Minimum limit}",
+      "policy-number": "${Licensure.Insurance.Policy number}"
+    }
+    ],
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,0,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Provider identifier number.National provider identification.National provider identification}",
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Provider identifier number.National provider identification.NPI date}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,1,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Provider identifier number.Other Medicaid state.Are you or have you been previously enrolled as a Title XIX Medicaid or Title XXI CHIP provider in another state?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,1,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "enrollment-begin-date": "${Provider identifier number.Other Medicaid state.Enrollment begin date}",
+      "enrollment-end-date": "${Provider identifier number.Other Medicaid state.Enrollment end date}",
+      "fee-paid": "${Provider identifier number.Other Medicaid state.Fee paid}",
+      "other-medicaid-state": "${Provider identifier number.Other Medicaid state.Other medicaid state}",
+      "site-visit": "${Provider identifier number.Other Medicaid state.Site visit}",
+      "site-visit-date": "${Provider identifier number.Other Medicaid state.Site visit date}",
+      "sort-fee-payment-date": "${Provider identifier number.Other Medicaid state.Sort fee payment date}",
+      "state-program": "${Provider identifier number.Other Medicaid state.State program}"
+    }
+    ]
+  }}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,1,2",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Provider identifier number.Other Medicaid state.Are you enrolled in Medicare?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,2,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Provider identifier number.Pay for performance.Are you a participant in Medicare's pay for performance (P4P) incentive program?}",
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,0,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Address details.Mailing address.Provider address}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Address details.Mailing address.Building, Suite}",
+    "timestamp": 0
+  }
+},
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "3,0,2",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Address details.Mailing address.Zip}",
+      "timestamp": 0
+    }
+  }, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,0,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Service.Gender served}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Service.Languages supported}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,0,2",
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Service location billing.Service.Age range served}"],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,0,3",
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Service location billing.Service.Interpretive services}"],
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Communication preference.Communication preference.Mailing - Service Location Physical Address (P.O. box not accepted)}",
+    "timestamp": 0
+  }
+},
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "4,0,2",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Communication preference.Communication preference.Mailing - Service Location Building, Suite}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "4,0,3",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Communication preference.Communication preference.Mailing - Service Location Zip}",
+      "timestamp": 0
+    }
+  }
+  ]

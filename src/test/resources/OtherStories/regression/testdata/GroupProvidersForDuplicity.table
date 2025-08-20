@@ -1,0 +1,3 @@
+|provider       |firstName|lastName|groupName            |npi       |fein       |speciality  |taxonomyDes              |
+|DuplicityGroup1|Bob      |Hope    |Brooklyn Plaza Center|1164523833|55-19185808|Chiropractic|111N00000X - Chiropractor|
+|DuplicityGroup2|Bob      |Hope    |Brooklyn Plaza Center|1164523833|55-19185808|Chiropractic|111N00000X - Chiropractor|

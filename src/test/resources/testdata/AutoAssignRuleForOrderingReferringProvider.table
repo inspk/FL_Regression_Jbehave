@@ -1,0 +1,2 @@
+|ruleName                        |selectapplicationtype |condition1      |enrollmenttypevalue |
+|OrderingReferringEnrollmentRule |Enrollment            |Enrollment Type |ORP                 |
