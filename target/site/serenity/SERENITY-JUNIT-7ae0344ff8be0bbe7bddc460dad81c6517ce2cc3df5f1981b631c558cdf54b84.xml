@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="02- auto  credentialing  entity  revalidation" skipped="0" tests="1" time="49.06" timestamp="2025-08-12 06:16:25"><testcase name="Entity Provider Credentialing Flow"><error message="Unable to set field value" type="java.lang.IllegalStateException">Unable to set field value</error><system-err>Unable to set field value
+com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$0(BeanUtils.java:43)
+com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$1(BeanUtils.java:35)
+com.hhstechgroup.util.common.BeanUtils.copyPropertiesInOrder(BeanUtils.java:34)
+com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps.setEnrollSearchCriteria(EnrollmentApplicationSteps.java:303)
+com.hhstechgroup.steps.jbehave.scenarios.enrollmentapplication.EnrollmentScenario.searchByEnrollParameters(EnrollmentScenario.java:26)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</system-err></testcase></testsuite>

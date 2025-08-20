@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="01- individual provider I-COC" skipped="0" tests="1" time="2.38" timestamp="2025-08-18 01:05:08"><testcase name="Indivdiual Provider I-COC flow"><error type="java.lang.NullPointerException"/><system-err>null
+com.hhstechgroup.util.properties.ProviderProperties.getData(ProviderProperties.java:121)
+com.hhstechgroup.steps.jbehave.scenarios.TestDataCreationScenario.getCredentials(TestDataCreationScenario.java:262)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</system-err></testcase></testsuite>

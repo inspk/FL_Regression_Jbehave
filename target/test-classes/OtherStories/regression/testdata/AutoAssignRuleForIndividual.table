@@ -1,0 +1,2 @@
+|ruleName                 |selectapplicationtype |condition1      |enrollmenttypevalue |condition2    |specialtytypevalue  |
+|IndividualEnrollmentRule |Enrollment            |Enrollment type |Individual          |Specialty     |Hospital            |

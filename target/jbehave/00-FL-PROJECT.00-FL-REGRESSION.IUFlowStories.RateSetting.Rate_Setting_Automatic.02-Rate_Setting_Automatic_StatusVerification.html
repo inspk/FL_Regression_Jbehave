@@ -1,0 +1,86 @@
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/RateSetting/Rate_Setting_Automatic/02-Rate_Setting_Automatic_StatusVerification.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Group Provider Status Changing from New to Approved with 2 reviewers and 1 Approver</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">And save current <span class="step parameter">date</span> to variable 'date'</div>
+<div class="step successful">And save value 'Mediplus Community Service' to variable 'providerLegalBusinessName'</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">And implicit wait '10' seconds</div>
+<div class="step successful">When click on new 'Agree' button in the Portal page</div>
+<div class="step successful">And implicit wait '20' seconds</div>
+<div class="step successful">When click on Enrollment tab on header</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then search with RequestID '446'</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'Entity' provider</div>
+<div class="step successful">When implicit wait '40' seconds</div>
+<div class="step successful">Then verify provider status should be 'NEW' on the Enrollment tab in IU portal</div>
+<div class="step successful">When click on 'Change status' button from the enrollment details page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When set enrollment request New status to - 'Document Review'</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And refresh page</div>
+<div class="step successful">And implicit wait '40' seconds</div>
+<div class="step successful">When click on 'Change status' button from the enrollment details page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When set enrollment request document status to - 'Document Review Approved'</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And refresh page</div>
+<div class="step successful">And implicit wait '40' seconds</div>
+<div class="step successful">When click on 'Change status' button from the enrollment details page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When set enrollment request ready for screening status to - 'Under Screening'</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And select provider reason 'Moving to Under screening' and 'screening note' Provider under screening</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on apply button in under screening page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And refresh page</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When submits screening with status 'UNDER SCREENING' and get specific request id and save it to 'requestId' with delay '10'</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When get authorization user 'cookies'</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When replace request id '446' screening file '100screening.xml'</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When send screening request 1 with file '100screening.xml' with '${cookies}'</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">And refresh page</div>
+<div class="step successful">And implicit wait '15' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Enrollment</span> tab on header</div>
+<div class="step successful">And implicit wait '40' seconds</div>
+<div class="step successful">Then search with RequestID '446'</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'Entity' provider</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">Then verify provider status should be 'UNDER CLEARING HOUSE CHECK' on the Enrollment tab in IU portal</div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Change status' button from the enrollment details page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When set enrollment request Under Clearing House Check status to - <span class="step parameter">'Clearing House Check Completed'</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And select provider reason 'Positive Background Results' and 'Clearing House Check Completed note' Provider under screening</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on apply button in under screening page</div>
+<div class="step successful">And implicit wait '40' seconds</div>
+<div class="step successful">And refresh page</div>
+<div class="step successful">And implicit wait '40' seconds</div>
+<div class="step successful">And refresh page</div>
+<div class="step successful">And implicit wait '40' seconds</div>
+<div class="step successful">When click on 'Change status' button from the enrollment details page</div>
+<div class="step successful">When set to the status for enrollment request status - 'Approved' and set the '${date}' with reason - 'Approved Based Documents'</div>
+<div class="step successful">And implicit wait '30' seconds</div>
+<div class="step successful">Then verify provider status should be 'APPROVED' on the Enrollment tab in IU portal</div>
+<div class="step successful">When log out from IU portal</div>
+</div>
+</div>

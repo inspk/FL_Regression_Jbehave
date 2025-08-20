@@ -1,0 +1,13 @@
+[
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Billing Address.Is this billing address the same as the service location?}",
+      "timestamp": 0
+    }
+  }
+
+]

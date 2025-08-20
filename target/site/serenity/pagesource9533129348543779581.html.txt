@@ -1,0 +1,2276 @@
+<html lang="en" style="--background-color: #00205C; --background-color1: #00205C; --background-color2: #00205C; --background-color3: #00205C; --background-color4: #00205C; --background-color5: #00205C; --background-color6: #00205C; --background-color7: #00205C; --background-color8: #00205C; --background-color9: #00205C; --background-color10: #00205C; --background-color11: #00205C; --display-icon-layout: block; --fontFamily: 'Montserrat', sans-serif; --fontFamily1: 'Montserrat', sans-serif; --fontSize: 14px; --unregister-button-spacing: 10px; --unregister-text-field-spacing: 8px 0 4px 0; --wr: 1000px;"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="manifest" href="/manifest.json"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="theme-color" content="#ffffff"><style data-fullcalendar=""></style><link rel="stylesheet" href="/reset.css"><link rel="stylesheet" href="/global.css"><link rel="stylesheet" href="/react-joyride-compiled.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><script src="/env-config.js"></script><script>console.log("REACT_APP_LICENSE_KEY ===",window.env.REACT_APP_LICENSE_KEY),console.log("REACT_APP_ENABLE_MONITORING ===",window.env.REACT_APP_ENABLE_MONITORING),console.log("REACT_APP_ACCOUNT_ID ===",window.env.REACT_APP_ACCOUNT_ID),console.log("REACT_APP_TRUST_KEY ===",window.env.REACT_APP_TRUST_KEY),console.log("REACT_APP_AGENT_ID ===",window.env.REACT_APP_AGENT_ID),console.log("REACT_APP_APPLICATION_ID ===",window.env.REACT_APP_APPLICATION_ID)</script><script>!function(){var t=JSON.parse(window.env.REACT_APP_ENABLE_MONITORING)?"./newrelic.js":"";document.write('<script type="text/javascript" src="'+t+'"><\/script>')}()</script><style>@-webkit-keyframes mui-progress-circular-rotate{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes mui-progress-circular-rotate{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes mui-progress-circular-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:100,200;stroke-dashoffset:-15}100%{stroke-dasharray:100,200;stroke-dashoffset:-120}}@keyframes mui-progress-circular-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:100,200;stroke-dashoffset:-15}100%{stroke-dasharray:100,200;stroke-dashoffset:-120}}</style><title>View MCo Details</title><link href="/static/css/main.4c67111d.chunk.css" rel="stylesheet"><style data-styled-components=""></style><link rel="shortcut icon" sizes="180x180" href="/api/hummingbird/v1/fav-icon/get?v=23.509348043603097" type="image/x-icon"><style data-emotion=""></style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+</style><style data-jss="" data-meta="MuiCollapse">
+.MuiCollapse-container {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiCollapse-entered {
+  height: auto;
+  overflow: visible;
+}
+.MuiCollapse-hidden {
+  visibility: hidden;
+}
+.MuiCollapse-wrapper {
+  display: flex;
+}
+.MuiCollapse-wrapperInner {
+  width: 100%;
+}
+</style><style data-jss="" data-meta="MuiInputBase">
+@-webkit-keyframes mui-auto-fill {}
+@-webkit-keyframes mui-auto-fill-cancel {}
+.MuiInputBase-root {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+}
+.MuiInputBase-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+.MuiInputBase-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInputBase-multiline.MuiInputBase-marginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-fullWidth {
+  width: 100%;
+}
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiInputBase-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:focus {
+  outline: 0;
+}
+.MuiInputBase-input:invalid {
+  box-shadow: none;
+}
+.MuiInputBase-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+}
+.MuiInputBase-input:-webkit-autofill {
+  animation-name: mui-auto-fill;
+  animation-duration: 5000s;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInputBase-inputMarginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-inputMultiline {
+  height: auto;
+  resize: none;
+  padding: 0;
+}
+.MuiInputBase-inputTypeSearch {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+</style><style data-jss="" data-meta="PrivateNotchedOutline">
+.jss20119 {
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 8px;
+  overflow: hidden;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.jss20120 {
+  padding: 0;
+  text-align: left;
+  transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  line-height: 11px;
+}
+.jss20121 {
+  width: auto;
+  height: 11px;
+  display: block;
+  padding: 0;
+  font-size: 0.75em;
+  max-width: 0.01px;
+  text-align: left;
+  transition: max-width 50ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  visibility: hidden;
+}
+.jss20121 > span {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.jss20122 {
+  max-width: 1000px;
+  transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
+}
+</style><style data-jss="" data-meta="MuiOutlinedInput">
+.MuiOutlinedInput-root {
+  position: relative;
+  border-radius: 4px;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.87);
+}
+@media (hover: none) {
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #00205c;
+  border-width: 2px;
+}
+.MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #f44336;
+}
+.MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.26);
+}
+.MuiOutlinedInput-colorSecondary.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ffc400;
+}
+.MuiOutlinedInput-adornedStart {
+  padding-left: 14px;
+}
+.MuiOutlinedInput-adornedEnd {
+  padding-right: 14px;
+}
+.MuiOutlinedInput-multiline {
+  padding: 18.5px 14px;
+}
+.MuiOutlinedInput-multiline.MuiOutlinedInput-marginDense {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.23);
+}
+.MuiOutlinedInput-input {
+  padding: 18.5px 14px;
+}
+.MuiOutlinedInput-input:-webkit-autofill {
+  border-radius: inherit;
+}
+.MuiOutlinedInput-inputMarginDense {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+}
+.MuiOutlinedInput-inputMultiline {
+  padding: 0;
+}
+.MuiOutlinedInput-inputAdornedStart {
+  padding-left: 0;
+}
+.MuiOutlinedInput-inputAdornedEnd {
+  padding-right: 0;
+}
+</style><style data-jss="" data-meta="MuiFormLabel">
+.MuiFormLabel-root {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+.MuiFormLabel-root.Mui-focused {
+  color: #00205c;
+}
+.MuiFormLabel-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiFormLabel-root.Mui-error {
+  color: #f44336;
+}
+.MuiFormLabel-colorSecondary.Mui-focused {
+  color: #ffc400;
+}
+.MuiFormLabel-asterisk.Mui-error {
+  color: #f44336;
+}
+</style><style data-jss="" data-meta="MuiInputLabel">
+.MuiInputLabel-root {
+  display: block;
+  font-family: "Montserrat",sans-serif;
+  transform-origin: top left;
+}
+.MuiInputLabel-formControl {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(0, 24px) scale(1);
+}
+.MuiInputLabel-marginDense {
+  transform: translate(0, 21px) scale(1);
+}
+.MuiInputLabel-shrink {
+  transform: translate(0, 1.5px) scale(0.75);
+  transform-origin: top left;
+}
+.MuiInputLabel-animated {
+  transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+.MuiInputLabel-filled {
+  z-index: 1;
+  transform: translate(12px, 20px) scale(1);
+  pointer-events: none;
+}
+.MuiInputLabel-filled.MuiInputLabel-marginDense {
+  transform: translate(12px, 17px) scale(1);
+}
+.MuiInputLabel-filled.MuiInputLabel-shrink {
+  transform: translate(12px, 10px) scale(0.75);
+}
+.MuiInputLabel-filled.MuiInputLabel-shrink.MuiInputLabel-marginDense {
+  transform: translate(12px, 7px) scale(0.75);
+}
+.MuiInputLabel-outlined {
+  z-index: 1;
+  transform: translate(14px, 20px) scale(1);
+  pointer-events: none;
+}
+.MuiInputLabel-outlined.MuiInputLabel-marginDense {
+  transform: translate(14px, 12px) scale(1);
+}
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -6px) scale(0.75);
+}
+</style><style data-jss="" data-meta="MuiFormControl">
+.MuiFormControl-root {
+  border: 0;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+}
+.MuiFormControl-marginNormal {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.MuiFormControl-marginDense {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.MuiFormControl-fullWidth {
+  width: 100%;
+}
+</style><style data-jss="" data-meta="MuiFormHelperText">
+.MuiFormHelperText-root {
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0;
+  font-size: 0.75rem;
+  margin-top: 3px;
+  text-align: left;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+}
+.MuiFormHelperText-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiFormHelperText-root.Mui-error {
+  color: #f44336;
+}
+.MuiFormHelperText-marginDense {
+  margin-top: 4px;
+}
+.MuiFormHelperText-contained {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+</style><style data-jss="" data-meta="MuiPopover">
+.MuiPopover-paper {
+  outline: 0;
+  position: absolute;
+  max-width: calc(100% - 32px);
+  min-width: 16px;
+  max-height: calc(100% - 32px);
+  min-height: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+</style><style data-jss="" data-meta="MuiPopover">
+.MuiPopover-paper-4 {
+  outline: 0;
+  position: absolute;
+  max-width: calc(100% - 32px);
+  min-width: 16px;
+  max-height: calc(100% - 32px);
+  min-height: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+</style><style data-jss="" data-meta="MuiMenu">
+.MuiMenu-paper {
+  max-height: calc(100% - 96px);
+  -webkit-overflow-scrolling: touch;
+}
+.MuiMenu-list {
+  outline: 0;
+}
+</style><style data-jss="" data-meta="MuiMenu">
+.MuiMenu-paper-1 {
+  max-height: calc(100% - 96px);
+  -webkit-overflow-scrolling: touch;
+}
+.MuiMenu-list-2 {
+  outline: 0;
+  background-color: #1974ce;
+}
+</style><style data-jss="" data-meta="MuiSvgIcon">
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #00205c;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #ffc400;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+</style><style data-jss="" data-meta="MuiSelect">
+.MuiSelect-select {
+  cursor: pointer;
+  min-width: 16px;
+  user-select: none;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.MuiSelect-select:focus {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.MuiSelect-select::-ms-expand {
+  display: none;
+}
+.MuiSelect-select.Mui-disabled {
+  cursor: default;
+}
+.MuiSelect-select[multiple] {
+  height: auto;
+}
+.MuiSelect-select:not([multiple]) option, .MuiSelect-select:not([multiple]) optgroup {
+  background-color: #fff;
+}
+.MuiSelect-select.MuiSelect-select {
+  padding-right: 24px;
+}
+.MuiSelect-filled.MuiSelect-filled {
+  padding-right: 32px;
+}
+.MuiSelect-outlined {
+  border-radius: 4px;
+}
+.MuiSelect-outlined.MuiSelect-outlined {
+  padding-right: 32px;
+}
+.MuiSelect-selectMenu {
+  height: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiSelect-icon {
+  top: calc(50% - 12px);
+  color: rgba(0, 0, 0, 0.54);
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.MuiSelect-icon.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSelect-iconOpen {
+  transform: rotate(180deg);
+}
+.MuiSelect-iconFilled {
+  right: 7px;
+}
+.MuiSelect-iconOutlined {
+  right: 7px;
+}
+</style><style data-jss="" data-meta="MuiTextField">
+
+</style><style data-jss="" data-meta="MuiTooltip">
+.MuiTooltip-popper {
+  flip: false;
+  z-index: 1500;
+  pointer-events: none;
+}
+.MuiTooltip-popperInteractive {
+  pointer-events: auto;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow {
+  top: 0;
+  flip: false;
+  left: 0;
+  width: 2em;
+  height: 1em;
+  margin-top: -0.95em;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow {
+  flip: false;
+  left: 0;
+  width: 2em;
+  bottom: 0;
+  height: 1em;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: -0.95em;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow {
+  flip: false;
+  left: 0;
+  width: 1em;
+  height: 2em;
+  margin-top: 4px;
+  margin-left: -0.95em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow {
+  flip: false;
+  right: 0;
+  width: 1em;
+  height: 2em;
+  margin-top: 4px;
+  margin-right: -0.95em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow::before {
+  flip: false;
+  border-color: transparent transparent transparent currentcolor;
+  border-width: 1em 0 1em 1em;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow::before {
+  flip: false;
+  border-color: transparent currentcolor transparent transparent;
+  border-width: 1em 1em 1em 0;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow::before {
+  flip: false;
+  border-color: currentcolor transparent transparent transparent;
+  border-width: 1em 1em 0 1em;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow::before {
+  flip: false;
+  border-color: transparent transparent currentcolor transparent;
+  border-width: 0 1em 1em 1em;
+}
+.MuiTooltip-tooltip {
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.625rem;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.4em;
+  border-radius: 4px;
+  background-color: rgba(97, 97, 97, 0.9);
+}
+.MuiTooltip-tooltipArrow {
+  margin: 0;
+  position: relative;
+}
+.MuiTooltip-arrow {
+  color: rgba(97, 97, 97, 0.9);
+  position: absolute;
+  font-size: 6px;
+}
+.MuiTooltip-arrow::before {
+  width: 0;
+  height: 0;
+  margin: auto;
+  content: "";
+  display: block;
+  border-style: solid;
+}
+.MuiTooltip-touch {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.14286em;
+}
+.MuiTooltip-tooltipPlacementLeft {
+  margin: 0 24px ;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementLeft {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementRight {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementRight {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementTop {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementTop {
+    margin: 14px 0;
+  }
+}
+.MuiTooltip-tooltipPlacementBottom {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementBottom {
+    margin: 14px 0;
+  }
+}
+</style><style data-jss="" data-meta="MuiTooltip">
+.MuiTooltip-popper-22385 {
+  flip: false;
+  z-index: 1500;
+  pointer-events: none;
+}
+.MuiTooltip-popperInteractive-22386 {
+  pointer-events: auto;
+}
+.MuiTooltip-popperArrow-22387[x-placement*="bottom"] .MuiTooltip-arrow-22390 {
+  top: 0;
+  flip: false;
+  left: 0;
+  width: 2em;
+  height: 1em;
+  margin-top: -0.95em;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.MuiTooltip-popperArrow-22387[x-placement*="top"] .MuiTooltip-arrow-22390 {
+  flip: false;
+  left: 0;
+  width: 2em;
+  bottom: 0;
+  height: 1em;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: -0.95em;
+}
+.MuiTooltip-popperArrow-22387[x-placement*="right"] .MuiTooltip-arrow-22390 {
+  flip: false;
+  left: 0;
+  width: 1em;
+  height: 2em;
+  margin-top: 4px;
+  margin-left: -0.95em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow-22387[x-placement*="left"] .MuiTooltip-arrow-22390 {
+  flip: false;
+  right: 0;
+  width: 1em;
+  height: 2em;
+  margin-top: 4px;
+  margin-right: -0.95em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow-22387[x-placement*="left"] .MuiTooltip-arrow-22390::before {
+  flip: false;
+  border-color: transparent transparent transparent currentcolor;
+  border-width: 1em 0 1em 1em;
+}
+.MuiTooltip-popperArrow-22387[x-placement*="right"] .MuiTooltip-arrow-22390::before {
+  flip: false;
+  border-color: transparent currentcolor transparent transparent;
+  border-width: 1em 1em 1em 0;
+}
+.MuiTooltip-popperArrow-22387[x-placement*="top"] .MuiTooltip-arrow-22390::before {
+  flip: false;
+  border-color: currentcolor transparent transparent transparent;
+  border-width: 1em 1em 0 1em;
+}
+.MuiTooltip-popperArrow-22387[x-placement*="bottom"] .MuiTooltip-arrow-22390::before {
+  flip: false;
+  border-color: transparent transparent currentcolor transparent;
+  border-width: 0 1em 1em 1em;
+}
+.MuiTooltip-tooltip-22388 {
+  color: #6f6f6f;
+  width: 201px;
+  border: 1px solid black;
+  padding: 10px 5px;
+  font-size: 0.625rem;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  line-height: 1.4em;
+  border-radius: 0;
+  background-color: white;
+}
+.MuiTooltip-tooltipArrow-22389 {
+  margin: 0;
+  position: relative;
+}
+.MuiTooltip-arrow-22390 {
+  color: rgba(97, 97, 97, 0.9);
+  position: absolute;
+  font-size: 6px;
+}
+.MuiTooltip-arrow-22390::before {
+  width: 0;
+  height: 0;
+  margin: auto;
+  content: "";
+  display: block;
+  border-style: solid;
+}
+.MuiTooltip-touch-22391 {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.14286em;
+}
+.MuiTooltip-tooltipPlacementLeft-22392 {
+  margin: 0 24px ;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementLeft-22392 {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementRight-22393 {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementRight-22393 {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementTop-22394 {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementTop-22394 {
+    margin: 14px 0;
+  }
+}
+.MuiTooltip-tooltipPlacementBottom-22395 {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementBottom-22395 {
+    margin: 14px 0;
+  }
+}
+</style><style data-jss="" data-meta="MuiTypography">
+.MuiTypography-root {
+  margin: 0;
+}
+.MuiTypography-body2 {
+  font-size: 0.875rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+}
+.MuiTypography-body1 {
+  font-size: 1rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.MuiTypography-caption {
+  font-size: 0.75rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+.MuiTypography-h1 {
+  font-size: 6rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 300;
+  line-height: 1.167;
+}
+.MuiTypography-h2 {
+  font-size: 3.75rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.MuiTypography-h3 {
+  font-size: 3rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.167;
+}
+.MuiTypography-h4 {
+  font-size: 2.125rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.235;
+}
+.MuiTypography-h5 {
+  font-size: 1.5rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+}
+.MuiTypography-h6 {
+  font-size: 1.25rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.MuiTypography-subtitle1 {
+  font-size: 1rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.MuiTypography-subtitle2 {
+  font-size: 0.875rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.57;
+}
+.MuiTypography-overline {
+  font-size: 0.75rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 2.66;
+  text-transform: uppercase;
+}
+.MuiTypography-srOnly {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #00205c;
+}
+.MuiTypography-colorSecondary {
+  color: #ffc400;
+}
+.MuiTypography-colorTextPrimary {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorError {
+  color: #f44336;
+}
+.MuiTypography-displayInline {
+  display: inline;
+}
+.MuiTypography-displayBlock {
+  display: block;
+}
+</style><style data-jss="" data-meta="MuiButton">
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-text {
+  padding: 6px 8px;
+}
+.MuiButton-textPrimary {
+  color: #00205c;
+}
+.MuiButton-textPrimary:hover {
+  background-color: rgba(0, 32, 92, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-textSecondary {
+  color: #ffc400;
+}
+.MuiButton-textSecondary:hover {
+  background-color: rgba(255, 196, 0, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 15px;
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButton-outlinedPrimary {
+  color: #00205c;
+  border: 1px solid rgba(0, 32, 92, 0.5);
+}
+.MuiButton-outlinedPrimary:hover {
+  border: 1px solid #00205c;
+  background-color: rgba(0, 32, 92, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlinedSecondary {
+  color: #ffc400;
+  border: 1px solid rgba(255, 196, 0, 0.5);
+}
+.MuiButton-outlinedSecondary:hover {
+  border: 1px solid #ffc400;
+  background-color: rgba(255, 196, 0, 0.04);
+}
+.MuiButton-outlinedSecondary.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+.MuiButton-contained:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  background-color: #d5d5d5;
+}
+.MuiButton-contained.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiButton-contained:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-contained:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #00205c;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #173a7e;
+}
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #00205c;
+  }
+}
+.MuiButton-containedSecondary {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffc400;
+}
+.MuiButton-containedSecondary:hover {
+  background-color: #ffab00;
+}
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #ffc400;
+  }
+}
+.MuiButton-disableElevation {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:hover {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-focusVisible {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:active {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-disabled {
+  box-shadow: none;
+}
+.MuiButton-colorInherit {
+  color: inherit;
+  border-color: currentColor;
+}
+.MuiButton-textSizeSmall {
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+}
+.MuiButton-textSizeLarge {
+  padding: 8px 11px;
+  font-size: 0.9375rem;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 3px 9px;
+  font-size: 0.8125rem;
+}
+.MuiButton-outlinedSizeLarge {
+  padding: 7px 21px;
+  font-size: 0.9375rem;
+}
+.MuiButton-containedSizeSmall {
+  padding: 4px 10px;
+  font-size: 0.8125rem;
+}
+.MuiButton-containedSizeLarge {
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+}
+.MuiButton-fullWidth {
+  width: 100%;
+}
+.MuiButton-startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 8px;
+}
+.MuiButton-startIcon.MuiButton-iconSizeSmall {
+  margin-left: -2px;
+}
+.MuiButton-endIcon {
+  display: inherit;
+  margin-left: 8px;
+  margin-right: -4px;
+}
+.MuiButton-endIcon.MuiButton-iconSizeSmall {
+  margin-right: -2px;
+}
+.MuiButton-iconSizeSmall > *:first-child {
+  font-size: 18px;
+}
+.MuiButton-iconSizeMedium > *:first-child {
+  font-size: 20px;
+}
+.MuiButton-iconSizeLarge > *:first-child {
+  font-size: 22px;
+}
+</style><style data-jss="" data-meta="MuiIconButton">
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiIconButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-edgeStart {
+  margin-left: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+  margin-left: -3px;
+}
+.MuiIconButton-edgeEnd {
+  margin-right: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+  margin-right: -3px;
+}
+.MuiIconButton-colorInherit {
+  color: inherit;
+}
+.MuiIconButton-colorPrimary {
+  color: #00205c;
+}
+.MuiIconButton-colorPrimary:hover {
+  background-color: rgba(0, 32, 92, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-colorSecondary {
+  color: #ffc400;
+}
+.MuiIconButton-colorSecondary:hover {
+  background-color: rgba(255, 196, 0, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-sizeSmall {
+  padding: 3px;
+  font-size: 1.125rem;
+}
+.MuiIconButton-label {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+</style><style data-jss="" data-meta="MuiDialog">
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+.MuiDialog-scrollPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MuiDialog-scrollBody {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+.MuiDialog-scrollBody:after {
+  width: 0;
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiDialog-container {
+  height: 100%;
+  outline: 0;
+}
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+.MuiDialog-paper {
+  margin: 32px;
+  position: relative;
+  overflow-y: auto;
+}
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+.MuiDialog-paperScrollPaper {
+  display: flex;
+  max-height: calc(100% - 64px);
+  flex-direction: column;
+}
+.MuiDialog-paperScrollBody {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.MuiDialog-paperWidthFalse {
+  max-width: calc(100% - 64px);
+}
+.MuiDialog-paperWidthXs {
+  max-width: 444px;
+}
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthSm {
+  max-width: 600px;
+}
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthMd {
+  max-width: 960px;
+}
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthLg {
+  max-width: 1280px;
+}
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthXl {
+  max-width: 1920px;
+}
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperFullWidth {
+  width: calc(100% - 64px);
+}
+.MuiDialog-paperFullScreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+.MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+  margin: 0;
+  max-width: 100%;
+}
+</style><style data-jss="" data-meta="MuiDialog">
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+.MuiDialog-scrollPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MuiDialog-scrollBody {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+.MuiDialog-scrollBody:after {
+  width: 0;
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiDialog-container {
+  height: 100%;
+  outline: 0;
+}
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+.MuiDialog-paper {
+  margin: 32px;
+  position: relative;
+  overflow-y: auto;
+}
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+.MuiDialog-paperScrollPaper {
+  display: flex;
+  max-height: calc(100% - 64px);
+  flex-direction: column;
+}
+.MuiDialog-paperScrollBody {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.MuiDialog-paperWidthFalse {
+  max-width: calc(100% - 64px);
+}
+.MuiDialog-paperWidthXs {
+  max-width: 444px;
+}
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthSm {
+  max-width: 600px;
+}
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthMd {
+  max-width: 960px;
+}
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthLg {
+  max-width: 1280px;
+}
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthXl {
+  max-width: 1920px;
+}
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperFullWidth {
+  width: calc(100% - 64px);
+}
+.MuiDialog-paperFullScreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+.MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+  margin: 0;
+  max-width: 100%;
+}
+</style><style data-jss="" data-meta="MuiLinearProgress">
+.MuiLinearProgress-root {
+  height: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.MuiLinearProgress-colorPrimary {
+  background-color: rgb(158, 170, 193);
+}
+.MuiLinearProgress-colorSecondary {
+  background-color: rgb(255, 232, 158);
+}
+.MuiLinearProgress-buffer {
+  background-color: transparent;
+}
+.MuiLinearProgress-query {
+  transform: rotate(180deg);
+}
+.MuiLinearProgress-dashed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: MuiLinearProgress-keyframes-buffer 3s infinite linear;
+  margin-top: 0;
+}
+.MuiLinearProgress-dashedColorPrimary {
+  background-size: 10px 10px;
+  background-image: radial-gradient(rgb(158, 170, 193) 0%, rgb(158, 170, 193) 16%, transparent 42%);
+  background-position: 0px -23px;
+}
+.MuiLinearProgress-dashedColorSecondary {
+  background-size: 10px 10px;
+  background-image: radial-gradient(rgb(255, 232, 158) 0%, rgb(255, 232, 158) 16%, transparent 42%);
+  background-position: 0px -23px;
+}
+.MuiLinearProgress-bar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  transition: transform 0.2s linear;
+  transform-origin: left;
+}
+.MuiLinearProgress-barColorPrimary {
+  background-color: #00205c;
+}
+.MuiLinearProgress-barColorSecondary {
+  background-color: #ffc400;
+}
+.MuiLinearProgress-bar1Indeterminate {
+  width: auto;
+  animation: MuiLinearProgress-keyframes-indeterminate1 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+.MuiLinearProgress-bar1Determinate {
+  transition: transform .4s linear;
+}
+.MuiLinearProgress-bar1Buffer {
+  z-index: 1;
+  transition: transform .4s linear;
+}
+.MuiLinearProgress-bar2Indeterminate {
+  width: auto;
+  animation: MuiLinearProgress-keyframes-indeterminate2 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite;
+}
+.MuiLinearProgress-bar2Buffer {
+  transition: transform .4s linear;
+}
+@-webkit-keyframes MuiLinearProgress-keyframes-indeterminate1 {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+@-webkit-keyframes MuiLinearProgress-keyframes-indeterminate2 {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+@-webkit-keyframes MuiLinearProgress-keyframes-buffer {
+  0% {
+    opacity: 1;
+    background-position: 0px -23px;
+  }
+  50% {
+    opacity: 0;
+    background-position: 0px -23px;
+  }
+  100% {
+    opacity: 1;
+    background-position: -200px -23px;
+  }
+}
+</style><style data-jss="" data-meta="MuiTab">
+.MuiTab-root {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  font-size: 0.875rem;
+  max-width: 264px;
+  min-width: 125px;
+  box-sizing: border-box;
+  min-height: 48px;
+  text-align: center;
+  flex-shrink: 1;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  white-space: normal;
+  text-transform: uppercase;
+}
+@media (min-width:600px) {
+  .MuiTab-root {
+    min-width: 160px;
+  }
+}
+.MuiTab-labelIcon {
+  min-height: 72px;
+  padding-top: 9px;
+}
+.MuiTab-labelIcon .MuiTab-wrapper > *:first-child {
+  margin-bottom: 6px;
+}
+.MuiTab-textColorInherit {
+  color: inherit;
+  opacity: 0.7;
+}
+.MuiTab-textColorInherit.Mui-selected {
+  opacity: 1;
+}
+.MuiTab-textColorInherit.Mui-disabled {
+  opacity: 0.5;
+}
+.MuiTab-textColorPrimary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #00205c;
+}
+.MuiTab-textColorPrimary.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiTab-textColorSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTab-textColorSecondary.Mui-selected {
+  color: #ffc400;
+}
+.MuiTab-textColorSecondary.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiTab-fullWidth {
+  flex-grow: 1;
+  max-width: none;
+  flex-basis: 0;
+  flex-shrink: 1;
+}
+.MuiTab-wrapped {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.MuiTab-wrapper {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+</style><style data-jss="" data-meta="MuiTableCell">
+.MuiTableCell-root {
+  display: table-cell;
+  padding: 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  border-bottom: 1px solid
+    rgba(224, 224, 224, 1);
+  vertical-align: inherit;
+}
+.MuiTableCell-head {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.MuiTableCell-body {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTableCell-footer {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  line-height: 1.3125rem;
+}
+.MuiTableCell-sizeSmall {
+  padding: 6px 24px 6px 16px;
+}
+.MuiTableCell-sizeSmall:last-child {
+  padding-right: 16px;
+}
+.MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox {
+  width: 24px;
+  padding: 0px 12px 0 16px;
+}
+.MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox:last-child {
+  padding-left: 12px;
+  padding-right: 16px;
+}
+.MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox > * {
+  padding: 0;
+}
+.MuiTableCell-paddingCheckbox {
+  width: 48px;
+  padding: 0 0 0 4px;
+}
+.MuiTableCell-paddingCheckbox:last-child {
+  padding-left: 0;
+  padding-right: 4px;
+}
+.MuiTableCell-paddingNone {
+  padding: 0;
+}
+.MuiTableCell-paddingNone:last-child {
+  padding: 0;
+}
+.MuiTableCell-alignLeft {
+  text-align: left;
+}
+.MuiTableCell-alignCenter {
+  text-align: center;
+}
+.MuiTableCell-alignRight {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+.MuiTableCell-alignJustify {
+  text-align: justify;
+}
+.MuiTableCell-stickyHeader {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: sticky;
+  background-color: #fafafa;
+}
+</style><style data-jss="" data-meta="MuiToolbar">
+.MuiToolbar-root {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.MuiToolbar-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.MuiToolbar-regular {
+  min-height: 56px;
+}
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+.MuiToolbar-dense {
+  min-height: 48px;
+}
+</style><style data-jss="" data-meta="MuiTablePagination">
+.MuiTablePagination-root {
+  color: rgba(0, 0, 0, 0.87);
+  overflow: auto;
+  font-size: 0.875rem;
+}
+.MuiTablePagination-root:last-child {
+  padding: 0;
+}
+.MuiTablePagination-toolbar {
+  min-height: 52px;
+  padding-right: 2px;
+}
+.MuiTablePagination-spacer {
+  flex: 1 1 100%;
+}
+.MuiTablePagination-caption {
+  flex-shrink: 0;
+}
+.MuiTablePagination-selectRoot {
+  margin-left: 8px;
+  margin-right: 32px;
+}
+.MuiTablePagination-select {
+  text-align: right;
+  padding-left: 8px;
+  padding-right: 24px;
+  text-align-last: right;
+}
+.MuiTablePagination-input {
+  color: inherit;
+  font-size: inherit;
+  flex-shrink: 0;
+}
+.MuiTablePagination-actions {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+</style><style data-jss="" data-meta="PrivateTabIndicator">
+.jss20115 {
+  width: 100%;
+  bottom: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.jss20116 {
+  background-color: #00205c;
+}
+.jss20117 {
+  background-color: #ffc400;
+}
+.jss20118 {
+  right: 0;
+  width: 2px;
+  height: 100%;
+}
+</style><style data-jss="" data-meta="MuiTabs">
+.MuiTabs-root {
+  display: flex;
+  overflow: hidden;
+  min-height: 48px;
+  -webkit-overflow-scrolling: touch;
+}
+.MuiTabs-vertical {
+  flex-direction: column;
+}
+.MuiTabs-flexContainer {
+  display: flex;
+}
+.MuiTabs-flexContainerVertical {
+  flex-direction: column;
+}
+.MuiTabs-centered {
+  justify-content: center;
+}
+.MuiTabs-scroller {
+  flex: 1 1 auto;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+.MuiTabs-fixed {
+  width: 100%;
+  overflow-x: hidden;
+}
+.MuiTabs-scrollable {
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.MuiTabs-scrollable::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width:599.95px) {
+  .MuiTabs-scrollButtonsDesktop {
+    display: none;
+  }
+}
+</style><style data-jss="" data-meta="inject-t-with-store">
+.jss20123 {
+  color: #20603C;
+}
+.jss20124 {
+  width: 100%;
+}
+.jss20125 {
+  padding-bottom: 1px;
+}
+.jss20126 {
+  overflow: hidden;
+  max-width: 225px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss20114 {
+  width: 160px;
+  margin: 10px 15px 10px 0;
+}
+</style><style data-jss="" data-meta="t">
+.jss5 {
+  width: 500px;
+  padding: 20px;
+}
+.jss6 {
+  text-align: right;
+}
+.jss7 {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.jss8 {
+  padding-bottom: 0;
+}
+</style><style data-jss="" data-meta="inject-t-with-store">
+.jss9 {
+  width: 500px;
+  padding: 20px;
+}
+.jss10 {
+  text-align: right;
+}
+.jss11 {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.jss12 {
+  padding-bottom: 0;
+}
+</style><style data-jss="" data-meta="t">
+.jss13 {
+  width: 500px;
+  padding: 20px;
+}
+.jss14 {
+  text-align: right;
+}
+.jss15 {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.jss16 {
+  padding-bottom: 0;
+}
+</style><style data-jss="" data-meta="inject-t-with-store">
+.jss17 {
+  width: 500px;
+  padding: 20px;
+}
+.jss18 {
+  text-align: right;
+}
+.jss19 {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.jss20 {
+  padding-bottom: 0;
+}
+</style><style data-react-tooltip="true">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip::before, .__react_component_tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0;
+  margin-left: 0;
+  visibility: visible;
+}
+.__react_component_tooltip.place-top::before {
+  bottom: 0;
+  left: 50%;
+  margin-left: -11px;
+}
+.__react_component_tooltip.place-bottom::before {
+  top: 0;
+  left: 50%;
+  margin-left: -11px;
+}
+.__react_component_tooltip.place-left::before {
+  right: 0;
+  top: 50%;
+  margin-top: -9px;
+}
+.__react_component_tooltip.place-right::before {
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+}</style></head><body style="margin: 0px;" data-state="opened"><div id="root" role="main"><div><div></div><div><div><div class="visually-hidden-children sc-dxgOiQ hTjMfW"><h1>Discover your provider</h1></div><div></div><div class="header_rl fl"><div class="wr"><div class="logo-container"><a class="" href="/dashboard"><div class="prodLogo"><img src="https://d2x1m0yoqdp9ol.cloudfront.net/logo-white.svg" alt="book" class="flImage"></div></a></div><div class="mobile-burger"><div class="inner"><i></i><i></i><i></i></div></div><div class="menu-container"><div><ul><li><a class="" href="/providers-list">Providers</a></li><li><a class="" href="/requests">Enrollment</a></li><li><a class=" active" href="/mco">MCO</a></li><li><a class="" href="/credentialing">Credentialing</a></li><li><a class="" href="/coc-list">CoC</a></li><li><a class="" href="/appeal-list">Reconsideration</a></li><li><a class="" href="/audit">Audit</a></li><li><a class="" href="/payments">Payments</a></li><li><a class="" href="/claims">Claims</a></li><li><a class="" href="/1099-list">1099</a></li><li><a class="" href="/reports">Reports</a></li><li><a class="" href="/site-visit">Site visits</a></li><li><a class="" href="/voting">Voting</a></li><li><button class="MuiButtonBase-root MuiButton-root MuiButton-text more-btn" tabindex="0" type="button" aria-haspopup="true"><span class="MuiButton-label">More <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M7 10l5 5 5-5z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></li></ul></div><div><div class="user-bar-container"><div class="messages helptour_messagebox"><a class="" href="/inbox"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="message box"><span class="MuiIconButton-label"><div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"></path></g></svg></div></span><span class="MuiTouchRipple-root"></span></button></a></div><div class="user helptour_user"><div role="button" aria-haspopup="true" tabindex="0"><div class="username" title="">Cindy Duran</div><div class="role" style="max-width: 200px; text-align: left;">Provider Supervisor</div></div></div><div class="photo-sectionn"><div class="img-containerr"><div aria-haspopup="true"><img alt="profile picture" src="/img/anonym.svg" class="user-anonym-imgg"></div></div></div></div></div></div></div></div><div class="root_content_1ygS5"><div class="wr"><div class="breadcrumb"><span>← Back to search results</span></div><br><div class="header runtime_header  "><div class="wr inner"><div><div></div><h1 class="header_header__title_3OsQs header_header__title__provider-name_3TkjZ">Enrollment:</h1><h2 class="header__title">MCO Provider Enrollment Application</h2></div><div class="sc-dUjcNx bowNXE"></div><div class="appStatus"><div class="headerAppStatus sc-cbkKFq bIUkjW"><div class="sc-fYiAbW bAzPxE"><i class="SVGInline SVGInline--cleaned icon_green_17DyX"><svg class="SVGInline-svg SVGInline--cleaned-svg icon_green_17DyX-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="11"><path fill-rule="evenodd" d="M4.6 7.6L1.4 4.4 0 5.8l4.6 4.6 9-9L12.2 0z"></path></svg></i></div>All changes saved</div></div><div class=""></div></div></div><div class="app application_details  "><div class="side-bar-runtime   menu-open"><span class="icon  "><i class="SVGInline SVGInline--cleaned"><svg class="SVGInline-svg SVGInline--cleaned-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12">
+    <g fill="#757575" fill-rule="evenodd">
+        <path d="M13.611 10.6L8.88 6l4.731-4.6-1.44-1.4L6 6l6.171 6z"></path>
+        <path d="M7.611 10.6L2.88 6l4.731-4.6L6.171 0 0 6l6.171 6z"></path>
+    </g>
+</svg></i></span><div class="menu-wr  " style="width: 294px; transform: translate(0px, 0px);"><div class="menu-inner-runtime  " id="divElem" tabindex="0" style="max-height: calc(-261px + 100vh);"><span><div class="menu-item" data-tip="true"><div class="ico"><div class="green"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></g></svg></div></div><div class="status-answers-wr"></div><span>Identifying Information</span></div></span><span><div class="menu-item" data-tip="true"><div class="ico"><div class="green"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></g></svg></div></div><div class="status-answers-wr"></div><span>Taxonomy / Specialty / Provider Type / License Certification Information</span></div></span><span><div class="menu-item" data-tip="true"><div class="ico"><div class="green"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></g></svg></div></div><div class="status-answers-wr"></div><span>Service Location</span></div></span><span><div class="menu-item" data-tip="true"><div class="status-answers-wr"></div><span>Address Details</span></div></span><span><div class="menu-item" data-tip="true"><div class="status-answers-wr"></div><span>Ownership</span></div></span><span><div class="menu-item" data-tip="true"><div class="status-answers-wr"></div><span>Key Personnel</span></div></span><span><div class="menu-item" data-tip="true"><div class="status-answers-wr"></div><span>Exclusion/Sanction Information</span></div></span><span><div class="menu-item" data-tip="true"><div class="status-answers-wr"></div><span>Upload Documents</span></div></span><span><div class="__react_component_tooltip tc32e6193-c90d-4e9b-a52e-bb06605228fa border place-bottom type-custom" id="Affiliation" data-id="tooltip" style="left: 49px; top: 567px;"><style aria-hidden="true">
+  	.tc32e6193-c90d-4e9b-a52e-bb06605228fa {
+	    color: black;
+	    background: white;
+	    border: 1px solid gray;
+	    border-radius: 3px;
+	    padding: 8px 21px;
+  	}
+
+  	.tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-top {
+        margin-top: -10px;
+    }
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-top::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        z-index: 2;
+        width: 20px;
+        height: 12px;
+    }
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-top::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top-right-radius: 0px;
+        border: 1px solid gray;
+        background-color: white;
+        z-index: -2;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -6px;
+        transform: rotate(135deg);
+    }
+
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-bottom {
+        margin-top: 10px;
+    }
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-bottom::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        z-index: -1;
+        width: 18px;
+        height: 10px;
+    }
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-bottom::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top-right-radius: 0px;
+        border: 1px solid gray;
+        background-color: white;
+        z-index: -2;
+        top: -6px;
+        left: 50%;
+        margin-left: -6px;
+        transform: rotate(45deg);
+    }
+
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-left {
+        margin-left: -10px;
+    }
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-left::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        z-index: -1;
+        width: 10px;
+        height: 18px;
+    }
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-left::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top-right-radius: 0px;
+        border: 1px solid gray;
+        background-color: white;
+        z-index: -2;
+        right: -6px;
+        top: 50%;
+        margin-top: -6px;
+        transform: rotate(45deg);
+    }
+
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-right {
+        margin-left: 10px;
+    }
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-right::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        z-index: -1;
+        width: 10px;
+        height: 18px;
+    }
+    .tc32e6193-c90d-4e9b-a52e-bb06605228fa.place-right::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top-right-radius: 0px;
+        border: 1px solid gray;
+        background-color: white;
+        z-index: -2;
+        left: -6px;
+        top: 50%;
+        margin-top: -6px;
+        transform: rotate(-135deg);
+    }
+  </style><span>Affiliation</span></div><div class="menu-item active" data-tip="true" data-for="Affiliation" currentitem="false"><div class="status-answers-wr"></div><span>Affiliation</span></div></span><span><div class="__react_component_tooltip tede7206d-923b-4541-8cd4-9f4caf43f0d9 place-bottom type-dark" id="Summary" data-id="tooltip"><style aria-hidden="true">
+  	.tede7206d-923b-4541-8cd4-9f4caf43f0d9 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+	    border-radius: undefinedpx;
+	    padding: 8px 21px;
+  	}
+
+  	.tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-top {
+        margin-top: -10px;
+    }
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-top::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        z-index: 2;
+        width: 20px;
+        height: 12px;
+    }
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-top::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top-right-radius: undefinedpx;
+        border: 1px solid transparent;
+        background-color: #222;
+        z-index: -2;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -6px;
+        transform: rotate(135deg);
+    }
+
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-bottom {
+        margin-top: 10px;
+    }
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-bottom::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        z-index: -1;
+        width: 18px;
+        height: 10px;
+    }
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-bottom::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top-right-radius: undefinedpx;
+        border: 1px solid transparent;
+        background-color: #222;
+        z-index: -2;
+        top: -6px;
+        left: 50%;
+        margin-left: -6px;
+        transform: rotate(45deg);
+    }
+
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-left {
+        margin-left: -10px;
+    }
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-left::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        z-index: -1;
+        width: 10px;
+        height: 18px;
+    }
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-left::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top-right-radius: undefinedpx;
+        border: 1px solid transparent;
+        background-color: #222;
+        z-index: -2;
+        right: -6px;
+        top: 50%;
+        margin-top: -6px;
+        transform: rotate(45deg);
+    }
+
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-right {
+        margin-left: 10px;
+    }
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-right::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        z-index: -1;
+        width: 10px;
+        height: 18px;
+    }
+    .tede7206d-923b-4541-8cd4-9f4caf43f0d9.place-right::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top-right-radius: undefinedpx;
+        border: 1px solid transparent;
+        background-color: #222;
+        z-index: -2;
+        left: -6px;
+        top: 50%;
+        margin-top: -6px;
+        transform: rotate(-135deg);
+    }
+  </style><span>Summary</span></div><div class="menu-item" data-tip="true" data-for="Summary" currentitem="false"><div class="status-answers-wr"></div><span>Summary</span></div></span></div><div class="menu_progress-bar_tQOFp"><div class="progress_wrapper fl sc-eNQAEJ fAbPPh"><div class="progress_status fl sc-kEYyzF gfWKdx"><div class="progress_name fl sc-hMqMXs cPxEnv">Complete</div><div class="progress_size fl sc-kkGfuU gqJIVH">18%</div></div><div class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate" role="progressbar" aria-valuenow="18" aria-label="progress bar"><div class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate" style="transform: translateX(-82%);"></div></div></div></div></div><div class="mobile-button"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="more"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="content"><div class="sc-esOvli ibhEHW"><div class="section-inner"><div class="section-header"><h3>Provider affiliation information</h3></div><p>Please enter Provider(s) that you would like to affiliate with</p><div class="provider-search"><div class="search-box-container tp_modified default  "><div class="search-box"><div class="search-box-content undefined"><div class="col-2 sc-eilVRo jTOvVS"><h2>Provider Info</h2><div class="search-box-i"><div class="MuiFormControl-root MuiTextField-root inputFieldEnhance  MuiFormControl-marginDense MuiFormControl-fullWidth"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined" data-shrink="false" for="providerNameNpi" id="providerNameNpi-label">Provider name/NPI/FEIN</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"><input aria-invalid="false" id="providerNameNpi" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense" value=""><fieldset aria-hidden="true" class="jss20119 MuiOutlinedInput-notchedOutline"><legend class="jss20121"><span>Provider name/NPI/FEIN</span></legend></fieldset></div></div></div><div class="search-box-i"><div class="sc-bxivhb cDFCAd"><div class="MuiFormControl-root jss20124 selectFieldEnhance MuiFormControl-marginDense"><label class="MuiFormLabel-root MuiInputLabel-root jss20126 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined" data-shrink="false" for="Type-7e2e3f2c-11e3-46c5-b7e7-46b2f7cec31a" style="font-size: 16px;">Type</label><div class="MuiInputBase-root MuiOutlinedInput-root   MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"><div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense" tabindex="0" role="button" aria-haspopup="listbox" aria-labelledby="Type-7e2e3f2c-11e3-46c5-b7e7-46b2f7cec31a" id="Type-7e2e3f2c-11e3-46c5-b7e7-46b2f7cec31a"><span>​</span></div><input type="hidden" id="Type-7e2e3f2c-11e3-46c5-b7e7-46b2f7cec31a" value=""><svg class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg><fieldset aria-hidden="true" class="jss20119 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;"><legend class="jss20120" style="width: 0.01px;"><span>​</span></legend></fieldset></div><p class="MuiFormHelperText-root MuiFormHelperText-contained helper_text_select MuiFormHelperText-marginDense"></p></div></div></div></div><div class="col-2 sc-eilVRo jTOvVS"><button class="MuiButtonBase-root MuiIconButton-root icon_button_runtime" tabindex="0" type="button" aria-label="Clear"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button><div class="search-box-i"><div class="MuiFormControl-root MuiTextField-root inputFieldEnhance  MuiFormControl-marginDense MuiFormControl-fullWidth"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined" data-shrink="false" for="providerID" id="providerID-label">Provider ID</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"><input aria-invalid="false" id="providerID" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense" value=""><fieldset aria-hidden="true" class="jss20119 MuiOutlinedInput-notchedOutline"><legend class="jss20121"><span>Provider ID</span></legend></fieldset></div></div></div><div class="search-box-i"><div class="MuiFormControl-root MuiTextField-root inputFieldEnhance  MuiFormControl-marginDense MuiFormControl-fullWidth"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined" data-shrink="false" for="Service Location" id="Service Location-label">Service Location</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"><input aria-invalid="false" id="Service Location" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense" value=""><fieldset aria-hidden="true" class="jss20119 MuiOutlinedInput-notchedOutline"><legend class="jss20121"><span>Service Location</span></legend></fieldset></div></div></div></div><div class="col-2 sc-eilVRo jTOvVS"><h2>Taxonomy Details</h2><div class="search-box-i"><div class="sc-bxivhb cDFCAd"><div class="MuiFormControl-root jss20124 selectFieldEnhance MuiFormControl-marginDense"><label class="MuiFormLabel-root MuiInputLabel-root jss20126 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined" data-shrink="false" for="Taxonomy Category-1c8b0def-1b2f-49fd-b4a4-5f5622009837" style="font-size: 16px;">Taxonomy Category</label><div class="MuiInputBase-root MuiOutlinedInput-root   MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"><div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense" tabindex="0" role="button" aria-haspopup="listbox" aria-labelledby="Taxonomy Category-1c8b0def-1b2f-49fd-b4a4-5f5622009837" id="Taxonomy Category-1c8b0def-1b2f-49fd-b4a4-5f5622009837"><span>​</span></div><input type="hidden" id="Taxonomy Category-1c8b0def-1b2f-49fd-b4a4-5f5622009837" value=""><svg class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg><fieldset aria-hidden="true" class="jss20119 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;"><legend class="jss20120" style="width: 0.01px;"><span>​</span></legend></fieldset></div><p class="MuiFormHelperText-root MuiFormHelperText-contained helper_text_select MuiFormHelperText-marginDense"></p></div></div></div><div class="search-box-i"><div class="sc-bxivhb cDFCAd"><div class="MuiFormControl-root jss20124 selectFieldEnhance MuiFormControl-marginDense"><label class="MuiFormLabel-root MuiInputLabel-root jss20126 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined" data-shrink="false" for="Taxonomy Description-35b6a874-d46f-466f-ac10-b2564f1b2469" style="font-size: 16px;">Taxonomy Description</label><div class="MuiInputBase-root MuiOutlinedInput-root   MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"><div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense" tabindex="0" role="button" aria-haspopup="listbox" aria-labelledby="Taxonomy Description-35b6a874-d46f-466f-ac10-b2564f1b2469" id="Taxonomy Description-35b6a874-d46f-466f-ac10-b2564f1b2469"><span>​</span></div><input type="hidden" id="Taxonomy Description-35b6a874-d46f-466f-ac10-b2564f1b2469" value=""><svg class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg><fieldset aria-hidden="true" class="jss20119 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;"><legend class="jss20120" style="width: 0.01px;"><span>​</span></legend></fieldset></div><p class="MuiFormHelperText-root MuiFormHelperText-contained helper_text_select MuiFormHelperText-marginDense"></p></div></div></div></div><div class="col-2 sc-eilVRo jTOvVS"><h2 aria-label="space" class=" ">&nbsp;</h2><div class="search-box-i"><div class="sc-bxivhb cDFCAd"><div class="MuiFormControl-root jss20124 selectFieldEnhance MuiFormControl-marginDense"><label class="MuiFormLabel-root MuiInputLabel-root jss20126 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined" data-shrink="false" for="Taxonomy-b71fd793-330f-400d-b32e-3d4e1217d6b6" style="font-size: 16px;">Taxonomy</label><div class="MuiInputBase-root MuiOutlinedInput-root   MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"><div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense" tabindex="0" role="button" aria-haspopup="listbox" aria-labelledby="Taxonomy-b71fd793-330f-400d-b32e-3d4e1217d6b6" id="Taxonomy-b71fd793-330f-400d-b32e-3d4e1217d6b6"><span>​</span></div><input type="hidden" id="Taxonomy-b71fd793-330f-400d-b32e-3d4e1217d6b6" value=""><svg class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg><fieldset aria-hidden="true" class="jss20119 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;"><legend class="jss20120" style="width: 0.01px;"><span>​</span></legend></fieldset></div><p class="MuiFormHelperText-root MuiFormHelperText-contained helper_text_select MuiFormHelperText-marginDense"></p></div></div></div></div></div><hr class="divider dashed dark  " style="width: calc(100% + 40px); height: 1px; border-width: 1px; margin: 20px -20px;"><div class="search-box-actions"><a class="search-box-action action-reset "><span class="action-reset-icon "><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></g></svg></span>Reset filters</a><button class="MuiButtonBase-root MuiButton-root MuiButton-contained search-box-action action-search newColorButton MuiButton-containedPrimary" tabindex="0" type="button"><span class="MuiButton-label">Search</span><span class="MuiTouchRipple-root"></span></button></div></div></div><div class="mb-15"></div></div><div><div class="MuiTabs-root"><div class="MuiTabs-scroller MuiTabs-fixed" style="overflow: hidden;"><div class="MuiTabs-flexContainer" role="tablist"><button class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected" tabindex="0" type="button" role="tab" aria-selected="true" style="padding-right: 50px; color: gray;"><span class="MuiTab-wrapper">AFFILIATIONS</span><span class="MuiTouchRipple-root"></span></button></div><span class="jss20115 jss20116 MuiTabs-indicator" style="left: 0px; width: 160px;"></span></div></div><div><div class="provider-list"><div class="table"><div class="head"><span>Provider name &amp; ID</span><span>Affiliation <br>type</span><span>NPI/FEIN</span><span style="position: relative; text-align: center; padding: 2px;"><div>Affiliate</div><br><div style="display: flex; justify-content: center; align-items: center; padding: 2px;"><span>Effective<br>Start&nbsp;date</span>&nbsp;&nbsp;<span>Effective<br>end&nbsp;date</span></div></span><span></span></div><div><div><div class="provider-list-item"><div>Emi Erickson<br>4000022</div><div>MCO to Entity</div><div>1245874239</div><div>08/19/2025</div><div></div><div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></g></svg></div><div><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="MuiCollapse-container MuiCollapse-hidden" style="min-height: 0px;"><div class="MuiCollapse-wrapper"><div class="MuiCollapse-wrapperInner"><div class="location-list"><div class="location-list-pp-header"><div>Service Location</div><div><div>Affiliate Location</div><div><div>Effective<br>Start date</div><div>Effective<br>end date</div></div></div><div>Status</div><div class="location-add-button-show">+ ADD</div></div><div class="location-item-pp"><div><div class="sc-dymIpo eeUFHz" color="#000000c4">+</div><div title="Region A" class="">Region A</div></div><div>08/19/2025</div><div>-</div><div>Active</div><div class="show-edit"><svg class="MuiSvgIcon-root show-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></g></svg> EDIT</div><div><svg class="MuiSvgIcon-root hide-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></g></svg> <span class="hide-delete" title="Information from the provider data cannot be removed and will be end dated.">REMOVE/END</span></div></div><div class="MuiCollapse-container MuiCollapse-hidden" style="min-height: 0px;"><div class="MuiCollapse-wrapper"><div class="MuiCollapse-wrapperInner"></div></div></div></div></div></div></div></div></div><div><td class="MuiTableCell-root MuiTablePagination-root" colspan="1000" style="overflow: hidden; border-bottom: none;"><div class="MuiToolbar-root MuiToolbar-regular MuiTablePagination-toolbar MuiToolbar-gutters"><div class="MuiTablePagination-spacer"></div><p class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit">Rows per page:</p><div class="MuiInputBase-root MuiTablePagination-input MuiTablePagination-selectRoot"><div class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input" tabindex="0" role="button" aria-haspopup="listbox" aria-label="Rows per page:">10</div><input type="hidden" value="10"><svg class="MuiSvgIcon-root MuiSelect-icon MuiTablePagination-selectIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg></div><p class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit">1-1 of 1</p><div class="MuiTablePagination-actions"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit Mui-disabled Mui-disabled" tabindex="-1" type="button" disabled="" title="Previous page" aria-label="Previous"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit Mui-disabled Mui-disabled" tabindex="-1" type="button" disabled="" title="Next page" aria-label="Next"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path></svg></span></button></div></div></td></div></div></div></div></div><div class="ActionButtonsContainer sc-gwVKww eWCHnX"><div class="sc-hXRMBi dGJUzr"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained jss20114 " tabindex="0" type="button" btnclass=""><span class="MuiButton-label">Back</span><span class="MuiTouchRipple-root"></span></button></div><button class="MuiButtonBase-root MuiButton-root MuiButton-contained jss20114 newColorButton MuiButton-containedPrimary" tabindex="0" type="button" id="nextBtn" btnclass="newColorButton"><span class="MuiButton-label">Next</span><span class="MuiTouchRipple-root"></span></button></div></div></div></div></div><div></div></div></div><div class="landing-page unregistered"><footer><div class="container"><div class="row aic "><div class="d-flex aic "><img src="https://d2x1m0yoqdp9ol.cloudfront.net/logo.svg" alt="Provider Portal Logo" width="109"><div class="foo-text"><strong>Discover Your Provider</strong> is a purpose-built software solution by HHS Technology Group.</div></div><div class="text-right undefined"><a class="link">Privacy Policy</a><a class="link">Terms &amp; Conditions</a><p class="small">V1.42.0</p><p class="small">©2025 HHS Technology Group. All rights reserved.</p></div></div></div></footer></div><div style="position: fixed; bottom: 30px; right: calc(-609px + 50vw); cursor: pointer; transition-duration: 0.2s; transition-timing-function: linear; transition-delay: 0s; opacity: 0; visibility: hidden; transition-property: opacity, visibility;"><div class="scroll-to-top"><svg class="MuiSvgIcon-root arrow-upward" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></g></svg>Back to top</div></div><div class="data-change-popup"></div></div></div></div></div><script type="text/javascript"></script><script src="/static/js/runtime~main.1b922744.js"></script><script src="/static/js/vendor~main.bcbf3d4d.chunk.js"></script><script src="/static/js/main.1c6aabe2.chunk.js"></script><a id="downloadAnchorElem" style="display:none">&nbsp;</a></body></html>

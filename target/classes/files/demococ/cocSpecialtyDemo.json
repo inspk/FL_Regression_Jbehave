@@ -1,0 +1,12 @@
+[
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Specialty}",
+      "timestamp": 0
+    }
+  }
+]

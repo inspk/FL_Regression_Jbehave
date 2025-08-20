@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.ProviderContracts.ProviderContracts</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/ProviderContracts/ProviderContracts.story" title="">
+<scenario keyword="Scenario:" title="Verify Provider Contracts for Individual Enrollment">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on <parameter>Enrollment</parameter> tab on header</step>
+<step outcome="successful">When search for enrollment data on IU portal by next parameters:
+<parameter><parameters>
+<names><name>enrollType</name><name>requestType</name></names>
+<values><value>Individual</value><value>Enrollment</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then check results after search</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on the &apos;Individual&apos; provider</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then verify Provider Contracts in IU</step>
+</scenario>
+<scenario keyword="Scenario:" title="Verify Provider Contracts for Entity Enrollment">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on <parameter>Enrollment</parameter> tab on header</step>
+<step outcome="successful">When search for enrollment data on IU portal by next parameters:
+<parameter><parameters>
+<names><name>enrollType</name><name>requestType</name></names>
+<values><value>Entity</value><value>Enrollment</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then check results after search</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on the &apos;Entity&apos; provider</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- Then verify Provider Contracts in IU
+
+!--</step>
+</scenario>
+<scenario keyword="Scenario:" title="Verify Provider Contracts for MCO Enrollment">
+<step outcome="comment">!-- Meta:</step>
+<step outcome="ignorable">!-- Given user navigated to landing page</step>
+<step outcome="ignorable">!-- When new user logs to Internal User portal with username - internal.user.dyp+cd@gmail.com and password - Internaluser1!</step>
+<step outcome="ignorable">!-- When implicit wait &apos;10&apos; seconds</step>
+<step outcome="ignorable">!-- When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="ignorable">!-- When implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- When click on Enrollment tab on header</step>
+<step outcome="ignorable">!-- When search for enrollment data on IU portal by next parameters:</step>
+<step outcome="comment">!-- |status|enrollType|requestType|</step>
+<step outcome="comment">!-- |New   |MCO       |Enrollment |</step>
+<step outcome="ignorable">!-- And implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- Then check results after search</step>
+<step outcome="ignorable">!-- When implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- Then click on the &apos;MCO&apos; provider</step>
+<step outcome="ignorable">!-- When implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- Then verify Provider Contracts in IU</step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

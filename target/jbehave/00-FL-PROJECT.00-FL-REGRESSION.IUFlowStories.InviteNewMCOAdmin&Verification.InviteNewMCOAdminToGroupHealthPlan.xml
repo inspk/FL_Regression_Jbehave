@@ -1,0 +1,16 @@
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/InviteNewMCOAdmin&amp;Verification/InviteNewMCOAdminToGroupHealthPlan.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">perform an action</asA>
+  <iWantTo keyword="So that">I can achieve a business goal</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Delete all existing gmails">
+<step outcome="successful">When login to user gmail</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then go to gmail to inbox page</step>
+<step outcome="successful">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="successful">When Delete all existing Gmails</step>
+<step outcome="successful">When implicit wait &apos;10&apos; seconds</step>
+</scenario>
+<scenario keyword="Scenario:" title="Invite a new MCO Admin to the Group Health Plan">
+<step outcome="successful">Given generate firstname, lastname, middlename and email credentials for &apos;Individual2&apos;</step>

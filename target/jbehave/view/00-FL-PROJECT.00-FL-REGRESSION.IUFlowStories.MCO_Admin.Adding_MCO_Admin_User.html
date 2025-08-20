@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.MCO_Admin.Adding_MCO_Admin_User</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/MCO_Admin/Adding_MCO_Admin_User.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Add MCO Admin user in system option</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then statistics should be displayed on dashboard page</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When navigate to 'System Options' page from user pop-up</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then click on 'Users' links in system options</div>
+<div class="step successful">When implicit wait '3' seconds</div>
+<div class="step successful">When Click on Add User button from User page</div>
+<div class="step successful">When implicit wait '3' seconds</div>
+<div class="step successful">Then Verifying Add new user pop-up is opened</div>
+<div class="step successful">When implicit wait '3' seconds</div>
+<div class="step successful">When fill User firstname field with value 'MCO'</div>
+<div class="step successful">When fill User lastname field with value 'ADMIN'</div>
+<div class="step successful">When fill user Email ID 'provideruser543@gmail.com'</div>
+<div class="step successful">When select role 'MCO Admin' from the user list</div>
+<div class="step successful">When implicit wait '15' seconds</div>
+<div class="step failed">When fill User lastname field with value 'ADMIN' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=138.0.7204.157)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SOMATHASIVASAMY', ip: '192.168.41.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.157, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62192}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a63da3fe10bd1eebc9b206ad22d044f7</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When select group 'Community Care Plan' from user list <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When fill User lastname field with value 'ADMIN' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on add button from the user page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When refresh page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When search for <span class="step parameter">'provideruser543@gmail.com'</span> in site visit user <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then fetch status of the added user <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When log out from IU portal <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When login to user gmail <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then go to gmail to inbox page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When search for message by email - <span class="step parameter">provideruser543@gmail.com</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on MCO ADMIN mail 'Registration in IU Portal' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on link in mail <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then set password 'Internaluser1!' for MCO ADMIN <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then Click on Back to LOgin <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Given user navigated to landing page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When new user logs to Internal User portal with username - <span class="step parameter">provideruser543@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on 'Agree' button in the Portal page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=138.0.7204.157)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SOMATHASIVASAMY', ip: '192.168.41.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.157, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62192}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a63da3fe10bd1eebc9b206ad22d044f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.clear(WebElementFacadeImpl.java:1069)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:684)
+	at com.hhstechgroup.ui.pages.sitevisit.UserPage.fillUserLastName(UserPage.java:68)
+	at com.hhstechgroup.steps.serenity.sitevisit.UserSteps.fillUserLastName(UserSteps.java:39)
+	at com.hhstechgroup.steps.serenity.sitevisit.UserSteps$$EnhancerByCGLIB$$9918c0ad.CGLIB$fillUserLastName$37(&lt;generated&gt;)
+	at com.hhstechgroup.steps.serenity.sitevisit.UserSteps$$EnhancerByCGLIB$$9918c0ad$$FastClassByCGLIB$$904368e2.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.hhstechgroup.steps.serenity.sitevisit.UserSteps$$EnhancerByCGLIB$$9918c0ad.fillUserLastName(&lt;generated&gt;)
+	at com.hhstechgroup.steps.jbehave.scenarios.sitevisit.UserScenario.fillUserLastName(UserScenario.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</pre>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

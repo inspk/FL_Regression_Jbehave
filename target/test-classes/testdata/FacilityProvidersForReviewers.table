@@ -1,0 +1,17 @@
+|index            |providerName          |fein        |taxEntityType         |mailingAddressLine1 |mailingAddressZip|mailingAddressCountycode|phone         |taxonomyCategory|primaryTaxonomy                    |licenseNumber|licenseType|licenseIssuedState|primaryServiceLocationAddressLine1|primaryServiceLocationZip |primaryServiceLocationCountyCode|profitStatus|
+|FacilityProvider1|Heritage Health Center|11-20792058 |Waiver - Self Directed|2528 DELL RANGE BLVD|77110-8343       |11160                   |(256)357-5678 |Waiver          |251B00000X -  Long Term Waiver     |6764655933   |License    |California        |2528 DELL RANGE BLVD              |64110-2345                |11170                           |Non-Profit  |
+|FacilityProvider2|Salvation Army        |12-20792059 |Waiver - Self Directed|1202 CLEVELAND AVE  |87110-8343       |22260                   |(356)357-5778 |Waiver          |251B00000X -  Long Term Waiver     |7764655933   |License    |California        |1202 CLEVELAND AVE                |74110-2345                |22270                           |Non-Profit  |
+|FacilityProvider3|Community Services    |13-20792060 |Waiver - Self Directed|2528 DELL RANGE BLVD|97110-8343       |33360                   |(456)357-5878 |Waiver          |251B00000X -  Long Term Waiver     |8764655933   |License    |California        |2528 DELL RANGE BLVD              |84110-2345                |33370                           |Non-Profit  |
+|FacilityProvider4|Jamaica Citadel       |14-20792061 |Waiver - Self Directed|1202 CLEVELAND AVE  |57110-8343       |44460                   |(556)357-5978 |Audiology       |332S00000X -  Hearing Aid Equipment|9764655933   |License    |California        |1202 CLEVELAND AVE                |94110-2345                |44470                           |Non-Profit  |
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+|firstName |lastName |provider         |npi        |gender   |speciality      |dob       |providerType |reasonCode   |trainingRequired    |
+|Winifred  |Pena     |winifred.pena    |1700020195 |Female   |Family Medicine |10/11/1985|Individual   |Reason Code 1|Training Required 1 |

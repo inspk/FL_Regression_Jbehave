@@ -1,0 +1,79 @@
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/ProviderContracts/ProviderContracts.story</div>
+<div class="scenario">
+<h2>Scenario: Verify Provider Contracts for Individual Enrollment</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Enrollment</span> tab on header</div>
+<div class="step successful">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>enrollType</th><th>requestType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Individual</td><td>Enrollment</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'Individual' provider</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then verify Provider Contracts in IU</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Provider Contracts for Entity Enrollment</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Enrollment</span> tab on header</div>
+<div class="step successful">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>enrollType</th><th>requestType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Entity</td><td>Enrollment</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'Entity' provider</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then verify Provider Contracts in IU
+
+!--</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Provider Contracts for MCO Enrollment</h2>
+<div class="comment">Meta:</div>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - internal.user.dyp+cd@gmail.com and password - Internaluser1!</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on Enrollment tab on header</div>
+<div class="step successful">When search for enrollment data on IU portal by next parameters:</div>
+<div class="comment">|status|enrollType|requestType|</div>
+<div class="comment">|New   |MCO       |Enrollment |</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'MCO' provider</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then verify Provider Contracts in IU</div>
+</div>
+</div>

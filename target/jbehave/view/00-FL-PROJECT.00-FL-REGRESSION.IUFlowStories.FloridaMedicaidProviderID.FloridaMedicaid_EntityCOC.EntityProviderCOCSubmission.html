@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.FloridaMedicaidProviderID.FloridaMedicaid_EntityCOC.EntityProviderCOCSubmission</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_EntityCOC/EntityProviderCOCSubmission.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Group Provider COC flow to Approve</h2>
+<div class="step successful">Given generate firstname, lastname, middlename and email credentials for 'Individual2'</div>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Provider Enrollment portal with username - <span class="step parameter">${email}</span> and password - <span class="step parameter">Aa123321!</span></div>
+<div class="step failed">When click on new 'Agree' button in the Portal page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Bhabanis-MacBook-Air.local', ip: '2405:201:a004:74:970:73a:817c:c900%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '11.0.27'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.127, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vv/wnbtrzvj5mx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50788}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8422bfd3e048c0da1cca3e6779f22ff9</span></div>
+<div class="step notPerformed">And close informational pop-up <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '3' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And click on <span class="step parameter">CoC</span> tab on header <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on Change request button on Coc page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When select taxonomy data type in coc pop-up <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click Create CoC  for group button  on categories modal window <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '15' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to 'Taxonomy / Specialty / Provider Type / License Certification Information' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on Add Taxonomy in Taxonomy Info section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>taxonomyDescription</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>225100000X</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>speciality</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>PHYSICAL THERAPIST - 091</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>effectiveStartDate</th><th>effectiveEndDate</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${date}</td><td>${expDate}</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on 'Add License/Certificate' in Taxonomy/Speciality/License Certification Info section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>licenseCertificateType</th><th>licenseCertificateNumber</th><th>effectiveEndDate2</th><th>effectiveStartDate2</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>HQA</td><td>12345</td><td>${expDate}</td><td>${date}</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When upload document 'Upload License/Certificate Document*' document <span class="step parameter">text_file.txt</span> in Taxonomy/Speciality/License Certification Info section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

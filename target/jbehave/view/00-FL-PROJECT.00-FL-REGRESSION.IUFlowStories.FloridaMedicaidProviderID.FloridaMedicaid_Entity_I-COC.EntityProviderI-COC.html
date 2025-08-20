@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.FloridaMedicaidProviderID.FloridaMedicaid_Entity_I-COC.EntityProviderI-COC</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_Entity_I-COC/EntityProviderI-COC.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Entity I-COC Flow</h2>
+<div class="step successful">Given generate firstname, lastname, middlename and email credentials for 'Individual2'</div>
+<div class="step successful">And get random npi from file 'SdNPI'</div>
+<div class="step successful">And save value '&lt;provider&gt;' to variable 'provider'</div>
+<div class="step successful">And save value '&lt;gender&gt;' to variable 'gender'</div>
+<div class="step successful">And save value '&lt;dob&gt;' to variable 'dob'</div>
+<div class="step successful">And save value '&lt;race&gt;' to variable 'race'</div>
+<div class="step successful">And save value '&lt;ssn&gt;' to variable 'ssn'</div>
+<div class="step successful">And save value '&lt;typeOfBusiness&gt;' to variable 'typeOfBusiness'</div>
+<div class="step successful">And save value '&lt;taxonomyCategory&gt;' to variable 'taxonomyCategory'</div>
+<div class="step successful">And save value '&lt;primaryTaxonomy&gt;' to variable 'primaryTaxonomy'</div>
+<div class="step successful">And save value '&lt;phoneno&gt;' to variable 'phoneno'</div>
+<div class="step successful">And save value '&lt;phoneno&gt;' to variable 'applicationContactNum'</div>
+<div class="step successful">And save value '&lt;address&gt;' to variable 'address'</div>
+<div class="step successful">And save value '&lt;mailingAddressZip&gt;' to variable 'mailingAddressZip'</div>
+<div class="step successful">And save value '&lt;mailingAddressCountycode&gt;' to variable 'mailingAddressCountycode'</div>
+<div class="step successful">And save value '&lt;licenseNumber&gt;' to variable 'licenseNumber'</div>
+<div class="step successful">And save value '&lt;licenseType&gt;' to variable 'licenseType'</div>
+<div class="step successful">And save value '&lt;licenseIssuedState&gt;' to variable 'licenseIssuedState'</div>
+<div class="step successful">And save value '&lt;primaryServiceLocationAddressLine1&gt;' to variable 'primaryServiceLocationAddressLine1'</div>
+<div class="step successful">And save value '&lt;primaryServiceLocationZip&gt;' to variable 'primaryServiceLocationZip'</div>
+<div class="step successful">And save value '&lt;primaryServiceLocationCountyCode&gt;' to variable 'primaryServiceLocationCountyCode'</div>
+<div class="step successful">And save value '&lt;profitStatus&gt;' to variable 'profitStatus'</div>
+<div class="step successful">And save value '&lt;countryOfBirth&gt;' to variable 'countryOfBirth'</div>
+<div class="step successful">And save value '&lt;stateOfBirth&gt;' to variable 'stateOfBirth'</div>
+<div class="step successful">And save value '&lt;stateOfBirth&gt;' to variable 'stateofBirth'</div>
+<div class="step successful">And save value '&lt;reasonCode&gt;' to variable 'reasonCode'</div>
+<div class="step successful">And save value '&lt;businessName&gt;' to variable 'businessName'</div>
+<div class="step successful">And save value '&lt;dbaName&gt;' to variable 'dbaName'</div>
+<div class="step successful">And save value '&lt;attentionLine&gt;' to variable 'attentionLine'</div>
+<div class="step successful">And save value '&lt;managingEmployeeType&gt;' to variable 'managingEmployeeType'</div>
+<div class="step successful">And save value '&lt;employeeStatus&gt;' to variable 'employeeStatus'</div>
+<div class="step successful">And save value '&lt;providerID&gt;' to variable 'providerID'</div>
+<div class="step successful">And save current <span class="step parameter">date</span> to variable 'date'</div>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">And save current <span class="step parameter">date</span> to variable 'date'</div>
+<div class="step successful">When save current date plus <span class="step parameter">1</span> years to variable 'expDate'</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">And implicit wait '10' seconds</div>
+<div class="step successful">When click on new 'Agree' button in the Portal page</div>
+<div class="step successful">And implicit wait '15' seconds</div>
+<div class="step successful">And click on <span class="step parameter">CoC</span> tab on header</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">When click on 'Add I Coc'</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When set providerid '4000408' in I-COC popup</div>
+<div class="step successful">When click search in I-Coc popup</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">When select provider in i-Coc popup</div>
+<div class="step successful">When click next in i-Coc popup</div>
+<div class="step successful">And implicit wait '20' seconds</div>
+<div class="step successful">When select taxonomy data type in coc pop-up</div>
+<div class="step successful">And implicit wait '10' seconds</div>
+<div class="step successful">When click Create CoC  for group button  on categories modal window</div>
+<div class="step successful">And implicit wait '30' seconds</div>
+<div class="step successful">When move to 'Taxonomy / Specialty / Provider Type / License Certification Information' section</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">When click on Add Taxonomy in Taxonomy Info section</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>taxonomyDescription</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>225100000X</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

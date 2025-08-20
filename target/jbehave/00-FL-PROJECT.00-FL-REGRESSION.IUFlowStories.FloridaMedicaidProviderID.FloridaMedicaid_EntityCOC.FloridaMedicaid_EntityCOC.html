@@ -1,0 +1,81 @@
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_EntityCOC/FloridaMedicaid_EntityCOC.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Florida Medicaid ID for Entity Enrollment-COC</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then statistics should be displayed on dashboard page</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When navigate to 'System Options' page from user pop-up</div>
+<div class="step successful">Then click on 'Approvals' links in system options</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When expand the <span class="step parameter">Group Providers</span> Approval configuration for 'Group Providers' Enrollment type Page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on View button for request 'Change of Circumstance'</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then verify configuration for FloridaMedicaid in SystemOption</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on Dashboard tab on header</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Enrollment</span> tab on header</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>enrollType</th><th>requestType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Entity</td><td>Enrollment</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'Entity' provider</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then verify BaseProviderID , LocationProviderID and status</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When edit date and status</div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</div>
+<div class="step successful">When implicit wait '40' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Providers</span> tab on header</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>enrollmentType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Entity</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'Entity' provider</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then verify BaseProviderID , LocationProviderID and status</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When edit date and status</div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</div>
+<div class="step successful">When implicit wait '40' seconds</div>
+<div class="step successful">When log out from portal</div>
+</div>
+</div>

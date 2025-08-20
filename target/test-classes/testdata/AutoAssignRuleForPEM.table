@@ -1,0 +1,2 @@
+|ruleName                      |selectapplicationtype |condition1      |enrollmenttypevalue       |
+|ProviderEnrollmentManagerRule |Enrollment            |Enrollment Type |Provider Enrolment Manager|

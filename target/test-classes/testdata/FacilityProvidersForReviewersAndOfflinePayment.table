@@ -1,0 +1,13 @@
+|index            |providerName          |fein        |taxEntityType         |npi       |mailingAddressLine1 |mailingAddressZip|mailingAddressCountycode|phone         |taxonomyCategory|primaryTaxonomy                    |licenseNumber|licenseType|licenseIssuedState|primaryServiceLocationAddressLine1|primaryServiceLocationZip |primaryServiceLocationCountyCode|profitStatus|
+|FacilityProvider1|Heritage Health Center|11-20792058 |Waiver - Self Directed|1891912846|2528 DELL RANGE BLVD|77110-8343       |11160                   |(256)357-5678 |Waiver          |251B00000X -  Long Term Waiver     |6764655933   |License    |California        |2528 DELL RANGE BLVD              |64110-2345                |11170                           |Non-Profit  |
+|FacilityProvider2|Salvation Army        |12-20792059 |Waiver - Self Directed|1710452743|1202 CLEVELAND AVE  |87110-8343       |22260                   |(356)357-5778 |Waiver          |251B00000X -  Long Term Waiver     |7764655933   |License    |California        |1202 CLEVELAND AVE                |74110-2345                |22270                           |Non-Profit  |
+
+
+
+
+
+
+
+
+
+

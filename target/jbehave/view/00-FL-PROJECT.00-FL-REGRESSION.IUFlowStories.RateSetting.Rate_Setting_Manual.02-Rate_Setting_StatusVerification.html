@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.RateSetting.Rate_Setting_Manual.02-Rate_Setting_StatusVerification</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/RateSetting/Rate_Setting_Manual/02-Rate_Setting_StatusVerification.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Group Provider Rate Setting Status Verification</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">And save current <span class="step parameter">date</span> to variable 'date'</div>
+<div class="step successful">And save value 'Mediplus Community Service' to variable 'providerLegalBusinessName'</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">And implicit wait '10' seconds</div>
+<div class="step successful">When click on new 'Agree' button in the Portal page</div>
+<div class="step successful">And implicit wait '20' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Enrollment</span> tab on header</div>
+<div class="step ignorable">!-- Then search with RequestID '456'</div>
+<div class="step ignorable">!-- When implicit wait '10' seconds</div>
+<div class="step ignorable">!-- Then check results after search</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- Then click on the 'Entity' provider</div>
+<div class="step ignorable">!-- When implicit wait '40' seconds</div>
+<div class="step ignorable">!-- Then verify provider status should be 'NEW' on the Enrollment tab in IU portal</div>
+<div class="step ignorable">!-- When click on 'Change status' button from the enrollment details page</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When set enrollment request New status to - 'Document Review'</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- And refresh page</div>
+<div class="step ignorable">!-- And implicit wait '40' seconds</div>
+<div class="step ignorable">!-- When click on 'Change status' button from the enrollment details page</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When set enrollment request document status to - 'Document Review Approved'</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- And refresh page</div>
+<div class="step ignorable">!-- And implicit wait '40' seconds</div>
+<div class="step ignorable">!-- When click on 'Change status' button from the enrollment details page</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When set enrollment request ready for screening status to - 'Under Screening'</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- And select provider reason 'Moving to Under screening' and 'screening note' Provider under screening</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When click on apply button in under screening page</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- And refresh page</div>
+<div class="step ignorable">!-- When implicit wait '20' seconds</div>
+<div class="step ignorable">!-- When submits screening with status 'UNDER SCREENING' and get specific request id and save it to 'requestId' with delay '10'</div>
+<div class="step ignorable">!-- When get authorization user 'cookies'</div>
+<div class="step ignorable">!-- When replace request id '456' screening file '100screening.xml'</div>
+<div class="step ignorable">!-- When send screening request 1 with file '100screening.xml' with '${cookies}'</div>
+<div class="step ignorable">!-- And implicit wait '40' seconds</div>
+<div class="step ignorable">!-- When click on Enrollment tab on header</div>
+<div class="step successful">And implicit wait '40' seconds</div>
+<div class="step successful">Then search with RequestID '456'</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then click on the 'Entity' provider</div>
+<div class="step successful">When implicit wait '30' seconds</div>
+<div class="step successful">Then verify provider status should be 'UNDER CLEARING HOUSE CHECK' on the Enrollment tab in IU portal</div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Change status' button from the enrollment details page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When set enrollment request Under Clearing House Check status to - <span class="step parameter">'Clearing House Check Completed'</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And select provider reason 'Positive Background Results' and 'Rate Setting Completed note' Provider under screening</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on apply button in under screening page</div>
+<div class="step successful">And implicit wait '40' seconds</div>
+<div class="step failed">Then verify provider status should be 'RATE SETTING IN PROGRESS' on the Enrollment tab in IU portal <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+<div class="step notPerformed">When log out from IU portal <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.hhstechgroup.steps.jbehave.scenarios.providerData.ProviderDataScenario.checkProviderStatus(ProviderDataScenario.java:235)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</pre>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

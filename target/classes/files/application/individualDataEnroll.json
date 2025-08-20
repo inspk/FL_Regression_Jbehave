@@ -1,0 +1,1111 @@
+[{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.First name}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Last name}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,6", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Date of birth}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,5", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Gender}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,4", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Suffix}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,9", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.May gender information be shared with members?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,7", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Country of birth}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,8", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.State}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,10", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.General information.Application contact email}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,1,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.Tax information.SSN}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,1,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.Tax information.Is this the number you use for tax reporting purposes?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,1,7", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.Tax information.Race}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,2,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.Tax information.Current/Previous NPI\API}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,2,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Identifying information.Current/Previous NPI\API.Were you previously enrolled in federal or state health care programs?}",
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,0,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Licensure.Provider type and program information.Provider type}",
+    "timestamp": 0
+  }
+},{
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "1,0,1", 
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Licensure.Provider type and program information.Program participation}",
+      "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,1,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "effective-date": "${Licensure.Licensure, Certification, Accreditation, Endorsement.Effective date}",
+      "expiration-date": "${Licensure.Licensure, Certification, Accreditation, Endorsement.Expiration date}",
+      "lcae-number": "${Licensure.Licensure, Certification, Accreditation, Endorsement.LCAE number}",
+      "state": "${Licensure.Licensure, Certification, Accreditation, Endorsement.State}",
+      "type": "${Licensure.Licensure, Certification, Accreditation, Endorsement.Type}"
+    }
+    ],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,2,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "begin-date": "${Licensure.Taxonomy.Begin date}",
+      "end-date": "${Licensure.Taxonomy.End date}",
+      "taxonomy-number": "${Licensure.Taxonomy.Taxonomy number}"
+    }
+    ],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,3,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Licensure.Specialties and subspecialties.Specialty}"],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "1,4,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "effective-date": "${Licensure.Insurance.Effective date}",
+      "expiration-date": "${Licensure.Insurance.Expiration date}",
+      "insurance-type": "${Licensure.Insurance.Insurance type}",
+      "insurer": "${Licensure.Insurance.Insurer}",
+      "minimum-limit": "${Licensure.Insurance.Minimum limit}",
+      "policy-number": "${Licensure.Insurance.Policy number}"
+    }
+    ],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,0,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "npi": "${Provider identifier number.National provider identification (NPI).NPI}",
+      "npi-date": "${Provider identifier number.National provider identification (NPI).NPI date}"
+    }
+    ],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,1,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "dea-date": "${Provider identifier number.Drug enforcement agency (DEA).DEA date}",
+      "dea-number": "${Provider identifier number.Drug enforcement agency (DEA).DEA number}"
+    }
+    ],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,2,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Provider identifier number.Other Medicaid state.Are you or have you been previously enrolled as a Title XIX Medicaid or Title XXI CHIP provider in another state?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,2,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "enrollment-begin-date": "${Provider identifier number.Other Medicaid state.Enrollment begin date}",
+      "enrollment-end-date": "${Provider identifier number.Other Medicaid state.Enrollment end date}",
+      "fee-paid": "${Provider identifier number.Other Medicaid state.Fee paid}",
+      "other-medicaid-state": "${Provider identifier number.Other Medicaid state.Other medicaid state}",
+      "site-visit": "${Provider identifier number.Other Medicaid state.Site visit}",
+      "site-visit-date": "${Provider identifier number.Other Medicaid state.Site visit date}",
+      "sort-fee-payment-date": "${Provider identifier number.Other Medicaid state.Sort fee payment date}",
+      "state-program": "${Provider identifier number.Other Medicaid state.State program}"
+      }
+   ]
+}}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,2,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Provider identifier number.Other Medicaid state.Are you enrolled in Medicare?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "2,3,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Provider identifier number.Pay for performance.Are you a participant in Medicare's pay for performance (P4P) incentive program?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,0,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Address Information.Physical address (P.O. box not accepted)}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Address Information.Building, suite}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,0,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Address Information.Zip}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,0,3",
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "fax": "${Service location billing.Address Information.Fax}",
+      "phone": "${Service location billing.Address Information.Phone}"
+      }],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,1,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [
+      {
+        "email": "${Service location billing.Location contact person(s).Email}",
+        "ext": "${Service location billing.Location contact person(s).Ext}",
+        "first-name": "${Service location billing.Location contact person(s).First name}",
+        "last-name": "${Service location billing.Location contact person(s).Last name}",
+        "phone": "${Service location billing.Location contact person(s).Phone}",
+        "position": "${Service location billing.Location contact person(s).Position}"
+      }
+    ]
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,2,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "-email-address": "${Service location billing.Email.Email address}",
+      "email-type": "${Service location billing.Email.Email type}"
+    }],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,3,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Service.Gender served}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,3,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Service.Languages supported}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,3,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Service location billing.Service.Age range served}"],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,3,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Service location billing.Service.Interpretive services}"],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,3,4", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Service.Accepting new patients?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,3,7", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Service.Are you a pharmacy or do you provide pharmacy services?*}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,3,13",
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Service location billing.Service.Available accessibility}"],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,4,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Servicing area.County}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,4,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Servicing area.Reservation}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,5,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Office hours.Is this location open 24 hours?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,5,11", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Office hours.Does this location provide emergency services after standard business hours?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,7,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Laboratory services.Do you bill laboratory services?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,6,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Service location billing.Special needs.Check all that location is equipped to serve}"],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "3,8,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Service location billing.Mailing Address.Is this mailing address the same as service location?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,0,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider information.Provider name}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,0,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider information.Provider address}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,0,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider information.Building, Suite}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,0,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider information.Zip}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,1,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider identifiers information.TIN/EIN}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,1,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider identifiers information.TIN/EIN number}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,1,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider identifiers information.NPI number}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,2,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider contact information.Provider contact name}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,2,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider contact information.Email Address}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,2,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider contact information.Telephone number}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,2,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Provider contact information.Fax number}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,4,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Authorized signature.Electronic signature of person submitting enrollment}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,4,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Authorized signature.Printed title of person submitting enrollment}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,4,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Authorized signature.Submission date}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,4,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Authorized signature.Requested ERA Start/Change/Cancel date}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "4,5,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic funds payment.Billing address.Is this billing address the same as the mailing address?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,0,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider information.Provider name}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,0,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider information.Provider address}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,0,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider information.Building, Suite}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,0,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider information.Zip}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,1,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider identifiers information.Provider identifiers}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,1,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider identifiers information.TIN/EIN identifier}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,1,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider identifiers information.National provider identification (NPI)}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,3,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider contact information.Provider contact name}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,3,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider contact information.Email address}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,3,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider contact information.Telephone number}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,3,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider contact information.Fax number}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,3,4", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider contact information.Preference of aggregation of remmittance data}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,3,7", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Provider contact information.Method of retrieval}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,5,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Authorized signature.Electronic signature of person submitting enrollment}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,5,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Authorized signature.Printed title of person submitting enrollment}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,5,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Authorized signature.Submission date}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,5,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Authorized signature.Requested ERA effective date}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,5,4", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Authorized signature.Remittance advice frequency}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,5,5", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Authorized signature.Begin date}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,5,6", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Authorized signature.End date}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "5,5,7", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Remittance advice.Authorized signature.Other details. Primary claims submission method}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "6,0,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic transaction submission..Does a third party billing agent submit your claims?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "6,0,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Electronic transaction submission..Does this Billing agent have access to make inquires on your behalf?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "6,0,4", 
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Electronic transaction submission..Indicate which of the following will be used to submit claims electronically:}"],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "6,1,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "table",
+    "value": [{
+      "protocol": "1",
+      "software-company-name": "${Electronic transaction submission.Billing software.Software company name}",
+      "software-name": "${Electronic transaction submission.Billing software.Software name}",
+      "version": "${Electronic transaction submission.Billing software.Version}"
+    }
+    ],
+    "timestamp": 0
+  }
+},  {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "6,1,1", 
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Electronic transaction submission.Billing software.Submit}"],
+    "timestamp": 0
+  }
+},  {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "6,1,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "array",
+    "value": ["${Electronic transaction submission.Billing software.Receive}"],
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "7,0,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Ownership..Have you ever had ownership in any organization that has billed, or is currently billing Medicare or Title XIX program services?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "7,0,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Ownership..Have you ever managed or directed any organization that has billed or is currently billing Medicare, Title XIX or Title XXI program services?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "7,0,4", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Ownership..Do you have an ownership interest of 5% or greater in a subcontractor for your business or practice? (A subcontractor is an individual, agency, or organization to which an applicant/provider has contracted or delegated some of its management functions)}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "7,0,6", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${..Do any of the members of your immediate family (spouse, parent, child, sibling) have ownership of 5% or greater in a subcontractor to your business or practice?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.1. Have you or any member of your immediate family or household ever been convicted, assessed, or excluded from the Title XVIII, Title XIX, or Title XX program or any federal program due to fraud, obstruction of an investigation, or a controlled substance violation?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.2. Do you, under any name or business identity, have any outstanding overpayments with Title XIX or any other federal program?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,4", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.3. Have you ever been convicted of a felony under federal or state law?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,8", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.4. Administrative sanction(s)?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,10", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.5. Professional board disciplinary action(s)?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,12", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.6. Program exclusions?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,14", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.7. Suspension of payments?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,16", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.8. Civil monetary penalty(s)?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,17", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.Date of occurrence3}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,18", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.9. Assessment(s)?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,19", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.Date of occurrence4}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,20", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.10. Program debarment(s)?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,22", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.11. Criminal fine(s)?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,23", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.Date of occurrence6}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,24", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.12. Restitution order(s)?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,26", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.13. Pending civil judgment(s)?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,28", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.14. Pending criminal judgment(s)?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "8,0,30", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${Exclusion / Sanction.Exclusion / Sanction information.15. Judgment(s) pending under the false claims act?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "9,0,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${PCCM.PCCM.Do you wish to participate in the PCCM?}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "9,1,0", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${PCCM.PASSPORT Information.}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "9,1,2", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${PCCM.PASSPORT Information.How many clients will you agree to accept?(up to 1,000 per solo provider)}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "9,1,3", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${PCCM.PASSPORT Information.24-Hour phone number}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "9,1,4", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${PCCM.PASSPORT Information.Call prior to member assignment}",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "9,1,6", 
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "${PCCM.PASSPORT Information.Group NPI}",
+    "timestamp": 0
+  }
+}
+]

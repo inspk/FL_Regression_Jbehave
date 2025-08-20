@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.Inidvidual-Entity_MCO_Affiliation.Individual_MCO_Affiliation_I-COC</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/Inidvidual-Entity_MCO_Affiliation/Individual_MCO_Affiliation_I-COC.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Individual Provider I-COC flow</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">And save current <span class="step parameter">date</span> to variable 'date'</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">And implicit wait '15' seconds</div>
+<div class="step successful">And click on <span class="step parameter">CoC</span> tab on header</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">When click on 'Add I Coc'</div>
+<div class="step successful">When set enrollment type 'Individual' in i-Coc popup</div>
+<div class="step failed">When click search in I-Coc popup <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.157)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SOMATHASIVASAMY', ip: '192.168.2.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.157, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64665}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d17fcea87f0593f43bc11eeae9f6f1dc
+*** Element info: {Using=xpath, value=//div[@aria-label='responsive-dialog-title']}</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When select provider in i-Coc popup <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click next in i-Coc popup <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When select add affiliation data type in i-coc popup <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click Create CoC  for group button  on categories modal window <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '15' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then affiliate 'MCO' with provider of 'Long Term Care' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to new 'Summary' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When wait for screening process execution during '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When submit application <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '15' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on Go to Change of Circumstance button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When log out from portal <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.157)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SOMATHASIVASAMY', ip: '192.168.2.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.157, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64665}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d17fcea87f0593f43bc11eeae9f6f1dc
+*** Element info: {Using=xpath, value=//div[@aria-label='responsive-dialog-title']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:231)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:16)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:208)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.findBy(WebElementFacadeImpl.java:232)
+	at com.hhstechgroup.ui.panels.AbstractPanel.findBy(AbstractPanel.java:64)
+	at com.hhstechgroup.ui.panels.coc.SelectCategoryModalWindow.clickSearchICoc(SelectCategoryModalWindow.java:102)
+	at com.hhstechgroup.steps.serenity.peportalpages.CocSteps.searchICOC(CocSteps.java:247)
+	at com.hhstechgroup.steps.serenity.peportalpages.CocSteps$$EnhancerByCGLIB$$ccbcbc2a.CGLIB$searchICOC$9(&lt;generated&gt;)
+	at com.hhstechgroup.steps.serenity.peportalpages.CocSteps$$EnhancerByCGLIB$$ccbcbc2a$$FastClassByCGLIB$$29b361c5.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.hhstechgroup.steps.serenity.peportalpages.CocSteps$$EnhancerByCGLIB$$ccbcbc2a.searchICOC(&lt;generated&gt;)
+	at com.hhstechgroup.steps.jbehave.scenarios.CocPageScenario.clickSearchIcoc(CocPageScenario.java:353)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</pre>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.FloridaMedicaidProviderID.FloridaMedicaid_Individual_I-COC.FloridaMedicaid_Individual_I-COC</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_Individual_I-COC/FloridaMedicaid_Individual_I-COC.story" title="">
+<scenario keyword="Scenario:" title="Verify Florida Medicaid ID for Individual Enrollment- ICOC">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then statistics should be displayed on dashboard page</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When navigate to &apos;System Options&apos; page from user pop-up</step>
+<step outcome="successful">Then click on &apos;Approvals&apos; links in system options</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When expand the Group Providers Approval configuration for &apos;Individual Providers&apos; Enrollment type Page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on View button for request &apos;Change of Circumstance&apos;</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then verify configuration for FloridaMedicaid in SystemOption</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on Dashboard tab on header</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on <parameter>Enrollment</parameter> tab on header</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then search with ProviderID &apos;4000002&apos;</step>
+<step outcome="successful">Then check results after search</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on the &apos;Individual&apos; provider</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">Then verify BaseProviderID , LocationProviderID and status</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When edit date and status</step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</step>
+<step outcome="successful">When implicit wait &apos;40&apos; seconds</step>
+<step outcome="successful">When click on <parameter>Providers</parameter> tab on header</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then search with ProviderID &apos;4000002&apos;</step>
+<step outcome="successful">Then check results after search</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on the &apos;Individual&apos; provider</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">Then verify BaseProviderID , LocationProviderID and status</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When edit date and status</step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</step>
+<step outcome="successful">When implicit wait &apos;40&apos; seconds</step>
+<step outcome="successful">When log out from portal</step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

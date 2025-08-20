@@ -1,0 +1,8 @@
+|index             |firstName|lastName|providerName          |fein        |taxEntityType         |npi       |mailingAddressLine1    |mailingAddressZip|mailingAddressCountycode|phone         |taxonomyCategory|primaryTaxonomy               |licenseNumber|licenseType|licenseIssuedState|primaryServiceLocationAddressLine1|primaryServiceLocationZip |primaryServiceLocationCountyCode|profitStatus|
+|DuplicityFacility1|Elias    |Sarah   |Heritage Health Center|61-20792058 |Waiver - Self Directed|1336259845|12 Wyman Ct, Laramie WY|77110-8343       |11160                   |(856)357-5678 |Waiver          |251B00000X -  Long Term Waiver|8764655933   |License    |California        |12 Wyarno Rd, Sheridan WY         |64110-2345                |11170                           |Non-Profit  |
+|DuplicityFacility2|Elias    |Sarah   |Heritage Health Center|61-20792058 |Waiver - Self Directed|1336259845|12 Wyman Ct, Laramie WY|77110-8343       |11160                   |(856)357-5678 |Waiver          |251B00000X -  Long Term Waiver|8764655933   |License    |California        |12 Wyarno Rd, Sheridan WY         |64110-2345                |11170                           |Non-Profit  |
+
+
+
+
+

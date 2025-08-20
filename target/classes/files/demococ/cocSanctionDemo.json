@@ -1,0 +1,54 @@
+[
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Sanction.Exclusion / Sanction information.1. Have you or any member of your immediate family or household ever been convicted, assessed, or excluded from the Title XVIII, Title XIX, or Title XX program or any federal program due to fraud, obstruction of an investigation, or a controlled substance violation?}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,1",
+    "timestamp": 0,
+    "answer": {
+      "type": "table",
+      "value": [
+        {
+          "first-name": "${Sanction.Exclusion / Sanction information.First name}",
+          "last-name": "${Sanction.Exclusion / Sanction information.Last name}"
+        }
+      ],
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,2",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${Sanction.Exclusion / Sanction information.2. Do you, under any name or business identity, have any outstanding overpayments with Title XIX or any other federal program?}",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,3",
+    "timestamp": 0,
+    "answer": {
+      "type": "table",
+      "value": [
+        {
+          "federal-program-name": "${Sanction.Exclusion / Sanction information.Federal program name}",
+          "last/business-name": "${Sanction.Exclusion / Sanction information.Last/Business name}",
+          "first-name": "${Sanction.Exclusion / Sanction information.First name}"
+        }
+      ],
+      "timestamp": 0
+    }
+  }
+
+]

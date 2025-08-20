@@ -1,0 +1,23 @@
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/Indicators/ProviderIndicatorFromIU.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> n Internal User</div>
+<div class="element asA"><span class="keyword asA">I want to</span> verify the Provider Indicator tab for enrolled providers</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can ensure indicators are updated and displayed correctly</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Provider Indicator Verification for Enrolled Providers</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When user calls Provider Indicator API</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When user clicks on Providers tab</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When searchAndVerifyIndicatorsForAllPES_IDs</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+</div>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="04- individual registration and submission" skipped="0" tests="2" time="691.28" timestamp="2025-08-11 06:49:04"><testcase name="Delete all existing gmails"/><testcase name="Individual Provider Enrollment Flow"><error message="Unable to set field value" type="java.lang.IllegalStateException">Unable to set field value</error><system-err>Unable to set field value
+com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$0(BeanUtils.java:43)
+com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$1(BeanUtils.java:35)
+com.hhstechgroup.util.common.BeanUtils.copyPropertiesInOrder(BeanUtils.java:34)
+com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps.setServiceLocationInfo(EnrollmentApplicationSteps.java:880)
+com.hhstechgroup.steps.jbehave.scenarios.enrollmentapplication.ApplicationSectionScenario.setServiceLocationInfo1(ApplicationSectionScenario.java:774)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</system-err></testcase></testsuite>

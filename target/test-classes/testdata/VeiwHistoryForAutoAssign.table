@@ -1,0 +1,2 @@
+|ruleName            |selectapplicationtype |condition1      |enrollmenttypevalue |newenrollmenttypevalue |
+|GroupEnrollmentRule |Enrollment            |Enrollment type |Group               |Pharmacy               |

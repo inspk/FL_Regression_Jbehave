@@ -1,0 +1,81 @@
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_Enrollments/FloridaMedicaid_Entity.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Florida Medicaid ID for Entity Enrollment</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then statistics should be displayed on dashboard page</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When navigate to 'System Options' page from user pop-up</div>
+<div class="step successful">Then click on 'Approvals' links in system options</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When expand the <span class="step parameter">Group Providers</span> Approval configuration for 'Group Providers' Enrollment type Page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on View button for request 'Enrollment'</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then verify configuration for FloridaMedicaid in SystemOption</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on Dashboard tab on header</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Enrollment</span> tab on header</div>
+<div class="step successful">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>status</th><th>enrollType</th><th>requestType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Approved</td><td>Individual</td><td>Enrollment</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">Then fetch PESID</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step failed">Then click on the 'Entity' provider <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Bhabanis-MacBook-Air.local', ip: '2405:201:a004:74:970:73a:817c:c900%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '11.0.27'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vv/wnbtrzvj5mx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59478}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2b0d91da100daacc3a269f20086740c</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then verify BaseProviderID , LocationProviderID and status <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When edit date and status <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '40' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And click on <span class="step parameter">Providers</span> tab on header <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>enrollmentType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Individual</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then check results after search <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on the 'Entity' provider <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then verify BaseProviderID, LocationProviderID and status for Provider tab <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When edit date and status <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>

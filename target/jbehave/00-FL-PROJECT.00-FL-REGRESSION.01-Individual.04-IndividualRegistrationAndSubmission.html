@@ -1,0 +1,927 @@
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/01-Individual/04-IndividualRegistrationAndSubmission.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Delete all existing gmails</h2>
+<div class="step successful">When login to user gmail</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then go to gmail to inbox page</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When Delete all existing Gmails</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Individual Provider Enrollment Flow</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given generate firstname, lastname, middlename and email credentials for 'Individual2'</div>
+<div class="step">And get random npi from file 'SdNPI'</div>
+<div class="step">And save value '&lt;provider&gt;' to variable 'provider'</div>
+<div class="step">And save value '&lt;gender&gt;' to variable 'gender'</div>
+<div class="step">And save value '&lt;dob&gt;' to variable 'dob'</div>
+<div class="step">And save value '&lt;race&gt;' to variable 'race'</div>
+<div class="step">And save value '&lt;ssn&gt;' to variable 'ssn'</div>
+<div class="step">And save value '&lt;typeOfBusiness&gt;' to variable 'typeOfBusiness'</div>
+<div class="step">And save value '&lt;taxonomyCategory&gt;' to variable 'taxonomyCategory'</div>
+<div class="step">And save value '&lt;primaryTaxonomy&gt;' to variable 'primaryTaxonomy'</div>
+<div class="step">And save value '&lt;phoneno&gt;' to variable 'phoneno'</div>
+<div class="step">And save value '&lt;phoneno&gt;' to variable 'applicationContactNum'</div>
+<div class="step">And save value '&lt;address&gt;' to variable 'address'</div>
+<div class="step">And save value '&lt;mailingAddressZip&gt;' to variable 'mailingAddressZip'</div>
+<div class="step">And save value '&lt;mailingAddressCountycode&gt;' to variable 'mailingAddressCountycode'</div>
+<div class="step">And save value '&lt;licenseNumber&gt;' to variable 'licenseNumber'</div>
+<div class="step">And save value '&lt;licenseType&gt;' to variable 'licenseType'</div>
+<div class="step">And save value '&lt;licenseIssuedState&gt;' to variable 'licenseIssuedState'</div>
+<div class="step">And save value '&lt;primaryServiceLocationAddressLine1&gt;' to variable 'primaryServiceLocationAddressLine1'</div>
+<div class="step">And save value '&lt;primaryServiceLocationZip&gt;' to variable 'primaryServiceLocationZip'</div>
+<div class="step">And save value '&lt;primaryServiceLocationCountyCode&gt;' to variable 'primaryServiceLocationCountyCode'</div>
+<div class="step">And save value '&lt;profitStatus&gt;' to variable 'profitStatus'</div>
+<div class="step">And save value '&lt;countryOfBirth&gt;' to variable 'countryOfBirth'</div>
+<div class="step">And save value '&lt;stateOfBirth&gt;' to variable 'stateOfBirth'</div>
+<div class="step">And save value '&lt;stateOfBirth&gt;' to variable 'stateofBirth'</div>
+<div class="step">And save value '&lt;reasonCode&gt;' to variable 'reasonCode'</div>
+<div class="step">And save value '&lt;businessName&gt;' to variable 'businessName'</div>
+<div class="step">And save value '&lt;dbaName&gt;' to variable 'dbaName'</div>
+<div class="step">And save value '&lt;attentionLine&gt;' to variable 'attentionLine'</div>
+<div class="step">And save value '&lt;managingEmployeeType&gt;' to variable 'managingEmployeeType'</div>
+<div class="step">And save value '&lt;employeeStatus&gt;' to variable 'employeeStatus'</div>
+<div class="step">And save value '&lt;providerID&gt;' to variable 'providerID'</div>
+<div class="step">And save current date to variable 'date'</div>
+<div class="step">When save current date plus 1 years to variable 'expDate'</div>
+<div class="step">When save yesterday's date to variable 'yesterdayDate'</div>
+<div class="step">When user navigated to landing page</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When click create account link in the landing page</div>
+<div class="step">And wait for screening process execution during '5' seconds</div>
+<div class="step">When fill Email with value '${email}' on registration page</div>
+<div class="step">And fill Password with value 'Aa123321!' on registration page</div>
+<div class="step">When click on continue button in the registartion page</div>
+<div class="step">And fill Organization Name field with value 'HHSTECHGROUP' on registration page</div>
+<div class="step">And fill Organization description with value 'HHSOrg' on registration page</div>
+<div class="step">When click on continue button in the registartion page</div>
+<div class="step">And fill First name  with value '${firstName}' on registration page</div>
+<div class="step">And fill Last name with value '${lastName}' on registration page</div>
+<div class="step">And fill Phone with value '${phoneno}' on registration page</div>
+<div class="step">When click on create account link in the registartion page</div>
+<div class="step">When login to user gmail</div>
+<div class="step">Then go to gmail to inbox page</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When search for message by email - ${email}</div>
+<div class="step">When open new 'Registration in ProviderPortal' email</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then click on new user link from the gmail</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then navigate Back to Login page</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">And refresh page</div>
+<div class="step">When implicit wait '15' seconds</div>
+<div class="step">When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!</div>
+<div class="step">When click on new 'Agree' button in the Portal page</div>
+<div class="step">When skip help tour if exists</div>
+<div class="step">And user click on Individual Enrollment type</div>
+<div class="step">When implicit wait '50' seconds</div>
+<div class="step">When move to 'Identifying Information' section</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When select 'To ONLY bill for services and receive payment directly from Medicaid' for Applicatiion type determination</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then select 'SOLE PROPRIETOR' for practice type</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">And To fill the identifying information section for Enrollment:
+|title |countryOfBirth   |stateofBirth   |
+|Mr.   |${countryOfBirth}|${stateOfBirth}|</div>
+<div class="step">And To fill the identifying information section for Enrollment:
+|firstName   |lastName   |dateOfBirth|appliationContactName   |applicationContactNum|ssn    |email    |middleName   |taxExempt |businessName   |dbaName   |
+|${firstName}|${lastName}|${dob}     |${firstName} ${lastName}|${phoneno}           |${ssn} |${email} |${middleName}|Yes       |${businessName}|${dbaName}|</div>
+<div class="step">When fill the Gender</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When move to 'Taxonomy / Specialty / Provider Type / License Certification Information' section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When click on Add Taxonomy in Taxonomy Info section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Taxonomy/Speciality/License Certification section info:
+|taxonomyDescription  |
+|22510000             |</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Taxonomy/Speciality/License Certification section info:
+|effectiveStartDate|effectiveEndDate|
+|${date}           |${expDate}      |</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When click on 'Add License/Certificate' in Taxonomy/Speciality/License Certification Info section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Taxonomy/Speciality/License Certification section info:
+|licenseCertificateType|licenseCertificateNumber|effectiveEndDate2|effectiveStartDate2 |
+|DOH                   |12345                   |${expDate}       |${date}             |</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When upload document 'Upload License/Certificate Document*' document text_file.txt in Taxonomy/Speciality/License Certification Info section</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When click on 'Add' in Taxonomy/Speciality/License Certification Info section</div>
+<div class="step">When implicit wait '3' seconds</div>
+<div class="step">Then save the details of Taxonomy/Speciality/License Certification section info</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When move to 'Provider Identifiers' section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Provider Identification Number:
+|npi      |
+|${npi}   |</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">And To fill the Provider Identification Number:
+|medicareCrossoverClaim|medicaidState|claimSubmit       |
+|No                    |No           |Direct Data Entry |</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When move to 'Other Credentialing Information' section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">Then click on the Add Line</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When To fill the Other Credentialing Information Info for Enrollment:
+|typeOfTraining|organizationName|effectiveStartDate|effectiveEndDate|
+|Internship    |Mediplus        |${date}           |${expDate}      |</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When upload document 'Upload Training Document' document text_file.txt in Other Credentialing Information Info section</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then click on the Save button</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When click on the Add line</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When To fill the Other Credentialing Information Info for Enrollment:
+|gradutaionType    |medicalSchool|professionalSchoolName|professionalSchoolAddress|
+|US/Canada Graduate|Yes          |CANVAS CAMPUS         |${address}               |</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then click on the Save button</div>
+<div class="step">When implicit wait '15' seconds</div>
+<div class="step">When move to 'Employment Authorization Information' section</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When To fill the Employment Authorization Information for Enrollment:
+|usCitizen|
+|Yes      |</div>
+<div class="step">When implicit wait '2' seconds</div>
+<div class="step">When move to 'Professional Liability Insurance Information' section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When To fill the Proffesional Liability Insurance Info for Enrollment:
+|deniedProffesionalLiabilityInsurance|deniedRenewal|malpractice1|unfavourableJudgement|malpracticeCurrentlyPending|mentalOrPhysicalHealthCondition|malPracticeInfo|malPracticeHealthInfo|
+|No                                  |No           |No          |No                   |No                        |No                             |No             |No                   |</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When move to 'Service Location' section</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When click on Add Location in Service Location section</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">And To fill the Service Location info:
+|effectiveDate|locationName  |addressLine1                         |attentionLine|email   |phoneNumber|mailingAddress|mailingAddressContactInfo|
+|${date}      |Primary clinic|${primaryServiceLocationAddressLine1}|${firstName} |${email}|${phoneno} |Yes           |Yes                      |</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When click on Add Taxonomy/Speciality in Service Location section</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+|specialty               |
+|PHYSICAL THERAPIST - 091|</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then select Taxonomy in Program Participation</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+|locationTaxonomyEffectiveStartDate|locationTaxonomyEffectiveEndDate|
+|${date}                           |${expDate}                      |</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then save Taxonomy in Taxonomy/Speciality</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When upload document 'Claims Documents' document text_file.txt in Service Location Claim Section</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">And To fill the Service Location info:
+|languageSupported|genderServed|ageRangesServed|
+|English          |Male        |All ages served|</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">And To fill the Service Location info:
+|acceptingNewPatients|ttdTty|county   |open24Hours|emergencyServices|patientRecords|personnelRecords|phoneNumberOfPatients|mannerOfService|
+|No                  |No    |allCounty|Yes        |No               |Yes           |Yes             |${phoneno}           |In-Person      |</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Service Location info:
+|wheelChairAccessibility|parkingSpaceForHandicapped|assistiveListeningDevices|accessibleExamRooms|
+|No                     |No                        |No                       |No                 |</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">Then click new Save button</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When move to 'Address Details' section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Address Details:
+|mailingAddressLine1|effectiveStartDate|effectiveEndDate|
+|${address}         |${date}           |${expDate}      |</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Concact Person Details:
+|attentionLine   |phone     |email    |fax         |ext    |
+|Landmark        |${phoneno}|${email} |111-111-1111 |333333 |</div>
+<div class="step">And To fill the Address Details:
+|homeOrCorpOfficeAddress|homeOrCorpOfficeContactPersonDetails|
+|Yes                    |Yes                                 |</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When click Next button in Address Details</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">!-- When move to 'Affiliation' section</div>
+<div class="step">!-- And implicit wait '5' seconds</div>
+<div class="step">!-- When click Add Affiliation button in affiliation section</div>
+<div class="step">!-- And implicit wait '5' seconds</div>
+<div class="step">!-- When set npi search value '1699444315' in affiliation section</div>
+<div class="step">!-- And implicit wait '5' seconds</div>
+<div class="step">!-- When set type search value 'Entity' in affiliation section</div>
+<div class="step">!-- And implicit wait '5' seconds</div>
+<div class="step">!-- When click search by npi in affiliation section</div>
+<div class="step">!-- And implicit wait '5' seconds</div>
+<div class="step">!-- When click add button in affiliation section</div>
+<div class="step">!-- And implicit wait '3' seconds</div>
+<div class="step">!-- When click on 'Do you want to affiliate with Primary service location ?' to 'true' in affiliation popup</div>
+<div class="step">!-- And implicit wait '3' seconds</div>
+<div class="step">!-- Then select Taxonomy and Provider Type of Entity in Affiliation section</div>
+<div class="step">!-- When implicit wait '2' seconds</div>
+<div class="step">!-- When fill the location effective start '${date}' and location effective end '${expDate}' in affiliation popup</div>
+<div class="step">!-- When implicit wait '2' seconds</div>
+<div class="step">!-- Then click on 'Next' button</div>
+<div class="step">!-- When implicit wait '5' seconds</div>
+<div class="step">!-- When select '225100000X - PHYSICAL THERAPIST' with '${date}' and '${expDate}' in affiliation popup</div>
+<div class="step">!-- And implicit wait '3' seconds</div>
+<div class="step">!-- When click add button in affiliation pop-up</div>
+<div class="step">!-- And implicit wait '3' seconds</div>
+<div class="step">When move to 'Ownership' section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Ownership Section for Enrollment:
+|personOwnership1|personOrEntityOwnership|subcontractorOwnership|familymembersOwnership|billedEntityOwnership|
+|No              |No                     |No                    |No                    |No                   |</div>
+<div class="step">When implicit wait '10' seconds</div>
+<div class="step">When move to 'Key Personnel' section</div>
+<div class="step">When implicit wait '2' seconds</div>
+<div class="step">Then click on the Addline</div>
+<div class="step">When implicit wait '2' seconds</div>
+<div class="step">When To fill the OwerKeyPersonel Information for Enrollment:
+|managingEmployeeType    |employeeStatus   |npi   |race   |gender   |firstName    |middleName    |lastName   |ssn    |dob     |countryOfBirth   |stateOfBirth    |ssnStartDate |ssnEndDate |ssnAddress |
+|ADMINISTRATOR           |${employeeStatus}|${npi}|${race}|${gender}|${firstName} |${middleName} |${lastName}|${ssn} |${dob}  |${countryOfBirth}|${stateOfBirth} |${date}      |${expDate} |${address} |</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then click on the Save button in Key Personel</div>
+<div class="step">When implicit wait '15' seconds</div>
+<div class="step">When move to 'Exclusion/Sanction Information' section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Exclusion Sanction Section:
+|fraudAlligations|fiduciaryResponsibility |perjury |serviceAbuse |criminalInvestigation |unlawfulSubstances |healthCareCrime |convictedFelony|
+|No              |No                      |No      |No           |No                    |No                 |No              |No             |</div>
+<div class="step">And To fill the Exclusion Sanction Section:
+|paymentInformation |disclosureInformation |businessOrProffesionalLicense|suspensionOfAccreditation|suspendedOrExcluded|paymentSuspension |falseClaimsAct |owesMoneyToMedicaid|
+|No                 |No                    |No                           |No                       |No                 |No                |No             |No                 |</div>
+<div class="step">When implicit wait '2' seconds</div>
+<div class="step">When move to 'EFT Information' section</div>
+<div class="step">When implicit wait '2' seconds</div>
+<div class="step">Then click on the Addline</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then select 'Name of the Authorized Person' in EFT Information Section</div>
+<div class="step">When implicit wait '2' seconds</div>
+<div class="step">When add servicelocation providertype</div>
+<div class="step">Then To fill the EFT Information:
+|financialInstitution |accountHolderName|EFTRoutingNumber |accountNumber |accountType |startDate       |
+|Pharma medi ltd      |${firstName}     |123456           |222333444     |Savings     |${yesterdayDate}|</div>
+<div class="step">When implicit wait '2' seconds</div>
+<div class="step">When upload file 'EFT supporting Document' document text_file.txt</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then click on the Save button in Key Personel</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When move to 'Upload Documents' section</div>
+<div class="step">When implicit wait '10' seconds</div>
+<div class="step">When upload new 'Additional Documents(Optional)' document text_file.txt</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When move to 'Authorized Signatory' section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">Then select 'Authorized Signatory Name' in Authorized Signatory section</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">When move to new 'Provider Agreement' section</div>
+<div class="step">And implicit wait '10' seconds</div>
+<div class="step">When click on sign button in the provider agreement section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And sign1 provider application for user '${firstName} ${lastName}'</div>
+<div class="step">And implicit wait '40' seconds</div>
+<div class="step">When move to new 'Summary' section</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And To fill the Concact Person Details:
+|firstName   |lastName   |
+|${firstName}|${lastName}|</div>
+<div class="step">Then Agree Term and conditions to Sign</div>
+<div class="step">When submit enrollment application</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When click on navigate to dashboard for Proceed To Sign</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When log out from PE portal</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And refresh page</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When new user logs to Provider Enrollment portal with username - johny.providers+68031@gmail.com and password - Aa123321!</div>
+<div class="step">When click on new 'Agree' button in the Portal page</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When navigate to Message Center</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When click on 'Confirm your affiliation to the individual' in message center</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And sign provider application for user '${firstName} ${lastName}'</div>
+<div class="step">And implicit wait '30' seconds</div>
+<div class="step">When log out from PE portal</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">And refresh page</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!</div>
+<div class="step">When click on new 'Agree' button in the Portal page</div>
+<div class="step">And implicit wait '5' seconds</div>
+<div class="step">When click on Proceed To Sign button</div>
+<div class="step">And implicit wait '10' seconds</div>
+<div class="step">And sign provider application for user '${firstName} ${lastName}'</div>
+<div class="step">When implicit wait '30' seconds</div>
+<div class="step">When click navigate to dashboard link after sign</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then save the tracking number of the provider</div>
+<div class="step">When implicit wait '5' seconds</div>
+<div class="step">Then rewrite stage of credentials to 'Submitted' for 'Individual2'</div>
+<table>
+<thead>
+<tr>
+<th>index</th><th>gender</th><th>dob</th><th>ssn</th><th>fein</th><th>organizationLegalBusinessName</th><th>fax</th><th>providerID</th><th>ext</th><th>businessName</th><th>typeOfBusiness</th><th>dbaName</th><th>claimSubmit</th><th>address</th><th>attentionLine</th><th>mailingAddressZip</th><th>mailingAddressCountycode</th><th>phoneno</th><th>taxonomyCategory</th><th>primaryTaxonomy</th><th>licenseNumber</th><th>licenseType</th><th>primaryServiceLocationAddressLine1</th><th>primaryServiceLocationZip</th><th>primaryServiceLocationCountyCode</th><th>profitStatus</th><th>countryOfBirth</th><th>stateOfBirth</th><th>reasonCode</th><th>managingEmployeeType</th><th>employeeStatus</th><th>kpNpi</th><th>race</th><th>secondaryServiceLocation</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Individual1</td><td>Male</td><td>10/11/1980</td><td>456-76-5451</td><td>72-3674673</td><td>Mediplus Pvt Lmt</td><td>111-11-1111</td><td>40000000</td><td>222</td><td>Clinic</td><td>Individual Practice</td><td>Doctor</td><td>Electronic Data Interchange (EDI)</td><td>2160 COLONIAL BLVD FORT MYERS, FL</td><td>Landmark</td><td>2222-23433</td><td>22222</td><td>3534534534</td><td>Interpreter</td><td>171R00000X -  Interpreter</td><td>5764655900</td><td>License</td><td>2160 COLONIAL BLVD FORT MYERS, FL</td><td>22110-2345</td><td>22120</td><td>Non-Profit</td><td>United States</td><td>Florida</td><td>3</td><td>Director</td><td>Managing Non Convicted</td><td>1780829283</td><td>ASIAN</td><td>PO BOX 4374 KEY WEST, FL</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {index=Individual1, gender=Male, dob=10/11/1980, ssn=456-76-5451, fein=72-3674673, organizationLegalBusinessName=Mediplus Pvt Lmt, fax=111-11-1111, providerID=40000000, ext=222, businessName=Clinic, typeOfBusiness=Individual Practice, dbaName=Doctor, claimSubmit=Electronic Data Interchange (EDI), address=2160 COLONIAL BLVD FORT MYERS, FL, attentionLine=Landmark, mailingAddressZip=2222-23433, mailingAddressCountycode=22222, phoneno=3534534534, taxonomyCategory=Interpreter, primaryTaxonomy=171R00000X -  Interpreter, licenseNumber=5764655900, licenseType=License, primaryServiceLocationAddressLine1=2160 COLONIAL BLVD FORT MYERS, FL, primaryServiceLocationZip=22110-2345, primaryServiceLocationCountyCode=22120, profitStatus=Non-Profit, countryOfBirth=United States, stateOfBirth=Florida, reasonCode=3, managingEmployeeType=Director, employeeStatus=Managing Non Convicted, kpNpi=1780829283, race=ASIAN, secondaryServiceLocation=PO BOX 4374 KEY WEST, FL}</h3>
+<div class="step successful">Given generate firstname, lastname, middlename and email credentials for 'Individual2'</div>
+<div class="step successful">And get random npi from file 'SdNPI'</div>
+<div class="step successful">And save value '&lt;provider&gt;' to variable 'provider'</div>
+<div class="step successful">And save value '<span class="step parameter">Male</span>' to variable 'gender'</div>
+<div class="step successful">And save value '<span class="step parameter">10/11/1980</span>' to variable 'dob'</div>
+<div class="step successful">And save value '<span class="step parameter">ASIAN</span>' to variable 'race'</div>
+<div class="step successful">And save value '<span class="step parameter">456-76-5451</span>' to variable 'ssn'</div>
+<div class="step successful">And save value '<span class="step parameter">Individual Practice</span>' to variable 'typeOfBusiness'</div>
+<div class="step successful">And save value '<span class="step parameter">Interpreter</span>' to variable 'taxonomyCategory'</div>
+<div class="step successful">And save value '<span class="step parameter">171R00000X -  Interpreter</span>' to variable 'primaryTaxonomy'</div>
+<div class="step successful">And save value '<span class="step parameter">3534534534</span>' to variable 'phoneno'</div>
+<div class="step successful">And save value '<span class="step parameter">3534534534</span>' to variable 'applicationContactNum'</div>
+<div class="step successful">And save value '<span class="step parameter">2160 COLONIAL BLVD FORT MYERS, FL</span>' to variable 'address'</div>
+<div class="step successful">And save value '<span class="step parameter">2222-23433</span>' to variable 'mailingAddressZip'</div>
+<div class="step successful">And save value '<span class="step parameter">22222</span>' to variable 'mailingAddressCountycode'</div>
+<div class="step successful">And save value '<span class="step parameter">5764655900</span>' to variable 'licenseNumber'</div>
+<div class="step successful">And save value '<span class="step parameter">License</span>' to variable 'licenseType'</div>
+<div class="step successful">And save value '&lt;licenseIssuedState&gt;' to variable 'licenseIssuedState'</div>
+<div class="step successful">And save value '<span class="step parameter">2160 COLONIAL BLVD FORT MYERS, FL</span>' to variable 'primaryServiceLocationAddressLine1'</div>
+<div class="step successful">And save value '<span class="step parameter">22110-2345</span>' to variable 'primaryServiceLocationZip'</div>
+<div class="step successful">And save value '<span class="step parameter">22120</span>' to variable 'primaryServiceLocationCountyCode'</div>
+<div class="step successful">And save value '<span class="step parameter">Non-Profit</span>' to variable 'profitStatus'</div>
+<div class="step successful">And save value '<span class="step parameter">United States</span>' to variable 'countryOfBirth'</div>
+<div class="step successful">And save value '<span class="step parameter">Florida</span>' to variable 'stateOfBirth'</div>
+<div class="step successful">And save value '<span class="step parameter">Florida</span>' to variable 'stateofBirth'</div>
+<div class="step successful">And save value '<span class="step parameter">3</span>' to variable 'reasonCode'</div>
+<div class="step successful">And save value '<span class="step parameter">Clinic</span>' to variable 'businessName'</div>
+<div class="step successful">And save value '<span class="step parameter">Doctor</span>' to variable 'dbaName'</div>
+<div class="step successful">And save value '<span class="step parameter">Landmark</span>' to variable 'attentionLine'</div>
+<div class="step successful">And save value '<span class="step parameter">Director</span>' to variable 'managingEmployeeType'</div>
+<div class="step successful">And save value '<span class="step parameter">Managing Non Convicted</span>' to variable 'employeeStatus'</div>
+<div class="step successful">And save value '<span class="step parameter">40000000</span>' to variable 'providerID'</div>
+<div class="step successful">And save current <span class="step parameter">date</span> to variable 'date'</div>
+<div class="step successful">When save current date plus <span class="step parameter">1</span> years to variable 'expDate'</div>
+<div class="step successful">When save yesterday's date to variable 'yesterdayDate'</div>
+<div class="step successful">When user navigated to landing page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click create account link in the landing page</div>
+<div class="step successful">And wait for screening process execution during '5' seconds</div>
+<div class="step successful">When fill Email with value '${email}' on registration page</div>
+<div class="step successful">And fill Password with value 'Aa123321!' on registration page</div>
+<div class="step successful">When click on continue button in the registartion page</div>
+<div class="step successful">And fill Organization Name field with value 'HHSTECHGROUP' on registration page</div>
+<div class="step successful">And fill Organization description with value 'HHSOrg' on registration page</div>
+<div class="step successful">When click on continue button in the registartion page</div>
+<div class="step successful">And fill First name  with value '${firstName}' on registration page</div>
+<div class="step successful">And fill Last name with value '${lastName}' on registration page</div>
+<div class="step successful">And fill Phone with value '${phoneno}' on registration page</div>
+<div class="step successful">When click on create account link in the registartion page</div>
+<div class="step successful">When login to user gmail</div>
+<div class="step successful">Then go to gmail to inbox page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When search for message by email - <span class="step parameter">${email}</span></div>
+<div class="step successful">When open new 'Registration in ProviderPortal' email</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on new user link from the gmail</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then navigate Back to Login page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And refresh page</div>
+<div class="step successful">When implicit wait '15' seconds</div>
+<div class="step successful">When new user logs to Provider Enrollment portal with username - <span class="step parameter">${email}</span> and password - <span class="step parameter">Aa123321!</span></div>
+<div class="step successful">When click on new 'Agree' button in the Portal page</div>
+<div class="step successful">When skip help tour if exists</div>
+<div class="step successful">And user click on <span class="step parameter">Individual Enrollment</span> type</div>
+<div class="step successful">When implicit wait '50' seconds</div>
+<div class="step successful">When move to 'Identifying Information' section</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When select 'To ONLY bill for services and receive payment directly from Medicaid' for Applicatiion type determination</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then select 'SOLE PROPRIETOR' for practice type</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And To fill the identifying information section for Enrollment:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>title</th><th>countryOfBirth</th><th>stateofBirth</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Mr.</td><td>${countryOfBirth}</td><td>${stateOfBirth}</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And To fill the identifying information section for Enrollment:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>firstName</th><th>lastName</th><th>dateOfBirth</th><th>appliationContactName</th><th>applicationContactNum</th><th>ssn</th><th>email</th><th>middleName</th><th>taxExempt</th><th>businessName</th><th>dbaName</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${firstName}</td><td>${lastName}</td><td>${dob}</td><td>${firstName} ${lastName}</td><td>${phoneno}</td><td>${ssn}</td><td>${email}</td><td>${middleName}</td><td>Yes</td><td>${businessName}</td><td>${dbaName}</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When fill the Gender</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When move to 'Taxonomy / Specialty / Provider Type / License Certification Information' section</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">When click on Add Taxonomy in Taxonomy Info section</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>taxonomyDescription</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>22510000</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>effectiveStartDate</th><th>effectiveEndDate</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${date}</td><td>${expDate}</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">When click on 'Add License/Certificate' in Taxonomy/Speciality/License Certification Info section</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>licenseCertificateType</th><th>licenseCertificateNumber</th><th>effectiveEndDate2</th><th>effectiveStartDate2</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>DOH</td><td>12345</td><td>${expDate}</td><td>${date}</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When upload document 'Upload License/Certificate Document*' document <span class="step parameter">text_file.txt</span> in Taxonomy/Speciality/License Certification Info section</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on 'Add' in Taxonomy/Speciality/License Certification Info section</div>
+<div class="step successful">When implicit wait '3' seconds</div>
+<div class="step successful">Then save the details of Taxonomy/Speciality/License Certification section info</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When move to 'Provider Identifiers' section</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">And To fill the Provider Identification Number:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>npi</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${npi}</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And To fill the Provider Identification Number:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>medicareCrossoverClaim</th><th>medicaidState</th><th>claimSubmit</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td><td>No</td><td>Direct Data Entry</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">When move to 'Other Credentialing Information' section</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">Then click on the Add Line</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When To fill the Other Credentialing Information Info for Enrollment:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>typeOfTraining</th><th>organizationName</th><th>effectiveStartDate</th><th>effectiveEndDate</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Internship</td><td>Mediplus</td><td>${date}</td><td>${expDate}</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When upload document 'Upload Training Document' document <span class="step parameter">text_file.txt</span> in Other Credentialing Information Info section</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the Save button</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on the Add line</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When To fill the Other Credentialing Information Info for Enrollment:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>gradutaionType</th><th>medicalSchool</th><th>professionalSchoolName</th><th>professionalSchoolAddress</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>US/Canada Graduate</td><td>Yes</td><td>CANVAS CAMPUS</td><td>${address}</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the Save button</div>
+<div class="step successful">When implicit wait '15' seconds</div>
+<div class="step successful">When move to 'Employment Authorization Information' section</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When To fill the Employment Authorization Information for Enrollment:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>usCitizen</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When move to 'Professional Liability Insurance Information' section</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">When To fill the Proffesional Liability Insurance Info for Enrollment:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>deniedProffesionalLiabilityInsurance</th><th>deniedRenewal</th><th>malpractice1</th><th>unfavourableJudgement</th><th>malpracticeCurrentlyPending</th><th>mentalOrPhysicalHealthCondition</th><th>malPracticeInfo</th><th>malPracticeHealthInfo</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When move to 'Service Location' section</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on Add Location in Service Location section</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And To fill the Service Location info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>effectiveDate</th><th>locationName</th><th>addressLine1</th><th>attentionLine</th><th>email</th><th>phoneNumber</th><th>mailingAddress</th><th>mailingAddressContactInfo</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${date}</td><td>Primary clinic</td><td>${primaryServiceLocationAddressLine1}</td><td>${firstName}</td><td>${email}</td><td>${phoneno}</td><td>Yes</td><td>Yes</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on Add Taxonomy/Speciality in Service Location section</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>specialty</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>PHYSICAL THERAPIST - 091</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then select Taxonomy in Program Participation</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>locationTaxonomyEffectiveStartDate</th><th>locationTaxonomyEffectiveEndDate</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${date}</td><td>${expDate}</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then save Taxonomy in Taxonomy/Speciality</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When upload document 'Claims Documents' document <span class="step parameter">text_file.txt</span> in Service Location Claim Section</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And To fill the Service Location info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>languageSupported</th><th>genderServed</th><th>ageRangesServed</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>English</td><td>Male</td><td>All ages served</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step failed">And To fill the Service Location info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>acceptingNewPatients</th><th>ttdTty</th><th>county</th><th>open24Hours</th><th>emergencyServices</th><th>patientRecords</th><th>personnelRecords</th><th>phoneNumberOfPatients</th><th>mannerOfService</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td><td>No</td><td>allCounty</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>${phoneno}</td><td>In-Person</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.IllegalStateException: Unable to set field value</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Service Location info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>wheelChairAccessibility</th><th>parkingSpaceForHandicapped</th><th>assistiveListeningDevices</th><th>accessibleExamRooms</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td><td>No</td><td>No</td><td>No</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click new Save button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to 'Address Details' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Address Details:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>mailingAddressLine1</th><th>effectiveStartDate</th><th>effectiveEndDate</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${address}</td><td>${date}</td><td>${expDate}</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Concact Person Details:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>attentionLine</th><th>phone</th><th>email</th><th>fax</th><th>ext</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Landmark</td><td>${phoneno}</td><td>${email}</td><td>111-111-1111</td><td>333333</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Address Details:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>homeOrCorpOfficeAddress</th><th>homeOrCorpOfficeContactPersonDetails</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes</td><td>Yes</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click Next button in Address Details <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step ignorable">!-- When move to 'Affiliation' section</div>
+<div class="step ignorable">!-- And implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When click Add Affiliation button in affiliation section</div>
+<div class="step ignorable">!-- And implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When set npi search value '1699444315' in affiliation section</div>
+<div class="step ignorable">!-- And implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When set type search value 'Entity' in affiliation section</div>
+<div class="step ignorable">!-- And implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When click search by npi in affiliation section</div>
+<div class="step ignorable">!-- And implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When click add button in affiliation section</div>
+<div class="step ignorable">!-- And implicit wait '3' seconds</div>
+<div class="step ignorable">!-- When click on 'Do you want to affiliate with Primary service location ?' to 'true' in affiliation popup</div>
+<div class="step ignorable">!-- And implicit wait '3' seconds</div>
+<div class="step ignorable">!-- Then select Taxonomy and Provider Type of Entity in Affiliation section</div>
+<div class="step ignorable">!-- When implicit wait '2' seconds</div>
+<div class="step ignorable">!-- When fill the location effective start '${date}' and location effective end '${expDate}' in affiliation popup</div>
+<div class="step ignorable">!-- When implicit wait '2' seconds</div>
+<div class="step ignorable">!-- Then click on 'Next' button</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- When select '225100000X - PHYSICAL THERAPIST' with '${date}' and '${expDate}' in affiliation popup</div>
+<div class="step ignorable">!-- And implicit wait '3' seconds</div>
+<div class="step ignorable">!-- When click add button in affiliation pop-up</div>
+<div class="step ignorable">!-- And implicit wait '3' seconds</div>
+<div class="step notPerformed">When move to 'Ownership' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Ownership Section for Enrollment:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>personOwnership1</th><th>personOrEntityOwnership</th><th>subcontractorOwnership</th><th>familymembersOwnership</th><th>billedEntityOwnership</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to 'Key Personnel' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on the Addline <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When To fill the OwerKeyPersonel Information for Enrollment:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>managingEmployeeType</th><th>employeeStatus</th><th>npi</th><th>race</th><th>gender</th><th>firstName</th><th>middleName</th><th>lastName</th><th>ssn</th><th>dob</th><th>countryOfBirth</th><th>stateOfBirth</th><th>ssnStartDate</th><th>ssnEndDate</th><th>ssnAddress</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>ADMINISTRATOR</td><td>${employeeStatus}</td><td>${npi}</td><td>${race}</td><td>${gender}</td><td>${firstName}</td><td>${middleName}</td><td>${lastName}</td><td>${ssn}</td><td>${dob}</td><td>${countryOfBirth}</td><td>${stateOfBirth}</td><td>${date}</td><td>${expDate}</td><td>${address}</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on the Save button in Key Personel <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '15' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to 'Exclusion/Sanction Information' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Exclusion Sanction Section:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>fraudAlligations</th><th>fiduciaryResponsibility</th><th>perjury</th><th>serviceAbuse</th><th>criminalInvestigation</th><th>unlawfulSubstances</th><th>healthCareCrime</th><th>convictedFelony</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Exclusion Sanction Section:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>paymentInformation</th><th>disclosureInformation</th><th>businessOrProffesionalLicense</th><th>suspensionOfAccreditation</th><th>suspendedOrExcluded</th><th>paymentSuspension</th><th>falseClaimsAct</th><th>owesMoneyToMedicaid</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to 'EFT Information' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on the Addline <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then select 'Name of the Authorized Person' in EFT Information Section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When add servicelocation providertype <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then To fill the EFT Information:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>financialInstitution</th><th>accountHolderName</th><th>EFTRoutingNumber</th><th>accountNumber</th><th>accountType</th><th>startDate</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Pharma medi ltd</td><td>${firstName}</td><td>123456</td><td>222333444</td><td>Savings</td><td>${yesterdayDate}</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When upload file 'EFT supporting Document' document <span class="step parameter">text_file.txt</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on the Save button in Key Personel <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to 'Upload Documents' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When upload new 'Additional Documents(Optional)' document <span class="step parameter">text_file.txt</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to 'Authorized Signatory' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then select 'Authorized Signatory Name' in Authorized Signatory section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to new 'Provider Agreement' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on sign button in the provider agreement section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And sign1 provider application for user '${firstName} ${lastName}' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '40' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to new 'Summary' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Concact Person Details:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>firstName</th><th>lastName</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${firstName}</td><td>${lastName}</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then Agree Term and conditions to Sign <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When submit enrollment application <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on navigate to dashboard for Proceed To Sign <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When log out from PE portal <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And refresh page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When new user logs to Provider Enrollment portal with username - <span class="step parameter">johny.providers+68031@gmail.com</span> and password - <span class="step parameter">Aa123321!</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on new 'Agree' button in the Portal page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When navigate to Message Center <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on 'Confirm your affiliation to the individual' in message center <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And sign provider application for user '${firstName} ${lastName}' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '30' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When log out from PE portal <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And refresh page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When new user logs to Provider Enrollment portal with username - <span class="step parameter">${email}</span> and password - <span class="step parameter">Aa123321!</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on new 'Agree' button in the Portal page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on Proceed To Sign button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And sign provider application for user '${firstName} ${lastName}' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '30' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click navigate to dashboard link after sign <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then save the tracking number of the provider <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then rewrite stage of credentials to 'Submitted' for 'Individual2' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+</div>
+<pre class="failure">java.lang.IllegalStateException: Unable to set field value
+	at com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$0(BeanUtils.java:43)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$1(BeanUtils.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.hhstechgroup.util.common.BeanUtils.copyPropertiesInOrder(BeanUtils.java:34)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps.setServiceLocationInfo(EnrollmentApplicationSteps.java:880)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps$$EnhancerByCGLIB$$1c72faeb.CGLIB$setServiceLocationInfo$46(&lt;generated&gt;)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps$$EnhancerByCGLIB$$1c72faeb$$FastClassByCGLIB$$9f7cbfd6.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps$$EnhancerByCGLIB$$1c72faeb.setServiceLocationInfo(&lt;generated&gt;)
+	at com.hhstechgroup.steps.jbehave.scenarios.enrollmentapplication.ApplicationSectionScenario.setServiceLocationInfo1(ApplicationSectionScenario.java:774)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</pre>
+</div>
+</div>

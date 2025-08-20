@@ -1,0 +1,795 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.01-Individual.04-IndividualRegistrationAndSubmission</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="00-FL-PROJECT/00-FL-REGRESSION/01-Individual/04-IndividualRegistrationAndSubmission.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">perform an action</asA>
+  <iWantTo keyword="So that">I can achieve a business goal</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Delete all existing gmails">
+<step outcome="successful">When login to user gmail</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then go to gmail to inbox page</step>
+<step outcome="successful">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="successful">When Delete all existing Gmails</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+</scenario>
+<scenario keyword="Scenario:" title="Individual Provider Enrollment Flow">
+<examples keyword="Examples:">
+<step>Given generate firstname, lastname, middlename and email credentials for &apos;Individual2&apos;</step>
+<step>And get random npi from file &apos;SdNPI&apos;</step>
+<step>And save value &apos;&lt;provider&gt;&apos; to variable &apos;provider&apos;</step>
+<step>And save value &apos;&lt;gender&gt;&apos; to variable &apos;gender&apos;</step>
+<step>And save value &apos;&lt;dob&gt;&apos; to variable &apos;dob&apos;</step>
+<step>And save value &apos;&lt;race&gt;&apos; to variable &apos;race&apos;</step>
+<step>And save value &apos;&lt;ssn&gt;&apos; to variable &apos;ssn&apos;</step>
+<step>And save value &apos;&lt;typeOfBusiness&gt;&apos; to variable &apos;typeOfBusiness&apos;</step>
+<step>And save value &apos;&lt;taxonomyCategory&gt;&apos; to variable &apos;taxonomyCategory&apos;</step>
+<step>And save value &apos;&lt;primaryTaxonomy&gt;&apos; to variable &apos;primaryTaxonomy&apos;</step>
+<step>And save value &apos;&lt;phoneno&gt;&apos; to variable &apos;phoneno&apos;</step>
+<step>And save value &apos;&lt;phoneno&gt;&apos; to variable &apos;applicationContactNum&apos;</step>
+<step>And save value &apos;&lt;address&gt;&apos; to variable &apos;address&apos;</step>
+<step>And save value &apos;&lt;mailingAddressZip&gt;&apos; to variable &apos;mailingAddressZip&apos;</step>
+<step>And save value &apos;&lt;mailingAddressCountycode&gt;&apos; to variable &apos;mailingAddressCountycode&apos;</step>
+<step>And save value &apos;&lt;licenseNumber&gt;&apos; to variable &apos;licenseNumber&apos;</step>
+<step>And save value &apos;&lt;licenseType&gt;&apos; to variable &apos;licenseType&apos;</step>
+<step>And save value &apos;&lt;licenseIssuedState&gt;&apos; to variable &apos;licenseIssuedState&apos;</step>
+<step>And save value &apos;&lt;primaryServiceLocationAddressLine1&gt;&apos; to variable &apos;primaryServiceLocationAddressLine1&apos;</step>
+<step>And save value &apos;&lt;primaryServiceLocationZip&gt;&apos; to variable &apos;primaryServiceLocationZip&apos;</step>
+<step>And save value &apos;&lt;primaryServiceLocationCountyCode&gt;&apos; to variable &apos;primaryServiceLocationCountyCode&apos;</step>
+<step>And save value &apos;&lt;profitStatus&gt;&apos; to variable &apos;profitStatus&apos;</step>
+<step>And save value &apos;&lt;countryOfBirth&gt;&apos; to variable &apos;countryOfBirth&apos;</step>
+<step>And save value &apos;&lt;stateOfBirth&gt;&apos; to variable &apos;stateOfBirth&apos;</step>
+<step>And save value &apos;&lt;stateOfBirth&gt;&apos; to variable &apos;stateofBirth&apos;</step>
+<step>And save value &apos;&lt;reasonCode&gt;&apos; to variable &apos;reasonCode&apos;</step>
+<step>And save value &apos;&lt;businessName&gt;&apos; to variable &apos;businessName&apos;</step>
+<step>And save value &apos;&lt;dbaName&gt;&apos; to variable &apos;dbaName&apos;</step>
+<step>And save value &apos;&lt;attentionLine&gt;&apos; to variable &apos;attentionLine&apos;</step>
+<step>And save value &apos;&lt;managingEmployeeType&gt;&apos; to variable &apos;managingEmployeeType&apos;</step>
+<step>And save value &apos;&lt;employeeStatus&gt;&apos; to variable &apos;employeeStatus&apos;</step>
+<step>And save value &apos;&lt;providerID&gt;&apos; to variable &apos;providerID&apos;</step>
+<step>And save current date to variable &apos;date&apos;</step>
+<step>When save current date plus 1 years to variable &apos;expDate&apos;</step>
+<step>When save yesterday&apos;s date to variable &apos;yesterdayDate&apos;</step>
+<step>When user navigated to landing page</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When click create account link in the landing page</step>
+<step>And wait for screening process execution during &apos;5&apos; seconds</step>
+<step>When fill Email with value &apos;${email}&apos; on registration page</step>
+<step>And fill Password with value &apos;Aa123321!&apos; on registration page</step>
+<step>When click on continue button in the registartion page</step>
+<step>And fill Organization Name field with value &apos;HHSTECHGROUP&apos; on registration page</step>
+<step>And fill Organization description with value &apos;HHSOrg&apos; on registration page</step>
+<step>When click on continue button in the registartion page</step>
+<step>And fill First name  with value &apos;${firstName}&apos; on registration page</step>
+<step>And fill Last name with value &apos;${lastName}&apos; on registration page</step>
+<step>And fill Phone with value &apos;${phoneno}&apos; on registration page</step>
+<step>When click on create account link in the registartion page</step>
+<step>When login to user gmail</step>
+<step>Then go to gmail to inbox page</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When search for message by email - ${email}</step>
+<step>When open new &apos;Registration in ProviderPortal&apos; email</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then click on new user link from the gmail</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then navigate Back to Login page</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>And refresh page</step>
+<step>When implicit wait &apos;15&apos; seconds</step>
+<step>When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!</step>
+<step>When click on new &apos;Agree&apos; button in the Portal page</step>
+<step>When skip help tour if exists</step>
+<step>And user click on Individual Enrollment type</step>
+<step>When implicit wait &apos;50&apos; seconds</step>
+<step>When move to &apos;Identifying Information&apos; section</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When select &apos;To ONLY bill for services and receive payment directly from Medicaid&apos; for Applicatiion type determination</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then select &apos;SOLE PROPRIETOR&apos; for practice type</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the identifying information section for Enrollment:
+|title |countryOfBirth   |stateofBirth   |
+|Mr.   |${countryOfBirth}|${stateOfBirth}|</step>
+<step>And To fill the identifying information section for Enrollment:
+|firstName   |lastName   |dateOfBirth|appliationContactName   |applicationContactNum|ssn    |email    |middleName   |taxExempt |businessName   |dbaName   |
+|${firstName}|${lastName}|${dob}     |${firstName} ${lastName}|${phoneno}           |${ssn} |${email} |${middleName}|Yes       |${businessName}|${dbaName}|</step>
+<step>When fill the Gender</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When move to &apos;Taxonomy / Specialty / Provider Type / License Certification Information&apos; section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When click on Add Taxonomy in Taxonomy Info section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Taxonomy/Speciality/License Certification section info:
+|taxonomyDescription  |
+|22510000             |</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Taxonomy/Speciality/License Certification section info:
+|effectiveStartDate|effectiveEndDate|
+|${date}           |${expDate}      |</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When click on &apos;Add License/Certificate&apos; in Taxonomy/Speciality/License Certification Info section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Taxonomy/Speciality/License Certification section info:
+|licenseCertificateType|licenseCertificateNumber|effectiveEndDate2|effectiveStartDate2 |
+|DOH                   |12345                   |${expDate}       |${date}             |</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When upload document &apos;Upload License/Certificate Document*&apos; document text_file.txt in Taxonomy/Speciality/License Certification Info section</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When click on &apos;Add&apos; in Taxonomy/Speciality/License Certification Info section</step>
+<step>When implicit wait &apos;3&apos; seconds</step>
+<step>Then save the details of Taxonomy/Speciality/License Certification section info</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When move to &apos;Provider Identifiers&apos; section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Provider Identification Number:
+|npi      |
+|${npi}   |</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Provider Identification Number:
+|medicareCrossoverClaim|medicaidState|claimSubmit       |
+|No                    |No           |Direct Data Entry |</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When move to &apos;Other Credentialing Information&apos; section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>Then click on the Add Line</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When To fill the Other Credentialing Information Info for Enrollment:
+|typeOfTraining|organizationName|effectiveStartDate|effectiveEndDate|
+|Internship    |Mediplus        |${date}           |${expDate}      |</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When upload document &apos;Upload Training Document&apos; document text_file.txt in Other Credentialing Information Info section</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then click on the Save button</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When click on the Add line</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When To fill the Other Credentialing Information Info for Enrollment:
+|gradutaionType    |medicalSchool|professionalSchoolName|professionalSchoolAddress|
+|US/Canada Graduate|Yes          |CANVAS CAMPUS         |${address}               |</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then click on the Save button</step>
+<step>When implicit wait &apos;15&apos; seconds</step>
+<step>When move to &apos;Employment Authorization Information&apos; section</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When To fill the Employment Authorization Information for Enrollment:
+|usCitizen|
+|Yes      |</step>
+<step>When implicit wait &apos;2&apos; seconds</step>
+<step>When move to &apos;Professional Liability Insurance Information&apos; section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When To fill the Proffesional Liability Insurance Info for Enrollment:
+|deniedProffesionalLiabilityInsurance|deniedRenewal|malpractice1|unfavourableJudgement|malpracticeCurrentlyPending|mentalOrPhysicalHealthCondition|malPracticeInfo|malPracticeHealthInfo|
+|No                                  |No           |No          |No                   |No                        |No                             |No             |No                   |</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When move to &apos;Service Location&apos; section</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When click on Add Location in Service Location section</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Service Location info:
+|effectiveDate|locationName  |addressLine1                         |attentionLine|email   |phoneNumber|mailingAddress|mailingAddressContactInfo|
+|${date}      |Primary clinic|${primaryServiceLocationAddressLine1}|${firstName} |${email}|${phoneno} |Yes           |Yes                      |</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When click on Add Taxonomy/Speciality in Service Location section</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+|specialty               |
+|PHYSICAL THERAPIST - 091|</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then select Taxonomy in Program Participation</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+|locationTaxonomyEffectiveStartDate|locationTaxonomyEffectiveEndDate|
+|${date}                           |${expDate}                      |</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then save Taxonomy in Taxonomy/Speciality</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When upload document &apos;Claims Documents&apos; document text_file.txt in Service Location Claim Section</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Service Location info:
+|languageSupported|genderServed|ageRangesServed|
+|English          |Male        |All ages served|</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Service Location info:
+|acceptingNewPatients|ttdTty|county   |open24Hours|emergencyServices|patientRecords|personnelRecords|phoneNumberOfPatients|mannerOfService|
+|No                  |No    |allCounty|Yes        |No               |Yes           |Yes             |${phoneno}           |In-Person      |</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Service Location info:
+|wheelChairAccessibility|parkingSpaceForHandicapped|assistiveListeningDevices|accessibleExamRooms|
+|No                     |No                        |No                       |No                 |</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>Then click new Save button</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When move to &apos;Address Details&apos; section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Address Details:
+|mailingAddressLine1|effectiveStartDate|effectiveEndDate|
+|${address}         |${date}           |${expDate}      |</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Concact Person Details:
+|attentionLine   |phone     |email    |fax         |ext    |
+|Landmark        |${phoneno}|${email} |111-111-1111 |333333 |</step>
+<step>And To fill the Address Details:
+|homeOrCorpOfficeAddress|homeOrCorpOfficeContactPersonDetails|
+|Yes                    |Yes                                 |</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When click Next button in Address Details</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>!-- When move to &apos;Affiliation&apos; section</step>
+<step>!-- And implicit wait &apos;5&apos; seconds</step>
+<step>!-- When click Add Affiliation button in affiliation section</step>
+<step>!-- And implicit wait &apos;5&apos; seconds</step>
+<step>!-- When set npi search value &apos;1699444315&apos; in affiliation section</step>
+<step>!-- And implicit wait &apos;5&apos; seconds</step>
+<step>!-- When set type search value &apos;Entity&apos; in affiliation section</step>
+<step>!-- And implicit wait &apos;5&apos; seconds</step>
+<step>!-- When click search by npi in affiliation section</step>
+<step>!-- And implicit wait &apos;5&apos; seconds</step>
+<step>!-- When click add button in affiliation section</step>
+<step>!-- And implicit wait &apos;3&apos; seconds</step>
+<step>!-- When click on &apos;Do you want to affiliate with Primary service location ?&apos; to &apos;true&apos; in affiliation popup</step>
+<step>!-- And implicit wait &apos;3&apos; seconds</step>
+<step>!-- Then select Taxonomy and Provider Type of Entity in Affiliation section</step>
+<step>!-- When implicit wait &apos;2&apos; seconds</step>
+<step>!-- When fill the location effective start &apos;${date}&apos; and location effective end &apos;${expDate}&apos; in affiliation popup</step>
+<step>!-- When implicit wait &apos;2&apos; seconds</step>
+<step>!-- Then click on &apos;Next&apos; button</step>
+<step>!-- When implicit wait &apos;5&apos; seconds</step>
+<step>!-- When select &apos;225100000X - PHYSICAL THERAPIST&apos; with &apos;${date}&apos; and &apos;${expDate}&apos; in affiliation popup</step>
+<step>!-- And implicit wait &apos;3&apos; seconds</step>
+<step>!-- When click add button in affiliation pop-up</step>
+<step>!-- And implicit wait &apos;3&apos; seconds</step>
+<step>When move to &apos;Ownership&apos; section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Ownership Section for Enrollment:
+|personOwnership1|personOrEntityOwnership|subcontractorOwnership|familymembersOwnership|billedEntityOwnership|
+|No              |No                     |No                    |No                    |No                   |</step>
+<step>When implicit wait &apos;10&apos; seconds</step>
+<step>When move to &apos;Key Personnel&apos; section</step>
+<step>When implicit wait &apos;2&apos; seconds</step>
+<step>Then click on the Addline</step>
+<step>When implicit wait &apos;2&apos; seconds</step>
+<step>When To fill the OwerKeyPersonel Information for Enrollment:
+|managingEmployeeType    |employeeStatus   |npi   |race   |gender   |firstName    |middleName    |lastName   |ssn    |dob     |countryOfBirth   |stateOfBirth    |ssnStartDate |ssnEndDate |ssnAddress |
+|ADMINISTRATOR           |${employeeStatus}|${npi}|${race}|${gender}|${firstName} |${middleName} |${lastName}|${ssn} |${dob}  |${countryOfBirth}|${stateOfBirth} |${date}      |${expDate} |${address} |</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then click on the Save button in Key Personel</step>
+<step>When implicit wait &apos;15&apos; seconds</step>
+<step>When move to &apos;Exclusion/Sanction Information&apos; section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Exclusion Sanction Section:
+|fraudAlligations|fiduciaryResponsibility |perjury |serviceAbuse |criminalInvestigation |unlawfulSubstances |healthCareCrime |convictedFelony|
+|No              |No                      |No      |No           |No                    |No                 |No              |No             |</step>
+<step>And To fill the Exclusion Sanction Section:
+|paymentInformation |disclosureInformation |businessOrProffesionalLicense|suspensionOfAccreditation|suspendedOrExcluded|paymentSuspension |falseClaimsAct |owesMoneyToMedicaid|
+|No                 |No                    |No                           |No                       |No                 |No                |No             |No                 |</step>
+<step>When implicit wait &apos;2&apos; seconds</step>
+<step>When move to &apos;EFT Information&apos; section</step>
+<step>When implicit wait &apos;2&apos; seconds</step>
+<step>Then click on the Addline</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then select &apos;Name of the Authorized Person&apos; in EFT Information Section</step>
+<step>When implicit wait &apos;2&apos; seconds</step>
+<step>When add servicelocation providertype</step>
+<step>Then To fill the EFT Information:
+|financialInstitution |accountHolderName|EFTRoutingNumber |accountNumber |accountType |startDate       |
+|Pharma medi ltd      |${firstName}     |123456           |222333444     |Savings     |${yesterdayDate}|</step>
+<step>When implicit wait &apos;2&apos; seconds</step>
+<step>When upload file &apos;EFT supporting Document&apos; document text_file.txt</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then click on the Save button in Key Personel</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When move to &apos;Upload Documents&apos; section</step>
+<step>When implicit wait &apos;10&apos; seconds</step>
+<step>When upload new &apos;Additional Documents(Optional)&apos; document text_file.txt</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When move to &apos;Authorized Signatory&apos; section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>Then select &apos;Authorized Signatory Name&apos; in Authorized Signatory section</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>When move to new &apos;Provider Agreement&apos; section</step>
+<step>And implicit wait &apos;10&apos; seconds</step>
+<step>When click on sign button in the provider agreement section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And sign1 provider application for user &apos;${firstName} ${lastName}&apos;</step>
+<step>And implicit wait &apos;40&apos; seconds</step>
+<step>When move to new &apos;Summary&apos; section</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And To fill the Concact Person Details:
+|firstName   |lastName   |
+|${firstName}|${lastName}|</step>
+<step>Then Agree Term and conditions to Sign</step>
+<step>When submit enrollment application</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When click on navigate to dashboard for Proceed To Sign</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When log out from PE portal</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And refresh page</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When new user logs to Provider Enrollment portal with username - johny.providers+68031@gmail.com and password - Aa123321!</step>
+<step>When click on new &apos;Agree&apos; button in the Portal page</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When navigate to Message Center</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When click on &apos;Confirm your affiliation to the individual&apos; in message center</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And sign provider application for user &apos;${firstName} ${lastName}&apos;</step>
+<step>And implicit wait &apos;30&apos; seconds</step>
+<step>When log out from PE portal</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>And refresh page</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!</step>
+<step>When click on new &apos;Agree&apos; button in the Portal page</step>
+<step>And implicit wait &apos;5&apos; seconds</step>
+<step>When click on Proceed To Sign button</step>
+<step>And implicit wait &apos;10&apos; seconds</step>
+<step>And sign provider application for user &apos;${firstName} ${lastName}&apos;</step>
+<step>When implicit wait &apos;30&apos; seconds</step>
+<step>When click navigate to dashboard link after sign</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then save the tracking number of the provider</step>
+<step>When implicit wait &apos;5&apos; seconds</step>
+<step>Then rewrite stage of credentials to &apos;Submitted&apos; for &apos;Individual2&apos;</step>
+<parameters>
+<names><name>index</name><name>gender</name><name>dob</name><name>ssn</name><name>fein</name><name>organizationLegalBusinessName</name><name>fax</name><name>providerID</name><name>ext</name><name>businessName</name><name>typeOfBusiness</name><name>dbaName</name><name>claimSubmit</name><name>address</name><name>attentionLine</name><name>mailingAddressZip</name><name>mailingAddressCountycode</name><name>phoneno</name><name>taxonomyCategory</name><name>primaryTaxonomy</name><name>licenseNumber</name><name>licenseType</name><name>primaryServiceLocationAddressLine1</name><name>primaryServiceLocationZip</name><name>primaryServiceLocationCountyCode</name><name>profitStatus</name><name>countryOfBirth</name><name>stateOfBirth</name><name>reasonCode</name><name>managingEmployeeType</name><name>employeeStatus</name><name>kpNpi</name><name>race</name><name>secondaryServiceLocation</name></names>
+<values><value>Individual1</value><value>Male</value><value>10/11/1980</value><value>456-76-5451</value><value>72-3674673</value><value>Mediplus Pvt Lmt</value><value>111-11-1111</value><value>40000000</value><value>222</value><value>Clinic</value><value>Individual Practice</value><value>Doctor</value><value>Electronic Data Interchange (EDI)</value><value>2160 COLONIAL BLVD FORT MYERS, FL</value><value>Landmark</value><value>2222-23433</value><value>22222</value><value>3534534534</value><value>Interpreter</value><value>171R00000X -  Interpreter</value><value>5764655900</value><value>License</value><value>2160 COLONIAL BLVD FORT MYERS, FL</value><value>22110-2345</value><value>22120</value><value>Non-Profit</value><value>United States</value><value>Florida</value><value>3</value><value>Director</value><value>Managing Non Convicted</value><value>1780829283</value><value>ASIAN</value><value>PO BOX 4374 KEY WEST, FL</value></values>
+</parameters>
+
+<example keyword="Example:">{index=Individual1, gender=Male, dob=10/11/1980, ssn=456-76-5451, fein=72-3674673, organizationLegalBusinessName=Mediplus Pvt Lmt, fax=111-11-1111, providerID=40000000, ext=222, businessName=Clinic, typeOfBusiness=Individual Practice, dbaName=Doctor, claimSubmit=Electronic Data Interchange (EDI), address=2160 COLONIAL BLVD FORT MYERS, FL, attentionLine=Landmark, mailingAddressZip=2222-23433, mailingAddressCountycode=22222, phoneno=3534534534, taxonomyCategory=Interpreter, primaryTaxonomy=171R00000X -  Interpreter, licenseNumber=5764655900, licenseType=License, primaryServiceLocationAddressLine1=2160 COLONIAL BLVD FORT MYERS, FL, primaryServiceLocationZip=22110-2345, primaryServiceLocationCountyCode=22120, profitStatus=Non-Profit, countryOfBirth=United States, stateOfBirth=Florida, reasonCode=3, managingEmployeeType=Director, employeeStatus=Managing Non Convicted, kpNpi=1780829283, race=ASIAN, secondaryServiceLocation=PO BOX 4374 KEY WEST, FL}</example>
+<step outcome="successful">Given generate firstname, lastname, middlename and email credentials for &apos;Individual2&apos;</step>
+<step outcome="successful">And get random npi from file &apos;SdNPI&apos;</step>
+<step outcome="successful">And save value &apos;&lt;provider&gt;&apos; to variable &apos;provider&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Male</parameter>&apos; to variable &apos;gender&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>10/11/1980</parameter>&apos; to variable &apos;dob&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>ASIAN</parameter>&apos; to variable &apos;race&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>456-76-5451</parameter>&apos; to variable &apos;ssn&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Individual Practice</parameter>&apos; to variable &apos;typeOfBusiness&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Interpreter</parameter>&apos; to variable &apos;taxonomyCategory&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>171R00000X -  Interpreter</parameter>&apos; to variable &apos;primaryTaxonomy&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>3534534534</parameter>&apos; to variable &apos;phoneno&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>3534534534</parameter>&apos; to variable &apos;applicationContactNum&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>2160 COLONIAL BLVD FORT MYERS, FL</parameter>&apos; to variable &apos;address&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>2222-23433</parameter>&apos; to variable &apos;mailingAddressZip&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>22222</parameter>&apos; to variable &apos;mailingAddressCountycode&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>5764655900</parameter>&apos; to variable &apos;licenseNumber&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>License</parameter>&apos; to variable &apos;licenseType&apos;</step>
+<step outcome="successful">And save value &apos;&lt;licenseIssuedState&gt;&apos; to variable &apos;licenseIssuedState&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>2160 COLONIAL BLVD FORT MYERS, FL</parameter>&apos; to variable &apos;primaryServiceLocationAddressLine1&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>22110-2345</parameter>&apos; to variable &apos;primaryServiceLocationZip&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>22120</parameter>&apos; to variable &apos;primaryServiceLocationCountyCode&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Non-Profit</parameter>&apos; to variable &apos;profitStatus&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>United States</parameter>&apos; to variable &apos;countryOfBirth&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Florida</parameter>&apos; to variable &apos;stateOfBirth&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Florida</parameter>&apos; to variable &apos;stateofBirth&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>3</parameter>&apos; to variable &apos;reasonCode&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Clinic</parameter>&apos; to variable &apos;businessName&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Doctor</parameter>&apos; to variable &apos;dbaName&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Landmark</parameter>&apos; to variable &apos;attentionLine&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Director</parameter>&apos; to variable &apos;managingEmployeeType&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>Managing Non Convicted</parameter>&apos; to variable &apos;employeeStatus&apos;</step>
+<step outcome="successful">And save value &apos;<parameter>40000000</parameter>&apos; to variable &apos;providerID&apos;</step>
+<step outcome="successful">And save current <parameter>date</parameter> to variable &apos;date&apos;</step>
+<step outcome="successful">When save current date plus <parameter>1</parameter> years to variable &apos;expDate&apos;</step>
+<step outcome="successful">When save yesterday&apos;s date to variable &apos;yesterdayDate&apos;</step>
+<step outcome="successful">When user navigated to landing page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click create account link in the landing page</step>
+<step outcome="successful">And wait for screening process execution during &apos;5&apos; seconds</step>
+<step outcome="successful">When fill Email with value &apos;${email}&apos; on registration page</step>
+<step outcome="successful">And fill Password with value &apos;Aa123321!&apos; on registration page</step>
+<step outcome="successful">When click on continue button in the registartion page</step>
+<step outcome="successful">And fill Organization Name field with value &apos;HHSTECHGROUP&apos; on registration page</step>
+<step outcome="successful">And fill Organization description with value &apos;HHSOrg&apos; on registration page</step>
+<step outcome="successful">When click on continue button in the registartion page</step>
+<step outcome="successful">And fill First name  with value &apos;${firstName}&apos; on registration page</step>
+<step outcome="successful">And fill Last name with value &apos;${lastName}&apos; on registration page</step>
+<step outcome="successful">And fill Phone with value &apos;${phoneno}&apos; on registration page</step>
+<step outcome="successful">When click on create account link in the registartion page</step>
+<step outcome="successful">When login to user gmail</step>
+<step outcome="successful">Then go to gmail to inbox page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When search for message by email - <parameter>${email}</parameter></step>
+<step outcome="successful">When open new &apos;Registration in ProviderPortal&apos; email</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on new user link from the gmail</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then navigate Back to Login page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And refresh page</step>
+<step outcome="successful">When implicit wait &apos;15&apos; seconds</step>
+<step outcome="successful">When new user logs to Provider Enrollment portal with username - <parameter>${email}</parameter> and password - <parameter>Aa123321!</parameter></step>
+<step outcome="successful">When click on new &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When skip help tour if exists</step>
+<step outcome="successful">And user click on <parameter>Individual Enrollment</parameter> type</step>
+<step outcome="successful">When implicit wait &apos;50&apos; seconds</step>
+<step outcome="successful">When move to &apos;Identifying Information&apos; section</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When select &apos;To ONLY bill for services and receive payment directly from Medicaid&apos; for Applicatiion type determination</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then select &apos;SOLE PROPRIETOR&apos; for practice type</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And To fill the identifying information section for Enrollment:
+<parameter><parameters>
+<names><name>title</name><name>countryOfBirth</name><name>stateofBirth</name></names>
+<values><value>Mr.</value><value>${countryOfBirth}</value><value>${stateOfBirth}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And To fill the identifying information section for Enrollment:
+<parameter><parameters>
+<names><name>firstName</name><name>lastName</name><name>dateOfBirth</name><name>appliationContactName</name><name>applicationContactNum</name><name>ssn</name><name>email</name><name>middleName</name><name>taxExempt</name><name>businessName</name><name>dbaName</name></names>
+<values><value>${firstName}</value><value>${lastName}</value><value>${dob}</value><value>${firstName} ${lastName}</value><value>${phoneno}</value><value>${ssn}</value><value>${email}</value><value>${middleName}</value><value>Yes</value><value>${businessName}</value><value>${dbaName}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When fill the Gender</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When move to &apos;Taxonomy / Specialty / Provider Type / License Certification Information&apos; section</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on Add Taxonomy in Taxonomy Info section</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And To fill the Taxonomy/Speciality/License Certification section info:
+<parameter><parameters>
+<names><name>taxonomyDescription</name></names>
+<values><value>22510000</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And To fill the Taxonomy/Speciality/License Certification section info:
+<parameter><parameters>
+<names><name>effectiveStartDate</name><name>effectiveEndDate</name></names>
+<values><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on &apos;Add License/Certificate&apos; in Taxonomy/Speciality/License Certification Info section</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And To fill the Taxonomy/Speciality/License Certification section info:
+<parameter><parameters>
+<names><name>licenseCertificateType</name><name>licenseCertificateNumber</name><name>effectiveEndDate2</name><name>effectiveStartDate2</name></names>
+<values><value>DOH</value><value>12345</value><value>${expDate}</value><value>${date}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When upload document &apos;Upload License/Certificate Document*&apos; document <parameter>text_file.txt</parameter> in Taxonomy/Speciality/License Certification Info section</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on &apos;Add&apos; in Taxonomy/Speciality/License Certification Info section</step>
+<step outcome="successful">When implicit wait &apos;3&apos; seconds</step>
+<step outcome="successful">Then save the details of Taxonomy/Speciality/License Certification section info</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When move to &apos;Provider Identifiers&apos; section</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And To fill the Provider Identification Number:
+<parameter><parameters>
+<names><name>npi</name></names>
+<values><value>${npi}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And To fill the Provider Identification Number:
+<parameter><parameters>
+<names><name>medicareCrossoverClaim</name><name>medicaidState</name><name>claimSubmit</name></names>
+<values><value>No</value><value>No</value><value>Direct Data Entry</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When move to &apos;Other Credentialing Information&apos; section</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on the Add Line</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When To fill the Other Credentialing Information Info for Enrollment:
+<parameter><parameters>
+<names><name>typeOfTraining</name><name>organizationName</name><name>effectiveStartDate</name><name>effectiveEndDate</name></names>
+<values><value>Internship</value><value>Mediplus</value><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When upload document &apos;Upload Training Document&apos; document <parameter>text_file.txt</parameter> in Other Credentialing Information Info section</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on the Save button</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on the Add line</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When To fill the Other Credentialing Information Info for Enrollment:
+<parameter><parameters>
+<names><name>gradutaionType</name><name>medicalSchool</name><name>professionalSchoolName</name><name>professionalSchoolAddress</name></names>
+<values><value>US/Canada Graduate</value><value>Yes</value><value>CANVAS CAMPUS</value><value>${address}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on the Save button</step>
+<step outcome="successful">When implicit wait &apos;15&apos; seconds</step>
+<step outcome="successful">When move to &apos;Employment Authorization Information&apos; section</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When To fill the Employment Authorization Information for Enrollment:
+<parameter><parameters>
+<names><name>usCitizen</name></names>
+<values><value>Yes</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">When move to &apos;Professional Liability Insurance Information&apos; section</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When To fill the Proffesional Liability Insurance Info for Enrollment:
+<parameter><parameters>
+<names><name>deniedProffesionalLiabilityInsurance</name><name>deniedRenewal</name><name>malpractice1</name><name>unfavourableJudgement</name><name>malpracticeCurrentlyPending</name><name>mentalOrPhysicalHealthCondition</name><name>malPracticeInfo</name><name>malPracticeHealthInfo</name></names>
+<values><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When move to &apos;Service Location&apos; section</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on Add Location in Service Location section</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And To fill the Service Location info:
+<parameter><parameters>
+<names><name>effectiveDate</name><name>locationName</name><name>addressLine1</name><name>attentionLine</name><name>email</name><name>phoneNumber</name><name>mailingAddress</name><name>mailingAddressContactInfo</name></names>
+<values><value>${date}</value><value>Primary clinic</value><value>${primaryServiceLocationAddressLine1}</value><value>${firstName}</value><value>${email}</value><value>${phoneno}</value><value>Yes</value><value>Yes</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on Add Taxonomy/Speciality in Service Location section</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<parameter><parameters>
+<names><name>specialty</name></names>
+<values><value>PHYSICAL THERAPIST - 091</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then select Taxonomy in Program Participation</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<parameter><parameters>
+<names><name>locationTaxonomyEffectiveStartDate</name><name>locationTaxonomyEffectiveEndDate</name></names>
+<values><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then save Taxonomy in Taxonomy/Speciality</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When upload document &apos;Claims Documents&apos; document <parameter>text_file.txt</parameter> in Service Location Claim Section</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And To fill the Service Location info:
+<parameter><parameters>
+<names><name>languageSupported</name><name>genderServed</name><name>ageRangesServed</name></names>
+<values><value>English</value><value>Male</value><value>All ages served</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="failed" keyword="FAILED">And To fill the Service Location info:
+<parameter><parameters>
+<names><name>acceptingNewPatients</name><name>ttdTty</name><name>county</name><name>open24Hours</name><name>emergencyServices</name><name>patientRecords</name><name>personnelRecords</name><name>phoneNumberOfPatients</name><name>mannerOfService</name></names>
+<values><value>No</value><value>No</value><value>allCounty</value><value>Yes</value><value>No</value><value>Yes</value><value>Yes</value><value>${phoneno}</value><value>In-Person</value></values>
+</parameters>
+</parameter><failure>java.lang.IllegalStateException: Unable to set field value</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Service Location info:
+<parameter><parameters>
+<names><name>wheelChairAccessibility</name><name>parkingSpaceForHandicapped</name><name>assistiveListeningDevices</name><name>accessibleExamRooms</name></names>
+<values><value>No</value><value>No</value><value>No</value><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click new Save button</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Address Details&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Address Details:
+<parameter><parameters>
+<names><name>mailingAddressLine1</name><name>effectiveStartDate</name><name>effectiveEndDate</name></names>
+<values><value>${address}</value><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Concact Person Details:
+<parameter><parameters>
+<names><name>attentionLine</name><name>phone</name><name>email</name><name>fax</name><name>ext</name></names>
+<values><value>Landmark</value><value>${phoneno}</value><value>${email}</value><value>111-111-1111</value><value>333333</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Address Details:
+<parameter><parameters>
+<names><name>homeOrCorpOfficeAddress</name><name>homeOrCorpOfficeContactPersonDetails</name></names>
+<values><value>Yes</value><value>Yes</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click Next button in Address Details</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- When move to &apos;Affiliation&apos; section</step>
+<step outcome="ignorable">!-- And implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- When click Add Affiliation button in affiliation section</step>
+<step outcome="ignorable">!-- And implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- When set npi search value &apos;1699444315&apos; in affiliation section</step>
+<step outcome="ignorable">!-- And implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- When set type search value &apos;Entity&apos; in affiliation section</step>
+<step outcome="ignorable">!-- And implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- When click search by npi in affiliation section</step>
+<step outcome="ignorable">!-- And implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- When click add button in affiliation section</step>
+<step outcome="ignorable">!-- And implicit wait &apos;3&apos; seconds</step>
+<step outcome="ignorable">!-- When click on &apos;Do you want to affiliate with Primary service location ?&apos; to &apos;true&apos; in affiliation popup</step>
+<step outcome="ignorable">!-- And implicit wait &apos;3&apos; seconds</step>
+<step outcome="ignorable">!-- Then select Taxonomy and Provider Type of Entity in Affiliation section</step>
+<step outcome="ignorable">!-- When implicit wait &apos;2&apos; seconds</step>
+<step outcome="ignorable">!-- When fill the location effective start &apos;${date}&apos; and location effective end &apos;${expDate}&apos; in affiliation popup</step>
+<step outcome="ignorable">!-- When implicit wait &apos;2&apos; seconds</step>
+<step outcome="ignorable">!-- Then click on &apos;Next&apos; button</step>
+<step outcome="ignorable">!-- When implicit wait &apos;5&apos; seconds</step>
+<step outcome="ignorable">!-- When select &apos;225100000X - PHYSICAL THERAPIST&apos; with &apos;${date}&apos; and &apos;${expDate}&apos; in affiliation popup</step>
+<step outcome="ignorable">!-- And implicit wait &apos;3&apos; seconds</step>
+<step outcome="ignorable">!-- When click add button in affiliation pop-up</step>
+<step outcome="ignorable">!-- And implicit wait &apos;3&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Ownership&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Ownership Section for Enrollment:
+<parameter><parameters>
+<names><name>personOwnership1</name><name>personOrEntityOwnership</name><name>subcontractorOwnership</name><name>familymembersOwnership</name><name>billedEntityOwnership</name></names>
+<values><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Key Personnel&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on the Addline</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When To fill the OwerKeyPersonel Information for Enrollment:
+<parameter><parameters>
+<names><name>managingEmployeeType</name><name>employeeStatus</name><name>npi</name><name>race</name><name>gender</name><name>firstName</name><name>middleName</name><name>lastName</name><name>ssn</name><name>dob</name><name>countryOfBirth</name><name>stateOfBirth</name><name>ssnStartDate</name><name>ssnEndDate</name><name>ssnAddress</name></names>
+<values><value>ADMINISTRATOR</value><value>${employeeStatus}</value><value>${npi}</value><value>${race}</value><value>${gender}</value><value>${firstName}</value><value>${middleName}</value><value>${lastName}</value><value>${ssn}</value><value>${dob}</value><value>${countryOfBirth}</value><value>${stateOfBirth}</value><value>${date}</value><value>${expDate}</value><value>${address}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on the Save button in Key Personel</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;15&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Exclusion/Sanction Information&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Exclusion Sanction Section:
+<parameter><parameters>
+<names><name>fraudAlligations</name><name>fiduciaryResponsibility</name><name>perjury</name><name>serviceAbuse</name><name>criminalInvestigation</name><name>unlawfulSubstances</name><name>healthCareCrime</name><name>convictedFelony</name></names>
+<values><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Exclusion Sanction Section:
+<parameter><parameters>
+<names><name>paymentInformation</name><name>disclosureInformation</name><name>businessOrProffesionalLicense</name><name>suspensionOfAccreditation</name><name>suspendedOrExcluded</name><name>paymentSuspension</name><name>falseClaimsAct</name><name>owesMoneyToMedicaid</name></names>
+<values><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;EFT Information&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on the Addline</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then select &apos;Name of the Authorized Person&apos; in EFT Information Section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When add servicelocation providertype</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then To fill the EFT Information:
+<parameter><parameters>
+<names><name>financialInstitution</name><name>accountHolderName</name><name>EFTRoutingNumber</name><name>accountNumber</name><name>accountType</name><name>startDate</name></names>
+<values><value>Pharma medi ltd</value><value>${firstName}</value><value>123456</value><value>222333444</value><value>Savings</value><value>${yesterdayDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When upload file &apos;EFT supporting Document&apos; document <parameter>text_file.txt</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on the Save button in Key Personel</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Upload Documents&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When upload new &apos;Additional Documents(Optional)&apos; document <parameter>text_file.txt</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Authorized Signatory&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then select &apos;Authorized Signatory Name&apos; in Authorized Signatory section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to new &apos;Provider Agreement&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on sign button in the provider agreement section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And sign1 provider application for user &apos;${firstName} ${lastName}&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;40&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to new &apos;Summary&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Concact Person Details:
+<parameter><parameters>
+<names><name>firstName</name><name>lastName</name></names>
+<values><value>${firstName}</value><value>${lastName}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Agree Term and conditions to Sign</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When submit enrollment application</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on navigate to dashboard for Proceed To Sign</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When log out from PE portal</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And refresh page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When new user logs to Provider Enrollment portal with username - <parameter>johny.providers+68031@gmail.com</parameter> and password - <parameter>Aa123321!</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on new &apos;Agree&apos; button in the Portal page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When navigate to Message Center</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on &apos;Confirm your affiliation to the individual&apos; in message center</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And sign provider application for user &apos;${firstName} ${lastName}&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;30&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When log out from PE portal</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And refresh page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When new user logs to Provider Enrollment portal with username - <parameter>${email}</parameter> and password - <parameter>Aa123321!</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on new &apos;Agree&apos; button in the Portal page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Proceed To Sign button</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And sign provider application for user &apos;${firstName} ${lastName}&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;30&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click navigate to dashboard link after sign</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then save the tracking number of the provider</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then rewrite stage of credentials to &apos;Submitted&apos; for &apos;Individual2&apos;</step>
+</examples>
+<failure>java.lang.IllegalStateException: Unable to set field value
+	at com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$0(BeanUtils.java:43)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$1(BeanUtils.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.hhstechgroup.util.common.BeanUtils.copyPropertiesInOrder(BeanUtils.java:34)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps.setServiceLocationInfo(EnrollmentApplicationSteps.java:880)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps$$EnhancerByCGLIB$$1c72faeb.CGLIB$setServiceLocationInfo$46(&lt;generated&gt;)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps$$EnhancerByCGLIB$$1c72faeb$$FastClassByCGLIB$$9f7cbfd6.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps$$EnhancerByCGLIB$$1c72faeb.setServiceLocationInfo(&lt;generated&gt;)
+	at com.hhstechgroup.steps.jbehave.scenarios.enrollmentapplication.ApplicationSectionScenario.setServiceLocationInfo1(ApplicationSectionScenario.java:774)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</failure>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

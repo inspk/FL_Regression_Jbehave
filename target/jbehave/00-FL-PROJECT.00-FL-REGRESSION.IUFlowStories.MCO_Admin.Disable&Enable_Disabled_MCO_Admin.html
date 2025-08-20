@@ -1,0 +1,63 @@
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/MCO_Admin/Disable&amp;Enable_Disabled_MCO_Admin.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Disable an MCO Admin's access</h2>
+<div class="step successful">When user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then statistics should be displayed on dashboard page</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When navigate to 'System Options' page from user pop-up</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then click on 'Users' links in system options</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then search with '${email}' on User Management page</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">Then Deactivate the user with reason 'Enrollment rules violation'</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">Then verify the status as 'DEACTIVATE' on User Management page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Once user is INACTIVE, they can no longer log into the system.</h2>
+<div class="step successful">When user navigated to landing page</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When deactivated user logs to Internal User portal with username - <span class="step parameter">${email}</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '1' seconds</div>
+<div class="step successful">Then verify the alert message for MCO Admin</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Reactivate Inactive User &amp; Verify Status</h2>
+<div class="step successful">When user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then statistics should be displayed on dashboard page</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When navigate to 'System Options' page from user pop-up</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then click on 'Users' links in system options</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then search with '${email}' on User Management page</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">Then reactivate the user with reason 'Positive enrollment history'</div>
+</div>
+<div class="scenario">
+<h2>Scenario: activated MCO Admin can log in using their email and access the Affiliation Dashboard immediately.</h2>
+<div class="step successful">When user navigated to landing page</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When deactivated user logs to Internal User portal with username - <span class="step parameter">${email}</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '1' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then verify 'MCO Admin' is displayed</div>
+</div>
+</div>

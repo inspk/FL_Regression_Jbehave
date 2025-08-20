@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.IU_MCO.MCO_Taxonomy_ServiceLocation_I-COC</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/IU_MCO/MCO_Taxonomy_ServiceLocation_I-COC.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: scenario description</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">And save current <span class="step parameter">date</span> to variable 'date'</div>
+<div class="step successful">When save current date plus <span class="step parameter">1</span> years to variable 'expDate'</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">Then validation message 'This system contains U.S. Government and State of Florida information. By accessing and using this computer system you are consenting to system monitoring for law enforcement, auditing, and other purposes. Unauthorized use of, or access to, this computer system may subject your to state and federal. criminal prosecution and penalties, as well as civil penalties. Unauthorized use of the system is prohibited.' should be displayed in agree page</div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">And click on <span class="step parameter">CoC</span> tab on header</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">When click on 'Add I Coc'</div>
+<div class="step successful">When set enrollment type 'MCO' in i-Coc popup</div>
+<div class="step successful">When click search in I-Coc popup</div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step failed">When select provider in i-Coc popup <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.157)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SOMATHASIVASAMY', ip: '192.168.2.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.157, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51546}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4a5c1ebea2269e9e15f7f8e58d79635
+*** Element info: {Using=xpath, value=//div[@aria-label='responsive-dialog-title']}</span></div>
+<div class="step notPerformed">When click next in i-Coc popup <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When select taxonomy data type in coc pop-up <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click Create CoC  for group button  on categories modal window <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '15' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to 'Taxonomy / Specialty / Provider Type / License Certification Information' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on Add Taxonomy in Taxonomy Info section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>taxonomyDescription</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>322D00000X</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Taxonomy/Speciality/License Certification section info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>effectiveStartDate</th><th>effectiveEndDate</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${date}</td><td>${expDate}</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then save the details of Taxonomy/Speciality/License Certification section info <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to 'Service Location' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on Add Location in Service Location section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Service Location info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>effectiveDate</th><th>locationName</th><th>addressLine1</th><th>attentionLine</th><th>email</th><th>phoneNumber</th><th>mailingAddress</th><th>mailingAddressContactInfo</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${date}</td><td>Primary clinic</td><td>100</td><td>John</td><td>test@gmail.com</td><td>8765487654</td><td>Yes</td><td>Yes</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on Add Taxonomy/Speciality in Service Location section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>specialty</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>FREESTANDING PSYCHIATRIC HOSPITAL FOR CHILDREN - 300</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then select Taxonomy in Program Participation <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>locationTaxonomyEffectiveStartDate</th><th>locationTaxonomyEffectiveEndDate</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>${date}</td><td>${expDate}</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then save Taxonomy in Taxonomy/Speciality <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '30' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on 'Add Region' in Service Location Section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And To fill the Service Location info:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>region</th><th>startDate</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Region F</td><td>${date}</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on Save Button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When move to new 'Summary' section <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When submit application <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on Go to Change of Circumstance button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When log out from portal <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

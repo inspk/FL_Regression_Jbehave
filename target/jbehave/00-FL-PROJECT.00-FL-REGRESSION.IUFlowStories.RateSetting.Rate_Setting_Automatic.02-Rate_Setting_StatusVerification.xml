@@ -1,0 +1,7 @@
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/RateSetting/Rate_Setting_Automatic/02-Rate_Setting_StatusVerification.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">perform an action</asA>
+  <iWantTo keyword="So that">I can achieve a business goal</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Group Provider Status Changing from New to Approved with 2 reviewers and 1 Approver">

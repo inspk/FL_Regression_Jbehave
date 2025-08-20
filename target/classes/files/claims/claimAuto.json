@@ -1,0 +1,70 @@
+{
+  "id": "123",
+  "statusEffectiveDate": "2018-03-11",
+  "tcn": "945405",
+  "serviceFromDate": "2018-03-01",
+  "serviceToDate": "2018-03-01",
+  "amount": "255",
+  "totalChargedAmount": "255",
+  "status": null,
+  "type": null,
+  "claimType": "MB",
+  "transaction": "00",
+  "transactionType": null,
+  "remittanceAdviceNumber": null,
+  "member": {
+    "id": "3456789-qa",
+    "firstName": "Olga",
+    "lastName": "ZaiatsCustomer",
+    "middleName": "S",
+    "dateOfBirth": "1990-01-23",
+    "gender": "FEMALE"
+  },
+  "provider": {
+    "id": "551-pr",
+    "lastName": "PROV Last Dentist",
+    "address": {
+      "state": "CA",
+      "city": "Kyiv",
+      "street": "433 Orange street",
+      "poBox": "54673",
+      "zip": "23456"
+    }
+  },
+  "payment": null,
+  "payer": null,
+  "informationReceiver": null,
+  "adjustments": [],
+  "remarkCodes": [
+    {
+      "amount": null,
+      "remarkCode": null,
+      "description": "EI"
+    },
+    {
+      "amount": null,
+      "remarkCode": null,
+      "description": "6R"
+    }
+  ],
+  "lineItems": [
+    {
+      "status": null,
+      "serviceFromDate": null,
+      "serviceToDate": null,
+      "procedureCode": null,
+      "modifier1": "HC>J2941",
+      "modifier2": null,
+      "modifier3": null,
+      "modifier4": null,
+      "statusEffectiveDate": null,
+      "totalChargeAmount": null,
+      "nonCoveredCharge": null,
+      "toBePaidAmount": null,
+      "paidAmount": null,
+      "revenueCode": null,
+      "submittedUnits": null,
+      "paidUnits": null
+    }
+  ]
+}

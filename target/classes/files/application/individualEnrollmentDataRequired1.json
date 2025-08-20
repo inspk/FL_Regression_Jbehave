@@ -1,0 +1,74 @@
+[{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "Jon",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,2",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "Snow",
+    "timestamp": 0
+  }
+}, {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,5",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "Male",
+    "timestamp": 0
+  }
+},
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,6",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "01/01/1984",
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "1,4,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "array",
+      "value": [
+        "Gastroenterology",
+        "Otolaryngology"
+      ],
+      "timestamp": 0
+    }
+  }
+,
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "2,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${NPI}",
+      "timestamp": 0
+    }
+  },
+ {
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "12,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "attachment",
+    "value": [${upload}],
+    "timestamp": 0
+  }
+}
+
+]

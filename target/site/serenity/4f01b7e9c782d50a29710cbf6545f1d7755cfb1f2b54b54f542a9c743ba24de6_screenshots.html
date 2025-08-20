@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Provider Management Test Report</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="f73546822bc0ea9ee3834070ed5bc8e30a4f970cdf1b4f8c87b400693c4c5f41.html">04- Individual Registration And Submission</a></span>
+                > <span class="truncate-60"><a
+                    href="4f01b7e9c782d50a29710cbf6545f1d7755cfb1f2b54b54f542a9c743ba24de6.html">Individual Provider Enrollment Flow </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-08-2025 18:50</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">04- Individual Registration And Submission</span>
+                                    <span class="badge tag-badge" style="">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user
+I want to perform an action
+So that I can achieve a business goal
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Individual Provider Enrollment Flow
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given generate firstname, lastname, middlename and email credentials for 'Individual2'<br>And get random npi from file 'SdNPI'<br>And save value '&lt;provider&gt;' to variable 'provider'<br>And save value '&lt;gender&gt;' to variable 'gender'<br>And save value '&lt;dob&gt;' to variable 'dob'<br>And save value '&lt;race&gt;' to variable 'race'<br>And save value '&lt;ssn&gt;' to variable 'ssn'<br>And save value '&lt;typeOfBusiness&gt;' to variable 'typeOfBusiness'<br>And save value '&lt;taxonomyCategory&gt;' to variable 'taxonomyCategory'<br>And save value '&lt;primaryTaxonomy&gt;' to variable 'primaryTaxonomy'<br>And save value '&lt;phoneno&gt;' to variable 'phoneno'<br>And save value '&lt;phoneno&gt;' to variable 'applicationContactNum'<br>And save value '&lt;address&gt;' to variable 'address'<br>And save value '&lt;mailingAddressZip&gt;' to variable 'mailingAddressZip'<br>And save value '&lt;mailingAddressCountycode&gt;' to variable 'mailingAddressCountycode'<br>And save value '&lt;licenseNumber&gt;' to variable 'licenseNumber'<br>And save value '&lt;licenseType&gt;' to variable 'licenseType'<br>And save value '&lt;licenseIssuedState&gt;' to variable 'licenseIssuedState'<br>And save value '&lt;primaryServiceLocationAddressLine1&gt;' to variable 'primaryServiceLocationAddressLine1'<br>And save value '&lt;primaryServiceLocationZip&gt;' to variable 'primaryServiceLocationZip'<br>And save value '&lt;primaryServiceLocationCountyCode&gt;' to variable 'primaryServiceLocationCountyCode'<br>And save value '&lt;profitStatus&gt;' to variable 'profitStatus'<br>And save value '&lt;countryOfBirth&gt;' to variable 'countryOfBirth'<br>And save value '&lt;stateOfBirth&gt;' to variable 'stateOfBirth'<br>And save value '&lt;stateOfBirth&gt;' to variable 'stateofBirth'<br>And save value '&lt;reasonCode&gt;' to variable 'reasonCode'<br>And save value '&lt;businessName&gt;' to variable 'businessName'<br>And save value '&lt;dbaName&gt;' to variable 'dbaName'<br>And save value '&lt;attentionLine&gt;' to variable 'attentionLine'<br>And save value '&lt;managingEmployeeType&gt;' to variable 'managingEmployeeType'<br>And save value '&lt;employeeStatus&gt;' to variable 'employeeStatus'<br>And save value '&lt;providerID&gt;' to variable 'providerID'<br>And save current date to variable 'date'<br>When save current date plus 1 years to variable 'expDate'<br>When save yesterday's date to variable 'yesterdayDate'<br>When user navigated to landing page<br>When implicit wait '5' seconds<br>When click create account link in the landing page<br>And wait for screening process execution during '5' seconds<br>When fill Email with value '${email}' on registration page<br>And fill Password with value 'Aa123321!' on registration page<br>When click on continue button in the registartion page<br>And fill Organization Name field with value 'HHSTECHGROUP' on registration page<br>And fill Organization description with value 'HHSOrg' on registration page<br>When click on continue button in the registartion page<br>And fill First name  with value '${firstName}' on registration page<br>And fill Last name with value '${lastName}' on registration page<br>And fill Phone with value '${phoneno}' on registration page<br>When click on create account link in the registartion page<br>When login to user gmail<br>Then go to gmail to inbox page<br>When implicit wait '5' seconds<br>When search for message by email - ${email}<br>When open new 'Registration in ProviderPortal' email<br>When implicit wait '5' seconds<br>Then click on new user link from the gmail<br>When implicit wait '5' seconds<br>Then navigate Back to Login page<br>When implicit wait '5' seconds<br>And refresh page<br>When implicit wait '15' seconds<br>When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!<br>When click on new 'Agree' button in the Portal page<br>When skip help tour if exists<br>And user click on Individual Enrollment type<br>When implicit wait '50' seconds<br>When move to 'Identifying Information' section<br>When implicit wait '5' seconds<br>When select 'To ONLY bill for services and receive payment directly from Medicaid' for Applicatiion type determination<br>When implicit wait '5' seconds<br>Then select 'SOLE PROPRIETOR' for practice type<br>When implicit wait '5' seconds<br>And To fill the identifying information section for Enrollment:<br><table class='embedded'><thead><th>title</th><th>countryOfBirth</th><th>stateofBirth</th></thead><tbody><tr><td>Mr.</td><td>${countryOfBirth}</td><td>${stateOfBirth}</td></tr></tbody></table><br>And To fill the identifying information section for Enrollment:<br><table class='embedded'><thead><th>firstName</th><th>lastName</th><th>dateOfBirth</th><th>appliationContactName</th><th>applicationContactNum</th><th>ssn</th><th>email</th><th>middleName</th><th>taxExempt</th><th>businessName</th><th>dbaName</th></thead><tbody><tr><td>${firstName}</td><td>${lastName}</td><td>${dob}</td><td>${firstName} ${lastName}</td><td>${phoneno}</td><td>${ssn}</td><td>${email}</td><td>${middleName}</td><td>Yes</td><td>${businessName}</td><td>${dbaName}</td></tr></tbody></table><br>When fill the Gender<br>When implicit wait '5' seconds<br>When move to 'Taxonomy / Specialty / Provider Type / License Certification Information' section<br>And implicit wait '5' seconds<br>When click on Add Taxonomy in Taxonomy Info section<br>And implicit wait '5' seconds<br>And To fill the Taxonomy/Speciality/License Certification section info:<br><table class='embedded'><thead><th>taxonomyDescription</th></thead><tbody><tr><td>22510000</td></tr></tbody></table><br>And implicit wait '5' seconds<br>And To fill the Taxonomy/Speciality/License Certification section info:<br><table class='embedded'><thead><th>effectiveStartDate</th><th>effectiveEndDate</th></thead><tbody><tr><td>${date}</td><td>${expDate}</td></tr></tbody></table><br>And implicit wait '5' seconds<br>When click on 'Add License/Certificate' in Taxonomy/Speciality/License Certification Info section<br>And implicit wait '5' seconds<br>And To fill the Taxonomy/Speciality/License Certification section info:<br><table class='embedded'><thead><th>licenseCertificateType</th><th>licenseCertificateNumber</th><th>effectiveEndDate2</th><th>effectiveStartDate2</th></thead><tbody><tr><td>DOH</td><td>12345</td><td>${expDate}</td><td>${date}</td></tr></tbody></table><br>When implicit wait '5' seconds<br>When upload document 'Upload License/Certificate Document*' document text_file.txt in Taxonomy/Speciality/License Certification Info section<br>When implicit wait '5' seconds<br>When click on 'Add' in Taxonomy/Speciality/License Certification Info section<br>When implicit wait '3' seconds<br>Then save the details of Taxonomy/Speciality/License Certification section info<br>When implicit wait '5' seconds<br>When move to 'Provider Identifiers' section<br>And implicit wait '5' seconds<br>And To fill the Provider Identification Number:<br><table class='embedded'><thead><th>npi</th></thead><tbody><tr><td>${npi}</td></tr></tbody></table><br>When implicit wait '5' seconds<br>And To fill the Provider Identification Number:<br><table class='embedded'><thead><th>medicareCrossoverClaim</th><th>medicaidState</th><th>claimSubmit</th></thead><tbody><tr><td>No</td><td>No</td><td>Direct Data Entry</td></tr></tbody></table><br>And implicit wait '5' seconds<br>When move to 'Other Credentialing Information' section<br>And implicit wait '5' seconds<br>Then click on the Add Line<br>When implicit wait '5' seconds<br>When To fill the Other Credentialing Information Info for Enrollment:<br><table class='embedded'><thead><th>typeOfTraining</th><th>organizationName</th><th>effectiveStartDate</th><th>effectiveEndDate</th></thead><tbody><tr><td>Internship</td><td>Mediplus</td><td>${date}</td><td>${expDate}</td></tr></tbody></table><br>When implicit wait '5' seconds<br>When upload document 'Upload Training Document' document text_file.txt in Other Credentialing Information Info section<br>When implicit wait '5' seconds<br>Then click on the Save button<br>When implicit wait '5' seconds<br>When click on the Add line<br>When implicit wait '5' seconds<br>When To fill the Other Credentialing Information Info for Enrollment:<br><table class='embedded'><thead><th>gradutaionType</th><th>medicalSchool</th><th>professionalSchoolName</th><th>professionalSchoolAddress</th></thead><tbody><tr><td>US/Canada Graduate</td><td>Yes</td><td>CANVAS CAMPUS</td><td>${address}</td></tr></tbody></table><br>When implicit wait '5' seconds<br>Then click on the Save button<br>When implicit wait '15' seconds<br>When move to 'Employment Authorization Information' section<br>When implicit wait '5' seconds<br>When To fill the Employment Authorization Information for Enrollment:<br><table class='embedded'><thead><th>usCitizen</th></thead><tbody><tr><td>Yes</td></tr></tbody></table><br>When implicit wait '2' seconds<br>When move to 'Professional Liability Insurance Information' section<br>And implicit wait '5' seconds<br>When To fill the Proffesional Liability Insurance Info for Enrollment:<br><table class='embedded'><thead><th>deniedProffesionalLiabilityInsurance</th><th>deniedRenewal</th><th>malpractice1</th><th>unfavourableJudgement</th><th>malpracticeCurrentlyPending</th><th>mentalOrPhysicalHealthCondition</th><th>malPracticeInfo</th><th>malPracticeHealthInfo</th></thead><tbody><tr><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></tbody></table><br>When implicit wait '5' seconds<br>When move to 'Service Location' section<br>When implicit wait '5' seconds<br>When click on Add Location in Service Location section<br>When implicit wait '5' seconds<br>And To fill the Service Location info:<br><table class='embedded'><thead><th>effectiveDate</th><th>locationName</th><th>addressLine1</th><th>attentionLine</th><th>email</th><th>phoneNumber</th><th>mailingAddress</th><th>mailingAddressContactInfo</th></thead><tbody><tr><td>${date}</td><td>Primary clinic</td><td>${primaryServiceLocationAddressLine1}</td><td>${firstName}</td><td>${email}</td><td>${phoneno}</td><td>Yes</td><td>Yes</td></tr></tbody></table><br>When implicit wait '5' seconds<br>When click on Add Taxonomy/Speciality in Service Location section<br>When implicit wait '5' seconds<br>Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:<br><table class='embedded'><thead><th>specialty</th></thead><tbody><tr><td>PHYSICAL THERAPIST - 091</td></tr></tbody></table><br>When implicit wait '5' seconds<br>Then select Taxonomy in Program Participation<br>When implicit wait '5' seconds<br>Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:<br><table class='embedded'><thead><th>locationTaxonomyEffectiveStartDate</th><th>locationTaxonomyEffectiveEndDate</th></thead><tbody><tr><td>${date}</td><td>${expDate}</td></tr></tbody></table><br>When implicit wait '5' seconds<br>Then save Taxonomy in Taxonomy/Speciality<br>When implicit wait '5' seconds<br>When upload document 'Claims Documents' document text_file.txt in Service Location Claim Section<br>When implicit wait '5' seconds<br>And To fill the Service Location info:<br><table class='embedded'><thead><th>languageSupported</th><th>genderServed</th><th>ageRangesServed</th></thead><tbody><tr><td>English</td><td>Male</td><td>All ages served</td></tr></tbody></table><br>When implicit wait '5' seconds<br>And To fill the Service Location info:<br><table class='embedded'><thead><th>acceptingNewPatients</th><th>ttdTty</th><th>county</th><th>open24Hours</th><th>emergencyServices</th><th>patientRecords</th><th>personnelRecords</th><th>phoneNumberOfPatients</th><th>mannerOfService</th></thead><tbody><tr><td>No</td><td>No</td><td>allCounty</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>${phoneno}</td><td>In-Person</td></tr></tbody></table><br>And implicit wait '5' seconds<br>And To fill the Service Location info:<br><table class='embedded'><thead><th>wheelChairAccessibility</th><th>parkingSpaceForHandicapped</th><th>assistiveListeningDevices</th><th>accessibleExamRooms</th></thead><tbody><tr><td>No</td><td>No</td><td>No</td><td>No</td></tr></tbody></table><br>And implicit wait '5' seconds<br>Then click new Save button<br>When implicit wait '5' seconds<br>When move to 'Address Details' section<br>And implicit wait '5' seconds<br>And To fill the Address Details:<br><table class='embedded'><thead><th>mailingAddressLine1</th><th>effectiveStartDate</th><th>effectiveEndDate</th></thead><tbody><tr><td>${address}</td><td>${date}</td><td>${expDate}</td></tr></tbody></table><br>And implicit wait '5' seconds<br>And To fill the Concact Person Details:<br><table class='embedded'><thead><th>attentionLine</th><th>phone</th><th>email</th><th>fax</th><th>ext</th></thead><tbody><tr><td>Landmark</td><td>${phoneno}</td><td>${email}</td><td>111-111-1111</td><td>333333</td></tr></tbody></table><br>And To fill the Address Details:<br><table class='embedded'><thead><th>homeOrCorpOfficeAddress</th><th>homeOrCorpOfficeContactPersonDetails</th></thead><tbody><tr><td>Yes</td><td>Yes</td></tr></tbody></table><br>And implicit wait '5' seconds<br>When click Next button in Address Details<br>When implicit wait '5' seconds<br>!-- When move to 'Affiliation' section<br>!-- And implicit wait '5' seconds<br>!-- When click Add Affiliation button in affiliation section<br>!-- And implicit wait '5' seconds<br>!-- When set npi search value '1699444315' in affiliation section<br>!-- And implicit wait '5' seconds<br>!-- When set type search value 'Entity' in affiliation section<br>!-- And implicit wait '5' seconds<br>!-- When click search by npi in affiliation section<br>!-- And implicit wait '5' seconds<br>!-- When click add button in affiliation section<br>!-- And implicit wait '3' seconds<br>!-- When click on 'Do you want to affiliate with Primary service location ?' to 'true' in affiliation popup<br>!-- And implicit wait '3' seconds<br>!-- Then select Taxonomy and Provider Type of Entity in Affiliation section<br>!-- When implicit wait '2' seconds<br>!-- When fill the location effective start '${date}' and location effective end '${expDate}' in affiliation popup<br>!-- When implicit wait '2' seconds<br>!-- Then click on 'Next' button<br>!-- When implicit wait '5' seconds<br>!-- When select '225100000X - PHYSICAL THERAPIST' with '${date}' and '${expDate}' in affiliation popup<br>!-- And implicit wait '3' seconds<br>!-- When click add button in affiliation pop-up<br>!-- And implicit wait '3' seconds<br>When move to 'Ownership' section<br>And implicit wait '5' seconds<br>And To fill the Ownership Section for Enrollment:<br><table class='embedded'><thead><th>personOwnership1</th><th>personOrEntityOwnership</th><th>subcontractorOwnership</th><th>familymembersOwnership</th><th>billedEntityOwnership</th></thead><tbody><tr><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></tbody></table><br>When implicit wait '10' seconds<br>When move to 'Key Personnel' section<br>When implicit wait '2' seconds<br>Then click on the Addline<br>When implicit wait '2' seconds<br>When To fill the OwerKeyPersonel Information for Enrollment:<br><table class='embedded'><thead><th>managingEmployeeType</th><th>employeeStatus</th><th>npi</th><th>race</th><th>gender</th><th>firstName</th><th>middleName</th><th>lastName</th><th>ssn</th><th>dob</th><th>countryOfBirth</th><th>stateOfBirth</th><th>ssnStartDate</th><th>ssnEndDate</th><th>ssnAddress</th></thead><tbody><tr><td>ADMINISTRATOR</td><td>${employeeStatus}</td><td>${npi}</td><td>${race}</td><td>${gender}</td><td>${firstName}</td><td>${middleName}</td><td>${lastName}</td><td>${ssn}</td><td>${dob}</td><td>${countryOfBirth}</td><td>${stateOfBirth}</td><td>${date}</td><td>${expDate}</td><td>${address}</td></tr></tbody></table><br>When implicit wait '5' seconds<br>Then click on the Save button in Key Personel<br>When implicit wait '15' seconds<br>When move to 'Exclusion/Sanction Information' section<br>And implicit wait '5' seconds<br>And To fill the Exclusion Sanction Section:<br><table class='embedded'><thead><th>fraudAlligations</th><th>fiduciaryResponsibility</th><th>perjury</th><th>serviceAbuse</th><th>criminalInvestigation</th><th>unlawfulSubstances</th><th>healthCareCrime</th><th>convictedFelony</th></thead><tbody><tr><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></tbody></table><br>And To fill the Exclusion Sanction Section:<br><table class='embedded'><thead><th>paymentInformation</th><th>disclosureInformation</th><th>businessOrProffesionalLicense</th><th>suspensionOfAccreditation</th><th>suspendedOrExcluded</th><th>paymentSuspension</th><th>falseClaimsAct</th><th>owesMoneyToMedicaid</th></thead><tbody><tr><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></tbody></table><br>When implicit wait '2' seconds<br>When move to 'EFT Information' section<br>When implicit wait '2' seconds<br>Then click on the Addline<br>When implicit wait '5' seconds<br>Then select 'Name of the Authorized Person' in EFT Information Section<br>When implicit wait '2' seconds<br>When add servicelocation providertype<br>Then To fill the EFT Information:<br><table class='embedded'><thead><th>financialInstitution</th><th>accountHolderName</th><th>EFTRoutingNumber</th><th>accountNumber</th><th>accountType</th><th>startDate</th></thead><tbody><tr><td>Pharma medi ltd</td><td>${firstName}</td><td>123456</td><td>222333444</td><td>Savings</td><td>${yesterdayDate}</td></tr></tbody></table><br>When implicit wait '2' seconds<br>When upload file 'EFT supporting Document' document text_file.txt<br>When implicit wait '5' seconds<br>Then click on the Save button in Key Personel<br>When implicit wait '5' seconds<br>When move to 'Upload Documents' section<br>When implicit wait '10' seconds<br>When upload new 'Additional Documents(Optional)' document text_file.txt<br>And implicit wait '5' seconds<br>When move to 'Authorized Signatory' section<br>And implicit wait '5' seconds<br>Then select 'Authorized Signatory Name' in Authorized Signatory section<br>When implicit wait '5' seconds<br>When move to new 'Provider Agreement' section<br>And implicit wait '10' seconds<br>When click on sign button in the provider agreement section<br>And implicit wait '5' seconds<br>And sign1 provider application for user '${firstName} ${lastName}'<br>And implicit wait '40' seconds<br>When move to new 'Summary' section<br>And implicit wait '5' seconds<br>And To fill the Concact Person Details:<br><table class='embedded'><thead><th>firstName</th><th>lastName</th></thead><tbody><tr><td>${firstName}</td><td>${lastName}</td></tr></tbody></table><br>Then Agree Term and conditions to Sign<br>When submit enrollment application<br>And implicit wait '5' seconds<br>When click on navigate to dashboard for Proceed To Sign<br>And implicit wait '5' seconds<br>When log out from PE portal<br>And implicit wait '5' seconds<br>And refresh page<br>And implicit wait '5' seconds<br>When new user logs to Provider Enrollment portal with username - johny.providers+68031@gmail.com and password - Aa123321!<br>When click on new 'Agree' button in the Portal page<br>And implicit wait '5' seconds<br>When navigate to Message Center<br>And implicit wait '5' seconds<br>When click on 'Confirm your affiliation to the individual' in message center<br>And implicit wait '5' seconds<br>And sign provider application for user '${firstName} ${lastName}'<br>And implicit wait '30' seconds<br>When log out from PE portal<br>And implicit wait '5' seconds<br>And refresh page<br>And implicit wait '5' seconds<br>When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!<br>When click on new 'Agree' button in the Portal page<br>And implicit wait '5' seconds<br>When click on Proceed To Sign button<br>And implicit wait '10' seconds<br>And sign provider application for user '${firstName} ${lastName}'<br>When implicit wait '30' seconds<br>When click navigate to dashboard link after sign<br>When implicit wait '5' seconds<br>Then save the tracking number of the provider<br>When implicit wait '5' seconds<br>Then rewrite stage of credentials to 'Submitted' for 'Individual2'</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Illegal state exception: Unable to set field value</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.IllegalStateException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$0(BeanUtils.java:43)<br />com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$1(BeanUtils.java:35)<br />com.hhstechgroup.util.common.BeanUtils.copyPropertiesInOrder(BeanUtils.java:34)<br />com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps.setServiceLocationInfo(EnrollmentApplicationSteps.java:880)<br />com.hhstechgroup.steps.jbehave.scenarios.enrollmentapplication.ApplicationSectionScenario.setServiceLocationInfo1(ApplicationSectionScenario.java:774)<br />jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)<br />jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource9318851115020890418.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="b4476cadb13c67ff70dcdab790c0aa289d0cef132119748ce9b2be8234636fa2.png" title="Set service location info: com.hhstechgroup.beans.application.ServiceLocationBean@62be463: <span class='error-color'>ERROR</span>" width="2774"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.0</span>
+</div>
+</body>
+</html>

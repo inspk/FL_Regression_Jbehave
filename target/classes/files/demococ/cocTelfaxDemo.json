@@ -1,0 +1,17 @@
+[
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "0,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "table",
+      "value": [
+        {
+          "fax": "${Tel/Fax/Email.Tel/Fax/Email.Fax}",
+          "phone": "${Tel/Fax/Email.Tel/Fax/Email.Phone}"
+        }
+      ],
+      "timestamp": 0
+    }
+  }
+]

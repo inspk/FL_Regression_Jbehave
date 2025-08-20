@@ -1,0 +1,62 @@
+[{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,0",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "New group",
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,1",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "123597",
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,3",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "Corporation",
+    "timestamp": 0
+  }
+},{
+  "type": "answerChangedEvent",
+  "runtimeFieldId": "0,0,4",
+  "timestamp": 0,
+  "answer": {
+    "type": "simple",
+    "value": "wy.providers+${provider}@gmail.com",
+    "timestamp": 0
+  }
+},
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "1,4,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "array",
+      "value": [
+        "Gastroenterology",
+        "Otolaryngology"
+      ],
+      "timestamp": 0
+    }
+  },
+  {
+    "type": "answerChangedEvent",
+    "runtimeFieldId": "2,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${NPI}",
+      "timestamp": 0
+    }
+  }
+
+]

@@ -1,0 +1,109 @@
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_IndividualCOC/03-IndividualProviderVerifyCOC.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">perform an action</asA>
+  <iWantTo keyword="So that">I can achieve a business goal</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Individual Provider COC flow to Approve">
+<step outcome="failed" keyword="FAILED">Given take firstname, lastname and email credentials for type &apos;Individual2&apos; and &apos;Submitted&apos; and use in session<failure>java.lang.NullPointerException</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Given user navigated to landing page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When new user logs to Provider Enrollment portal with username - <parameter>${email}</parameter> and password - <parameter>Aa123321!</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on new &apos;Agree&apos; button in the Portal page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And save current <parameter>date</parameter> to variable &apos;date&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When skip help tour if exists</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;3&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And click on <parameter>CoC</parameter> tab on header</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Change request button on Coc page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When select taxonomy data type in coc pop-up</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click Create CoC  for group button  on categories modal window</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;15&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Taxonomy / Specialty / Provider Type / License Certification Information&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Add Taxonomy in Taxonomy Info section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Taxonomy/Speciality/License Certification section info:
+<parameter><parameters>
+<names><name>taxonomyDescription</name></names>
+<values><value>22510000</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Taxonomy/Speciality/License Certification section info:
+<parameter><parameters>
+<names><name>effectiveStartDate</name><name>effectiveEndDate</name></names>
+<values><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on &apos;Add License/Certificate&apos; in Taxonomy/Speciality/License Certification Info section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Taxonomy/Speciality/License Certification section info:
+<parameter><parameters>
+<names><name>licenseCertificateType</name><name>licenseCertificateNumber</name><name>effectiveEndDate2</name><name>effectiveStartDate2</name></names>
+<values><value>DOH</value><value>12345</value><value>${expDate}</value><value>${date}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When upload document &apos;Upload License/Certificate Document*&apos; document <parameter>text_file.txt</parameter> in Taxonomy/Speciality/License Certification Info section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on &apos;Add&apos; in Taxonomy/Speciality/License Certification Info section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;3&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then save the details of Taxonomy/Speciality/License Certification section info</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Service Location&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Add Location in Service Location section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Service Location info:
+<parameter><parameters>
+<names><name>effectiveDate</name><name>locationName</name><name>addressLine1</name><name>attentionLine</name><name>email</name><name>phoneNumber</name><name>mailingAddress</name><name>mailingAddressContactInfo</name></names>
+<values><value>${date}</value><value>Primary clinic</value><value>${primaryServiceLocationAddressLine1}</value><value>${firstName}</value><value>${email}</value><value>${phoneno}</value><value>Yes</value><value>Yes</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Add Taxonomy/Speciality in Service Location section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<parameter><parameters>
+<names><name>specialty</name></names>
+<values><value>PHYSICAL THERAPIST - 091</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then select Taxonomy in Program Participation</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<parameter><parameters>
+<names><name>locationTaxonomyEffectiveStartDate</name><name>locationTaxonomyEffectiveEndDate</name></names>
+<values><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then save Taxonomy in Taxonomy/Speciality</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to new &apos;Summary&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When submit application</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then page with url &apos;runtime/submitted/coc&apos; should be opened</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And pop-up with title &apos;Success!Your request was submitted.&apos; should be displayed after submission</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Go to Change of Circumstance button</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then save coc request ID to approve the request of the provider</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then rewrite stage of credentials to &apos;ApprovedReviewCOC1&apos; for &apos;Individual3&apos;</step>
+<failure>java.lang.NullPointerException
+	at com.hhstechgroup.util.properties.ProviderProperties.getData(ProviderProperties.java:121)
+	at com.hhstechgroup.steps.jbehave.scenarios.TestDataCreationScenario.getCredentials(TestDataCreationScenario.java:262)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</failure>
+</scenario>
+</story>

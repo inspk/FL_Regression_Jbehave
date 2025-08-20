@@ -1,0 +1,276 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.IU_MCO.AddingMCOFromIU</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/IU_MCO/AddingMCOFromIU.story" title="">
+<scenario keyword="Scenario:" title="Adding MCO from Internal User Portal">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">And save value &apos;&lt;fein&gt;&apos; to variable &apos;fein&apos;</step>
+<step outcome="successful">And save value &apos;&lt;gender&gt;&apos; to variable &apos;gender&apos;</step>
+<step outcome="successful">And save value &apos;&lt;taxEntityType&gt;&apos; to variable &apos;taxEntityType&apos;</step>
+<step outcome="successful">And save value &apos;&lt;planLegalName&gt;&apos; to variable &apos;planLegalName&apos;</step>
+<step outcome="successful">And save value &apos;&lt;mailingAddressLine1&gt;&apos; to variable &apos;mailingAddressLine1&apos;</step>
+<step outcome="successful">And save value &apos;&lt;phone&gt;&apos; to variable &apos;phone&apos;</step>
+<step outcome="successful">And save value &apos;&lt;phoneno&gt;&apos; to variable &apos;phoneno&apos;</step>
+<step outcome="successful">And save value &apos;&lt;taxonomyCategory&gt;&apos; to variable &apos;taxonomyCategory&apos;</step>
+<step outcome="successful">And save value &apos;&lt;primaryTaxonomy&gt;&apos; to variable &apos;primaryTaxonomy&apos;</step>
+<step outcome="successful">And save value &apos;&lt;dbaName&gt;&apos; to variable &apos;dbaName&apos;</step>
+<step outcome="successful">And save value &apos;&lt;region&gt;&apos; to variable &apos;region&apos;</step>
+<step outcome="successful">And save value &apos;&lt;attentionLine&gt;&apos; to variable &apos;attentionLine&apos;</step>
+<step outcome="successful">And save value &apos;&lt;managingEmployeeType&gt;&apos; to variable &apos;managingEmployeeType&apos;</step>
+<step outcome="successful">And save value &apos;&lt;primaryServiceLocationAddressLine1&gt;&apos; to variable &apos;primaryServiceLocationAddressLine1&apos;</step>
+<step outcome="successful">And save value &apos;&lt;employeeStatus&gt;&apos; to variable &apos;employeeStatus&apos;</step>
+<step outcome="successful">And save value &apos;&lt;dob&gt;&apos; to variable &apos;dob&apos;</step>
+<step outcome="successful">And save value &apos;&lt;ssn&gt;&apos; to variable &apos;ssn&apos;</step>
+<step outcome="successful">And save value &apos;&lt;countryOfBirth&gt;&apos; to variable &apos;countryOfBirth&apos;</step>
+<step outcome="successful">And save value &apos;&lt;stateofBirth&gt;&apos; to variable &apos;stateofBirth&apos;</step>
+<step outcome="successful">And save value &apos;&lt;phone&gt;&apos; to variable &apos;applicationContactPhone&apos;</step>
+<step outcome="successful">And save value &apos;&lt;providerID&gt;&apos; to variable &apos;providerID&apos;</step>
+<step outcome="successful">And save current <parameter>date</parameter> to variable &apos;date&apos;</step>
+<step outcome="successful">When save current date plus <parameter>1</parameter> years to variable &apos;expDate&apos;</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">Then validation message &apos;This system contains U.S. Government and State of Florida information. By accessing and using this computer system you are consenting to system monitoring for law enforcement, auditing, and other purposes. Unauthorized use of, or access to, this computer system may subject your to state and federal. criminal prosecution and penalties, as well as civil penalties. Unauthorized use of the system is prohibited.&apos; should be displayed in agree page</step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And click on <parameter>MCO</parameter> tab on header</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When user clicks on Add MCO button</step>
+<step outcome="successful">When implicit wait &apos;30&apos; seconds</step>
+<step outcome="successful">When move to &apos;Identifying Information&apos; section</step>
+<step outcome="successful">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="failed" keyword="FAILED">And To fill the identifying information section for Enrollment:
+<parameter><parameters>
+<names><name>planLegalName</name><name>taxEntityType</name><name>federalEmployerIdentification</name><name>applicationContactPhone</name><name>appliationContactName</name><name>mcoEmail</name></names>
+<values><value>planLegal</value><value>Corporation/Professional Organization</value><value>876543278</value><value>4567897643</value><value>John Dezouzer</value><value>test@gmail.com</value></values>
+</parameters>
+</parameter><failure>java.lang.IllegalStateException: Unable to set field value</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then fill in grouptype field with value &apos;Sunshine Health&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then fill in plantype field with value &apos;Long Term Care&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Taxonomy / Specialty / Provider Type / License Certification Information&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Add Taxonomy in Taxonomy Info section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Taxonomy/Speciality/License Certification section info:
+<parameter><parameters>
+<names><name>taxonomyDescription</name></names>
+<values><value>322D00000X</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Taxonomy/Speciality/License Certification section info:
+<parameter><parameters>
+<names><name>effectiveStartDate</name><name>effectiveEndDate</name></names>
+<values><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then save the details of Taxonomy/Speciality/License Certification section info</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Service Location&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Add Location in Service Location section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Service Location info:
+<parameter><parameters>
+<names><name>effectiveDate</name><name>locationName</name><name>addressLine1</name><name>attentionLine</name><name>email</name><name>phoneNumber</name><name>mailingAddress</name><name>mailingAddressContactInfo</name></names>
+<values><value>${date}</value><value>Primary clinic</value><value>100</value><value>John</value><value>test@gmail.com</value><value>8765487654</value><value>Yes</value><value>Yes</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Add Taxonomy/Speciality in Service Location section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<parameter><parameters>
+<names><name>specialty</name></names>
+<values><value>FREESTANDING PSYCHIATRIC HOSPITAL FOR CHILDREN - 300</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then select Taxonomy in Program Participation</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:
+<parameter><parameters>
+<names><name>locationTaxonomyEffectiveStartDate</name><name>locationTaxonomyEffectiveEndDate</name></names>
+<values><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then save Taxonomy in Taxonomy/Speciality</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;30&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on &apos;Add Region&apos; in Service Location Section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Service Location info:
+<parameter><parameters>
+<names><name>region</name><name>startDate</name></names>
+<values><value>Region A</value><value>${date}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on Save Button</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then affiliate &apos;Entity&apos; with provider</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Address Details&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Address Details:
+<parameter><parameters>
+<names><name>mailingAddressLine1</name><name>effectiveStartDate</name><name>effectiveEndDate</name></names>
+<values><value>100</value><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Concact Person Details:
+<parameter><parameters>
+<names><name>attentionLine</name><name>phone</name><name>email</name><name>fax</name><name>ext</name></names>
+<values><value>Landmark</value><value>3567894563</value><value>test@gmail.com</value><value>111-111-1111</value><value>333333</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Address Details:
+<parameter><parameters>
+<names><name>billingAddressHomeOrCorp</name><name>billingAddressContactPersonDetailsHomeOrCorp</name></names>
+<values><value>Yes</value><value>Yes</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Ownership&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Ownership Section for Enrollment:
+<parameter><parameters>
+<names><name>ownershipCode</name><name>lessThanFivePercent</name><name>personOwnership</name><name>entityOwnership</name><name>familymembersOwnership</name><name>ownersOwnership</name></names>
+<values><value>Government - City</value><value>Yes</value><value>No</value><value>No</value><value>No</value><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Ownership Section for Enrollment:
+<parameter><parameters>
+<names><name>personOrEntityOwnership</name></names>
+<values><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When To fill the Ownership Section for Enrollment:
+<parameter><parameters>
+<names><name>subcontractorOwnership</name></names>
+<values><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When provider clicks on radio button for Ownership lessthanfivepercent</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Key Personnel&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on the Addline</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When To fill the OwerKeyPersonel Information for Enrollment:
+<parameter><parameters>
+<names><name>managingEmployeeType</name><name>employeeStatus</name><name>race</name><name>gender</name><name>firstName</name><name>middleName</name><name>lastName</name><name>ssn</name><name>dob</name><name>ssnStartDate</name><name>ssnEndDate</name></names>
+<values><value>ADMINISTRATOR</value><value>Managing Non Convicted</value><value>HISPANIC</value><value>Male</value><value>John</value><value>William</value><value>Dezouzer</value><value>876543235</value><value>15-08-1947</value><value>${date}</value><value>${expDate}</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When To fill the OwerKeyPersonel Information for Enrollment:
+<parameter><parameters>
+<names><name>dob</name></names>
+<values><value>02-23-1954</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When To fill the OwerKeyPersonel Information for Enrollment:
+<parameter><parameters>
+<names><name>addressLine1</name></names>
+<values><value>100</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on the Save button in Key Personel</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;15&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to &apos;Exclusion/Sanction Information&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Exclusion Sanction Section:
+<parameter><parameters>
+<names><name>fraudAlligations</name><name>fiduciaryResponsibility</name><name>perjury</name><name>serviceAbuse</name><name>criminalInvestigation</name><name>unlawfulSubstances</name><name>healthCareCrime</name><name>convictedFelony</name></names>
+<values><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Exclusion Sanction Section:
+<parameter><parameters>
+<names><name>paymentInformation</name><name>disclosureInformation</name><name>businessOrProffesionalLicense</name><name>suspensionOfAccreditation</name><name>suspendedOrExcluded</name><name>paymentSuspension</name><name>falseClaimsAct</name><name>owesMoneyToMedicaid</name></names>
+<values><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value><value>No</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;30&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to new &apos;Summary&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And To fill the Concact Person Details:
+<parameter><parameters>
+<names><name>firstName</name><name>lastName</name></names>
+<values><value>John</value><value>Dezouzer</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Agree Term and conditions to Sign</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When submit enrollment application</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on Go To MCO button</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When log out from portal</step>
+<failure>java.lang.IllegalStateException: Unable to set field value
+	at com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$0(BeanUtils.java:43)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$1(BeanUtils.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.hhstechgroup.util.common.BeanUtils.copyPropertiesInOrder(BeanUtils.java:34)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps.setIndividualIdentifyInfo(EnrollmentApplicationSteps.java:353)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps$$EnhancerByCGLIB$$1c72faeb.CGLIB$setIndividualIdentifyInfo$202(&lt;generated&gt;)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps$$EnhancerByCGLIB$$1c72faeb$$FastClassByCGLIB$$9f7cbfd6.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps$$EnhancerByCGLIB$$1c72faeb.setIndividualIdentifyInfo(&lt;generated&gt;)
+	at com.hhstechgroup.steps.jbehave.scenarios.enrollmentapplication.ApplicationSectionScenario.setIndividualIdentifyInfo(ApplicationSectionScenario.java:279)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</failure>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,5 @@
+|firstName|lastName|provider        |gender |dob       |providerType       |speciality|taxonomyDes                               |npi        |
+|Jennifer |Grant   |jennifer.grant  |Female |10/11/1985|Individual Facility|Ambulance |341600000X - Ambulance                    |1982612081 |
+|Laila    |Jaxson  |laila.jaxson    |Female |10/11/1985|Individual         |Dental    |122300000X - Dentist                      |1952319089 |
+|Michelle |Nicolas |michelle.nicolas|Female |10/11/1985|Individual         |Audiology |231H00000X - Audiologist                  |1932117066 |
+|Lucy     |Goodwin |lucy.goodwin    |Female |10/11/1985|Individual Facility|Laboratory|291U00000X -  Clinical Medical Laboratory |1952532343 |

@@ -1,0 +1,20 @@
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/Indicators/ProviderIndicatorFromIU.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">n Internal User</inOrderTo>
+  <asA keyword="I want to">verify the Provider Indicator tab for enrolled providers</asA>
+  <iWantTo keyword="So that">I can ensure indicators are updated and displayed correctly</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Provider Indicator Verification for Enrolled Providers">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When user calls Provider Indicator API</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When user clicks on Providers tab</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When searchAndVerifyIndicatorsForAllPES_IDs</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+</scenario>
+</story>

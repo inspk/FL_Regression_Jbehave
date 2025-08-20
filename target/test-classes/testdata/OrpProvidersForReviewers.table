@@ -1,0 +1,21 @@
+|index                     |gender|dob       |ssn        |mailingAddressLine1   |mailingAddressZip|mailingAddressCountycode|phone         |taxonomyCategory|primaryTaxonomy                                                  |licenseNumber|licenseType|licenseIssuedState|primaryServiceLocationAddressLine1|primaryServiceLocationZip |primaryServiceLocationCountyCode|
+|OrderingReferringProvider1|Male  |10/11/1981|999-63-2236|1517 CONVERSE AVE     |55210-3343       |55150                   |(734)357-5678 |Pharmacist      |1835P2201X -  Pharmacist, Individual  (not a dispensing pharmacy)|7777655933   |License    |California        |1517 CONVERSE AVE                 |64110-2345                |00150                           |
+|OrderingReferringProvider2|Male  |10/11/1982|889-63-2236|2812 SNYDER AVE       |44210-3343       |66150                   |(834)357-5678 |Pharmacist      |1835P2201X -  Pharmacist, Individual  (not a dispensing pharmacy)|8888655933   |License    |California        |2812 SNYDER AVE                   |64110-2345                |00150                           |
+|OrderingReferringProvider3|Male  |10/11/1983|779-63-2236|820 EAST 18TH STREET  |33210-3343       |77150                   |(934)357-5678 |Pharmacist      |1835P2201X -  Pharmacist, Individual  (not a dispensing pharmacy)|9999655933   |License    |California        |820 EAST 18TH STREET              |64110-2345                |00150                           |
+|OrderingReferringProvider4|Male  |10/11/1984|669-63-2236|1517 CONVERSE AVE     |22210-3343       |88150                   |(634)357-5678 |Audiology       |231H00000X -  Audiologist                                        |6666655933   |License    |California        |1517 CONVERSE AVE                 |64110-2345                |00150                           |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

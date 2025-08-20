@@ -1,0 +1,116 @@
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_Enrollments/FloridaMedicaidProvider.story</div>
+<div class="scenario">
+<h2>Scenario: Verify Florida Medicaid ID for Individual Enrollment</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then statistics should be displayed on dashboard page</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When navigate to 'System Options' page from user pop-up</div>
+<div class="step failed">Then click on 'Approvals' links in system options <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;h1 style=&quot;text-align: right; margin-bottom: 12px; font-size: 20px; color: rgb(45, 53, 60);&quot;&gt;...&lt;/h1&gt; is not clickable at point (632, 187). Other element would receive the click: &lt;div aria-hidden=&quot;true&quot; style=&quot;z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=138.0.7204.184)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SOMATHASIVASAMY', ip: '192.168.1.82', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54079}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afa907f4f681f56a79e28c0bb3f47d94</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When expand the Group Providers Approval configuration for 'Individual Providers' Enrollment type Page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on View button for request 'Enrollment' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then verify configuration for FloridaMedicaid in SystemOption <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on Dashboard tab on header <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on <span class="step parameter">Enrollment</span> tab on header <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>status</th><th>enrollType</th><th>requestType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Approved</td><td>Individual</td><td>Enrollment</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on the 'Individual' provider <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then verify BaseProviderID , LocationProviderID and status <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When edit date and status <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '40' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And click on <span class="step parameter">Providers</span> tab on header <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>providerStatus</th><th>enrollmentType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td><td>Individual</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then check results after search <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on the 'Individual' provider <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then verify BaseProviderID , LocationProviderID and status <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '20' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When edit date and status <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;h1 style=&quot;text-align: right; margin-bottom: 12px; font-size: 20px; color: rgb(45, 53, 60);&quot;&gt;...&lt;/h1&gt; is not clickable at point (632, 187). Other element would receive the click: &lt;div aria-hidden=&quot;true&quot; style=&quot;z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=138.0.7204.184)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SOMATHASIVASAMY', ip: '192.168.1.82', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54079}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afa907f4f681f56a79e28c0bb3f47d94
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1041)
+	at com.hhstechgroup.ui.pages.sitevisit.SystemOptionsDypPage.clickOnLinksInSystemOptionsPage(SystemOptionsDypPage.java:34)
+	at com.hhstechgroup.steps.serenity.sitevisit.SystemOptionsDypSteps.clickOnLinksInSystemOptionsPage(SystemOptionsDypSteps.java:19)
+	at com.hhstechgroup.steps.serenity.sitevisit.SystemOptionsDypSteps$$EnhancerByCGLIB$$cec12d22.CGLIB$clickOnLinksInSystemOptionsPage$12(&lt;generated&gt;)
+	at com.hhstechgroup.steps.serenity.sitevisit.SystemOptionsDypSteps$$EnhancerByCGLIB$$cec12d22$$FastClassByCGLIB$$a706578e.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.hhstechgroup.steps.serenity.sitevisit.SystemOptionsDypSteps$$EnhancerByCGLIB$$cec12d22.clickOnLinksInSystemOptionsPage(&lt;generated&gt;)
+	at com.hhstechgroup.steps.jbehave.scenarios.sitevisit.SystemOptionsDypScenario.clickOnLinksInSystemOptionsPage(SystemOptionsDypScenario.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Florida Medicaid ID for Entity Enrollment</h2>

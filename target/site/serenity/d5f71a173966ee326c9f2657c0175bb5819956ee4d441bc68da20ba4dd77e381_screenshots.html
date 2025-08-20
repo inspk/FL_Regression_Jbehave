@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Provider Management Test Report</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="61b8b964463ec65202e8e033a146b02a2a31139f1e796d7cb2876ee4cefa139f.html">MCO  Entity  Affiliation</a></span>
+                > <span class="truncate-60"><a
+                    href="d5f71a173966ee326c9f2657c0175bb5819956ee4d441bc68da20ba4dd77e381.html">Register and Enroll the MCO Enrollment Provider Flow </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-07-2025 23:49</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">MCO  Entity  Affiliation</span>
+                                    <span class="badge tag-badge" style="">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user
+I want to perform an action
+So that I can achieve a business goal
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Register and Enroll the MCO Enrollment Provider Flow
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given generate firstname, lastname, middlename and email credentials for 'MCO'<br>And save value '&lt;fein&gt;' to variable 'fein'<br>And save value '&lt;gender&gt;' to variable 'gender'<br>And save value '&lt;taxEntityType&gt;' to variable 'taxEntityType'<br>And save value '&lt;planLegalName&gt;' to variable 'planLegalName'<br>And save value '&lt;mailingAddressLine1&gt;' to variable 'mailingAddressLine1'<br>And save value '&lt;phone&gt;' to variable 'phone'<br>And save value '&lt;phoneno&gt;' to variable 'phoneno'<br>And save value '&lt;taxonomyCategory&gt;' to variable 'taxonomyCategory'<br>And save value '&lt;primaryTaxonomy&gt;' to variable 'primaryTaxonomy'<br>And save value '&lt;dbaName&gt;' to variable 'dbaName'<br>And save value '&lt;region&gt;' to variable 'region'<br>And save value '&lt;attentionLine&gt;' to variable 'attentionLine'<br>And save value '&lt;managingEmployeeType&gt;' to variable 'managingEmployeeType'<br>And save value '&lt;primaryServiceLocationAddressLine1&gt;' to variable 'primaryServiceLocationAddressLine1'<br>And save value '&lt;employeeStatus&gt;' to variable 'employeeStatus'<br>And save value '&lt;dob&gt;' to variable 'dob'<br>And save value '&lt;ssn&gt;' to variable 'ssn'<br>And save value '&lt;countryOfBirth&gt;' to variable 'countryOfBirth'<br>And save value '&lt;stateofBirth&gt;' to variable 'stateofBirth'<br>And save value '&lt;phone&gt;' to variable 'applicationContactPhone'<br>And save value '&lt;providerID&gt;' to variable 'providerID'<br>And save current date to variable 'date'<br>When save current date plus 1 years to variable 'expDate'<br>When user navigated to landing page<br>When click create account link in the landing page<br>And wait for screening process execution during '3' seconds<br>When fill Email with value '${email}' on registration page<br>And fill Password with value 'Aa123321!' on registration page<br>When click on continue button in the registartion page<br>And fill Organization Name field with value 'HHSTECHGROUP' on registration page<br>And fill Organization description with value 'HHSOrg' on registration page<br>When click on continue button in the registartion page<br>And fill First name  with value '${firstName}' on registration page<br>And fill Last name with value '${lastName}' on registration page<br>And fill Phone with value '9876543256' on registration page<br>When implicit wait '5' seconds<br>When click on create account link in the registartion page<br>When implicit wait '5' seconds<br>When login to user gmail<br>Then go to gmail to inbox page<br>When implicit wait '5' seconds<br>When search for message by email - ${email}<br>When implicit wait '5' seconds<br>When open new 'Registration in ProviderPortal' email<br>When implicit wait '5' seconds<br>Then click on new user link from the gmail<br>When implicit wait '5' seconds<br>Then navigate Back to Login page<br>When implicit wait '5' seconds<br>And refresh page<br>When implicit wait '5' seconds<br>When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!<br>When click on new 'Agree' button in the Portal page<br>When skip help tour if exists<br>And user click on Managed Care Organisation Enrollment type<br>When implicit wait '20' seconds<br>When move to 'Identifying Information' section<br>When implicit wait '5' seconds<br>And To fill the identifying information section for Enrollment:<br><table class='embedded'><thead><th>planLegalName</th><th>taxEntityType</th><th>federalEmployerIdentification</th><th>applicationContactPhone</th><th>appliationContactName</th><th>mcoEmail</th></thead><tbody><tr><td>planLegal</td><td>Corporation/Professional Organization</td><td>876543278</td><td>4567897643</td><td>John Dezouzer</td><td>test@gmail.com</td></tr></tbody></table><br>When implicit wait '10' seconds<br>Then fill in plantype field with value 'Serious Mental Illness'<br>When implicit wait '5' seconds<br>Then fill in grouptype field with value 'Community Care Plan'<br>When implicit wait '5' seconds<br>When move to 'Taxonomy / Specialty / Provider Type / License Certification Information' section<br>And implicit wait '10' seconds<br>When click on Add Taxonomy in Taxonomy Info section<br>And implicit wait '10' seconds<br>And To fill the Taxonomy/Speciality/License Certification section info:<br><table class='embedded'><thead><th>taxonomyDescription</th></thead><tbody><tr><td>322D00000X</td></tr></tbody></table><br>And implicit wait '10' seconds<br>And To fill the Taxonomy/Speciality/License Certification section info:<br><table class='embedded'><thead><th>effectiveStartDate</th><th>effectiveEndDate</th></thead><tbody><tr><td>${date}</td><td>${expDate}</td></tr></tbody></table><br>And implicit wait '10' seconds<br>Then save the details of Taxonomy/Speciality/License Certification section info<br>When implicit wait '10' seconds<br>When move to 'Service Location' section<br>When implicit wait '10' seconds<br>When click on Add Location in Service Location section<br>When implicit wait '10' seconds<br>And To fill the Service Location info:<br><table class='embedded'><thead><th>effectiveDate</th><th>locationName</th><th>addressLine1</th><th>attentionLine</th><th>email</th><th>phoneNumber</th><th>mailingAddress</th><th>mailingAddressContactInfo</th></thead><tbody><tr><td>${date}</td><td>Primary clinic</td><td>100</td><td>John</td><td>test@gmail.com</td><td>8765487654</td><td>Yes</td><td>Yes</td></tr></tbody></table><br>When implicit wait '10' seconds<br>When click on Add Taxonomy/Speciality in Service Location section<br>When implicit wait '5' seconds<br>Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:<br><table class='embedded'><thead><th>specialty</th></thead><tbody><tr><td>FREESTANDING PSYCHIATRIC HOSPITAL FOR CHILDREN - 300</td></tr></tbody></table><br>When implicit wait '10' seconds<br>Then select Taxonomy in Program Participation<br>When implicit wait '10' seconds<br>Then to fill the Taxonomy/Speciality/License Certification section info in Service Location:<br><table class='embedded'><thead><th>locationTaxonomyEffectiveStartDate</th><th>locationTaxonomyEffectiveEndDate</th></thead><tbody><tr><td>${date}</td><td>${expDate}</td></tr></tbody></table><br>When implicit wait '20' seconds<br>Then save Taxonomy in Taxonomy/Speciality<br>When implicit wait '30' seconds<br>When click on 'Add Region' in Service Location Section<br>And To fill the Service Location info:<br><table class='embedded'><thead><th>region</th><th>startDate</th></thead><tbody><tr><td>Region A</td><td>${date}</td></tr></tbody></table><br>Then click on Save Button<br>When implicit wait '20' seconds<br>Then affiliate 'Entity' with provider<br>When implicit wait '20' seconds<br>When move to 'Address Details' section<br>And implicit wait '20' seconds<br>And To fill the Address Details:<br><table class='embedded'><thead><th>mailingAddressLine1</th><th>effectiveStartDate</th><th>effectiveEndDate</th></thead><tbody><tr><td>100</td><td>${date}</td><td>${expDate}</td></tr></tbody></table><br>And To fill the Concact Person Details:<br><table class='embedded'><thead><th>attentionLine</th><th>phone</th><th>email</th><th>fax</th><th>ext</th></thead><tbody><tr><td>Landmark</td><td>3567894563</td><td>test@gmail.com</td><td>111-111-1111</td><td>333333</td></tr></tbody></table><br>And implicit wait '20' seconds<br>And To fill the Address Details:<br><table class='embedded'><thead><th>billingAddressHomeOrCorp</th><th>billingAddressContactPersonDetailsHomeOrCorp</th></thead><tbody><tr><td>Yes</td><td>Yes</td></tr></tbody></table><br>When implicit wait '20' seconds<br>When move to 'Ownership' section<br>And implicit wait '20' seconds<br>And To fill the Ownership Section for Enrollment:<br><table class='embedded'><thead><th>ownershipCode</th><th>lessThanFivePercent</th><th>personOwnership</th><th>entityOwnership</th><th>familymembersOwnership</th><th>ownersOwnership</th></thead><tbody><tr><td>Government - City</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></tbody></table><br>And implicit wait '20' seconds<br>And To fill the Ownership Section for Enrollment:<br><table class='embedded'><thead><th>personOrEntityOwnership</th></thead><tbody><tr><td>No</td></tr></tbody></table><br>When implicit wait '20' seconds<br>When To fill the Ownership Section for Enrollment:<br><table class='embedded'><thead><th>subcontractorOwnership</th></thead><tbody><tr><td>No</td></tr></tbody></table><br>When implicit wait '20' seconds<br>When provider clicks on radio button for Ownership lessthanfivepercent<br>When implicit wait '20' seconds<br>When move to 'Key Personnel' section<br>When implicit wait '10' seconds<br>Then click on the Addline<br>When implicit wait '10' seconds<br>When To fill the OwerKeyPersonel Information for Enrollment:<br><table class='embedded'><thead><th>managingEmployeeType</th><th>employeeStatus</th><th>gender</th><th>firstName</th><th>middleName</th><th>lastName</th><th>ssn</th><th>dob</th><th>ssnStartDate</th><th>ssnEndDate</th></thead><tbody><tr><td>ADMINISTRATOR</td><td>Managing Non Convicted</td><td>Male</td><td>John</td><td>William</td><td>Dezouzer</td><td>876543235</td><td>15-08-1947</td><td>${date}</td><td>${expDate}</td></tr></tbody></table><br>When implicit wait '10' seconds<br>When To fill the OwerKeyPersonel Information for Enrollment:<br><table class='embedded'><thead><th>dob</th></thead><tbody><tr><td>02-23-1954</td></tr></tbody></table><br>When To fill the OwerKeyPersonel Information for Enrollment:<br><table class='embedded'><thead><th>addressLine1</th></thead><tbody><tr><td>100</td></tr></tbody></table><br>When implicit wait '10' seconds<br>Then click on the Save button in Key Personel<br>When implicit wait '15' seconds<br>When move to 'Exclusion/Sanction Information' section<br>And implicit wait '10' seconds<br>And To fill the Exclusion Sanction Section:<br><table class='embedded'><thead><th>fraudAlligations</th><th>fiduciaryResponsibility</th><th>perjury</th><th>serviceAbuse</th><th>criminalInvestigation</th><th>unlawfulSubstances</th><th>healthCareCrime</th><th>convictedFelony</th></thead><tbody><tr><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></tbody></table><br>And To fill the Exclusion Sanction Section:<br><table class='embedded'><thead><th>paymentInformation</th><th>disclosureInformation</th><th>businessOrProffesionalLicense</th><th>suspensionOfAccreditation</th><th>suspendedOrExcluded</th><th>paymentSuspension</th><th>falseClaimsAct</th><th>owesMoneyToMedicaid</th></thead><tbody><tr><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></tbody></table><br>And implicit wait '30' seconds<br>When move to new 'Summary' section<br>And implicit wait '5' seconds<br>And To fill the Concact Person Details:<br><table class='embedded'><thead><th>firstName</th><th>lastName</th></thead><tbody><tr><td>John</td><td>Dezouzer</td></tr></tbody></table><br>Then Agree Term and conditions to Sign<br>When implicit wait '10' seconds<br>When submit enrollment application<br>And implicit wait '10' seconds<br>When click on navigate to dashboard for Proceed To Sign<br>When implicit wait '5' seconds<br>When log out from portal<br>And refresh page<br>And implicit wait '10' seconds<br>When user navigated to landing page<br>When new user logs to Provider Enrollment portal with username - provideruser543+42148@gmail.com and password - Aa123321!<br>When click on new 'Agree' button in the Portal page<br>When skip help tour if exists<br>When navigate to Message Center<br>And implicit wait '5' seconds<br>When click on 'Confirm your affiliation to the group' in message center<br>And implicit wait '5' seconds<br>And sign provider application for user '${firstName} ${lastName}'<br>And implicit wait '40' seconds<br>When click navigate to dashboard link after sign<br>And implicit wait '5' seconds<br>When log out from PE portal<br>And implicit wait '5' seconds<br>And refresh page<br>And implicit wait '10' seconds<br>When new user logs to Provider Enrollment portal with username - ${email} and password - Aa123321!<br>When click on new 'Agree' button in the Portal page<br>And implicit wait '5' seconds<br>When click on Proceed To Sign button<br>And implicit wait '10' seconds<br>And sign provider application for user '${firstName} ${lastName}'<br>When implicit wait '30' seconds<br>When click navigate to dashboard link after sign<br>When implicit wait '15' seconds<br>Then save the tracking number of the provider<br>When implicit wait '5' seconds<br>Then rewrite stage of credentials to 'Submitted' for 'MCO2'<br></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Json exception: java.lang.reflect.InvocationTargetException</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.json.JsonException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)<br />com.hhstechgroup.ui.pages.AbstractPage.selectOption(AbstractPage.java:73)<br />com.hhstechgroup.ui.pages.AbstractPage.selectFromDropDown(AbstractPage.java:67)<br />com.hhstechgroup.ui.pages.IUFlowPages.AffiliationPages.fillInAffiliationSectionforMCO(AffiliationPages.java:139)<br />com.hhstechgroup.steps.serenity.IUFlowSteps.AddingMCOSteps.fillInAffiliationSectionforMCO(AddingMCOSteps.java:33)<br />com.hhstechgroup.steps.jbehave.scenarios.IUFlowScenarios.AddingMCOScenario.fillInAffiliationSectionforMCO(AddingMCOScenario.java:53)<br />jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)<br />jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: java.lang.reflect.InvocationTargetException
+                    </h4>
+                    <div>
+                        <pre>jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java :-2)<br />jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java :62)<br />jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java :43)<br />com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java :65)<br />com.hhstechgroup.ui.pages.AbstractPage.selectOption(AbstractPage.java :73)<br />com.hhstechgroup.ui.pages.AbstractPage.selectFromDropDown(AbstractPage.java :67)<br />com.hhstechgroup.ui.pages.IUFlowPages.AffiliationPages.fillInAffiliationSectionforMCO(AffiliationPages.java :139)<br />com.hhstechgroup.steps.serenity.IUFlowSteps.AddingMCOSteps.fillInAffiliationSectionforMCO(AddingMCOSteps.java :33)<br />com.hhstechgroup.steps.jbehave.scenarios.IUFlowScenarios.AddingMCOScenario.fillInAffiliationSectionforMCO(AddingMCOScenario.java :53)<br />jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java :-2)<br />jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java :62)<br />jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java :43)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource6009083472902084089.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="3a0014d2582c72aa9fe64f096c10ba0ba9d70f036f31c728710abc526f605270.png" title="Fill in affiliation sectionfor MCO: Entity: <span class='error-color'>ERROR</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.0</span>
+</div>
+</body>
+</html>

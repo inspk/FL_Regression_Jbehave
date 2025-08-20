@@ -1,0 +1,11 @@
+[{
+  "type": "answerChangedEvent",
+    "runtimeFieldId": "2,0,0",
+    "timestamp": 0,
+    "answer": {
+      "type": "simple",
+      "value": "${NPI}",
+      "timestamp": 0
+    }
+  }
+]

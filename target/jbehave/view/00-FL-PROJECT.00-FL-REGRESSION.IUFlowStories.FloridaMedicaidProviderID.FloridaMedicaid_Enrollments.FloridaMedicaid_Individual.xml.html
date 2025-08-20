@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.FloridaMedicaidProviderID.FloridaMedicaid_Enrollments.FloridaMedicaid_Individual</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_Enrollments/FloridaMedicaid_Individual.story" title="">
+<scenario keyword="Scenario:" title="Verify Florida Medicaid ID for Individual Enrollment">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then statistics should be displayed on dashboard page</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When navigate to &apos;System Options&apos; page from user pop-up</step>
+<step outcome="successful">Then click on &apos;Approvals&apos; links in system options</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When expand the Group Providers Approval configuration for &apos;Individual Provider&apos; Enrollment type Page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on View button for request &apos;Enrollment&apos;</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then verify configuration for FloridaMedicaid in SystemOption</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on Dashboard tab on header</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on <parameter>Enrollment</parameter> tab on header</step>
+<step outcome="successful">When search for enrollment data on IU portal by next parameters:
+<parameter><parameters>
+<names><name>status</name><name>enrollType</name><name>requestType</name></names>
+<values><value>Approved</value><value>Individual</value><value>Enrollment</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then check results after search</step>
+<step outcome="successful">Then fetch PESID</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on the &apos;Individual&apos; provider</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">Then verify BaseProviderID , LocationProviderID and status</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When edit date and status</step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</step>
+<step outcome="successful">When implicit wait &apos;40&apos; seconds</step>
+<step outcome="successful">And click on <parameter>Providers</parameter> tab on header</step>
+<step outcome="successful">When search for enrollment data on IU portal by next parameters:
+<parameter><parameters>
+<names><name>enrollmentType</name></names>
+<values><value>Individual</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then check results after search</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on the &apos;Individual&apos; provider</step>
+<step outcome="successful">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="successful">Then verify BaseProviderID, LocationProviderID and status for Provider tab</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When edit date and status</step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="failed" keyword="FAILED">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;nfirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;<failure>net.serenitybdd.core.exceptions.SerenityManagedException: expected:&lt;...pdated successfully.[]&gt; but was:&lt;...pdated successfully.[&quot;nfirmation message :  &quot;Medicaid Provider has been updated successfully.]&gt;</failure></step>
+<failure>net.serenitybdd.core.exceptions.SerenityManagedException: expected:&lt;...pdated successfully.[]&gt; but was:&lt;...pdated successfully.[&quot;nfirmation message :  &quot;Medicaid Provider has been updated successfully.]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.hhstechgroup.ui.pages.IUFlowPages.FloridaMedicaidPages.verifyEditConfirmation(FloridaMedicaidPages.java:125)
+	at com.hhstechgroup.steps.serenity.IUFlowSteps.FloridaMedicaidSteps.VerifyConfirmationMessage(FloridaMedicaidSteps.java:30)
+	at com.hhstechgroup.steps.serenity.IUFlowSteps.FloridaMedicaidSteps$$EnhancerByCGLIB$$ca98f548.CGLIB$VerifyConfirmationMessage$2(&lt;generated&gt;)
+	at com.hhstechgroup.steps.serenity.IUFlowSteps.FloridaMedicaidSteps$$EnhancerByCGLIB$$ca98f548$$FastClassByCGLIB$$5704b46a.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.hhstechgroup.steps.serenity.IUFlowSteps.FloridaMedicaidSteps$$EnhancerByCGLIB$$ca98f548.VerifyConfirmationMessage(&lt;generated&gt;)
+	at com.hhstechgroup.steps.jbehave.scenarios.IUFlowScenarios.FloridaMedicaidScenario.verifyConfirmationMessage(FloridaMedicaidScenario.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</failure>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

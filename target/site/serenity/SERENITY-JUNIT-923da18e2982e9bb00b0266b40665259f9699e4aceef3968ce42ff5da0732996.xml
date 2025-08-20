@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Entity provider I-COC" skipped="0" tests="1" time="173.29" timestamp="2025-08-18 12:07:11"><testcase name="Entity I-COC Flow"><error message="Unable to set field value" type="java.lang.IllegalStateException">Unable to set field value</error><system-err>Unable to set field value
+com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$0(BeanUtils.java:43)
+com.hhstechgroup.util.common.BeanUtils.lambda$copyPropertiesInOrder$1(BeanUtils.java:35)
+com.hhstechgroup.util.common.BeanUtils.copyPropertiesInOrder(BeanUtils.java:34)
+com.hhstechgroup.steps.serenity.individualenrollment.EnrollmentApplicationSteps.setProgramParticipationSectionInfo(EnrollmentApplicationSteps.java:894)
+com.hhstechgroup.steps.jbehave.scenarios.enrollmentapplication.ApplicationSectionScenario.setProgramParticipationSectionInfo(ApplicationSectionScenario.java:786)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</system-err></testcase></testsuite>

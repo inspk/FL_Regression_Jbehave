@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.FloridaMedicaidProviderID.FloridaMedicaid_Revalidation.FloridaMedicaid_Entity_Revalidation</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_Revalidation/FloridaMedicaid_Entity_Revalidation.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Verify Florida Medicaid ID for Entity Revalidation</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then statistics should be displayed on dashboard page</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When navigate to 'System Options' page from user pop-up</div>
+<div class="step successful">Then click on 'Approvals' links in system options</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When expand the <span class="step parameter">Group Providers</span> Approval configuration for 'Group Providers' Enrollment type Page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on View button for request 'Revalidation'</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then verify configuration for FloridaMedicaid in SystemOption</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on Dashboard tab on header</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Enrollment</span> tab on header</div>
+<div class="step successful">Then search with ProviderID '4000010'</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'Revalidation' provider</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then verify BaseProviderID , LocationProviderID and status</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When edit date and status</div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</div>
+<div class="step successful">When implicit wait '40' seconds</div>
+<div class="step successful">And click on <span class="step parameter">Providers</span> tab on header</div>
+<div class="step successful">Then search with ProviderID '4000010'</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'Entity' provider</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then verify BaseProviderID , LocationProviderID and status</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">When edit date and status</div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

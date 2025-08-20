@@ -1,0 +1,2705 @@
+{
+  "type": "request",
+  "id": "REPLACE_ID",
+  "templateId": "REPLACE_ID",
+  "children": [
+    {
+      "type": "section",
+      "id": "section1",
+      "templateId": "section1",
+      "fields": [
+        {
+          "id": "generalInfo",
+          "templateId": "generalInfo",
+          "fields": [
+            {
+              "id": "prefix",
+              "templateId": "prefix",
+              "answer": {
+                "type": "simple",
+                "value": "M. D.",
+                "timestamp": 1510054590326
+              }
+            },
+            {
+              "id": "firstName",
+              "templateId": "firstName",
+              "answer": {
+                "type": "simple",
+                "value": "Olga",
+                "timestamp": 1509962312547
+              }
+            },
+            {
+              "id": "lastName",
+              "templateId": "lastName",
+              "answer": {
+                "type": "simple",
+                "value": "Zaiats",
+                "timestamp": 1510054439104
+              }
+            },
+            {
+              "id": "mI",
+              "templateId": "mI",
+              "answer": {
+                "type": "simple",
+                "value": "MI",
+                "timestamp": 1510054663533
+              }
+            },
+            {
+              "id": "suffix",
+              "templateId": "suffix",
+              "answer": {
+                "type": "simple",
+                "value": "Sr.",
+                "timestamp": 1510054703306
+              }
+            },
+            {
+              "id": "gender",
+              "templateId": "gender",
+              "answer": {
+                "type": "simple",
+                "value": "Female",
+                "timestamp": 1510054762539
+              }
+            },
+            {
+              "id": "dateOfBirth",
+              "templateId": "dateOfBirth",
+              "answer": {
+                "type": "simple",
+                "value": "1990-01-23",
+                "timestamp": 1510134730856
+              }
+            },
+            {
+              "id": "countryOfBirth",
+              "templateId": "countryOfBirth",
+              "answer": {
+                "type": "simple",
+                "value": "United States",
+                "timestamp": 1510153699934
+              }
+            },
+            {
+              "id": "state1",
+              "templateId": "state1",
+              "answer": {
+                "type": "simple",
+                "value": "FL",
+                "timestamp": 1510158860480
+              }
+            },
+            {
+              "id": "genderInfoShared",
+              "templateId": "genderInfoShared",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "appContactEmail",
+              "templateId": "appContactEmail",
+              "answer": {
+                "type": "simple",
+                "value": "olga@test.com",
+                "timestamp": 1510055456372
+              }
+            }
+          ]
+        },
+        {
+          "id": "taxInfo",
+          "templateId": "taxInfo",
+          "fields": [
+            {
+              "id": "ssn1",
+              "templateId": "ssn1",
+              "answer": {
+                "type": "simple",
+                "value": "1231231235",
+                "timestamp": 1510055706171
+              }
+            },
+            {
+              "id": "isNumberForTax",
+              "templateId": "isNumberForTax",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "fein",
+              "templateId": "fein"
+            },
+            {
+              "id": "legalBusinessName",
+              "templateId": "legalBusinessName"
+            },
+            {
+              "id": "note1",
+              "templateId": "note1",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"fo797\",\"text\":\"Note: Your SSN will be linked to your health care program provider number. All claims paid to this provider number will be submitted as income under your SSN to the IRS. If you plan to bill using your employer identification number (FEIN), the group through which you plan to bill must complete a separate application and list you as an affiliated member, which links to that FEIN. If we have any questions regarding the application, we will contact you by email, using the email address of the application contact person previously entered above.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":547,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":5,\"style\":\"BOLD\"},{\"offset\":0,\"length\":547,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "attachUploadW-9",
+              "templateId": "attachUploadW-9",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"fphfv\",\"text\":\"Attach/upload a copy of your W-9 at the end of your application \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "note2",
+              "templateId": "note2",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"4pavu\",\"text\":\"Note: The U.S. Department of Human Services, Office of Civil Rights is requesting the following information be completed for statistical purposes only. This information is optional and is not required for  state health care programs . \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":6,\"style\":\"BOLD\"},{\"offset\":0,\"length\":235,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":235,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "race1",
+              "templateId": "race1",
+              "answer": {
+                "type": "simple",
+                "value": "White",
+                "timestamp": 1510055830075
+              }
+            }
+          ]
+        },
+        {
+          "id": "currentPreviousNPI",
+          "templateId": "currentPreviousNPI",
+          "fields": [
+            {
+              "id": "wereEnrolled",
+              "templateId": "wereEnrolled",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "note3",
+              "templateId": "note3",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"5t6rd\",\"text\":\"Please enter your current or previous  state health care program provider number for the service location you are now applying for.\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":131,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":131,\"style\":\"fontsize-16\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "idType",
+              "templateId": "idType"
+            },
+            {
+              "id": "npiApi",
+              "templateId": "npiApi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section2",
+      "templateId": "section2",
+      "fields": [
+        {
+          "id": "providerTypeAndProgramInfo",
+          "templateId": "providerTypeAndProgramInfo",
+          "fields": [
+            {
+              "id": "providerType",
+              "templateId": "providerType",
+              "answer": {
+                "type": "simple",
+                "value": "Pharmacy",
+                "timestamp": 1510055931485
+              }
+            },
+            {
+              "id": "programParticipation",
+              "templateId": "programParticipation",
+              "answer": {
+                "type": "simple",
+                "value": "Medicaid/ MHSP",
+                "timestamp": 1510055991297
+              }
+            },
+            {
+              "id": "selectClientele",
+              "templateId": "selectClientele"
+            },
+            {
+              "id": "note4",
+              "templateId": "note4",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6d7a1\",\"text\":\"Note:These are the only two categories of clients that Chiropractic Services are covered for \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":5,\"style\":\"BOLD\"},{\"offset\":0,\"length\":93,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":93,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "3e7988dd-b26f-4cf3-86b5-48cc564265ac",
+          "templateId": "ee93e478-0e1c-4658-9a03-c85740bec042",
+          "fields": [
+            {
+              "id": "licensureTable",
+              "templateId": "licensureTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "68422a52-f4da-4e47-a8b3-d22f234fcfd0",
+                    "lcae-number": "123000111",
+                    "type": "C-Certification",
+                    "state": "WA",
+                    "effective-date": "2017-11-08",
+                    "expiration-date": "2017-11-30"
+                  }
+                ],
+                "timestamp": 1510056083584
+              }
+            }
+          ]
+        },
+        {
+          "id": "4e0c65bc-a363-43b6-a5c5-f6056b02297d",
+          "templateId": "0a7a0d2f-afdf-4466-b94c-fdca0c995bba",
+          "fields": [
+            {
+              "id": "taxonomyTable",
+              "templateId": "taxonomyTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "60b3996b-9c3b-4b65-87ed-30609f5d466f",
+                    "taxonomy-number": "111222333",
+                    "begin-date": "2017-11-01",
+                    "end-date": "2017-11-30"
+                  }
+                ],
+                "timestamp": 1510056134831
+              }
+            }
+          ]
+        },
+        {
+          "id": "002400ff-c4b5-4357-8187-cdcc02c2ccff",
+          "templateId": "8665acdf-0a7e-4cee-960d-e392a9cd82b5",
+          "fields": [
+            {
+              "id": "specialtiesAndSubspecialtiesTable",
+              "templateId": "specialtiesAndSubspecialtiesTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "e7adc564-a938-4474-b6d7-3b109ee174ca",
+                    "specialty": "Board specialty 3",
+                    "certification": "aaa-131144141",
+                    "certification-agency": "State board of internal medicine",
+                    "state": "PR"
+                  }
+                ],
+                "timestamp": 1510056195245
+              }
+            }
+          ]
+        },
+        {
+          "id": "98239196-75d3-4a45-94b7-e357690e1a36",
+          "templateId": "db78eb46-d8d6-47e1-9b6f-7ebad91161f8",
+          "fields": [
+            {
+              "id": "insuranceTable",
+              "templateId": "insuranceTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "92d11d5d-7a18-46db-af7f-4f51fccb6ce4",
+                    "insurance-type": "Reinsurance",
+                    "insurer": "Insurance company",
+                    "effective-date": "2017-11-01",
+                    "expiration-date": "2017-11-30",
+                    "policy-number": "#1234637648",
+                    "minimum-limit": "1000"
+                  }
+                ],
+                "timestamp": 1510062211365
+              }
+            }
+          ]
+        },
+        {
+          "id": "haveYouBeenDesignatedByCms",
+          "templateId": "haveYouBeenDesignatedByCms",
+          "answer": {
+            "type": "simple",
+            "value": "false",
+            "timestamp": 1510158917214
+          }
+        },
+        {
+          "id": "note5",
+          "templateId": "note5",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"c0ikh\",\"text\":\"A provider based facility is defined as a relationship between a hospital as the main provider and another health care provider who furnishes health care services of a different type from those of the main provider under the name, ownership, and administrative and financial control of the main provider.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":304,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":304,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "note6",
+          "templateId": "note6",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"3arrh\",\"text\":\"Note: Include your CMS Designation letter with your enrollment paperwork. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":5,\"style\":\"BOLD\"},{\"offset\":0,\"length\":74,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":74,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section3",
+      "templateId": "section3",
+      "fields": [
+        {
+          "id": "0313d6d5-f780-4ddc-b648-a8e2107b614a",
+          "templateId": "a16c0fdc-4c84-48e1-a6b8-335a4cffd2c1",
+          "fields": [
+            {
+              "id": "nationalProviderIdentificationNpiTable",
+              "templateId": "nationalProviderIdentificationNpiTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "356c6b97-b405-4e8a-a9e8-132162623f5b",
+                    "national-provider-identification-(npi)": "1112224444",
+                    "npi-date": "2017-11-22"
+                  }
+                ],
+                "timestamp": 1510062279264
+              }
+            }
+          ]
+        },
+        {
+          "id": "9ed544d1-d6ee-4b22-ba13-e4648ff3c78a",
+          "templateId": "45cf6e25-a5ee-4551-96a1-6c752d3e1216",
+          "fields": [
+            {
+              "id": "drugEnforcementAgencyTable",
+              "templateId": "drugEnforcementAgencyTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "790b9731-44fb-442d-9ae5-ad4c3e08ca01",
+                    "drug-enforcement-agency-(dea)-number": "468341214",
+                    "dea-date": "2017-11-09"
+                  }
+                ],
+                "timestamp": 1510062343374
+              }
+            }
+          ]
+        },
+        {
+          "id": "e5d4142d-8a6e-4f81-a24f-2f119f1d16e1",
+          "templateId": "3b441762-d24e-4395-ad12-a8d34fbc518d",
+          "fields": [
+            {
+              "id": "areYouOrHaveYouBeenPreviouslyEnrolled",
+              "templateId": "areYouOrHaveYouBeenPreviouslyEnrolled",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510062366913
+              }
+            },
+            {
+              "id": "otherMedicaidChipStateTable",
+              "templateId": "otherMedicaidChipStateTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "667b8bae-389d-4f16-b355-685ed44d96f6",
+                    "other-medicaid-state": "Wyoming",
+                    "state-program": "Medicaid",
+                    "enrollment-begin-date": "2017-11-02",
+                    "enrollment-end-date": "2018-02-28",
+                    "fee-paid": "true",
+                    "sort-fee-payment-date": "2017-11-01",
+                    "site-visit": "true",
+                    "site-visit-date": "2017-11-16"
+                  }
+                ],
+                "timestamp": 1510062432876
+              }
+            },
+            {
+              "id": "areYouEnrolledInMedicare",
+              "templateId": "areYouEnrolledInMedicare",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "235dd261-bb87-4f3f-b3bb-e815452f12ae",
+          "templateId": "3188196c-3e3a-4c97-bbb5-8ad9220791ca",
+          "fields": [
+            {
+              "id": "areYouParticipantInMedicarePay",
+              "templateId": "areYouParticipantInMedicarePay",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510152840161
+              }
+            },
+            {
+              "id": "lumpSumDollarAmount",
+              "templateId": "lumpSumDollarAmount",
+              "answer": {
+                "type": "simple",
+                "value": "121331",
+                "timestamp": 1510062529987
+              }
+            },
+            {
+              "id": "percentOfPayment",
+              "templateId": "percentOfPayment",
+              "answer": {
+                "type": "simple",
+                "value": "10",
+                "timestamp": 1510062600962
+              }
+            },
+            {
+              "id": "beginDate",
+              "templateId": "beginDate"
+            },
+            {
+              "id": "endDate",
+              "templateId": "endDate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section4",
+      "templateId": "section4",
+      "fields": [
+        {
+          "id": "50b0e8a5-2d41-4195-81a7-319cfb01bf5d",
+          "templateId": "492c1f64-ff0d-46be-9aec-e5ba48b22124",
+          "fields": [
+            {
+              "id": "physicalAddressPoBox4",
+              "templateId": "physicalAddressPoBox4",
+              "answer": {
+                "type": "simple",
+                "value": "test address",
+                "timestamp": 1510135385730
+              }
+            },
+            {
+              "id": "buildingSuite4",
+              "templateId": "buildingSuite4",
+              "answer": {
+                "type": "simple",
+                "value": "123",
+                "timestamp": 1510069636480
+              }
+            },
+            {
+              "id": "city4",
+              "templateId": "city4",
+              "answer": {
+                "type": "simple",
+                "value": "Miami",
+                "timestamp": 1510069689599
+              }
+            },
+            {
+              "id": "state4",
+              "templateId": "state4",
+              "answer": {
+                "type": "simple",
+                "value": "WI",
+                "timestamp": 1510069707991
+              }
+            },
+            {
+              "id": "zip4",
+              "templateId": "zip4",
+              "answer": {
+                "type": "simple",
+                "value": "12345-1234",
+                "timestamp": 1510135433650
+              }
+            },
+            {
+              "id": "phoneFax4",
+              "templateId": "phoneFax4",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "4de6ab4f-5364-4eeb-95ab-32d10a055290",
+                    "phone": "(123)999-9999",
+                    "fax": "(231)232-1312"
+                  }
+                ],
+                "timestamp": 1510069826377
+              }
+            }
+          ]
+        },
+        {
+          "id": "c587af95-3adc-4f86-8b5b-1438cf711d1e",
+          "templateId": "8340b53c-c868-451e-bce7-de456eea8214",
+          "fields": [
+            {
+              "id": "locationContactPersonTable1",
+              "templateId": "locationContactPersonTable1",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "0722e06b-2bd8-4233-99bb-b39aaf3e0317",
+                    "first-name": "Olga",
+                    "mi": "MI",
+                    "last-name": "Zaiats",
+                    "phone": "(231)231-2313",
+                    "ext": "123",
+                    "fax": "(231)231-2312",
+                    "email": "olga@test.com",
+                    "position": "CEO - Chief executive officer"
+                  }
+                ],
+                "timestamp": 1510136241232
+              }
+            }
+          ]
+        },
+        {
+          "id": "545aa3e0-442a-4266-9825-be8af8f877b9",
+          "templateId": "56587272-79cc-4379-a920-1011e4e5f5a7",
+          "fields": [
+            {
+              "id": "emailTable",
+              "templateId": "emailTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "5f951bb9-bd71-4556-8404-564cb9b5a4fb",
+                    "email-type": "C-Correspondence",
+                    "-email-address": "olga@test.com"
+                  }
+                ],
+                "timestamp": 1510070004419
+              }
+            }
+          ]
+        },
+        {
+          "id": "1a453716-caaf-411e-95f7-7852af974791",
+          "templateId": "6a398ec6-1b48-4b31-b78e-61b5fd450734",
+          "fields": [
+            {
+              "id": "genderServed",
+              "templateId": "genderServed",
+              "answer": {
+                "type": "simple",
+                "value": "Female",
+                "timestamp": 1510136297520
+              }
+            },
+            {
+              "id": "languagesSupported",
+              "templateId": "languagesSupported",
+              "answer": {
+                "type": "simple",
+                "value": "English",
+                "timestamp": 1510070349108
+              }
+            },
+            {
+              "id": "ageRangeServed",
+              "templateId": "ageRangeServed",
+              "answer": {
+                "type": "array",
+                "value": [
+                  "18-21 Years",
+                  "22-59 Years"
+                ],
+                "timestamp": 1510070398691
+              }
+            },
+            {
+              "id": "interpretiveServices",
+              "templateId": "interpretiveServices",
+              "answer": {
+                "type": "array",
+                "value": [
+                  "Braille",
+                  "Services",
+                  "TDD-TTY",
+                  "Sign",
+                  "Oral",
+                  "Other"
+                ],
+                "timestamp": 1510070588514
+              }
+            },
+            {
+              "id": "acceptingNewPatients",
+              "templateId": "acceptingNewPatients",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510136353180
+              }
+            },
+            {
+              "id": "reason",
+              "templateId": "reason",
+              "answer": {
+                "type": "simple",
+                "value": "1-Accepts new patients",
+                "timestamp": 1510070846327
+              }
+            },
+            {
+              "id": "reasonDate",
+              "templateId": "reasonDate",
+              "answer": {
+                "type": "simple",
+                "value": "2017-09-01",
+                "timestamp": 1510070910580
+              }
+            },
+            {
+              "id": "areYouPharmacy",
+              "templateId": "areYouPharmacy",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "indicateNumberOfMembers",
+              "templateId": "indicateNumberOfMembers",
+              "answer": {
+                "type": "simple",
+                "value": "200",
+                "timestamp": 1510070943513
+              }
+            },
+            {
+              "id": "isLocationEquipped",
+              "templateId": "isLocationEquipped",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510136411466
+              }
+            },
+            {
+              "id": "tddPhone",
+              "templateId": "tddPhone",
+              "answer": {
+                "type": "simple",
+                "value": "(111)111-1111",
+                "timestamp": 1510071013475
+              }
+            },
+            {
+              "id": "populationServed",
+              "templateId": "populationServed",
+              "answer": {
+                "type": "array",
+                "value": [
+                  "MH Non-Medicaid"
+                ],
+                "timestamp": 1510136429553
+              }
+            },
+            {
+              "id": "availableAccessibility",
+              "templateId": "availableAccessibility",
+              "answer": {
+                "type": "array",
+                "value": [
+                  "Assistance dogs welcome"
+                ],
+                "timestamp": 1510071087303
+              }
+            }
+          ]
+        },
+        {
+          "id": "13773314-dac4-49ef-97b2-d19b5561230e",
+          "templateId": "573b7dff-62bd-4ceb-abcb-2a07a38e777f",
+          "fields": [
+            {
+              "id": "county1",
+              "templateId": "county1",
+              "answer": {
+                "type": "simple",
+                "value": "All counties",
+                "timestamp": 1510136447165
+              }
+            },
+            {
+              "id": "selectedCounties",
+              "templateId": "selectedCounties"
+            },
+            {
+              "id": "reservation1",
+              "templateId": "reservation1",
+              "answer": {
+                "type": "simple",
+                "value": "All reservations",
+                "timestamp": 1510071244747
+              }
+            },
+            {
+              "id": "selectedReservations",
+              "templateId": "selectedReservations"
+            }
+          ]
+        },
+        {
+          "id": "c7223b57-e13f-4924-8711-46c2fac3d6ca",
+          "templateId": "2249046b-fdd2-4a3f-b970-01a5d306ad7b",
+          "fields": [
+            {
+              "id": "isOpen24Hours",
+              "templateId": "isOpen24Hours",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510136461927
+              }
+            },
+            {
+              "id": "areOfficeHoursSame",
+              "templateId": "areOfficeHoursSame",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510071304614
+              }
+            },
+            {
+              "id": "mondayFriday",
+              "templateId": "mondayFriday",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"bbs07\",\"text\":\"Monday - Friday:\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":16,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "fromMondayFriday",
+              "templateId": "fromMondayFriday",
+              "answer": {
+                "type": "simple",
+                "value": "10:00 AM",
+                "timestamp": 1510136521894
+              }
+            },
+            {
+              "id": "toMondayFriday",
+              "templateId": "toMondayFriday",
+              "answer": {
+                "type": "simple",
+                "value": "9:00 PM",
+                "timestamp": 1510071351140
+              }
+            },
+            {
+              "id": "saturday",
+              "templateId": "saturday",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"50et1\",\"text\":\"Saturday:\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":10,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "fromSaturday",
+              "templateId": "fromSaturday",
+              "answer": {
+                "type": "simple",
+                "value": "10:00 AM",
+                "timestamp": 1510136528158
+              }
+            },
+            {
+              "id": "toSaturday",
+              "templateId": "toSaturday",
+              "answer": {
+                "type": "simple",
+                "value": "5:00 PM",
+                "timestamp": 1510136595427
+              }
+            },
+            {
+              "id": "sunday",
+              "templateId": "sunday",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6crja\",\"text\":\"Sunday:\\n\\n \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":8,\"style\":\"color-rgb(125,145,153)\"},{\"offset\":0,\"length\":8,\"style\":\"fontsize-medi\"},{\"offset\":0,\"length\":8,\"style\":\"fontfamily-Hind, Arial, Helvetica, sans-serif\"},{\"offset\":0,\"length\":8,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "fromSunday",
+              "templateId": "fromSunday",
+              "answer": {
+                "type": "simple",
+                "value": "10:00 AM",
+                "timestamp": 1510136628339
+              }
+            },
+            {
+              "id": "toSunday",
+              "templateId": "toSunday",
+              "answer": {
+                "type": "simple",
+                "value": "2:00 PM",
+                "timestamp": 1510136632828
+              }
+            },
+            {
+              "id": "doesProvideEmergencyServices",
+              "templateId": "doesProvideEmergencyServices",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510136682456
+              }
+            },
+            {
+              "id": "afterHoursPhone",
+              "templateId": "afterHoursPhone",
+              "answer": {
+                "type": "simple",
+                "value": "(341)212-4123",
+                "timestamp": 1510136715143
+              }
+            }
+          ]
+        },
+        {
+          "id": "bf18949d-83ea-42c1-9c6a-aa2661db8a93",
+          "templateId": "2a6b1aa5-dc12-443d-b150-f6b554f86660",
+          "fields": [
+            {
+              "id": "checkEquippedServe",
+              "templateId": "checkEquippedServe",
+              "answer": {
+                "type": "array",
+                "value": [
+                  "Behavioral/Emotional disabilities",
+                  "Mental health disabilities"
+                ],
+                "timestamp": 1510136806102
+              }
+            }
+          ]
+        },
+        {
+          "id": "2e1f56f0-2eb8-414c-a16f-21479a0dc599",
+          "templateId": "75e1f055-73e7-49fb-9f5a-2b5215bf77c8",
+          "fields": [
+            {
+              "id": "DoYouBillLaboratoryServices",
+              "templateId": "DoYouBillLaboratoryServices",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510136862483
+              }
+            }
+          ]
+        },
+        {
+          "id": "fac59121-8a84-408f-8a24-2368256078e1",
+          "templateId": "802f79b9-a07f-4ce0-9ec1-67b0ee86de5f",
+          "fields": [
+            {
+              "id": "isMailingSameAsServiceLocation",
+              "templateId": "isMailingSameAsServiceLocation",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 1510136907550
+              }
+            },
+            {
+              "id": "physicalAddressPo2",
+              "templateId": "physicalAddressPo2",
+              "answer": {
+                "type": "simple",
+                "value": "test address",
+                "timestamp": 1510136949290
+              }
+            },
+            {
+              "id": "buildingSuite2",
+              "templateId": "buildingSuite2",
+              "answer": {
+                "type": "simple",
+                "value": "231",
+                "timestamp": 1510136996724
+              }
+            },
+            {
+              "id": "state2",
+              "templateId": "state2",
+              "answer": {
+                "type": "simple",
+                "value": "WA",
+                "timestamp": 1510137050510
+              }
+            },
+            {
+              "id": "zip2",
+              "templateId": "zip2",
+              "answer": {
+                "type": "simple",
+                "value": "32131-3123",
+                "timestamp": 1510137087495
+              }
+            }
+          ]
+        },
+        {
+          "id": "nationalProviderInfoNote",
+          "templateId": "nationalProviderInfoNote",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"a01is\",\"text\":\"National  Provider Information \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":31,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "nationalProviderInfoTable",
+          "templateId": "nationalProviderInfoTable",
+          "answer": {
+            "type": "table",
+            "value": [
+              {
+                "id": "26961c2a-4171-4769-ba18-15ea3d89e855",
+                "npi": "1234567891"
+              }
+            ],
+            "timestamp": 1510137511799
+          }
+        },
+        {
+          "id": "locationContactPerson",
+          "templateId": "locationContactPerson",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"5c7jc\",\"text\":\"Location contact person \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":23,\"style\":\"color-rgb(55,64,71)\"},{\"offset\":0,\"length\":23,\"style\":\"fontsize-20\"},{\"offset\":0,\"length\":23,\"style\":\"fontfamily-Hind, Arial, Helvetica, sans-serif\"},{\"offset\":0,\"length\":24,\"style\":\"fontsize-16\"},{\"offset\":0,\"length\":24,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "personalInfoTable",
+          "templateId": "personalInfoTable",
+          "answer": {
+            "type": "table",
+            "value": [
+              {
+                "id": "2d91dfb7-de95-45a6-bc48-cd0d0ef13218",
+                "last-name": "Zaiats1",
+                "first-name": "Olga1",
+                "mi": "MI1",
+                "phone": "(231)231-2312",
+                "ext": "232",
+                "fax": "(321)313-1231",
+                "email": "olga@test.com",
+                "other-details-(primary-claims-submission-method)": "7-Sabbatical"
+              }
+            ],
+            "timestamp": 1510137577837
+          }
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section5",
+      "templateId": "section5",
+      "fields": [
+        {
+          "id": "d55ab62c-2952-42ac-89d2-e463e1150106",
+          "templateId": "e2ab8e14-f0a5-4131-88ea-d05338c18865",
+          "fields": [
+            {
+              "id": "providerName",
+              "templateId": "providerName",
+              "answer": {
+                "type": "simple",
+                "value": "Provider Billy",
+                "timestamp": 1510137722879
+              }
+            },
+            {
+              "id": "providerAddress",
+              "templateId": "providerAddress",
+              "answer": {
+                "type": "simple",
+                "value": "test provider address",
+                "timestamp": 1510137772255
+              }
+            },
+            {
+              "id": "buildingSuite5",
+              "templateId": "buildingSuite5",
+              "answer": {
+                "type": "simple",
+                "value": "1247",
+                "timestamp": 1510137813336
+              }
+            },
+            {
+              "id": "city5",
+              "templateId": "city5",
+              "answer": {
+                "type": "simple",
+                "value": "Miami",
+                "timestamp": 1510137858520
+              }
+            },
+            {
+              "id": "state5",
+              "templateId": "state5",
+              "answer": {
+                "type": "simple",
+                "value": "VT",
+                "timestamp": 1510137911025
+              }
+            },
+            {
+              "id": "zip5",
+              "templateId": "zip5",
+              "answer": {
+                "type": "simple",
+                "value": "23123-1232",
+                "timestamp": 1510137958624
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca6e6b54-4ed5-49af-af7d-1b53f0386c3c",
+          "templateId": "d58f9f76-6c37-493f-8634-5de5815812af",
+          "fields": [
+            {
+              "id": "providerIdentifiers",
+              "templateId": "providerIdentifiers",
+              "answer": {
+                "type": "simple",
+                "value": "Employee identification number(EIN)",
+                "timestamp": 1510138831068
+              }
+            },
+            {
+              "id": "einNumber",
+              "templateId": "einNumber"
+            },
+            {
+              "id": "tinNumber",
+              "templateId": "tinNumber"
+            },
+            {
+              "id": "npi5",
+              "templateId": "npi5",
+              "answer": {
+                "type": "simple",
+                "value": "2121312312",
+                "timestamp": 1510138894042
+              }
+            }
+          ]
+        },
+        {
+          "id": "645869f4-87df-475e-b3f8-4461f6c257f4",
+          "templateId": "24667cb3-62dd-4e33-9544-461fd490c288",
+          "fields": [
+            {
+              "id": "providerContactName",
+              "templateId": "providerContactName",
+              "answer": {
+                "type": "simple",
+                "value": "Contact Peter",
+                "timestamp": 1510139131257
+              }
+            },
+            {
+              "id": "emailAddress",
+              "templateId": "emailAddress",
+              "answer": {
+                "type": "simple",
+                "value": "peter@test.com",
+                "timestamp": 1510139148379
+              }
+            },
+            {
+              "id": "phoneNumber",
+              "templateId": "phoneNumber",
+              "answer": {
+                "type": "simple",
+                "value": "(232)131-3131",
+                "timestamp": 1510139172462
+              }
+            },
+            {
+              "id": "faxNumber",
+              "templateId": "faxNumber",
+              "answer": {
+                "type": "simple",
+                "value": "(213)432-4124",
+                "timestamp": 1510139236121
+              }
+            }
+          ]
+        },
+        {
+          "id": "4be21c43-aabc-4715-8f13-543f68ca15ba",
+          "templateId": "19846cad-4f7c-4368-8d56-1721a7276e48",
+          "fields": [
+            {
+              "id": "finInstitutionName",
+              "templateId": "finInstitutionName",
+              "answer": {
+                "type": "simple",
+                "value": "Fin institution",
+                "timestamp": 1510139249660
+              }
+            },
+            {
+              "id": "finInstitutionNumber",
+              "templateId": "finInstitutionNumber",
+              "answer": {
+                "type": "simple",
+                "value": "2312311111",
+                "timestamp": 1510139275456
+              }
+            },
+            {
+              "id": "typeOfAccount",
+              "templateId": "typeOfAccount",
+              "answer": {
+                "type": "simple",
+                "value": "Checking",
+                "timestamp": 1510139299218
+              }
+            },
+            {
+              "id": "accountNumberFinInstitution",
+              "templateId": "accountNumberFinInstitution",
+              "answer": {
+                "type": "simple",
+                "value": "111177732342",
+                "timestamp": 1510139330418
+              }
+            },
+            {
+              "id": "accountNumberLinkage",
+              "templateId": "accountNumberLinkage",
+              "answer": {
+                "type": "simple",
+                "value": "Provider federal tax identification number(TIN)",
+                "timestamp": 1510139377161
+              }
+            },
+            {
+              "id": "tinNumber1",
+              "templateId": "tinNumber1",
+              "answer": {
+                "type": "simple",
+                "value": "4545624567",
+                "timestamp": 1510139407118
+              }
+            },
+            {
+              "id": "npiNumber",
+              "templateId": "npiNumber"
+            },
+            {
+              "id": "reasonForSubmission",
+              "templateId": "reasonForSubmission",
+              "answer": {
+                "type": "simple",
+                "value": "New enrollment",
+                "timestamp": 1510139429009
+              }
+            },
+            {
+              "id": "includedWithEnrollmentSubmission",
+              "templateId": "includedWithEnrollmentSubmission",
+              "answer": {
+                "type": "simple",
+                "value": "Voided check",
+                "timestamp": 1510139451028
+              }
+            }
+          ]
+        },
+        {
+          "id": "b7badc86-42dd-4dc6-9273-aa801a536139",
+          "templateId": "6eb416dd-cc00-4c1d-9b96-ea1632d3fc10",
+          "fields": [
+            {
+              "id": "electronicSignature",
+              "templateId": "electronicSignature",
+              "answer": {
+                "type": "simple",
+                "value": "signature ",
+                "timestamp": 1510139577299
+              }
+            },
+            {
+              "id": "printedTitlePerson",
+              "templateId": "printedTitlePerson",
+              "answer": {
+                "type": "simple",
+                "value": "printed title",
+                "timestamp": 1510139609576
+              }
+            },
+            {
+              "id": "submissionDate",
+              "templateId": "submissionDate",
+              "answer": {
+                "type": "simple",
+                "value": "2017-11-30",
+                "timestamp": 1510139696371
+              }
+            },
+            {
+              "id": "requestedEFT",
+              "templateId": "requestedEFT",
+              "answer": {
+                "type": "simple",
+                "value": "2017-11-30",
+                "timestamp": 1510139683233
+              }
+            }
+          ]
+        },
+        {
+          "id": "1ff62da9-60c0-4300-816f-ffecf460dadd",
+          "templateId": "3da45075-8add-46e9-aa3c-55d16500a99b",
+          "fields": [
+            {
+              "id": "isBillingAddressSameServiceLocation",
+              "templateId": "isBillingAddressSameServiceLocation",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 1510139758244
+              }
+            },
+            {
+              "id": "physicalAddressPoBox51",
+              "templateId": "physicalAddressPoBox51",
+              "answer": {
+                "type": "simple",
+                "value": "test address aaa",
+                "timestamp": 1510139806173
+              }
+            },
+            {
+              "id": "buildingSuite51",
+              "templateId": "buildingSuite51",
+              "answer": {
+                "type": "simple",
+                "value": "341",
+                "timestamp": 1510139864985
+              }
+            },
+            {
+              "id": "city51",
+              "templateId": "city51",
+              "answer": {
+                "type": "simple",
+                "value": "Miami",
+                "timestamp": 1510139943915
+              }
+            },
+            {
+              "id": "state51",
+              "templateId": "state51",
+              "answer": {
+                "type": "simple",
+                "value": "WA",
+                "timestamp": 1510139956227
+              }
+            },
+            {
+              "id": "zip51",
+              "templateId": "zip51",
+              "answer": {
+                "type": "simple",
+                "value": "45233-4242",
+                "timestamp": 1510140167615
+              }
+            },
+            {
+              "id": "phoneFax51",
+              "templateId": "phoneFax51",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "a84bad4d-e952-44d5-87ed-b65cefb0eec8",
+                    "phone": "(234)762-3746",
+                    "fax": "(453)242-3466"
+                  }
+                ],
+                "timestamp": 1510140182982
+              }
+            },
+            {
+              "id": "contactPersonNote",
+              "templateId": "contactPersonNote",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"9nilh\",\"text\":\"Location contact person(s) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":27,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "locationContactPersonTable2",
+              "templateId": "locationContactPersonTable2",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "1785c76f-bd46-4ebe-9e95-9aeee910ff8d",
+                    "last-name": "Zaiats",
+                    "first-name": "Olga",
+                    "mi": "MI",
+                    "phone": "(637)657-5677",
+                    "ext": "222",
+                    "fax": "(674)564-6546",
+                    "email": "olga@test.com",
+                    "position": "Business manager"
+                  }
+                ],
+                "timestamp": 1510140605379
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section6",
+      "templateId": "section6",
+      "fields": [
+        {
+          "id": "ef7ba474-47f1-4f35-93cc-c4eb582a005c",
+          "templateId": "c7f37399-cb57-4e3b-a908-d99d46cea2bc",
+          "fields": [
+            {
+              "id": "providerName6",
+              "templateId": "providerName6",
+              "answer": {
+                "type": "simple",
+                "value": "Provider Olga",
+                "timestamp": 1510140758108
+              }
+            },
+            {
+              "id": "providerAddress6",
+              "templateId": "providerAddress6",
+              "answer": {
+                "type": "simple",
+                "value": "test address provider",
+                "timestamp": 1510140798300
+              }
+            },
+            {
+              "id": "buildingSuite6",
+              "templateId": "buildingSuite6",
+              "answer": {
+                "type": "simple",
+                "value": "567",
+                "timestamp": 1510140866486
+              }
+            },
+            {
+              "id": "city6",
+              "templateId": "city6",
+              "answer": {
+                "type": "simple",
+                "value": "New York",
+                "timestamp": 1510140884333
+              }
+            },
+            {
+              "id": "stateProvince6",
+              "templateId": "stateProvince6",
+              "answer": {
+                "type": "simple",
+                "value": "WA",
+                "timestamp": 1510140900109
+              }
+            },
+            {
+              "id": "zip6",
+              "templateId": "zip6",
+              "answer": {
+                "type": "simple",
+                "value": "88888-8888",
+                "timestamp": 1510140913223
+              }
+            }
+          ]
+        },
+        {
+          "id": "9fa526b4-60b7-4d03-b99e-0468067bd531",
+          "templateId": "a93669dd-f482-4e62-a5c8-bcf945e1cc89",
+          "fields": [
+            {
+              "id": "providerIdentifiers6",
+              "templateId": "providerIdentifiers6",
+              "answer": {
+                "type": "simple",
+                "value": "Employee identification number(EIN)",
+                "timestamp": 1510140968685
+              }
+            },
+            {
+              "id": "tinIdentifier6",
+              "templateId": "tinIdentifier6"
+            },
+            {
+              "id": "einIdentifier6",
+              "templateId": "einIdentifier6"
+            },
+            {
+              "id": "npi6",
+              "templateId": "npi6",
+              "answer": {
+                "type": "simple",
+                "value": "7878787878",
+                "timestamp": 1510141008258
+              }
+            }
+          ]
+        },
+        {
+          "id": "otherIdentifiers6",
+          "templateId": "otherIdentifiers6",
+          "fields": [
+            {
+              "id": "assigningAuthority",
+              "templateId": "assigningAuthority",
+              "answer": {
+                "type": "simple",
+                "value": "authority",
+                "timestamp": 1510141045143
+              }
+            },
+            {
+              "id": "tradingPartnerId",
+              "templateId": "tradingPartnerId",
+              "answer": {
+                "type": "simple",
+                "value": "id-2412423552",
+                "timestamp": 1510141076995
+              }
+            }
+          ]
+        },
+        {
+          "id": "445580e6-8024-40f2-9288-15f07382c967",
+          "templateId": "f95c7a6a-15a5-4775-8314-d95151197ef9",
+          "fields": [
+            {
+              "id": "providerContactName6",
+              "templateId": "providerContactName6",
+              "answer": {
+                "type": "simple",
+                "value": "provider contact Peter",
+                "timestamp": 1510141165213
+              }
+            },
+            {
+              "id": "emailAddress6",
+              "templateId": "emailAddress6",
+              "answer": {
+                "type": "simple",
+                "value": "olga@test.com",
+                "timestamp": 1510141213891
+              }
+            },
+            {
+              "id": "telephoneNumber6",
+              "templateId": "telephoneNumber6",
+              "answer": {
+                "type": "simple",
+                "value": "(241)353-2525",
+                "timestamp": 1510141523743
+              }
+            },
+            {
+              "id": "faxNumber6",
+              "templateId": "faxNumber6",
+              "answer": {
+                "type": "simple",
+                "value": "(767)567-8796",
+                "timestamp": 1510143607811
+              }
+            },
+            {
+              "id": "prefAggregRemittanceData",
+              "templateId": "prefAggregRemittanceData",
+              "answer": {
+                "type": "simple",
+                "value": "Provider federal tax identification number(TIN)",
+                "timestamp": 1510143633515
+              }
+            },
+            {
+              "id": "tinNumber6",
+              "templateId": "tinNumber6",
+              "answer": {
+                "type": "simple",
+                "value": "6534543435345",
+                "timestamp": 1510143673321
+              }
+            },
+            {
+              "id": "npiNumber6",
+              "templateId": "npiNumber6"
+            },
+            {
+              "id": "methodRetrieval",
+              "templateId": "methodRetrieval",
+              "answer": {
+                "type": "simple",
+                "value": "Electronic (835)",
+                "timestamp": 1510143702166
+              }
+            }
+          ]
+        },
+        {
+          "id": "fe84b4ec-a941-42d9-814a-67e8bcc6817d",
+          "templateId": "f4e27078-eea0-498c-9628-c5ceb2b70420",
+          "fields": [
+            {
+              "id": "clearinghouseName",
+              "templateId": "clearinghouseName",
+              "answer": {
+                "type": "simple",
+                "value": "Clearing House ABC",
+                "timestamp": 1510143759009
+              }
+            },
+            {
+              "id": "phone6",
+              "templateId": "phone6",
+              "answer": {
+                "type": "simple",
+                "value": "(479)384-7973",
+                "timestamp": 1510143807184
+              }
+            },
+            {
+              "id": "email6",
+              "templateId": "email6",
+              "answer": {
+                "type": "simple",
+                "value": "avfdds@test.com",
+                "timestamp": 1510143815512
+              }
+            },
+            {
+              "id": "reasonSubmission",
+              "templateId": "reasonSubmission",
+              "answer": {
+                "type": "simple",
+                "value": "New enrollment",
+                "timestamp": 1510143846848
+              }
+            }
+          ]
+        },
+        {
+          "id": "21bedbe0-62f5-4cca-9f0b-63534160aba2",
+          "templateId": "0bf9e5a1-4c5a-49af-abd6-38c4b6ca8b0a",
+          "fields": [
+            {
+              "id": "signaturePerson",
+              "templateId": "signaturePerson",
+              "answer": {
+                "type": "simple",
+                "value": "electronic signature",
+                "timestamp": 1510143879195
+              }
+            },
+            {
+              "id": "titlePerson",
+              "templateId": "titlePerson",
+              "answer": {
+                "type": "simple",
+                "value": "printed title",
+                "timestamp": 1510143911376
+              }
+            },
+            {
+              "id": "submissionDate6",
+              "templateId": "submissionDate6",
+              "answer": {
+                "type": "simple",
+                "value": "2017-11-01",
+                "timestamp": 1510144099995
+              }
+            },
+            {
+              "id": "requestedEra",
+              "templateId": "requestedEra",
+              "answer": {
+                "type": "simple",
+                "value": "2017-11-02",
+                "timestamp": 1510144104378
+              }
+            },
+            {
+              "id": "remittanceAdviceFrequency",
+              "templateId": "remittanceAdviceFrequency",
+              "answer": {
+                "type": "simple",
+                "value": "Bi-weekly",
+                "timestamp": 1510144137720
+              }
+            },
+            {
+              "id": "beginDate6",
+              "templateId": "beginDate6",
+              "answer": {
+                "type": "simple",
+                "value": "2017-01-01",
+                "timestamp": 1510144188441
+              }
+            },
+            {
+              "id": "endDate6",
+              "templateId": "endDate6",
+              "answer": {
+                "type": "simple",
+                "value": "2018-02-28",
+                "timestamp": 1510144242598
+              }
+            },
+            {
+              "id": "otherDetails",
+              "templateId": "otherDetails",
+              "answer": {
+                "type": "simple",
+                "value": "Electronics",
+                "timestamp": 1510144243704
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section7",
+      "templateId": "section7",
+      "fields": [
+        {
+          "id": "affiliationType",
+          "templateId": "affiliationType",
+          "answer": {
+            "type": "simple",
+            "value": "Employee to employer",
+            "timestamp": 1510144293336
+          }
+        },
+        {
+          "id": "groupTable",
+          "templateId": "groupTable",
+          "answer": {
+            "type": "table",
+            "value": [
+              {
+                "id": "c498cdb8-a6a8-4f56-9580-ea9cde43b0fe",
+                "group-practice-name": "Practice",
+                "id-type": "NPI",
+                "npi\\api": "1243476761",
+                "provider-type": "Pharmacy",
+                "affiliation-effective-date": "2017-09-01",
+                "affiliation-type": "affiliation"
+              }
+            ],
+            "timestamp": 1510144354898
+          }
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section8",
+      "templateId": "section8",
+      "fields": [
+        {
+          "id": "infoNote",
+          "templateId": "infoNote",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"e7ega\",\"text\":\"Providers who choose to submit claims electronically must be aware that payment of claims will be from federal and state funds and that any falsification or concealment of material fact may be prosecuted under federal and state laws. Further, providers must understand and agree to do the following:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":299,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":299,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"64pj9\",\"text\":\"- Safeguard the state health care programs against abuse in the use of electronic claims submission.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":100,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":100,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"98b18\",\"text\":\"- Correctly enter the claims data, monitor the data, and certify that the data entered is correct.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":98,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":98,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fvvoj\",\"text\":\"- Assure that the transmission of claims data is restricted to authorized personnel to prevent erroneous payments by the department's fiscal agent which might result from carelessness or fraud.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":193,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":193,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1bcum\",\"text\":\"- Have on file the applicable documentation to substantiate any claims submitted to the health care programs.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":109,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":109,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2pee7\",\"text\":\"- Allow the department or any of its designees and representatives of the attorney general to review and copy all records, including source documents and data related to information entered through electronic claims submission.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":227,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":227,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"dplst\",\"text\":\"- Abide by all federal and state statutes, rules, regulations, and manuals governing the health care programs.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":110,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":110,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"982ag\",\"text\":\"- Electronically sign and adhere to all conditions of the state health care programs provider agreement and be officially enrolled in the health care programs to participate in electronic claims submission.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":206,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":206,\"style\":\"fontsize-14\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "does3rdPartySubmitClaim",
+          "templateId": "does3rdPartySubmitClaim",
+          "answer": {
+            "type": "simple",
+            "value": "true",
+            "timestamp": 1510152719321
+          }
+        },
+        {
+          "id": "signedNote",
+          "templateId": "signedNote",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"2r7oi\",\"text\":\"The billing agent agreement must be signed. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":44,\"style\":\"fontsize-16\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "doesHaveAccessMakeInquires",
+          "templateId": "doesHaveAccessMakeInquires",
+          "answer": {
+            "type": "simple",
+            "value": "false",
+            "timestamp": 1510149608026
+          }
+        },
+        {
+          "id": "whichUsedSubmitClaimsElectronically",
+          "templateId": "whichUsedSubmitClaimsElectronically",
+          "answer": {
+            "type": "array",
+            "value": [
+              "Billing agent/Clearing house",
+              "Billing software"
+            ],
+            "timestamp": 1510149624379
+          }
+        },
+        {
+          "id": "f86471d2-1df6-48b3-9b5d-0d9704ead480",
+          "templateId": "ac6d3b62-b2f5-4bc7-a558-4908e4ea76a6",
+          "fields": [
+            {
+              "id": "billingSoftwareTable",
+              "templateId": "billingSoftwareTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "83f39f01-0a4b-4c9c-bf7f-2886878f61ae",
+                    "software-company-name": "Company",
+                    "software-name": "software",
+                    "version": "version 1",
+                    "protocol": "protocol test"
+                  }
+                ],
+                "timestamp": 1510149694799
+              }
+            },
+            {
+              "id": "submit8",
+              "templateId": "submit8",
+              "answer": {
+                "type": "array",
+                "value": [
+                  "278 Service authorization"
+                ],
+                "timestamp": 1510149837034
+              }
+            },
+            {
+              "id": "receive8",
+              "templateId": "receive8"
+            }
+          ]
+        },
+        {
+          "id": "fc063685-dc1d-4ae7-bb20-8eb72bc5127f",
+          "templateId": "9a909dda-18a0-4fce-b6ff-ec1e9244a907",
+          "fields": [
+            {
+              "id": "billingAgent",
+              "templateId": "billingAgent",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "e8d2374e-7fdf-4d1e-84d5-0f0c34de1316",
+                    "agent/clearinghouse-name": "agent clearing",
+                    "contact-first-name": "Olga",
+                    "contact-last-name": "Zaiats",
+                    "contact-phone-number": "(323)423-4234",
+                    "street-address": "address street",
+                    "street-address-2": "street 2",
+                    "city": "Kyiv",
+                    "state": "UT",
+                    "zip": "54545-6457"
+                  }
+                ],
+                "timestamp": 1510149967019
+              }
+            },
+            {
+              "id": "infoNote2",
+              "templateId": "infoNote2",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"a47ut\",\"text\":\"Please check transactions that you submit and/or receive using this Billing Agent/Clearinghouse:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":96,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":96,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "submit71",
+              "templateId": "submit71"
+            },
+            {
+              "id": "receive71",
+              "templateId": "receive71"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section9",
+      "templateId": "section9",
+      "fields": [
+        {
+          "id": "HadOwnership",
+          "templateId": "HadOwnership",
+          "answer": {
+            "type": "simple",
+            "value": "true",
+            "timestamp": 1510153038770
+          }
+        },
+        {
+          "id": "ownershipInfoNote",
+          "templateId": "ownershipInfoNote",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"dd7jm\",\"text\":\"Ownership information \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":22,\"style\":\"fontsize-16\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "ownershipInfoTable",
+          "templateId": "ownershipInfoTable",
+          "answer": {
+            "type": "table",
+            "value": [
+              {
+                "id": "b36233e9-7f84-44b1-abd8-eeb0c6a36769",
+                "organization's-legal-business-name": "Organization",
+                "effective-date": "2017-11-01",
+                "end-date": "2017-11-30",
+                "fein": "234551441",
+                "please-enter-a-medicare-and/or-title-xix": "Medicare",
+                "current-medicare": "24341412321",
+                "current-npi/api": "35436524234",
+                "id-type": "API",
+                "country": "France",
+                "address-line1": "address1",
+                "address-line2": "address2",
+                "city": "Kyiv",
+                "state": "WA",
+                "zip": "56514-3424"
+              }
+            ],
+            "timestamp": 1510154793980
+          }
+        },
+        {
+          "id": "haveManaged",
+          "templateId": "haveManaged",
+          "answer": {
+            "type": "simple",
+            "value": "true",
+            "timestamp": 1510154831384
+          }
+        },
+        {
+          "id": "managingNote",
+          "templateId": "managingNote",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"4rknf\",\"text\":\"Managing/directing information \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":31,\"style\":\"fontsize-16\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "managingInfoTable",
+          "templateId": "managingInfoTable",
+          "answer": {
+            "type": "table",
+            "value": [
+              {
+                "id": "3a8337dd-f72f-4ec4-9cad-bd2233a536e4",
+                "organization's-legal-business-name": "organization",
+                "effective-date": "2017-11-01",
+                "end-date": "2017-11-30",
+                "fein": "111111111",
+                "please-enter-a-medicare-and/or-title-xix": "Medicaid",
+                "current-npi/api": "35676224111441",
+                "id-type": "API",
+                "country": "Brazil",
+                "address-line1": "address",
+                "address-line2": "address22",
+                "city": "Kyiv",
+                "state": "WY",
+                "zip": "25144-1414"
+              }
+            ],
+            "timestamp": 1510154901662
+          }
+        },
+        {
+          "id": "doYouHaveOwnershipInterest",
+          "templateId": "doYouHaveOwnershipInterest",
+          "answer": {
+            "type": "simple",
+            "value": "true",
+            "timestamp": 1510154926965
+          }
+        },
+        {
+          "id": "subcontractorNote",
+          "templateId": "subcontractorNote",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"4tdjd\",\"text\":\"Subcontractor information \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":26,\"style\":\"fontsize-16\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "subcontractorInfoTable",
+          "templateId": "subcontractorInfoTable",
+          "answer": {
+            "type": "table",
+            "value": [
+              {
+                "id": "c560e2e7-1301-492c-87bb-57e5b3b5b47a",
+                "subcontractor-name": "subcontractor",
+                "country": "France",
+                "address-line1": "address",
+                "address-line2": "address tes2",
+                "city": "Kyiv",
+                "state": "UT",
+                "zip": "11212-1212"
+              }
+            ],
+            "timestamp": 1510155008690
+          }
+        },
+        {
+          "id": "doMembersHaveOwnership",
+          "templateId": "doMembersHaveOwnership",
+          "answer": {
+            "type": "simple",
+            "value": "true",
+            "timestamp": 1510155031111
+          }
+        },
+        {
+          "id": "relativeInfoNote",
+          "templateId": "relativeInfoNote",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"dru2o\",\"text\":\"Relative information \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":21,\"style\":\"fontsize-16\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "relativeInfoTable",
+          "templateId": "relativeInfoTable",
+          "answer": {
+            "type": "table",
+            "value": [
+              {
+                "id": "219a377b-0cc6-4902-b56a-fc18b202b504",
+                "first-name": "Olga",
+                "mi": "MI",
+                "last-name": "Zaiats",
+                "relationship": "Cousin",
+                "subcontractor-name": "subcontractor name",
+                "country": "Unites States",
+                "address-line1": "address",
+                "address-line2": "address2",
+                "city": "Kyiv",
+                "state": "UT",
+                "zip": "45234-2532"
+              }
+            ],
+            "timestamp": 1510155124155
+          }
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section10",
+      "templateId": "section10",
+      "fields": [
+        {
+          "id": "de713edd-d24f-42a2-8616-5033106262ca",
+          "templateId": "ebde329a-c0cb-4c7f-b639-7b2de6e31f02",
+          "fields": [
+            {
+              "id": "boolean1",
+              "templateId": "boolean1",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510155174462
+              }
+            },
+            {
+              "id": "nameNote",
+              "templateId": "nameNote",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"a7ji4\",\"text\":\"Name\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":4,\"style\":\"color-rgb(0, 0, 0)\"},{\"offset\":0,\"length\":4,\"style\":\"fontsize-16\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "name1Table",
+              "templateId": "name1Table",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "d891fe4b-4590-4e39-9cac-c4e5b188c723",
+                    "first-name": "Billy",
+                    "mi": "M",
+                    "last-name": "Johnson",
+                    "suffix": "Sr.",
+                    "relationship": "Cousin"
+                  }
+                ],
+                "timestamp": 1510155233506
+              }
+            },
+            {
+              "id": "boolean2",
+              "templateId": "boolean2",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510155257344
+              }
+            },
+            {
+              "id": "fedProgNote",
+              "templateId": "fedProgNote",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"aitu8\",\"text\":\"Federal program\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"color-rgb(0, 0, 0)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "federalProgramTable",
+              "templateId": "federalProgramTable",
+              "answer": {
+                "type": "table",
+                "value": [
+                  {
+                    "id": "e8ae5350-8da9-4793-9a71-6e057800af1c",
+                    "federal-program-name": "program test",
+                    "last-name-or-business-name": "Jefferson",
+                    "first-name": "Bill",
+                    "\nmi": "A",
+                    "suffix": "Jr."
+                  }
+                ],
+                "timestamp": 1510155302201
+              }
+            },
+            {
+              "id": "boolean3",
+              "templateId": "boolean3",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 1510155325981
+              }
+            },
+            {
+              "id": "newFieldNote",
+              "templateId": "newFieldNote",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"bog3h\",\"text\":\"Please add appropriate documentation pertaining to the situation. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":66,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "newFieldNote2",
+              "templateId": "newFieldNote2",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"9d3pb\",\"text\":\"Please indicate for each item below whether or not the applicant has ever had any of the following adverse legal actions imposed or pending by Title XIX program. Check the appropriate box and indicate the date when the adverse legal action was imposed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":252,\"style\":\"fontsize-16\"},{\"offset\":0,\"length\":252,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "newFieldNote3",
+              "templateId": "newFieldNote3",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"355lg\",\"text\":\"Important! Please submit copy(s) of adverse legal action notification(s)\\n                                  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":10,\"style\":\"BOLD\"},{\"offset\":0,\"length\":72,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":72,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "boolean4",
+              "templateId": "boolean4",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510155350937
+              }
+            },
+            {
+              "id": "dateOfOccurence",
+              "templateId": "dateOfOccurence",
+              "answer": {
+                "type": "simple",
+                "value": "2017-09-06",
+                "timestamp": 1510155376662
+              }
+            },
+            {
+              "id": "boolean5",
+              "templateId": "boolean5",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "dateOfOccurence2",
+              "templateId": "dateOfOccurence2"
+            },
+            {
+              "id": "boolean6",
+              "templateId": "boolean6",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "dateOfOccurence3",
+              "templateId": "dateOfOccurence3"
+            },
+            {
+              "id": "boolean7",
+              "templateId": "boolean7",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510155415777
+              }
+            },
+            {
+              "id": "dateOfOccurence4",
+              "templateId": "dateOfOccurence4",
+              "answer": {
+                "type": "simple",
+                "value": "2017-11-01",
+                "timestamp": 1510155441485
+              }
+            },
+            {
+              "id": "boolean8",
+              "templateId": "boolean8",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "dateOfOccurence5",
+              "templateId": "dateOfOccurence5"
+            },
+            {
+              "id": "boolean9",
+              "templateId": "boolean9",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "dateOfOccurence9",
+              "templateId": "dateOfOccurence9"
+            },
+            {
+              "id": "boolean10",
+              "templateId": "boolean10",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "dateOfOccurence10",
+              "templateId": "dateOfOccurence10"
+            },
+            {
+              "id": "boolean11",
+              "templateId": "boolean11",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "dateOfOccurence11",
+              "templateId": "dateOfOccurence11"
+            },
+            {
+              "id": "boolean12",
+              "templateId": "boolean12",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "dateOfOccurence12",
+              "templateId": "dateOfOccurence12"
+            },
+            {
+              "id": "boolean13",
+              "templateId": "boolean13",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "dateOfOccurence13",
+              "templateId": "dateOfOccurence13"
+            },
+            {
+              "id": "boolean14",
+              "templateId": "boolean14",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "dateOfOccurence14",
+              "templateId": "dateOfOccurence14"
+            },
+            {
+              "id": "boolean15",
+              "templateId": "boolean15",
+              "answer": {
+                "type": "simple",
+                "value": "true",
+                "timestamp": 1510155465397
+              }
+            },
+            {
+              "id": "dateOfOccurence15",
+              "templateId": "dateOfOccurence15",
+              "answer": {
+                "type": "simple",
+                "value": "2017-11-02",
+                "timestamp": 1510155526848
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "section11",
+      "templateId": "section11",
+      "fields": [
+        {
+          "id": "wishParticipate",
+          "templateId": "wishParticipate",
+          "answer": {
+            "type": "simple",
+            "value": "false",
+            "timestamp": 1510155553062
+          }
+        },
+        {
+          "id": "5518e6dc-caa0-43ee-aaf6-b789a52d1ce6",
+          "templateId": "df01e27d-03c4-49d4-9476-b643f19d6f77",
+          "fields": [
+            {
+              "id": "selectType",
+              "templateId": "selectType",
+              "answer": {
+                "type": "simple",
+                "value": "Enroll as solo provider",
+                "timestamp": 1510155571914
+              }
+            },
+            {
+              "id": "PatientNote",
+              "templateId": "PatientNote",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"ehf40\",\"text\":\"Patient demographics  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "howManyClients",
+              "templateId": "howManyClients"
+            },
+            {
+              "id": "24PhoneNumber",
+              "templateId": "24PhoneNumber"
+            },
+            {
+              "id": "callPriorAssignment",
+              "templateId": "callPriorAssignment",
+              "answer": {
+                "type": "simple",
+                "value": "false",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "groupNote",
+              "templateId": "groupNote",
+              "answer": {
+                "type": "simple",
+                "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"br4vh\",\"text\":\"Group passport \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}]}",
+                "timestamp": 0
+              }
+            },
+            {
+              "id": "groupNpi",
+              "templateId": "groupNpi"
+            }
+          ]
+        },
+        {
+          "id": "note11",
+          "templateId": "note11",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"7sdq9\",\"text\":\"Note: For out of state providers, only those providers within 100 miles of the state border qualify to participate in the PCCM program. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":6,\"style\":\"BOLD\"},{\"offset\":0,\"length\":136,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":136,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "sectionUpload",
+      "templateId": "sectionUpload",
+      "fields": [
+        {
+          "id": "152156dd-06be-4112-80a9-ce1a2ec4d5cf",
+          "templateId": "b2ebb365-27a8-4f4e-9391-08b69d50b108",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"5g094\",\"text\":\"Allowed formats: *.jpg, *.jpeg, *.png, *.pdf, *.txt, *.csv, *.doc, *.docx, *.xls, *.xlsx \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":89,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":89,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "bankAccountNumber",
+          "templateId": "bankAccountNumber",
+          "answer": {
+            "type": "attachment",
+            "value": [
+              {
+                "id": "5a032f671aa8410001923dd3",
+                "name": "image-3.png",
+                "length": 89369,
+                "version": 0.0
+              }
+            ],
+            "timestamp": 1510155620870
+          }
+        },
+        {
+          "id": "5110ef47-aa3a-400b-94f3-fcc709740b5b",
+          "templateId": "66790e7a-ef8a-43a5-86e8-1f2e9abd913a",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"bdsm8\",\"text\":\"Letter from your Financial Institution verifying the routing number and account number\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":86,\"style\":\"color-rgb(125, 145, 153)\"},{\"offset\":0,\"length\":86,\"style\":\"fontsize-12\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "currentLicense",
+          "templateId": "currentLicense",
+          "answer": {
+            "type": "attachment",
+            "value": [
+              {
+                "id": "5a032fa21aa8410001923dd5",
+                "name": "image-3.png",
+                "length": 89369,
+                "version": 0.0
+              }
+            ],
+            "timestamp": 1510157838912
+          }
+        },
+        {
+          "id": "83ecf6b6-7ea7-4955-ac84-e92fe1ca71d6",
+          "templateId": "d3ba267f-6654-4990-91c0-b8ba7ff66834",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"e2i50\",\"text\":\"A photocopy of the current license showing an effective and expiration date. If you are enrolling to bill for services already provided, also enclose a photocopy of your license covering that date of service. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":208,\"style\":\"color-rgb(69,90,101)\"},{\"offset\":0,\"length\":208,\"style\":\"fontsize-13\"},{\"offset\":0,\"length\":208,\"style\":\"fontfamily-Hind, Arial, Helvetica, sans-serif\"},{\"offset\":0,\"length\":209,\"style\":\"fontsize-12\"},{\"offset\":0,\"length\":209,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "applicableBoardCertification",
+          "templateId": "applicableBoardCertification",
+          "answer": {
+            "type": "attachment",
+            "value": [
+              {
+                "id": "5a032fb91aa8410001923dd7",
+                "name": "image-3.png",
+                "length": 89369,
+                "version": 0.0
+              }
+            ],
+            "timestamp": 1510158264268
+          }
+        },
+        {
+          "id": "b9138aea-943e-4dd6-8933-7596a52125d0",
+          "templateId": "bea70bbe-e996-4b16-a97c-e81bec04b11b",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"72l5r\",\"text\":\"A photocopy of applicable board certification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":46,\"style\":\"fontsize-12\"},{\"offset\":0,\"length\":46,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "tradingPartnerAgreement",
+          "templateId": "tradingPartnerAgreement",
+          "answer": {
+            "type": "attachment",
+            "value": [
+              {
+                "id": "5a032fd81aa8410001923dd9",
+                "name": "image-3.png",
+                "length": 89369,
+                "version": 0.0
+              }
+            ],
+            "timestamp": 1510158294931
+          }
+        },
+        {
+          "id": "410ed472-6e20-40de-aff0-7c5318032794",
+          "templateId": "a1f99ae4-e460-4d20-8a6b-b305e3141077",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"e4435\",\"text\":\"Sign the printed Trading Partner Agreement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":43,\"style\":\"fontsize-12\"},{\"offset\":0,\"length\":43,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "irsW9",
+          "templateId": "irsW9",
+          "answer": {
+            "type": "attachment",
+            "value": [
+              {
+                "id": "5a03301e1aa8410001923ddb",
+                "name": "image-3.png",
+                "length": 89369,
+                "version": 0.0
+              }
+            ],
+            "timestamp": 1510158365479
+          }
+        },
+        {
+          "id": "72e7cf83-a39b-4321-85b2-3eb401f30878",
+          "templateId": "c3f8a398-c556-4bb3-a837-e6987b4b3fde",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"3pstc\",\"text\":\"Copy of the organization?s form IRS-P575 or, if not available, the W-9 (if ownership or control interest of 5 percent or more in other organizations that bill for publicly funded health care programs).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":201,\"style\":\"fontsize-12\"},{\"offset\":0,\"length\":201,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "cliaCertification",
+          "templateId": "cliaCertification",
+          "answer": {
+            "type": "attachment",
+            "value": [
+              {
+                "id": "5a03311c1aa8410001923ddd",
+                "name": "image-3.png",
+                "length": 89369,
+                "version": 0.0
+              }
+            ],
+            "timestamp": 1510158619781
+          }
+        },
+        {
+          "id": "c8db4b81-6173-4be2-83ac-ae9fbbb3bd42",
+          "templateId": "2c6c4f29-7114-42e3-a374-7889b06c03f3",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c85m\",\"text\":\"Enclose a copy of the current CLIA certification for each of the practice locations reported on this application (If you perform laboratory services).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":150,\"style\":\"fontsize-12\"},{\"offset\":0,\"length\":150,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "cmsProviderBased",
+          "templateId": "cmsProviderBased",
+          "answer": {
+            "type": "attachment",
+            "value": [
+              {
+                "id": "5a0331441aa8410001923ddf",
+                "name": "image-3.png",
+                "length": 89369,
+                "version": 0.0
+              }
+            ],
+            "timestamp": 1510158659340
+          }
+        },
+        {
+          "id": "70c57e0b-d7f9-4fb5-8a5c-71c4bb838010",
+          "templateId": "9d2d661c-875a-47ed-a807-765b06f7226a",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"4j4rk\",\"text\":\"Include CMS Provider-Based Facility Designation (if applicable).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":64,\"style\":\"fontsize-12\"},{\"offset\":0,\"length\":64,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        },
+        {
+          "id": "applicationFee",
+          "templateId": "applicationFee",
+          "answer": {
+            "type": "attachment",
+            "value": [
+              {
+                "id": "5a0331631aa8410001923de1",
+                "name": "image-3.png",
+                "length": 89369,
+                "version": 0.0
+              }
+            ],
+            "timestamp": 1510158690387
+          }
+        },
+        {
+          "id": "9bb4673c-44de-4df3-96c3-9340e8f9d61f",
+          "templateId": "3536134c-dd33-4e44-9d37-dc6739416f76",
+          "answer": {
+            "type": "simple",
+            "value": "{\"entityMap\":{},\"blocks\":[{\"key\":\"75i8t\",\"text\":\"Application fee receipt and/or enrolled in Medicare or another State?s Medicaid or CHIP Program. Receipt from Medicare or another State?s Medicaid Plan or CHIP Program.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":168,\"style\":\"fontsize-12\"},{\"offset\":0,\"length\":168,\"style\":\"color-rgb(125, 145, 153)\"}],\"entityRanges\":[],\"data\":{}}]}",
+            "timestamp": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "id": "b48030ed-bc9a-45e5-bbc6-e377dbb37065",
+      "fields": {
+        "summaryIsSigned": {
+
+        },
+        "summaryFirstName": {
+
+        },
+        "summaryLastName": {
+
+        }
+      }
+    }
+  ]

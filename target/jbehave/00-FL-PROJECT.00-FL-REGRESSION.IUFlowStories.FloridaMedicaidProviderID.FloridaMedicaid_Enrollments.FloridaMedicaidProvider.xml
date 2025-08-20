@@ -1,0 +1,100 @@
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_Enrollments/FloridaMedicaidProvider.story" title="">
+<scenario keyword="Scenario:" title="Verify Florida Medicaid ID for Individual Enrollment">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then statistics should be displayed on dashboard page</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When navigate to &apos;System Options&apos; page from user pop-up</step>
+<step outcome="failed" keyword="FAILED">Then click on &apos;Approvals&apos; links in system options<failure>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;h1 style=&quot;text-align: right; margin-bottom: 12px; font-size: 20px; color: rgb(45, 53, 60);&quot;&gt;...&lt;/h1&gt; is not clickable at point (632, 187). Other element would receive the click: &lt;div aria-hidden=&quot;true&quot; style=&quot;z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=138.0.7204.184)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SOMATHASIVASAMY&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54079}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afa907f4f681f56a79e28c0bb3f47d94</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When expand the Group Providers Approval configuration for &apos;Individual Providers&apos; Enrollment type Page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on View button for request &apos;Enrollment&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then verify configuration for FloridaMedicaid in SystemOption</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on Dashboard tab on header</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on <parameter>Enrollment</parameter> tab on header</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When search for enrollment data on IU portal by next parameters:
+<parameter><parameters>
+<names><name>status</name><name>enrollType</name><name>requestType</name></names>
+<values><value>Approved</value><value>Individual</value><value>Enrollment</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on the &apos;Individual&apos; provider</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then verify BaseProviderID , LocationProviderID and status</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When edit date and status</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;40&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And click on <parameter>Providers</parameter> tab on header</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When search for enrollment data on IU portal by next parameters:
+<parameter><parameters>
+<names><name>providerStatus</name><name>enrollmentType</name></names>
+<values><value>Active</value><value>Individual</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then check results after search</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on the &apos;Individual&apos; provider</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then verify BaseProviderID , LocationProviderID and status</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When edit date and status</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</step>
+<failure>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;h1 style=&quot;text-align: right; margin-bottom: 12px; font-size: 20px; color: rgb(45, 53, 60);&quot;&gt;...&lt;/h1&gt; is not clickable at point (632, 187). Other element would receive the click: &lt;div aria-hidden=&quot;true&quot; style=&quot;z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=138.0.7204.184)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SOMATHASIVASAMY&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54079}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afa907f4f681f56a79e28c0bb3f47d94
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1041)
+	at com.hhstechgroup.ui.pages.sitevisit.SystemOptionsDypPage.clickOnLinksInSystemOptionsPage(SystemOptionsDypPage.java:34)
+	at com.hhstechgroup.steps.serenity.sitevisit.SystemOptionsDypSteps.clickOnLinksInSystemOptionsPage(SystemOptionsDypSteps.java:19)
+	at com.hhstechgroup.steps.serenity.sitevisit.SystemOptionsDypSteps$$EnhancerByCGLIB$$cec12d22.CGLIB$clickOnLinksInSystemOptionsPage$12(&lt;generated&gt;)
+	at com.hhstechgroup.steps.serenity.sitevisit.SystemOptionsDypSteps$$EnhancerByCGLIB$$cec12d22$$FastClassByCGLIB$$a706578e.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.hhstechgroup.steps.serenity.sitevisit.SystemOptionsDypSteps$$EnhancerByCGLIB$$cec12d22.clickOnLinksInSystemOptionsPage(&lt;generated&gt;)
+	at com.hhstechgroup.steps.jbehave.scenarios.sitevisit.SystemOptionsDypScenario.clickOnLinksInSystemOptionsPage(SystemOptionsDypScenario.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="Verify Florida Medicaid ID for Entity Enrollment">

@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>00-FL-PROJECT.00-FL-REGRESSION.IUFlowStories.FloridaMedicaidProviderID.FloridaMedicaid_Enrollments.FloridaMedicaid_Entity</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_Enrollments/FloridaMedicaid_Entity.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">perform an action</asA>
+  <iWantTo keyword="So that">I can achieve a business goal</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Verify Florida Medicaid ID for Entity Enrollment">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then statistics should be displayed on dashboard page</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When navigate to &apos;System Options&apos; page from user pop-up</step>
+<step outcome="successful">Then click on &apos;Approvals&apos; links in system options</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When expand the <parameter>Group Providers</parameter> Approval configuration for &apos;Group Providers&apos; Enrollment type Page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on View button for request &apos;Enrollment&apos;</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then verify configuration for FloridaMedicaid in SystemOption</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then click on Dashboard tab on header</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on <parameter>Enrollment</parameter> tab on header</step>
+<step outcome="successful">When search for enrollment data on IU portal by next parameters:
+<parameter><parameters>
+<names><name>status</name><name>enrollType</name><name>requestType</name></names>
+<values><value>Approved</value><value>Individual</value><value>Enrollment</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then check results after search</step>
+<step outcome="successful">Then fetch PESID</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="failed" keyword="FAILED">Then click on the &apos;Entity&apos; provider<failure>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Bhabanis-MacBook-Air.local&apos;, ip: &apos;2405:201:a004:74:970:73a:817c:c900%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6&apos;, java.version: &apos;11.0.27&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vv/wnbtrzvj5mx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59478}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2b0d91da100daacc3a269f20086740c</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then verify BaseProviderID , LocationProviderID and status</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When edit date and status</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;40&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And click on <parameter>Providers</parameter> tab on header</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When search for enrollment data on IU portal by next parameters:
+<parameter><parameters>
+<names><name>enrollmentType</name></names>
+<values><value>Individual</value></values>
+</parameters>
+</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then check results after search</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then click on the &apos;Entity&apos; provider</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;10&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then verify BaseProviderID, LocationProviderID and status for Provider tab</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When edit date and status</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then I should see edit confirmation message :  &quot;Medicaid Provider has been updated successfully.&quot;</step>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,7 @@
+|firstName|lastName|user             |roleName        |roleDescription |
+|Frank    |Walker  |frank.walker     |First Reviewer  |first reviewer  |
+|Lewis    |Wood    |lewis.wood       |Second Reviewer |second reviewer |
+|Leonard  |Peterson|leonard.peterson |Approver        |approver        |
+|Richard  |Copeland|richard.copeland |Document Review |Document review |
+|Stephen  |Wilkins |stephen.wilkins  |Enrollemnt role |Enrollment role |
+|Elon     |Mask    |elon.mask        |CVO committee   |CVO vote        |

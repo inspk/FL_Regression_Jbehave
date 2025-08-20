@@ -1,0 +1,1571 @@
+{
+  "_id" : "trading_partner",
+  "name" : "Trading partner enrollment application",
+  "description" : "",
+  "settings" : {
+    "forwardSubmittedData" : false,
+    "emailTo" : "",
+    "themeId" : "default",
+    "needEmailAuthorization" : false,
+    "showStartPage" : true,
+    "showFinishPage" : true,
+    "summaryPageTitle" : "Summary Page",
+    "summarySectionTitle" : "Summary",
+    "startPageButtonTitle" : "Start",
+    "startPageShowTermsAndConditions" : false,
+    "submitPageShowAllAnswers" : true,
+    "submitPageSignatureRequired" : false,
+    "submitPageAllowSendingAnswersToUsersEmail" : false,
+    "submitPageShowTermsAndConditions" : false,
+    "submitPageRequireTermsAndConditionsConfirmation" : false,
+    "submitButtonTitle" : "Submit"
+  },
+  "sections" : [
+    {
+      "_id" : "acbe1b3b-8424-4aad-aba5-2427cf09d750",
+      "name" : "Identifying information",
+      "description" : "",
+      "fields" : [
+        {
+          "_id" : "2a1ae8c7-61f4-460f-8bb2-2bc7bbd2c82f",
+          "type" : "TOPIC",
+          "name" : "Classification",
+          "description" : "",
+          "fields" : [
+            {
+              "_id" : "f9cfd9b3-3f50-4448-95a4-1e2f682ae04a",
+              "type" : "CHOICE",
+              "name" : "Please select:",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : "Billing agent"
+                },
+                "options" : [
+                  {
+                    "value" : "Billing agent",
+                    "title" : "Billing agent"
+                  },
+                  {
+                    "value" : "Clearing house",
+                    "title" : "Clearing house"
+                  },
+                  {
+                    "value" : "Other payer",
+                    "title" : "Other payer"
+                  },
+                  {
+                    "value" : "Carrier",
+                    "title" : "Carrier"
+                  },
+                  {
+                    "value" : "Switch vendor",
+                    "title" : "Switch vendor"
+                  }
+                ],
+                "withOther" : false,
+                "choiceType" : "RADIO_BUTTON",
+                "bindToFields" : [],
+                "readOnly" : false,
+                "columnsAmount" : 1,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "ade096de-f4fe-4d85-9259-6e265b3331a8",
+              "type" : "BOOLEAN",
+              "name" : "Are you using software from a vendor?",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : "true"
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "d6af5887-bbe3-4d1d-b06f-0743417268f1",
+              "type" : "BOOLEAN",
+              "name" : "Is the requesting provider also the event provider?",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : "true"
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "06bc6d86-c184-44b3-a274-943f9d7ad22c",
+              "type" : "EMAIL",
+              "name" : "Application contact email",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [
+                  "PII"
+                ],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "true",
+                    "fieldId" : "d6af5887-bbe3-4d1d-b06f-0743417268f1"
+                  }
+                ]
+              },
+              "edited" : false
+            }
+          ],
+          "layout" : [
+            1,
+            1,
+            1,
+            1
+          ],
+          "properties" : {
+            "required" : false,
+            "withOther" : false,
+            "readOnly" : false,
+            "existenceConditions" : [
+              {}
+            ]
+          },
+          "edited" : false
+        },
+        {
+          "_id" : "fab56e50-798b-40a4-86a3-5f5b832b852e",
+          "type" : "TOPIC",
+          "name" : "Software Vendor Details",
+          "description" : "",
+          "fields" : [
+            {
+              "_id" : "8cdf3a79-fe57-49e9-bed0-a6a018b129fc",
+              "type" : "TEXT",
+              "name" : "Software Vendor Name",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "true",
+                    "fieldId" : "d6af5887-bbe3-4d1d-b06f-0743417268f1"
+                  }
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "5f4bacfb-498a-4a7a-87b6-623f672f465e",
+              "type" : "TEXT",
+              "name" : "Software Name",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "true",
+                    "fieldId" : "d6af5887-bbe3-4d1d-b06f-0743417268f1"
+                  }
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "6981ae07-5709-4758-a030-48f9b9cf95f5",
+              "type" : "TEXT",
+              "name" : "Version ID",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "true",
+                    "fieldId" : "d6af5887-bbe3-4d1d-b06f-0743417268f1"
+                  }
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "91be0ca0-0dd0-4094-905e-de5857e3af6e",
+              "type" : "CHOICE",
+              "name" : "Entity code",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "options" : [
+                  {
+                    "value" : "Kermit",
+                    "title" : "Kermit"
+                  },
+                  {
+                    "value" : "TCP/IP",
+                    "title" : "TCP/IP"
+                  },
+                  {
+                    "value" : "MQseries",
+                    "title" : "MQseries"
+                  },
+                  {
+                    "value" : "WEB",
+                    "title" : "WEB"
+                  },
+                  {
+                    "value" : "SNA",
+                    "title" : "SNA"
+                  },
+                  {
+                    "value" : "YMODEM",
+                    "title" : "YMODEM"
+                  },
+                  {
+                    "value" : "Cartridge",
+                    "title" : "Cartridge"
+                  },
+                  {
+                    "value" : "ZMODEM",
+                    "title" : "ZMODEM"
+                  },
+                  {
+                    "value" : "XMODEM",
+                    "title" : "XMODEM"
+                  }
+                ],
+                "withOther" : false,
+                "choiceType" : "DROPDOWN",
+                "bindToFields" : [],
+                "readOnly" : false,
+                "columnsAmount" : 1,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "true",
+                    "fieldId" : "d6af5887-bbe3-4d1d-b06f-0743417268f1"
+                  }
+                ]
+              },
+              "edited" : false
+            }
+          ],
+          "layout" : [
+            2,
+            2
+          ],
+          "properties" : {
+            "required" : false,
+            "withOther" : false,
+            "readOnly" : false,
+            "existenceConditions" : [
+              {
+                "operand" : "EQUALS",
+                "compareTo" : "true",
+                "fieldId" : "d6af5887-bbe3-4d1d-b06f-0743417268f1"
+              },
+              {
+                "compareTo" : "",
+                "connection" : "AND",
+                "fieldId" : "d6af5887-bbe3-4d1d-b06f-0743417268f1"
+              }
+            ]
+          },
+          "edited" : false
+        },
+        {
+          "_id" : "5a5349cc-ab8b-4c89-bb86-4d33add89b01",
+          "type" : "TOPIC",
+          "name" : "Email",
+          "description" : "",
+          "fields" : [
+            {
+              "_id" : "4a4e061e-b900-4d1c-8bd4-1deec6b050d6",
+              "type" : "LARGE_TEXT",
+              "name" : "Note:",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : false,
+                "defaultValue" : {
+                  "value" : "{\"entityMap\":{},\"blocks\":[{\"key\":\"e1085\",\"text\":\"Note:If we have any questions regarding the application, we will contact you by email, using the email address of the application contact person previously entered above\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}]}"
+                },
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "ed51ba75-d957-42e3-bd93-9c86cd8649fa",
+              "type" : "TABLE",
+              "name" : "Email",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "withOther" : false,
+                "presentationType" : "HORIZONTAL",
+                "rows" : [
+                  {
+                    "title" : "Row 1",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 2",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 3",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  }
+                ],
+                "columns" : [
+                  {
+                    "title" : "Begin date",
+                    "fieldType" : "DATE",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "End date",
+                    "fieldType" : "DATE",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Email type",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "C-Correspondence",
+                          "title" : "C-Correspondence"
+                        },
+                        {
+                          "value" : "B-Billing",
+                          "title" : "B-Billing"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "Email address",
+                    "fieldType" : "EMAIL",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  }
+                ],
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            }
+          ],
+          "layout" : [
+            1,
+            1
+          ],
+          "properties" : {
+            "required" : false,
+            "withOther" : false,
+            "readOnly" : false,
+            "existenceConditions" : [
+              {}
+            ]
+          },
+          "edited" : false
+        },
+        {
+          "_id" : "971c69ff-97f4-45e9-9d71-fffbc1d34ccd",
+          "type" : "TOPIC",
+          "name" : "Demographic",
+          "description" : "",
+          "fields" : [
+            {
+              "_id" : "4a632a8e-e683-46ae-9c03-efc1ef513dff",
+              "type" : "CHOICE",
+              "name" : "If you bill services using a SSN then enroll as an individual. If you bill services using a FEIN then enroll as a business.",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : "Business"
+                },
+                "options" : [
+                  {
+                    "value" : "Individual",
+                    "title" : "Individual"
+                  },
+                  {
+                    "value" : "Business",
+                    "title" : "Business"
+                  }
+                ],
+                "withOther" : false,
+                "choiceType" : "RADIO_BUTTON",
+                "bindToFields" : [],
+                "readOnly" : false,
+                "columnsAmount" : 1,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "00a5a28f-95b1-4afb-bb71-c769a16f61cf",
+              "type" : "TEXT",
+              "name" : "First Name",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [
+                  "FTI",
+                  "PII"
+                ],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "Individual",
+                    "fieldId" : "4a632a8e-e683-46ae-9c03-efc1ef513dff"
+                  }
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "b4ae0e0e-3e21-4dce-98a9-8bf2d627b4be",
+              "type" : "TEXT",
+              "name" : "MI",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : false,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "Individual",
+                    "fieldId" : "4a632a8e-e683-46ae-9c03-efc1ef513dff"
+                  }
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "391b62f0-5e95-4415-b601-0626c1eb1a6e",
+              "type" : "TEXT",
+              "name" : "Last Name",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [
+                  "FTI",
+                  "PII"
+                ],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "Individual",
+                    "fieldId" : "4a632a8e-e683-46ae-9c03-efc1ef513dff"
+                  }
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "d4b46c73-5734-4850-81b1-a7eff06904c5",
+              "type" : "TEXT",
+              "name" : "SSN",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "(111)111-9999",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [
+                  "PII"
+                ],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "Individual",
+                    "fieldId" : "4a632a8e-e683-46ae-9c03-efc1ef513dff"
+                  }
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "ff3daa41-39b1-4573-a565-ba494593dabb",
+              "type" : "TEXT",
+              "name" : "Business name",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [
+                  "FTI",
+                  "PII"
+                ],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "Business",
+                    "fieldId" : "4a632a8e-e683-46ae-9c03-efc1ef513dff"
+                  }
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "96a7ddec-d27d-498f-86af-dd186905a767",
+              "type" : "TEXT",
+              "name" : "FEIN",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [
+                  "FTI",
+                  "PII"
+                ],
+                "existenceConditions" : [
+                  {
+                    "operand" : "EQUALS",
+                    "compareTo" : "Business",
+                    "fieldId" : "4a632a8e-e683-46ae-9c03-efc1ef513dff"
+                  },
+                  {
+                    "connection" : "AND"
+                  }
+                ]
+              },
+              "edited" : false
+            }
+          ],
+          "layout" : [
+            1,
+            2,
+            2,
+            2
+          ],
+          "properties" : {
+            "required" : false,
+            "withOther" : false,
+            "readOnly" : false,
+            "existenceConditions" : [
+              {}
+            ]
+          },
+          "edited" : false
+        },
+        {
+          "_id" : "6eb8e9cb-a9e6-4194-ba30-68f33ada72eb",
+          "type" : "TOPIC",
+          "name" : "Address information",
+          "description" : "",
+          "fields" : [
+            {
+              "_id" : "18bf9b89-9386-4918-bfb3-04ff4730411e",
+              "type" : "ADDRESS",
+              "name" : "Address",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [
+                  "FTI",
+                  "PII"
+                ],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "79ee3345-5313-4c8e-98e0-7eda27cc79b4",
+              "type" : "TEXT",
+              "name" : "PO box, building, suite, etc",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : false,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "93813e57-5827-4ea9-9065-4b31a96675dd",
+              "type" : "TEXT",
+              "name" : "Zip",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "mask" : "",
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [
+                  "FTI",
+                  "PII"
+                ],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "1f677d6f-14d0-40a6-83cb-34b7b61ea906",
+              "type" : "CHOICE",
+              "name" : "Provider type",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : true,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "options" : [
+                  {
+                    "value" : "School",
+                    "title" : "School"
+                  },
+                  {
+                    "value" : "Hospital",
+                    "title" : "Hospital"
+                  },
+                  {
+                    "value" : "Practice",
+                    "title" : "Practice"
+                  },
+                  {
+                    "value" : "Chiropractor",
+                    "title" : "Chiropractor"
+                  },
+                  {
+                    "value" : "Targeted case management",
+                    "title" : "Targeted case management"
+                  },
+                  {
+                    "value" : "Pharmacy",
+                    "title" : "Pharmacy"
+                  }
+                ],
+                "withOther" : false,
+                "choiceType" : "DROPDOWN",
+                "bindToFields" : [],
+                "readOnly" : false,
+                "columnsAmount" : 1,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "de532d3a-c9cc-4174-bd96-14c43efb1400",
+              "type" : "TABLE",
+              "name" : "Phone/Fax",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : false,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "withOther" : false,
+                "presentationType" : "HORIZONTAL",
+                "rows" : [
+                  {
+                    "title" : "Row 1",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 2",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 3",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  }
+                ],
+                "columns" : [
+                  {
+                    "title" : " Phone",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Fax",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  }
+                ],
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            }
+          ],
+          "layout" : [
+            1,
+            2,
+            1,
+            1
+          ],
+          "properties" : {
+            "required" : false,
+            "withOther" : false,
+            "readOnly" : false,
+            "existenceConditions" : [
+              {}
+            ]
+          },
+          "edited" : false
+        },
+        {
+          "_id" : "2022b38e-ab34-44fc-be0f-30ee25c8bb7f",
+          "type" : "TOPIC",
+          "name" : "Location contact person(s)",
+          "description" : "",
+          "fields" : [
+            {
+              "_id" : "2dbb37d0-786b-4536-9edf-fc54faf9812e",
+              "type" : "TABLE",
+              "name" : "location",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : false,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "withOther" : false,
+                "presentationType" : "HORIZONTAL",
+                "rows" : [
+                  {
+                    "title" : "Row 1",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 2",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 3",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  }
+                ],
+                "columns" : [
+                  {
+                    "title" : "First name",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "MI",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Last name",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Phone",
+                    "fieldType" : "PHONE",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Ext",
+                    "fieldType" : "TEXT",
+                    "hidden" : true,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Fax",
+                    "fieldType" : "TEXT",
+                    "hidden" : true,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Email",
+                    "fieldType" : "EMAIL",
+                    "hidden" : true,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : " \nPosition",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : true,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "CEO - Chief executive officer",
+                          "title" : "CEO - Chief executive officer"
+                        },
+                        {
+                          "value" : "CFO - Chief financial officer",
+                          "title" : "CFO - Chief financial officer"
+                        },
+                        {
+                          "value" : "Supervisor",
+                          "title" : "Supervisor"
+                        },
+                        {
+                          "value" : "Administrator",
+                          "title" : "Administrator"
+                        },
+                        {
+                          "value" : "Office manager",
+                          "title" : "Office manager"
+                        },
+                        {
+                          "value" : "Business manager",
+                          "title" : "Business manager"
+                        },
+                        {
+                          "value" : "Other",
+                          "title" : "Other"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            }
+          ],
+          "layout" : [
+            1
+          ],
+          "properties" : {
+            "required" : false,
+            "withOther" : false,
+            "readOnly" : false,
+            "existenceConditions" : [
+              {}
+            ]
+          },
+          "edited" : false
+        }
+      ],
+      "properties" : {
+        "existenceConditions" : [
+          {}
+        ]
+      }
+    },
+    {
+      "_id" : "60f54596-0414-470c-b014-309455a6bc04",
+      "name" : "Provider association",
+      "description" : "",
+      "fields" : [
+        {
+          "_id" : "87576f2b-2996-44af-8de3-adc667875ada",
+          "type" : "TOPIC",
+          "name" : "",
+          "description" : "",
+          "fields" : [
+            {
+              "_id" : "1f2303a3-6558-4f63-bc03-11d51e02bac3",
+              "type" : "LARGE_TEXT",
+              "name" : "Please enter any providers that will be linked to your Trading partner ID\t",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : false,
+                "defaultValue" : {
+                  "value" : "{\"entityMap\":{},\"blocks\":[{\"key\":\"1fq62\",\"text\":\"Please enter any providers that will be linked to your Trading partner ID\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}]}"
+                },
+                "withOther" : false,
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            },
+            {
+              "_id" : "7fc030cc-dc08-4766-87a2-badd4707bbef",
+              "type" : "TABLE",
+              "name" : "Please enter any providers that will be linked to your Trading partner ID\t",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : false,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "withOther" : false,
+                "presentationType" : "HORIZONTAL",
+                "rows" : [
+                  {
+                    "title" : "Row 1",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 2",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 3",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  }
+                ],
+                "columns" : [
+                  {
+                    "title" : "Associate name",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Type",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "School",
+                          "title" : "School"
+                        },
+                        {
+                          "value" : "Hospital",
+                          "title" : "Hospital"
+                        },
+                        {
+                          "value" : "Practice",
+                          "title" : "Practice"
+                        },
+                        {
+                          "value" : "Individual",
+                          "title" : "Individual"
+                        },
+                        {
+                          "value" : "Chiropractor",
+                          "title" : "Chiropractor"
+                        },
+                        {
+                          "value" : "Targeted case management",
+                          "title" : "Targeted case management"
+                        },
+                        {
+                          "value" : "Pharmacy",
+                          "title" : "Pharmacy"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "NPI/FEIN",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Association end date",
+                    "fieldType" : "DATE",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  }
+                ],
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            }
+          ],
+          "layout" : [
+            1,
+            1
+          ],
+          "properties" : {
+            "required" : false,
+            "withOther" : false,
+            "readOnly" : false,
+            "existenceConditions" : [
+              {}
+            ]
+          },
+          "edited" : false
+        },
+        {
+          "_id" : "389c4e6b-cfe9-4a91-8ab5-84f2e28930a5",
+          "type" : "TOPIC",
+          "name" : "Transactions",
+          "description" : "",
+          "fields" : [
+            {
+              "_id" : "6fc7daa2-c2db-4eb4-b1e9-00b8f0019188",
+              "type" : "TABLE",
+              "name" : "Transactions",
+              "description" : "",
+              "fields" : [],
+              "properties" : {
+                "required" : false,
+                "defaultValue" : {
+                  "value" : ""
+                },
+                "withOther" : false,
+                "presentationType" : "HORIZONTAL",
+                "rows" : [
+                  {
+                    "title" : "Row 1",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 2",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  },
+                  {
+                    "title" : "Row 3",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : []
+                    }
+                  }
+                ],
+                "columns" : [
+                  {
+                    "title" : "NPI/FEIN",
+                    "fieldType" : "TEXT",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "Both",
+                          "title" : "Both"
+                        },
+                        {
+                          "value" : "Send",
+                          "title" : "Send"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "270 (Eligibility inquiry)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "Send/Retrieve",
+                          "title" : "Send/Retrieve"
+                        },
+                        {
+                          "value" : "Send",
+                          "title" : "Send"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "271 (TPL coverage response)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "Send/Retrieve",
+                          "title" : "Send/Retrieve"
+                        },
+                        {
+                          "value" : "Send",
+                          "title" : "Send"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "276 (Claim inquiry)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "Send/Retrieve",
+                          "title" : "Send/Retrieve"
+                        },
+                        {
+                          "value" : "Send",
+                          "title" : "Send"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "278 (Service auth  request)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "Send/Retrieve",
+                          "title" : "Send/Retrieve"
+                        },
+                        {
+                          "value" : "Send",
+                          "title" : "Send"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "837D (837 dental)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "Send/Retrieve",
+                          "title" : "Send/Retrieve"
+                        },
+                        {
+                          "value" : "Send",
+                          "title" : "Send"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "837I (837 institutional)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "Send/Retrieve",
+                          "title" : "Send/Retrieve"
+                        },
+                        {
+                          "value" : "Send",
+                          "title" : "Send"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "837P (837 professional)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "Send/Retrieve",
+                          "title" : "Send/Retrieve"
+                        },
+                        {
+                          "value" : "Send",
+                          "title" : "Send"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "820 (Premium payment)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "834 (Managed care enrollment)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title" : "835 (Remittance advice)",
+                    "fieldType" : "DROPDOWN",
+                    "hidden" : false,
+                    "properties" : {
+                      "options" : [
+                        {
+                          "value" : "Retrieve",
+                          "title" : "Retrieve"
+                        },
+                        {
+                          "value" : "N/A",
+                          "title" : "N/A"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindToFields" : [],
+                "readOnly" : false,
+                "sensitivity" : [],
+                "existenceConditions" : [
+                  {}
+                ]
+              },
+              "edited" : false
+            }
+          ],
+          "layout" : [
+            1
+          ],
+          "properties" : {
+            "required" : false,
+            "withOther" : false,
+            "readOnly" : false,
+            "existenceConditions" : [
+              {}
+            ]
+          },
+          "edited" : false
+        }
+      ],
+      "properties" : {
+        "existenceConditions" : [
+          {}
+        ]
+      }
+    }
+  ],
+  "status" : "DRAFT",
+  "paymentMapping" : {},
+  "lastModifiedDate" : ISODate("2019-01-14T11:55:44.646Z"),
+  "_class" : "com.hhstechgroup.hummingbird.models.builder.Application"
+}

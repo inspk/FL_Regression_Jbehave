@@ -1,0 +1,186 @@
+<div class="story">
+<h1></h1>
+<div class="path">00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/AlternateIdentifier/AlternateIdentifier.story</div>
+<div class="scenario">
+<h2>Scenario: Add and edit alternate identifier for Individual Enrollment</h2>
+<div class="comment">!-- Meta:</div>
+<div class="step ignorable">!-- Given user navigated to landing page</div>
+<div class="step ignorable">!-- When implicit wait '10' seconds</div>
+<div class="step ignorable">!-- When new user logs to Internal User portal with username - internal.user.dyp+cd@gmail.com and password - Internaluser1!</div>
+<div class="step ignorable">!-- When implicit wait '10' seconds</div>
+<div class="step ignorable">!-- When click on 'Agree' button in the Portal page</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- Then statistics should be displayed on dashboard page</div>
+<div class="step ignorable">!-- When implicit wait '3' seconds</div>
+<div class="step ignorable">!-- When click on Enrollment tab on header</div>
+<div class="step ignorable">!-- When search for enrollment data on IU portal by next parameters:</div>
+<div class="comment">!-- |status        |enrollType|requestType|</div>
+<div class="comment">!-- |Approved      |Individual|Enrollment |</div>
+<div class="step ignorable">!-- And implicit wait '5' seconds</div>
+<div class="step ignorable">!-- Then check results after search</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- Then click on the 'Individual' provider</div>
+<div class="step ignorable">!-- When implicit wait '20' seconds</div>
+<div class="step ignorable">!-- Then I add an alternate identifier with level Key Personnel, type COBA ID, reason New Enrollment</div>
+<div class="step ignorable">!-- When implicit wait '2' seconds</div>
+<div class="step ignorable">!-- Then I should see &quot;Alternate Identifier has been added successfully.&quot;</div>
+<div class="step ignorable">!-- When implicit wait '40' seconds</div>
+<div class="step ignorable">!-- When I edit that alternate identifier to reason CHOW and status Inactive</div>
+<div class="step ignorable">!-- When implicit wait '2' seconds</div>
+<div class="step ignorable">!-- Then I should get &quot;Alternate Identifier has been updated successfully.&quot;</div>
+<div class="step ignorable">!-- When implicit wait '40' seconds</div>
+<div class="step ignorable">!-- And click on Providers tab on header</div>
+<div class="step ignorable">!-- When search for enrollment data on IU portal by next parameters:</div>
+<div class="comment">!-- |providerStatus|enrollmentType|</div>
+<div class="comment">!-- |Active        |Individual    |</div>
+<div class="step ignorable">!-- And implicit wait '5' seconds</div>
+<div class="step ignorable">!-- Then check results after search</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- Then click on the 'Individual' provider</div>
+<div class="step ignorable">!-- When implicit wait '5' seconds</div>
+<div class="step ignorable">!-- Then I add an alternate identifier in providers tab with level NPI/Provider, type COBA ID, reason New Enrollment</div>
+<div class="step ignorable">!-- When implicit wait '2' seconds</div>
+<div class="step ignorable">!-- Then I should see &quot;Alternate Identifier has been added successfully.&quot;</div>
+<div class="step ignorable">!-- When implicit wait '40' seconds</div>
+<div class="step ignorable">!-- When I edit that alternate identifier to reason CHOW and status Inactive</div>
+<div class="step ignorable">!-- When implicit wait '2' seconds</div>
+<div class="step ignorable">!-- Then I should get &quot;Alternate Identifier has been updated successfully.&quot;</div>
+<div class="step ignorable">!-- When implicit wait '10' seconds</div>
+<div class="step ignorable">!-- When log out from portal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Add and edit alternate identifier for Entity Enrollment</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then statistics should be displayed on dashboard page</div>
+<div class="step successful">When implicit wait '3' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Enrollment</span> tab on header</div>
+<div class="step successful">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>status</th><th>enrollType</th><th>requestType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Approved</td><td>Entity</td><td>Enrollment</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">Then click on the 'Entity' provider</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then I add an alternate identifier with level NPI/Provider, type Historical/Legacy NPI, reason <span class="step parameter">New Enrollment</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">Then I should see &quot;Alternate Identifier has been added successfully.&quot;</div>
+<div class="step successful">When implicit wait '40' seconds</div>
+<div class="step successful">When I edit that alternate identifier to reason <span class="step parameter">CHOW</span> and status <span class="step parameter">Inactive</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">Then I should get &quot;Alternate Identifier has been updated successfully.&quot;</div>
+<div class="step successful">When implicit wait '40' seconds</div>
+<div class="step successful">And click on <span class="step parameter">Providers</span> tab on header</div>
+<div class="step successful">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>providerStatus</th><th>enrollmentType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td><td>Entity</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'Entity' provider</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then I add an alternate identifier in providers tab with level Ownership, type Historical/Legacy NPI, reason <span class="step parameter">New Enrollment</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">Then I should see &quot;Alternate Identifier has been added successfully.&quot;</div>
+<div class="step successful">When implicit wait '40' seconds</div>
+<div class="step successful">When I edit that alternate identifier to reason <span class="step parameter">CHOW</span> and status <span class="step parameter">Inactive</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">Then I should get &quot;Alternate Identifier has been updated successfully.&quot;</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When log out from portal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Add and edit alternate identifier for TP Enrollment</h2>
+<div class="step successful">Given user navigated to landing page</div>
+<div class="step successful">When implicit wait '10' seconds</div>
+<div class="step successful">When new user logs to Internal User portal with username - <span class="step parameter">internal.user.dyp+cd@gmail.com</span> and password - <span class="step parameter">Internaluser1!</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step successful">When click on 'Agree' button in the Portal page</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then statistics should be displayed on dashboard page</div>
+<div class="step successful">When implicit wait '3' seconds</div>
+<div class="step successful">When click on <span class="step parameter">Enrollment</span> tab on header</div>
+<div class="step successful">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>status</th><th>enrollType</th><th>requestType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Approved</td><td>TP</td><td>Enrollment</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And implicit wait '5' seconds</div>
+<div class="step successful">Then check results after search</div>
+<div class="step successful">When implicit wait '5' seconds</div>
+<div class="step successful">Then click on the 'TP' provider</div>
+<div class="step successful">When implicit wait '20' seconds</div>
+<div class="step successful">Then I add an alternate identifier with level Provider Medicaid Id, type Historical TaxID (FEIN), reason <span class="step parameter">New Enrollment</span></div>
+<div class="step successful">When implicit wait '2' seconds</div>
+<div class="step failed">Then I should see &quot;Alternate Identifier has been added successfully.&quot; <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[.='Alternate Identifier has been added successfully.'])[1] (tried for 80 second(s) with 50 milliseconds interval)</span></div>
+<div class="step notPerformed">When implicit wait '40' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When I edit that alternate identifier to reason <span class="step parameter">CHOW</span> and status <span class="step parameter">Inactive</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then I should get &quot;Alternate Identifier has been updated successfully.&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '40' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And click on <span class="step parameter">Providers</span> tab on header <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When search for enrollment data on IU portal by next parameters:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>providerStatus</th><th>enrollmentType</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td><td>TP</td></tr>
+</tbody>
+</table>
+</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then check results after search <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then click on the 'TP' provider <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '5' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then I add an alternate identifier in providers tab with level Key Personnel, type Phone Number, reason <span class="step parameter">New Enrollment</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then I should see &quot;Alternate Identifier has been added successfully.&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '40' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When I edit that alternate identifier to reason <span class="step parameter">CHOW</span> and status <span class="step parameter">Inactive</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '2' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then I should get &quot;Alternate Identifier has been updated successfully.&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When implicit wait '10' seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step pending">When log out from portal
+
+
+!-- <span class="keyword pending">(PENDING)</span></div>
+<div><pre class="pending">@When(&quot;log out from portal\r\n\r\n\r\n!--&quot;)
+@Pending
+public void whenLogOutFromPortal() {
+  // PENDING
+}
+</pre></div>

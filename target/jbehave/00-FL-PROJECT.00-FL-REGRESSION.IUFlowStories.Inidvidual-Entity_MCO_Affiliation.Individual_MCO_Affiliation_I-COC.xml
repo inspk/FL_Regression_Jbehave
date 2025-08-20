@@ -1,0 +1,42 @@
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/Inidvidual-Entity_MCO_Affiliation/Individual_MCO_Affiliation_I-COC.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">perform an action</asA>
+  <iWantTo keyword="So that">I can achieve a business goal</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Individual Provider I-COC flow">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">And save current <parameter>date</parameter> to variable &apos;date&apos;</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">And implicit wait &apos;15&apos; seconds</step>
+<step outcome="successful">And click on <parameter>CoC</parameter> tab on header</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on &apos;Add I Coc&apos;</step>
+<step outcome="successful">When set enrollment type &apos;Individual&apos; in i-Coc popup</step>
+<step outcome="failed" keyword="FAILED">When click search in I-Coc popup<failure>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.157)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SOMATHASIVASAMY&apos;, ip: &apos;192.168.2.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.157, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Somatha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64665}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d17fcea87f0593f43bc11eeae9f6f1dc
+*** Element info: {Using=xpath, value=//div[@aria-label=&apos;responsive-dialog-title&apos;]}</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When select provider in i-Coc popup</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click next in i-Coc popup</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When select add affiliation data type in i-coc popup</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;2&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click Create CoC  for group button  on categories modal window</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And implicit wait &apos;15&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then affiliate &apos;MCO&apos; with provider of &apos;Long Term Care&apos;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When move to new &apos;Summary&apos; section</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When wait for screening process execution during &apos;5&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When submit application</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;15&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click on Go to Change of Circumstance button</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When log out from portal</step>

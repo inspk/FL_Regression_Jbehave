@@ -1,0 +1,72 @@
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/FloridaMedicaidProviderID/FloridaMedicaid_Entity_I-COC/EntityProviderI-COC.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">perform an action</asA>
+  <iWantTo keyword="So that">I can achieve a business goal</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Entity I-COC Flow">
+<step outcome="successful">Given generate firstname, lastname, middlename and email credentials for &apos;Individual2&apos;</step>
+<step outcome="successful">And get random npi from file &apos;SdNPI&apos;</step>
+<step outcome="successful">And save value &apos;&lt;provider&gt;&apos; to variable &apos;provider&apos;</step>
+<step outcome="successful">And save value &apos;&lt;gender&gt;&apos; to variable &apos;gender&apos;</step>
+<step outcome="successful">And save value &apos;&lt;dob&gt;&apos; to variable &apos;dob&apos;</step>
+<step outcome="successful">And save value &apos;&lt;race&gt;&apos; to variable &apos;race&apos;</step>
+<step outcome="successful">And save value &apos;&lt;ssn&gt;&apos; to variable &apos;ssn&apos;</step>
+<step outcome="successful">And save value &apos;&lt;typeOfBusiness&gt;&apos; to variable &apos;typeOfBusiness&apos;</step>
+<step outcome="successful">And save value &apos;&lt;taxonomyCategory&gt;&apos; to variable &apos;taxonomyCategory&apos;</step>
+<step outcome="successful">And save value &apos;&lt;primaryTaxonomy&gt;&apos; to variable &apos;primaryTaxonomy&apos;</step>
+<step outcome="successful">And save value &apos;&lt;phoneno&gt;&apos; to variable &apos;phoneno&apos;</step>
+<step outcome="successful">And save value &apos;&lt;phoneno&gt;&apos; to variable &apos;applicationContactNum&apos;</step>
+<step outcome="successful">And save value &apos;&lt;address&gt;&apos; to variable &apos;address&apos;</step>
+<step outcome="successful">And save value &apos;&lt;mailingAddressZip&gt;&apos; to variable &apos;mailingAddressZip&apos;</step>
+<step outcome="successful">And save value &apos;&lt;mailingAddressCountycode&gt;&apos; to variable &apos;mailingAddressCountycode&apos;</step>
+<step outcome="successful">And save value &apos;&lt;licenseNumber&gt;&apos; to variable &apos;licenseNumber&apos;</step>
+<step outcome="successful">And save value &apos;&lt;licenseType&gt;&apos; to variable &apos;licenseType&apos;</step>
+<step outcome="successful">And save value &apos;&lt;licenseIssuedState&gt;&apos; to variable &apos;licenseIssuedState&apos;</step>
+<step outcome="successful">And save value &apos;&lt;primaryServiceLocationAddressLine1&gt;&apos; to variable &apos;primaryServiceLocationAddressLine1&apos;</step>
+<step outcome="successful">And save value &apos;&lt;primaryServiceLocationZip&gt;&apos; to variable &apos;primaryServiceLocationZip&apos;</step>
+<step outcome="successful">And save value &apos;&lt;primaryServiceLocationCountyCode&gt;&apos; to variable &apos;primaryServiceLocationCountyCode&apos;</step>
+<step outcome="successful">And save value &apos;&lt;profitStatus&gt;&apos; to variable &apos;profitStatus&apos;</step>
+<step outcome="successful">And save value &apos;&lt;countryOfBirth&gt;&apos; to variable &apos;countryOfBirth&apos;</step>
+<step outcome="successful">And save value &apos;&lt;stateOfBirth&gt;&apos; to variable &apos;stateOfBirth&apos;</step>
+<step outcome="successful">And save value &apos;&lt;stateOfBirth&gt;&apos; to variable &apos;stateofBirth&apos;</step>
+<step outcome="successful">And save value &apos;&lt;reasonCode&gt;&apos; to variable &apos;reasonCode&apos;</step>
+<step outcome="successful">And save value &apos;&lt;businessName&gt;&apos; to variable &apos;businessName&apos;</step>
+<step outcome="successful">And save value &apos;&lt;dbaName&gt;&apos; to variable &apos;dbaName&apos;</step>
+<step outcome="successful">And save value &apos;&lt;attentionLine&gt;&apos; to variable &apos;attentionLine&apos;</step>
+<step outcome="successful">And save value &apos;&lt;managingEmployeeType&gt;&apos; to variable &apos;managingEmployeeType&apos;</step>
+<step outcome="successful">And save value &apos;&lt;employeeStatus&gt;&apos; to variable &apos;employeeStatus&apos;</step>
+<step outcome="successful">And save value &apos;&lt;providerID&gt;&apos; to variable &apos;providerID&apos;</step>
+<step outcome="successful">And save current <parameter>date</parameter> to variable &apos;date&apos;</step>
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">And save current <parameter>date</parameter> to variable &apos;date&apos;</step>
+<step outcome="successful">When save current date plus <parameter>1</parameter> years to variable &apos;expDate&apos;</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="successful">When click on new &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">And implicit wait &apos;15&apos; seconds</step>
+<step outcome="successful">And click on <parameter>CoC</parameter> tab on header</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on &apos;Add I Coc&apos;</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When set providerid &apos;4000408&apos; in I-COC popup</step>
+<step outcome="successful">When click search in I-Coc popup</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When select provider in i-Coc popup</step>
+<step outcome="successful">When click next in i-Coc popup</step>
+<step outcome="successful">And implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When select taxonomy data type in coc pop-up</step>
+<step outcome="successful">And implicit wait &apos;10&apos; seconds</step>
+<step outcome="successful">When click Create CoC  for group button  on categories modal window</step>
+<step outcome="successful">And implicit wait &apos;30&apos; seconds</step>
+<step outcome="successful">When move to &apos;Taxonomy / Specialty / Provider Type / License Certification Information&apos; section</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">When click on Add Taxonomy in Taxonomy Info section</step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">And To fill the Taxonomy/Speciality/License Certification section info:
+<parameter><parameters>
+<names><name>taxonomyDescription</name></names>
+<values><value>225100000X</value></values>
+</parameters>
+</parameter></step>
+<step outcome="successful">And implicit wait &apos;5&apos; seconds</step>

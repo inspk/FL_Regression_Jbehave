@@ -1,0 +1,4 @@
+|firstName|lastName|providerEmail |npi       |fein      |businessName            |type      |taxonomyCode|address              |zip  |state  |phone     |
+|Luciana  |Margot  |luciana.margot|1003860859|1234567891|Arrow Electronics, Inc  |Speciality|8765445671  |Dexter Ave, Auburn ME|01643|Alaska |9934534534|
+|Millie   |Viviana |millie.viviana|1003860768|1234567892|Atmos Energy Corporation|Retail    |8765445672  |Dexter Ave, Auburn ME|01644|Alabama|9934534535|
+|Jazmin   |Frances |jazmin.frances|1003860800|1234567893|ACT Manufacturing Inc.  |Mail Order|8765445673  |Dexter Ave, Auburn ME|01645|Arizona|9934534536|

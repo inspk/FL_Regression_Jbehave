@@ -1,0 +1,20 @@
+<story path="00-FL-PROJECT/00-FL-REGRESSION/IUFlowStories/RateSetting/Rate_Setting_Manual/01-RateSetting_SystemOption.story" title="">
+<scenario keyword="Scenario:" title="Verify RateSetting toggle button in SystemOption.">
+<step outcome="successful">Given user navigated to landing page</step>
+<step outcome="successful">When new user logs to Internal User portal with username - <parameter>internal.user.dyp+cd@gmail.com</parameter> and password - <parameter>Internaluser1!</parameter></step>
+<step outcome="successful">When implicit wait &apos;2&apos; seconds</step>
+<step outcome="successful">When click on &apos;Agree&apos; button in the Portal page</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+<step outcome="successful">Then statistics should be displayed on dashboard page</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When navigate to &apos;System Options&apos; page from user pop-up</step>
+<step outcome="successful">Then click on &apos;Approvals&apos; links in system options</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When expand the <parameter>Group Providers</parameter> Approval configuration for &apos;Group Providers&apos; Enrollment type Page</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">When click on View button for request &apos;Enrollment&apos;</step>
+<step outcome="successful">When implicit wait &apos;20&apos; seconds</step>
+<step outcome="successful">Then verify ratesetting toggle in SystemOption for Manual</step>
+<step outcome="successful">When implicit wait &apos;5&apos; seconds</step>
+</scenario>
+</story>

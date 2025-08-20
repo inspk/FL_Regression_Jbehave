@@ -1,0 +1,1694 @@
+<html lang="en" style="--background-color: #00205C; --background-color1: #00205C; --background-color2: #00205C; --background-color3: #00205C; --background-color4: #00205C; --background-color5: #00205C; --background-color6: #00205C; --background-color7: #00205C; --background-color8: #00205C; --background-color9: #00205C; --background-color10: #00205C; --background-color11: #00205C; --display-icon-layout: block; --fontFamily: 'Montserrat', sans-serif; --fontFamily1: 'Montserrat', sans-serif; --fontSize: 14px; --unregister-button-spacing: 10px; --unregister-text-field-spacing: 8px 0 4px 0; --wr: 1000px;"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="manifest" href="/manifest.json"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="theme-color" content="#ffffff"><style data-fullcalendar=""></style><link rel="stylesheet" href="/reset.css"><link rel="stylesheet" href="/global.css"><link rel="stylesheet" href="/react-joyride-compiled.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><script src="/env-config.js"></script><script>console.log("REACT_APP_LICENSE_KEY ===",window.env.REACT_APP_LICENSE_KEY),console.log("REACT_APP_ENABLE_MONITORING ===",window.env.REACT_APP_ENABLE_MONITORING),console.log("REACT_APP_ACCOUNT_ID ===",window.env.REACT_APP_ACCOUNT_ID),console.log("REACT_APP_TRUST_KEY ===",window.env.REACT_APP_TRUST_KEY),console.log("REACT_APP_AGENT_ID ===",window.env.REACT_APP_AGENT_ID),console.log("REACT_APP_APPLICATION_ID ===",window.env.REACT_APP_APPLICATION_ID)</script><script>!function(){var t=JSON.parse(window.env.REACT_APP_ENABLE_MONITORING)?"./newrelic.js":"";document.write('<script type="text/javascript" src="'+t+'"><\/script>')}()</script><style>@-webkit-keyframes mui-progress-circular-rotate{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes mui-progress-circular-rotate{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes mui-progress-circular-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:100,200;stroke-dashoffset:-15}100%{stroke-dasharray:100,200;stroke-dashoffset:-120}}@keyframes mui-progress-circular-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:100,200;stroke-dashoffset:-15}100%{stroke-dasharray:100,200;stroke-dashoffset:-120}}</style><title>Dashboard</title><link href="/static/css/main.96ef485b.chunk.css" rel="stylesheet"><style data-styled-components=""></style><link rel="shortcut icon" sizes="180x180" href="/api/hummingbird/v1/fav-icon/get?v=65.41943511131166" type="image/x-icon"><style data-emotion=""></style><style data-jss="" data-meta="MuiPaper">
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+</style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+</style><style data-jss="" data-meta="MuiInputBase">
+@-webkit-keyframes mui-auto-fill {}
+@-webkit-keyframes mui-auto-fill-cancel {}
+.MuiInputBase-root {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+}
+.MuiInputBase-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+.MuiInputBase-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInputBase-multiline.MuiInputBase-marginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-fullWidth {
+  width: 100%;
+}
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiInputBase-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:focus {
+  outline: 0;
+}
+.MuiInputBase-input:invalid {
+  box-shadow: none;
+}
+.MuiInputBase-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+}
+.MuiInputBase-input:-webkit-autofill {
+  animation-name: mui-auto-fill;
+  animation-duration: 5000s;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInputBase-inputMarginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-inputMultiline {
+  height: auto;
+  resize: none;
+  padding: 0;
+}
+.MuiInputBase-inputTypeSearch {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+</style><style data-jss="" data-meta="MuiPopover">
+.MuiPopover-paper {
+  outline: 0;
+  position: absolute;
+  max-width: calc(100% - 32px);
+  min-width: 16px;
+  max-height: calc(100% - 32px);
+  min-height: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+</style><style data-jss="" data-meta="MuiPopover">
+.MuiPopover-paper-4 {
+  outline: 0;
+  position: absolute;
+  max-width: calc(100% - 32px);
+  min-width: 16px;
+  max-height: calc(100% - 32px);
+  min-height: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+</style><style data-jss="" data-meta="MuiMenu">
+.MuiMenu-paper {
+  max-height: calc(100% - 96px);
+  -webkit-overflow-scrolling: touch;
+}
+.MuiMenu-list {
+  outline: 0;
+}
+</style><style data-jss="" data-meta="MuiMenu">
+.MuiMenu-paper-1 {
+  max-height: calc(100% - 96px);
+  -webkit-overflow-scrolling: touch;
+}
+.MuiMenu-list-2 {
+  outline: 0;
+  background-color: #1974ce;
+}
+</style><style data-jss="" data-meta="MuiSvgIcon">
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #00205c;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #ffc400;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+</style><style data-jss="" data-meta="MuiSelect">
+.MuiSelect-select {
+  cursor: pointer;
+  min-width: 16px;
+  user-select: none;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.MuiSelect-select:focus {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.MuiSelect-select::-ms-expand {
+  display: none;
+}
+.MuiSelect-select.Mui-disabled {
+  cursor: default;
+}
+.MuiSelect-select[multiple] {
+  height: auto;
+}
+.MuiSelect-select:not([multiple]) option, .MuiSelect-select:not([multiple]) optgroup {
+  background-color: #fff;
+}
+.MuiSelect-select.MuiSelect-select {
+  padding-right: 24px;
+}
+.MuiSelect-filled.MuiSelect-filled {
+  padding-right: 32px;
+}
+.MuiSelect-outlined {
+  border-radius: 4px;
+}
+.MuiSelect-outlined.MuiSelect-outlined {
+  padding-right: 32px;
+}
+.MuiSelect-selectMenu {
+  height: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiSelect-icon {
+  top: calc(50% - 12px);
+  color: rgba(0, 0, 0, 0.54);
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.MuiSelect-icon.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSelect-iconOpen {
+  transform: rotate(180deg);
+}
+.MuiSelect-iconFilled {
+  right: 7px;
+}
+.MuiSelect-iconOutlined {
+  right: 7px;
+}
+</style><style data-jss="" data-meta="MuiTooltip">
+.MuiTooltip-popper {
+  flip: false;
+  z-index: 1500;
+  pointer-events: none;
+}
+.MuiTooltip-popperInteractive {
+  pointer-events: auto;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow {
+  top: 0;
+  flip: false;
+  left: 0;
+  width: 2em;
+  height: 1em;
+  margin-top: -0.95em;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow {
+  flip: false;
+  left: 0;
+  width: 2em;
+  bottom: 0;
+  height: 1em;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: -0.95em;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow {
+  flip: false;
+  left: 0;
+  width: 1em;
+  height: 2em;
+  margin-top: 4px;
+  margin-left: -0.95em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow {
+  flip: false;
+  right: 0;
+  width: 1em;
+  height: 2em;
+  margin-top: 4px;
+  margin-right: -0.95em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow::before {
+  flip: false;
+  border-color: transparent transparent transparent currentcolor;
+  border-width: 1em 0 1em 1em;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow::before {
+  flip: false;
+  border-color: transparent currentcolor transparent transparent;
+  border-width: 1em 1em 1em 0;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow::before {
+  flip: false;
+  border-color: currentcolor transparent transparent transparent;
+  border-width: 1em 1em 0 1em;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow::before {
+  flip: false;
+  border-color: transparent transparent currentcolor transparent;
+  border-width: 0 1em 1em 1em;
+}
+.MuiTooltip-tooltip {
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.625rem;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.4em;
+  border-radius: 4px;
+  background-color: rgba(97, 97, 97, 0.9);
+}
+.MuiTooltip-tooltipArrow {
+  margin: 0;
+  position: relative;
+}
+.MuiTooltip-arrow {
+  color: rgba(97, 97, 97, 0.9);
+  position: absolute;
+  font-size: 6px;
+}
+.MuiTooltip-arrow::before {
+  width: 0;
+  height: 0;
+  margin: auto;
+  content: "";
+  display: block;
+  border-style: solid;
+}
+.MuiTooltip-touch {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.14286em;
+}
+.MuiTooltip-tooltipPlacementLeft {
+  margin: 0 24px ;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementLeft {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementRight {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementRight {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementTop {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementTop {
+    margin: 14px 0;
+  }
+}
+.MuiTooltip-tooltipPlacementBottom {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementBottom {
+    margin: 14px 0;
+  }
+}
+</style><style data-jss="" data-meta="MuiTypography">
+.MuiTypography-root {
+  margin: 0;
+}
+.MuiTypography-body2 {
+  font-size: 0.875rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+}
+.MuiTypography-body1 {
+  font-size: 1rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.MuiTypography-caption {
+  font-size: 0.75rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+.MuiTypography-h1 {
+  font-size: 6rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 300;
+  line-height: 1.167;
+}
+.MuiTypography-h2 {
+  font-size: 3.75rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.MuiTypography-h3 {
+  font-size: 3rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.167;
+}
+.MuiTypography-h4 {
+  font-size: 2.125rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.235;
+}
+.MuiTypography-h5 {
+  font-size: 1.5rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+}
+.MuiTypography-h6 {
+  font-size: 1.25rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.MuiTypography-subtitle1 {
+  font-size: 1rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.MuiTypography-subtitle2 {
+  font-size: 0.875rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.57;
+}
+.MuiTypography-overline {
+  font-size: 0.75rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 2.66;
+  text-transform: uppercase;
+}
+.MuiTypography-srOnly {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #00205c;
+}
+.MuiTypography-colorSecondary {
+  color: #ffc400;
+}
+.MuiTypography-colorTextPrimary {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorError {
+  color: #f44336;
+}
+.MuiTypography-displayInline {
+  display: inline;
+}
+.MuiTypography-displayBlock {
+  display: block;
+}
+</style><style data-jss="" data-meta="MuiButton">
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-text {
+  padding: 6px 8px;
+}
+.MuiButton-textPrimary {
+  color: #00205c;
+}
+.MuiButton-textPrimary:hover {
+  background-color: rgba(0, 32, 92, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-textSecondary {
+  color: #ffc400;
+}
+.MuiButton-textSecondary:hover {
+  background-color: rgba(255, 196, 0, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 15px;
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButton-outlinedPrimary {
+  color: #00205c;
+  border: 1px solid rgba(0, 32, 92, 0.5);
+}
+.MuiButton-outlinedPrimary:hover {
+  border: 1px solid #00205c;
+  background-color: rgba(0, 32, 92, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlinedSecondary {
+  color: #ffc400;
+  border: 1px solid rgba(255, 196, 0, 0.5);
+}
+.MuiButton-outlinedSecondary:hover {
+  border: 1px solid #ffc400;
+  background-color: rgba(255, 196, 0, 0.04);
+}
+.MuiButton-outlinedSecondary.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+.MuiButton-contained:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  background-color: #d5d5d5;
+}
+.MuiButton-contained.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiButton-contained:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-contained:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #00205c;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #173a7e;
+}
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #00205c;
+  }
+}
+.MuiButton-containedSecondary {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffc400;
+}
+.MuiButton-containedSecondary:hover {
+  background-color: #ffab00;
+}
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #ffc400;
+  }
+}
+.MuiButton-disableElevation {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:hover {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-focusVisible {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:active {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-disabled {
+  box-shadow: none;
+}
+.MuiButton-colorInherit {
+  color: inherit;
+  border-color: currentColor;
+}
+.MuiButton-textSizeSmall {
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+}
+.MuiButton-textSizeLarge {
+  padding: 8px 11px;
+  font-size: 0.9375rem;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 3px 9px;
+  font-size: 0.8125rem;
+}
+.MuiButton-outlinedSizeLarge {
+  padding: 7px 21px;
+  font-size: 0.9375rem;
+}
+.MuiButton-containedSizeSmall {
+  padding: 4px 10px;
+  font-size: 0.8125rem;
+}
+.MuiButton-containedSizeLarge {
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+}
+.MuiButton-fullWidth {
+  width: 100%;
+}
+.MuiButton-startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 8px;
+}
+.MuiButton-startIcon.MuiButton-iconSizeSmall {
+  margin-left: -2px;
+}
+.MuiButton-endIcon {
+  display: inherit;
+  margin-left: 8px;
+  margin-right: -4px;
+}
+.MuiButton-endIcon.MuiButton-iconSizeSmall {
+  margin-right: -2px;
+}
+.MuiButton-iconSizeSmall > *:first-child {
+  font-size: 18px;
+}
+.MuiButton-iconSizeMedium > *:first-child {
+  font-size: 20px;
+}
+.MuiButton-iconSizeLarge > *:first-child {
+  font-size: 22px;
+}
+</style><style data-jss="" data-meta="MuiCard">
+.MuiCard-root {
+  overflow: hidden;
+}
+</style><style data-jss="" data-meta="MuiCardContent">
+.MuiCardContent-root {
+  padding: 16px;
+}
+.MuiCardContent-root:last-child {
+  padding-bottom: 24px;
+}
+</style><style data-jss="" data-meta="MuiCardHeader">
+.MuiCardHeader-root {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+.MuiCardHeader-avatar {
+  flex: 0 0 auto;
+  margin-right: 16px;
+}
+.MuiCardHeader-action {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  margin-top: -8px;
+  margin-right: -8px;
+}
+.MuiCardHeader-content {
+  flex: 1 1 auto;
+}
+</style><style data-jss="" data-meta="MuiIconButton">
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiIconButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-edgeStart {
+  margin-left: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+  margin-left: -3px;
+}
+.MuiIconButton-edgeEnd {
+  margin-right: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+  margin-right: -3px;
+}
+.MuiIconButton-colorInherit {
+  color: inherit;
+}
+.MuiIconButton-colorPrimary {
+  color: #00205c;
+}
+.MuiIconButton-colorPrimary:hover {
+  background-color: rgba(0, 32, 92, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-colorSecondary {
+  color: #ffc400;
+}
+.MuiIconButton-colorSecondary:hover {
+  background-color: rgba(255, 196, 0, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-sizeSmall {
+  padding: 3px;
+  font-size: 1.125rem;
+}
+.MuiIconButton-label {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+</style><style data-jss="" data-meta="MuiDialog">
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+.MuiDialog-scrollPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MuiDialog-scrollBody {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+.MuiDialog-scrollBody:after {
+  width: 0;
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiDialog-container {
+  height: 100%;
+  outline: 0;
+}
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+.MuiDialog-paper {
+  margin: 32px;
+  position: relative;
+  overflow-y: auto;
+}
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+.MuiDialog-paperScrollPaper {
+  display: flex;
+  max-height: calc(100% - 64px);
+  flex-direction: column;
+}
+.MuiDialog-paperScrollBody {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.MuiDialog-paperWidthFalse {
+  max-width: calc(100% - 64px);
+}
+.MuiDialog-paperWidthXs {
+  max-width: 444px;
+}
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthSm {
+  max-width: 600px;
+}
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthMd {
+  max-width: 960px;
+}
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthLg {
+  max-width: 1280px;
+}
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthXl {
+  max-width: 1920px;
+}
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperFullWidth {
+  width: calc(100% - 64px);
+}
+.MuiDialog-paperFullScreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+.MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+  margin: 0;
+  max-width: 100%;
+}
+</style><style data-jss="" data-meta="MuiDialog">
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+.MuiDialog-scrollPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MuiDialog-scrollBody {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+.MuiDialog-scrollBody:after {
+  width: 0;
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiDialog-container {
+  height: 100%;
+  outline: 0;
+}
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+.MuiDialog-paper {
+  margin: 32px;
+  position: relative;
+  overflow-y: auto;
+}
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+.MuiDialog-paperScrollPaper {
+  display: flex;
+  max-height: calc(100% - 64px);
+  flex-direction: column;
+}
+.MuiDialog-paperScrollBody {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.MuiDialog-paperWidthFalse {
+  max-width: calc(100% - 64px);
+}
+.MuiDialog-paperWidthXs {
+  max-width: 444px;
+}
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthSm {
+  max-width: 600px;
+}
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthMd {
+  max-width: 960px;
+}
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthLg {
+  max-width: 1280px;
+}
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthXl {
+  max-width: 1920px;
+}
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperFullWidth {
+  width: calc(100% - 64px);
+}
+.MuiDialog-paperFullScreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+.MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+  margin: 0;
+  max-width: 100%;
+}
+</style><style data-jss="" data-meta="MuiSnackbar">
+.MuiSnackbar-root {
+  left: 8px;
+  right: 8px;
+  display: flex;
+  z-index: 1400;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+.MuiSnackbar-anchorOriginTopCenter {
+  top: 8px;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginTopCenter {
+    top: 24px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
+.MuiSnackbar-anchorOriginBottomCenter {
+  bottom: 8px;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginBottomCenter {
+    left: 50%;
+    right: auto;
+    bottom: 24px;
+    transform: translateX(-50%);
+  }
+}
+.MuiSnackbar-anchorOriginTopRight {
+  top: 8px;
+  justify-content: flex-end;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginTopRight {
+    top: 24px;
+    left: auto;
+    right: 24px;
+  }
+}
+.MuiSnackbar-anchorOriginBottomRight {
+  bottom: 8px;
+  justify-content: flex-end;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginBottomRight {
+    left: auto;
+    right: 24px;
+    bottom: 24px;
+  }
+}
+.MuiSnackbar-anchorOriginTopLeft {
+  top: 8px;
+  justify-content: flex-start;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginTopLeft {
+    top: 24px;
+    left: 24px;
+    right: auto;
+  }
+}
+.MuiSnackbar-anchorOriginBottomLeft {
+  bottom: 8px;
+  justify-content: flex-start;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginBottomLeft {
+    left: 24px;
+    right: auto;
+    bottom: 24px;
+  }
+}
+</style><style data-jss="" data-meta="MuiTab">
+.MuiTab-root {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  font-size: 0.875rem;
+  max-width: 264px;
+  min-width: 125px;
+  box-sizing: border-box;
+  min-height: 48px;
+  text-align: center;
+  flex-shrink: 1;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  white-space: normal;
+  text-transform: uppercase;
+}
+@media (min-width:600px) {
+  .MuiTab-root {
+    min-width: 160px;
+  }
+}
+.MuiTab-labelIcon {
+  min-height: 72px;
+  padding-top: 9px;
+}
+.MuiTab-labelIcon .MuiTab-wrapper > *:first-child {
+  margin-bottom: 6px;
+}
+.MuiTab-textColorInherit {
+  color: inherit;
+  opacity: 0.7;
+}
+.MuiTab-textColorInherit.Mui-selected {
+  opacity: 1;
+}
+.MuiTab-textColorInherit.Mui-disabled {
+  opacity: 0.5;
+}
+.MuiTab-textColorPrimary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #00205c;
+}
+.MuiTab-textColorPrimary.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiTab-textColorSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTab-textColorSecondary.Mui-selected {
+  color: #ffc400;
+}
+.MuiTab-textColorSecondary.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiTab-fullWidth {
+  flex-grow: 1;
+  max-width: none;
+  flex-basis: 0;
+  flex-shrink: 1;
+}
+.MuiTab-wrapped {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.MuiTab-wrapper {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+</style><style data-jss="" data-meta="MuiTableCell">
+.MuiTableCell-root {
+  display: table-cell;
+  padding: 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  border-bottom: 1px solid
+    rgba(224, 224, 224, 1);
+  vertical-align: inherit;
+}
+.MuiTableCell-head {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.MuiTableCell-body {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTableCell-footer {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  line-height: 1.3125rem;
+}
+.MuiTableCell-sizeSmall {
+  padding: 6px 24px 6px 16px;
+}
+.MuiTableCell-sizeSmall:last-child {
+  padding-right: 16px;
+}
+.MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox {
+  width: 24px;
+  padding: 0px 12px 0 16px;
+}
+.MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox:last-child {
+  padding-left: 12px;
+  padding-right: 16px;
+}
+.MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox > * {
+  padding: 0;
+}
+.MuiTableCell-paddingCheckbox {
+  width: 48px;
+  padding: 0 0 0 4px;
+}
+.MuiTableCell-paddingCheckbox:last-child {
+  padding-left: 0;
+  padding-right: 4px;
+}
+.MuiTableCell-paddingNone {
+  padding: 0;
+}
+.MuiTableCell-paddingNone:last-child {
+  padding: 0;
+}
+.MuiTableCell-alignLeft {
+  text-align: left;
+}
+.MuiTableCell-alignCenter {
+  text-align: center;
+}
+.MuiTableCell-alignRight {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+.MuiTableCell-alignJustify {
+  text-align: justify;
+}
+.MuiTableCell-stickyHeader {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: sticky;
+  background-color: #fafafa;
+}
+</style><style data-jss="" data-meta="MuiTableFooter">
+.MuiTableFooter-root {
+  display: table-footer-group;
+}
+</style><style data-jss="" data-meta="MuiToolbar">
+.MuiToolbar-root {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.MuiToolbar-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.MuiToolbar-regular {
+  min-height: 56px;
+}
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+.MuiToolbar-dense {
+  min-height: 48px;
+}
+</style><style data-jss="" data-meta="MuiTablePagination">
+.MuiTablePagination-root {
+  color: rgba(0, 0, 0, 0.87);
+  overflow: auto;
+  font-size: 0.875rem;
+}
+.MuiTablePagination-root:last-child {
+  padding: 0;
+}
+.MuiTablePagination-toolbar {
+  min-height: 52px;
+  padding-right: 2px;
+}
+.MuiTablePagination-spacer {
+  flex: 1 1 100%;
+}
+.MuiTablePagination-caption {
+  flex-shrink: 0;
+}
+.MuiTablePagination-selectRoot {
+  margin-left: 8px;
+  margin-right: 32px;
+}
+.MuiTablePagination-select {
+  text-align: right;
+  padding-left: 8px;
+  padding-right: 24px;
+  text-align-last: right;
+}
+.MuiTablePagination-input {
+  color: inherit;
+  font-size: inherit;
+  flex-shrink: 0;
+}
+.MuiTablePagination-actions {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+</style><style data-jss="" data-meta="MuiTableRow">
+.MuiTableRow-root {
+  color: inherit;
+  display: table-row;
+  outline: 0;
+  vertical-align: middle;
+}
+.MuiTableRow-root.MuiTableRow-hover:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTableRow-root.Mui-selected, .MuiTableRow-root.Mui-selected:hover {
+  background-color: rgba(255, 196, 0, 0.08);
+}
+</style><style data-jss="" data-meta="PrivateTabIndicator">
+.jss5 {
+  width: 100%;
+  bottom: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.jss6 {
+  background-color: #00205c;
+}
+.jss7 {
+  background-color: #ffc400;
+}
+.jss8 {
+  right: 0;
+  width: 2px;
+  height: 100%;
+}
+</style><style data-jss="" data-meta="MuiTabs">
+.MuiTabs-root {
+  display: flex;
+  overflow: hidden;
+  min-height: 48px;
+  -webkit-overflow-scrolling: touch;
+}
+.MuiTabs-vertical {
+  flex-direction: column;
+}
+.MuiTabs-flexContainer {
+  display: flex;
+}
+.MuiTabs-flexContainerVertical {
+  flex-direction: column;
+}
+.MuiTabs-centered {
+  justify-content: center;
+}
+.MuiTabs-scroller {
+  flex: 1 1 auto;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+.MuiTabs-fixed {
+  width: 100%;
+  overflow-x: hidden;
+}
+.MuiTabs-scrollable {
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.MuiTabs-scrollable::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width:599.95px) {
+  .MuiTabs-scrollButtonsDesktop {
+    display: none;
+  }
+}
+</style><style data-jss="" data-meta="t">
+.jss9 {
+  width: 500px;
+  padding: 20px;
+}
+.jss10 {
+  text-align: right;
+}
+.jss11 {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.jss12 {
+  padding-bottom: 0;
+}
+</style><style data-jss="" data-meta="inject-t-with-store">
+.jss13 {
+  width: 500px;
+  padding: 20px;
+}
+.jss14 {
+  text-align: right;
+}
+.jss15 {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.jss16 {
+  padding-bottom: 0;
+}
+</style><style data-jss="" data-meta="t">
+.jss17 {
+  width: 500px;
+  padding: 20px;
+}
+.jss18 {
+  text-align: right;
+}
+.jss19 {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.jss20 {
+  padding-bottom: 0;
+}
+</style><style data-jss="" data-meta="inject-t-with-store">
+.jss21 {
+  width: 500px;
+  padding: 20px;
+}
+.jss22 {
+  text-align: right;
+}
+.jss23 {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.jss24 {
+  padding-bottom: 0;
+}
+</style></head><body style="margin:0" data-state="opened"><div id="root" role="main"><div><div></div><div><div><div class="visually-hidden-children sc-dxgOiQ hTjMfW"><h1>Discover your provider</h1></div><div></div><div class="header_rl fl"><div class="wr"><div class="logo-container"><a class=" active" href="/dashboard"><div class="prodLogo"><img src="https://d2x1m0yoqdp9ol.cloudfront.net/logo-white.svg" alt="book" class="flImage"></div></a></div><div class="mobile-burger"><div class="inner"><i></i><i></i><i></i></div></div><div class="menu-container"><div><ul><li><a class="" href="/providers-list">Providers</a></li><li><a class="" href="/requests">Enrollment</a></li><li><a class="" href="/mco">MCO</a></li><li><a class="" href="/credentialing">Credentialing</a></li><li><a class="" href="/coc-list">CoC</a></li><li><a class="" href="/appeal-list">Reconsideration</a></li><li><a class="" href="/audit">Audit</a></li><li><a class="" href="/payments">Payments</a></li><li><a class="" href="/claims">Claims</a></li><li><button class="MuiButtonBase-root MuiButton-root MuiButton-text more-btn" tabindex="0" type="button" aria-haspopup="true"><span class="MuiButton-label">More <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M7 10l5 5 5-5z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></li></ul></div><div><div class="user-bar-container"><div class="messages helptour_messagebox"><a class="" href="/inbox"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="message box"><span class="MuiIconButton-label"><div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"></path></g></svg></div></span><span class="MuiTouchRipple-root"></span></button></a></div><div class="user helptour_user"><div role="button" aria-haspopup="true" tabindex="0"><div class="username" title="">Cindy Duran</div><div class="role">Provider Supervisor</div></div></div><div class="photo-sectionn"><div class="img-containerr"><div aria-haspopup="true"><img alt="profile picture" src="/img/anonym.svg" class="user-anonym-imgg"></div></div></div></div></div></div></div></div><div class="root_content_3FYxC"><div class="wr dashboard_cwd dashboard_cwd--case-worker" id="iu-tries-dashboard" tabindex="0" aria-label="You are in the dashboard page"><div class="main"><div class="MuiPaper-root MuiCard-root card main_info_panel   MuiPaper-elevation1 MuiPaper-rounded"><div class="card-heading-wrap"><div class="MuiCardHeader-root card-heading  "><div class="MuiCardHeader-content"><span class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock" style="font-size: 20px; margin: 9px 0px 7px; width: 90%; word-break: break-word; font-weight: 400;">Hello, Cindy</span></div></div></div><div class="legend-wrapper"><div class="legend-block"><span class="clr-block dark-blue"></span><span class="legend-name"> DOCUMENT REVIEW</span></div><div class="legend-block"><span class="clr-block blue"></span><span class="legend-name"> UNDER SCREENING </span></div><div class="legend-block"><span class="clr-block ligit-yellow"></span><span class="legend-name"> PENDING REVIEW</span></div><div class="legend-block"><span class="clr-block light-blue"></span><span class="legend-name"> PENDING APPROVAL </span></div><div class="legend-block"><span class="clr-block ligit-green"></span><span class="legend-name"> APPROVED </span></div><div class="legend-block"><span class="clr-block lemon-green"></span><span class="legend-name"> TEMPORARY APPROVED </span></div><div class="legend-block"><span class="clr-block ligit-orange"></span><span class="legend-name"> DENIED </span></div></div><div class="MuiCardContent-root content content_global_adjust "><div class="chart-wrapper size"><div class="recharts-responsive-container" style="width: 100%; height: 100%;"><div class="recharts-wrapper" style="position: relative; cursor: default; width: 234px; height: 150px;"><svg class="recharts-surface" width="234" height="150" viewBox="0 0 234 150" version="1.1"><defs><clipPath id="recharts2-clip"><rect x="60" y="15" height="105" width="174"></rect></clipPath></defs><g class="recharts-layer recharts-bar"><g class="recharts-layer recharts-bar-rectangles"><g class="recharts-layer recharts-bar-rectangle"><path fill="#1977CA" width="22.371428571428574" height="11.454545454545453" x="61" y="108.54545454545455" radius="0" class="recharts-rectangle" d="M 61,108.54545454545455 h 22.371428571428574 v 11.454545454545453 h -22.371428571428574 Z"></path></g><g class="recharts-layer recharts-bar-rectangle"><path fill="#0cccac" width="22.371428571428574" height="1.9090909090909207" x="85.85714285714286" y="118.09090909090908" radius="0" class="recharts-rectangle" d="M 85.85714285714286,118.09090909090908 h 22.371428571428574 v 1.9090909090909207 h -22.371428571428574 Z"></path></g><g class="recharts-layer recharts-bar-rectangle"><path fill="#35CC63" width="22.371428571428574" height="66.81818181818181" x="110.71428571428572" y="53.18181818181819" radius="0" class="recharts-rectangle" d="M 110.71428571428572,53.18181818181819 h 22.371428571428574 v 66.81818181818181 h -22.371428571428574 Z"></path></g><g class="recharts-layer recharts-bar-rectangle"></g><g class="recharts-layer recharts-bar-rectangle"></g><g class="recharts-layer recharts-bar-rectangle"></g><g class="recharts-layer recharts-bar-rectangle"></g></g><g class="recharts-layer recharts-label-list"><text x="72.18571428571428" y="103.54545454545455" width="22.371428571428574" height="11.454545454545453" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="72.18571428571428" dy="0em">6</tspan></text><text x="97.04285714285714" y="113.09090909090908" width="22.371428571428574" height="1.9090909090909207" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="97.04285714285714" dy="0em">1</tspan></text><text x="121.9" y="48.18181818181819" width="22.371428571428574" height="66.81818181818181" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="121.9" dy="0em">35</tspan></text><text x="146.75714285714284" y="115" width="22.371428571428574" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="146.75714285714284" dy="0em">0</tspan></text><text x="171.61428571428573" y="115" width="22.371428571428574" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="171.61428571428573" dy="0em">0</tspan></text><text x="196.47142857142856" y="115" width="22.371428571428574" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="196.47142857142856" dy="0em">0</tspan></text><text x="221.32857142857142" y="115" width="22.371428571428574" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="221.32857142857142" dy="0em">0</tspan></text></g></g><g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"><line class="recharts-cartesian-axis-line" width="174" height="30" x="60" y="120" stroke="#666" fill="none" x1="60" y1="120" x2="234" y2="120"></line><g class="recharts-cartesian-axis-ticks"></g></g><g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line class="recharts-cartesian-axis-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="60" y1="15" x2="60" y2="120"></line><g class="recharts-cartesian-axis-ticks"><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="120" x2="60" y2="120"></line><text width="60" height="105" x="52" y="120" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">0</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="91.36363636363637" x2="60" y2="91.36363636363637"></line><text width="60" height="105" x="52" y="91.36363636363637" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">15</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="62.72727272727273" x2="60" y2="62.72727272727273"></line><text width="60" height="105" x="52" y="62.72727272727273" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">30</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="15" x2="60" y2="15"></line><text width="60" height="105" x="52" y="15" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">55</tspan></text></g></g></g></svg><div class="recharts-tooltip-wrapper recharts-tooltip-wrapper-left recharts-tooltip-wrapper-bottom" style="pointer-events: none; visibility: hidden; position: absolute; top: 0px; transform: translate(60px, 15px);"><div class="recharts-default-tooltip" style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); white-space: nowrap;"><p class="recharts-tooltip-label" style="margin: 0px;">UNDER SCREENING</p></div></div></div><div style="position: absolute; width: 0px; height: 0px; visibility: hidden; display: none;"></div></div><h2 class="chart-footer">ENROLLMENT</h2></div><div class="chart-wrapper size"><div class="recharts-responsive-container" style="width: 100%; height: 100%;"><div class="recharts-wrapper" style="position: relative; cursor: default; width: 234px; height: 150px;"><svg class="recharts-surface" width="234" height="150" viewBox="0 0 234 150" version="1.1"><defs><clipPath id="recharts5-clip"><rect x="60" y="15" height="105" width="174"></rect></clipPath></defs><g class="recharts-layer recharts-bar"><g class="recharts-layer recharts-bar-rectangles"><g class="recharts-layer recharts-bar-rectangle"><path fill="#35CC63" width="30" height="17.5" x="66" y="102.5" radius="0" class="recharts-rectangle" d="M 66,102.5 h 30 v 17.5 h -30 Z"></path></g><g class="recharts-layer recharts-bar-rectangle"></g><g class="recharts-layer recharts-bar-rectangle"></g><g class="recharts-layer recharts-bar-rectangle"></g></g><g class="recharts-layer recharts-label-list"><text x="81" y="97.5" width="30" height="17.5" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="81" dy="0em">4</tspan></text><text x="124.5" y="115" width="30" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="124.5" dy="0em">0</tspan></text><text x="168" y="115" width="30" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="168" dy="0em">0</tspan></text><text x="211.5" y="115" width="30" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="211.5" dy="0em">0</tspan></text></g></g><g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"><line class="recharts-cartesian-axis-line" width="174" height="30" x="60" y="120" stroke="#666" fill="none" x1="60" y1="120" x2="234" y2="120"></line><g class="recharts-cartesian-axis-ticks"></g></g><g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line class="recharts-cartesian-axis-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="60" y1="15" x2="60" y2="120"></line><g class="recharts-cartesian-axis-ticks"><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="120" x2="60" y2="120"></line><text width="60" height="105" x="52" y="120" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">0</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="93.75" x2="60" y2="93.75"></line><text width="60" height="105" x="52" y="93.75" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">6</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="67.5" x2="60" y2="67.5"></line><text width="60" height="105" x="52" y="67.5" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">12</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="41.25" x2="60" y2="41.25"></line><text width="60" height="105" x="52" y="41.25" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">18</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="15" x2="60" y2="15"></line><text width="60" height="105" x="52" y="15" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">24</tspan></text></g></g></g></svg><div class="recharts-tooltip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom" style="pointer-events: none; visibility: hidden; position: absolute; top: 0px; transform: translate(91.75px, 15px);"><div class="recharts-default-tooltip" style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); white-space: nowrap;"><p class="recharts-tooltip-label" style="margin: 0px;">APPROVED</p></div></div></div><div style="position: absolute; width: 0px; height: 0px; visibility: hidden; display: none;"></div></div><h2 class="chart-footer">COC</h2></div><div class="chart-wrapper size"><div class="recharts-responsive-container" style="width: 100%; height: 100%;"><div class="recharts-wrapper" style="position: relative; cursor: default; width: 234px; height: 150px;"><svg class="recharts-surface" width="234" height="150" viewBox="0 0 234 150" version="1.1"><defs><clipPath id="recharts8-clip"><rect x="60" y="15" height="105" width="174"></rect></clipPath></defs><g class="recharts-layer recharts-bar"><g class="recharts-layer recharts-bar-rectangles"><g class="recharts-layer recharts-bar-rectangle"></g><g class="recharts-layer recharts-bar-rectangle"></g><g class="recharts-layer recharts-bar-rectangle"></g></g><g class="recharts-layer recharts-label-list"><text x="89" y="115" width="30" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="89" dy="0em">0</tspan></text><text x="147" y="115" width="30" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="147" dy="0em">0</tspan></text><text x="205" y="115" width="30" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="205" dy="0em">0</tspan></text></g></g><g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"><line class="recharts-cartesian-axis-line" width="174" height="30" x="60" y="120" stroke="#666" fill="none" x1="60" y1="120" x2="234" y2="120"></line><g class="recharts-cartesian-axis-ticks"></g></g><g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line class="recharts-cartesian-axis-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="60" y1="15" x2="60" y2="120"></line><g class="recharts-cartesian-axis-ticks"><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="120" x2="60" y2="120"></line><text width="60" height="105" x="52" y="120" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">0</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="93.75" x2="60" y2="93.75"></line><text width="60" height="105" x="52" y="93.75" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">5</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="67.5" x2="60" y2="67.5"></line><text width="60" height="105" x="52" y="67.5" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">10</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="41.25" x2="60" y2="41.25"></line><text width="60" height="105" x="52" y="41.25" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">15</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="15" x2="60" y2="15"></line><text width="60" height="105" x="52" y="15" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">20</tspan></text></g></g></g></svg><div class="recharts-tooltip-wrapper recharts-tooltip-wrapper-left recharts-tooltip-wrapper-bottom" style="pointer-events: none; visibility: hidden; position: absolute; top: 0px; transform: translate(60px, 15px);"><div class="recharts-default-tooltip" style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); white-space: nowrap;"><p class="recharts-tooltip-label" style="margin: 0px;">PENDING APPROVAL</p></div></div></div><div style="position: absolute; width: 0px; height: 0px; visibility: hidden; display: none;"></div></div><h2 class="chart-footer">RECONSIDERATION</h2></div><div class="chart-wrapper size"><div class="recharts-responsive-container" style="width: 100%; height: 100%;"><div class="recharts-wrapper" style="position: relative; cursor: default; width: 234px; height: 150px;"><svg class="recharts-surface" width="234" height="150" viewBox="0 0 234 150" version="1.1"><defs><clipPath id="recharts11-clip"><rect x="60" y="15" height="105" width="174"></rect></clipPath></defs><g class="recharts-layer recharts-bar"><g class="recharts-layer recharts-bar-rectangles"><g class="recharts-layer recharts-bar-rectangle"></g><g class="recharts-layer recharts-bar-rectangle"></g><g class="recharts-layer recharts-bar-rectangle"></g></g><g class="recharts-layer recharts-label-list"><text x="89" y="115" width="30" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="89" dy="0em">0</tspan></text><text x="147" y="115" width="30" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="147" dy="0em">0</tspan></text><text x="205" y="115" width="30" height="0" fill="#2D353C" font-size="10px" class="recharts-text recharts-label" text-anchor="middle"><tspan x="205" dy="0em">0</tspan></text></g></g><g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"><line class="recharts-cartesian-axis-line" width="174" height="30" x="60" y="120" stroke="#666" fill="none" x1="60" y1="120" x2="234" y2="120"></line><g class="recharts-cartesian-axis-ticks"></g></g><g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line class="recharts-cartesian-axis-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="60" y1="15" x2="60" y2="120"></line><g class="recharts-cartesian-axis-ticks"><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="120" x2="60" y2="120"></line><text width="60" height="105" x="52" y="120" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">0</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="93.75" x2="60" y2="93.75"></line><text width="60" height="105" x="52" y="93.75" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">5</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="67.5" x2="60" y2="67.5"></line><text width="60" height="105" x="52" y="67.5" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">10</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="41.25" x2="60" y2="41.25"></line><text width="60" height="105" x="52" y="41.25" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">15</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line class="recharts-cartesian-axis-tick-line" width="60" height="105" x="0" y="15" stroke="#666" fill="none" x1="54" y1="15" x2="60" y2="15"></line><text width="60" height="105" x="52" y="15" stroke="none" fill="#2D353C" font-size="10" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end"><tspan x="52" dy="0.355em">20</tspan></text></g></g></g></svg><div class="recharts-tooltip-wrapper recharts-tooltip-wrapper-left recharts-tooltip-wrapper-bottom" style="pointer-events: none; visibility: hidden; position: absolute; top: 0px; transform: translate(60px, 15px);"><div class="recharts-default-tooltip" style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); white-space: nowrap;"><p class="recharts-tooltip-label" style="margin: 0px;">PENDING APPROVAL</p></div></div></div><div style="position: absolute; width: 0px; height: 0px; visibility: hidden; display: none;"></div></div><h2 class="chart-footer">SITE VISIT</h2></div></div></div><div class="dashboard-content  "><div class="left-content default "><div><div class="MuiTabs-root tabs-wrapper   none-border"><div class="MuiTabs-scroller MuiTabs-fixed" style="overflow: hidden;"><div class="MuiTabs-flexContainer" role="tablist"><button class="MuiButtonBase-root MuiTab-root horizontal-tabs_tab_1aRDs MuiTab-textColorPrimary Mui-selected" tabindex="0" type="button" role="tab" aria-selected="true"><span class="MuiTab-wrapper">All Requests</span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiTab-root horizontal-tabs_tab_1aRDs MuiTab-textColorPrimary" tabindex="0" type="button" role="tab" aria-selected="false"><span class="MuiTab-wrapper">Enrollments</span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiTab-root horizontal-tabs_tab_1aRDs MuiTab-textColorPrimary" tabindex="0" type="button" role="tab" aria-selected="false"><span class="MuiTab-wrapper">Reconsideration</span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiTab-root horizontal-tabs_tab_1aRDs MuiTab-textColorPrimary" tabindex="0" type="button" role="tab" aria-selected="false"><span class="MuiTab-wrapper">COC</span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiTab-root horizontal-tabs_tab_1aRDs MuiTab-textColorPrimary" tabindex="0" type="button" role="tab" aria-selected="false"><span class="MuiTab-wrapper">Site Visit</span><span class="MuiTouchRipple-root"></span></button></div><span class="jss5 jss6 MuiTabs-indicator" style="left: 0px; width: 160px;"></span></div></div></div><div><div class="enroll-list-table mt_0"><div class="tile-table sc-kjoXOD hpTAeq"><div class="tile-table-head-component   sc-cHGsZl doffJW" font-size="12p.4x"><div class="tile-table-sortable-column   sc-kvZOFW fsRdEH"><span class="sortable">ID</span></div><div class="tile-table-sortable-column   sc-kvZOFW hxfMNX"><span class="sortable">Application</span></div><div class="tile-table-sortable-column   sc-kvZOFW jtOTlo"><span class=""><span class="ml-minus-5">Type</span></span></div><div class="tile-table-sortable-column   sc-kvZOFW jtOTlo"><span class="sortable"><span class="ml-minus-10">Provider name &amp; PES ID</span></span></div><div class="tile-table-sortable-column active   sc-kvZOFW eNPNzw"><span class="sortable">Created<span class=" icon_wrapper_tile_table  sc-hqyNC keRCOE"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></g></svg></span></span></div><div class="tile-table-sortable-column   sc-kvZOFW hxfMNX"><span class="sortable">Pending Days</span></div><div class="tile-table-sortable-column   sc-kvZOFW heApTS"><span class="sortable">Assignee</span></div><div class="tile-table-sortable-column   sc-kvZOFW hIQyYU"><span class="sortable">Status</span></div></div><div class="tile-table-body sc-TOsTZ kjYrri"><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">607</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">606</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">605</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">604</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">601</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">581</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">580</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">579</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">578</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div><div class="tile-table-row  sc-kgAjT hOpCRo"><div class="expansion-panel   sc-hzDkRC FVhrM"><div class="expansion-panel-summary clickable sc-fMiknA huoRTk"><div class="tile-table-row-summary  sc-ksYbfQ jHwjmi"><div class="tile-table-column sc-frDJqD begDvE" width="7%"><div class="table-text-wr"><div class="tooltip-wrapper-content"><p class="sc-caSCKo guUgTN">577</p></div></div></div><div class="tile-table-column sc-frDJqD kTzXJp" width="14% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="COC"><p class="sc-caSCKo guUgTN">COC</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Affiliation"><p class="sc-caSCKo guUgTN">Affiliation</p></div></div></div><div class="tile-table-column sc-frDJqD jafNES" width="22% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Dibya"><p class="sc-caSCKo guUgTN">Dibya</p></div><div class="tooltip-wrapper-content" title="4000352"><p class="sc-caSCKo guUgTN">4000352</p></div></div></div><div class="tile-table-column sc-frDJqD iUONPV" width="19% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="07/31/2025"><p class="sc-caSCKo guUgTN">07/31/2025</p></div></div></div><div class="tile-table-column sc-frDJqD hKEMtO" width="17% " style="color: inherit;"><div class="table-text-wr"><div class="tooltip-wrapper-content" title="0"><p class="sc-caSCKo guUgTN">0</p></div></div></div><div class="tile-table-column clickable sc-frDJqD iEajnm" width="15% "><div class="table-text-wr"><div class="tooltip-wrapper-content" title="Unassigned"><p class="sc-caSCKo eSEEbi">Unassigned</p></div></div></div><div class="tile-table-column sc-frDJqD eIBrwa" width="10% " style="color: rgb(174, 94, 12); font-size: 11.5px; text-overflow: ellipsis;"><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content" title="IN PROGRESS"><p class="sc-caSCKo eSEEbi">IN PROGRESS</p></div></div><div class="table-text-wr align-items-center"><div class="tooltip-wrapper-content"><p>—</p></div></div></div></div></div><div class="expansion-panel-actions sc-jhAzac dHdpIn"><div class="expansion-panel-menu sc-eqIVtm gfpXD" style="visibility: visible;"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button" aria-label="More"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="sc-bRBYWo jerErT"></div></div></div></div><div class="tile-table-foot sc-jbKcbu cWSlbe"><table><tfoot class="MuiTableFooter-root"><tr class="MuiTableRow-root MuiTableRow-footer"><tfoot class="MuiTableFooter-root"><tr class="MuiTableRow-root MuiTableRow-footer"><td class="MuiTableCell-root MuiTableCell-footer MuiTablePagination-root status_history_pagination" colspan="1000"><div class="MuiToolbar-root MuiToolbar-regular MuiTablePagination-toolbar MuiToolbar-gutters"><div class="MuiTablePagination-spacer"></div><p class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit">Rows per page:</p><div class="MuiInputBase-root MuiTablePagination-input MuiTablePagination-selectRoot"><div class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input" tabindex="0" role="button" aria-haspopup="listbox" aria-label="Rows per page:">10</div><input type="hidden" value="10"><svg class="MuiSvgIcon-root MuiSelect-icon MuiTablePagination-selectIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg></div><p class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit">1-10 of 114</p><div class="MuiTablePagination-actions"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit Mui-disabled Mui-disabled" tabindex="-1" type="button" disabled="" title="Previous page" aria-label="Previous page"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit" tabindex="0" type="button" title="Next page" aria-label="Next page"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></td></tr></tfoot></tr></tfoot></table></div></div></div><div></div></div></div><div class="right-content"><div class="info-box"><h3 class="title">Congratulations</h3><p class="description">You processed 0 request(s) today!</p><br><p class="description" style="font-weight: 500; color: rgb(0, 0, 0);">Outstanding request(s) today: 0 </p></div><div class="info-box"><h3 class="title">Keep it up!</h3><p class="description">No pending requests older than 15 days!</p><br></div><div class="divider"></div></div></div></div></div></div><div class="landing-page unregistered"><footer><div class="container"><div class="row aic "><div class="d-flex aic "><img src="https://d2x1m0yoqdp9ol.cloudfront.net/logo.svg" alt="Provider Portal Logo" width="109"><div class="foo-text"><strong>Discover Your Provider</strong> is a purpose-built software solution by HHS Technology Group.</div></div><div class="text-right undefined"><a class="link">Privacy Policy</a><a class="link">Terms &amp; Conditions</a><p class="small">V1.42.0</p><p class="small">©2025 HHS Technology Group. All rights reserved.</p></div></div></div></footer></div><div style="position: fixed; bottom: 30px; right: calc(-609px + 50vw); cursor: pointer; transition-duration: 0.2s; transition-timing-function: linear; transition-delay: 0s; opacity: 0; visibility: hidden; transition-property: opacity, visibility;"><div class="scroll-to-top"><svg class="MuiSvgIcon-root arrow-upward" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></g></svg>Back to top</div></div><div class="data-change-popup"></div></div></div></div></div><script type="text/javascript"></script><script src="/static/js/runtime~main.1b922744.js"></script><script src="/static/js/vendor~main.1f482e8b.chunk.js"></script><script src="/static/js/main.ca6c4a12.chunk.js"></script><a id="downloadAnchorElem" style="display:none">&nbsp;</a><span id="recharts_measurement_span" style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; border: none; white-space: pre;">5</span></body></html>

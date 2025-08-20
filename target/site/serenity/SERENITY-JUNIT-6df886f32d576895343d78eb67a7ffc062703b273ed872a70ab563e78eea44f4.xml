@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="02- rate  setting  status verification" skipped="0" tests="1" time="232.72" timestamp="2025-08-14 07:42:57"><testcase name="Group Provider Rate Setting Status Verification"><failure type="java.lang.AssertionError"/><system-err>null
+com.hhstechgroup.steps.jbehave.scenarios.providerData.ProviderDataScenario.checkProviderStatus(ProviderDataScenario.java:235)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</system-err></testcase></testsuite>
